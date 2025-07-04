@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm Yashvardhan Thanvi
+# Yashvardhan Thanvi
 
 ## 🚀 About Me
 Aspiring Software Developer | SIH'24 Finalist | C & Python Programming | Tech Enthusiast | Interactive Learning Builder | Exploring Cloud & AI
