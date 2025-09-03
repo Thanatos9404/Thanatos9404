@@ -1,40 +1,50 @@
 # Yashvardhan Thanvi
 
 ## 🚀 About Me
-Aspiring Software Developer | SIH'24 Finalist | C & Python Programming | Tech Enthusiast | Interactive Learning Builder | Exploring Cloud & AI
+AI/ML Developer | Google Gemini Student Ambassador | SIH'24 Finalist | Deep Learning & NLP Specialist | Building Real-World AI Applications
 
-I'm passionate about building innovative solutions and exploring the intersection of technology and creativity. Currently focused on developing interactive learning tools and exploring the potential of AI and cloud technologies.
+I'm passionate about building scalable AI solutions that solve real-world problems. Currently focused on developing AI-powered applications with hands-on experience in deep learning, NLP, computer vision, and RAG systems. As a Google Gemini Student Ambassador, I bridge the gap between cutting-edge AI research and practical applications.
 
 ## 💻 Tech Stack
 
 ### Programming Languages
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-### Python Libraries & Frameworks
+### AI/ML Libraries & Frameworks
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
+### AI/ML Tools & APIs
+![LangChain](https://img.shields.io/badge/🦜_LangChain-1C3C3C?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-154f3c?style=for-the-badge)
+
+### Web & Deployment
 ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-### Frontend
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-
-### Design & Tools
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+### Cloud & DevOps
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ### Development Environment
 ![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 
 ## 📊 GitHub Stats
-
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Thanatos9404&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
 </div>
@@ -54,24 +64,59 @@ I'm passionate about building innovative solutions and exploring the intersectio
 
 ## 🌟 Featured Projects
 
-### 🎮 [Gesture-Controlled Media Player](https://github.com/Thanatos9404/Gesture-Controlled-Media-Player)
-**Python** | Control your media player using hand gestures with computer vision
+### 🎭 [PrepCabin 3D.AI](https://github.com/Thanatos9404/PrepCabin-3D-AI) 
+**AI-Powered 3D Interview Simulator** | React + Three.js + FastAPI + Transformers  
+Immersive interview practice platform with resume-driven Q&A, multimodal evaluation (speech, posture, coding), and real-time latency optimization (<2s). Designed for Tier-2/3 students with measurable retention gains.
 
-### 🎫 [NFT-Attendance-Verification](https://github.com/Thanatos9404/NFT-Attendance-Verification)
-**Move** | Blockchain-based attendance verification system using NFTs
+### 🏛️ [BharatWitness](https://github.com/Thanatos9404/BharatWitness)
+**Governance-Grade RAG for Indian Policies** | OCR + SPLADE + FAISS + LayoutLMv3  
+Legal/policy Q&A system with temporally aware, span-level cited answers. Benchmarked with 500+ QA dataset, achieving nDCG@10 ≥ 0.85 and 95%+ attributable claims with refusal handling.
 
-### 📰 [AI-News-Summarizer](https://github.com/Thanatos9404/AI-News-Summarizer)
-**Python** | Intelligent news summarization tool powered by AI
+### 🔍 [FakeCatcher++](https://github.com/Thanatos9404/FakeCatcher-Plus)
+**AI Authenticity Verification for Recruitment** | FastAPI + PyTorch + React  
+Platform detecting AI-generated resumes with >90% accuracy using text analysis, perplexity detection, and trust scores. Features glassmorphism UI and roadmap for deepfake video/voice detection.
+
+### 🗞️ [BharatVaani](https://github.com/Thanatos9404/BharatVaani)
+**Multilingual AI News Companion** | Flask + HuggingFace Transformers  
+News summarization in regional languages with TTS, "What-If" scenario generator, and dynamic filtering for inclusive local news access.
+
+### 🧠 [MindScope](https://github.com/Thanatos9404/MindScope)
+**AI Mental Health Companion** | ML + TTS + Interactive UI  
+Anonymous self-checkup web app with ML models providing real-time mood and stress assessments. Fully animated, accessible UI deployed on Vercel.
 
 ## 🏅 Achievements
-- **SIH'24 Finalist** - Smart India Hackathon 2024
-- **Interactive Learning Builder** - Focused on creating engaging educational tools
-- **Open Source Contributor** - Contributing to the developer community
+
+### 🏆 Competition & Recognition
+- **Smart India Hackathon 2024 Finalist** - Team TechSpark (Next Round Qualifier)
+- **1st Prize** - Website Design Competition (IETE Student's Day 2025)
+- **100% Scholarship Winner** - RCAT Quizathon (Top 1%)
+- **5 Star Python** - HackerRank
+
+### 🎓 Leadership & Ambassador Roles
+- **Google Gemini Student Ambassador** (2025) - Conducted GenAI workshops for 200+ students
+- **Student Coordinator** - Institute Innovation Council (IIC) - TechSpark Hackathon, IETE Student's Day 2025
+
+## 📜 Certifications
+
+- **LLMOps** - Google (Aug 2025)
+- **Building Code Agents with Hugging Face smolagents** - DeepLearning.AI (Aug 2025)  
+- **Post-training of LLMs** - University of Washington (Aug 2025)
+- **Reinforcement Learning from Human Feedback (RLHF)** - DeepLearning.AI (Aug 2025)
+- **Problem Solving (DSA)** - HackerRank (Mar 2025)
 
 ## 🌱 Currently Learning
-- **AI/ML** - Deep learning and neural networks
-- **Computer Vision** - Advanced image processing techniques
-- **Web Development** - Expanding full-stack capabilities in Python
+
+- **Advanced RAG Systems** - Multi-modal retrieval and governance-grade applications
+- **LLM Fine-tuning** - RLHF and post-training optimization techniques  
+- **3D AI Integration** - Computer vision with immersive user experiences
+- **Production ML** - Scalable deployment and latency optimization
+
+## 💼 Professional Experience
+
+**AI/ML & UI/UX Design Intern** - Olinp Technologies Pvt. Ltd. (Mar 2025 - Jun 2025)
+- Built internal AI tools with Streamlit + Flask integrating model inference APIs
+- Reduced UI/UX defects by ~20% through improved testing workflows
+- Designed responsive UIs and wrote comprehensive feature documentation
 
 ## 📫 Connect with Me
 
@@ -85,20 +130,23 @@ I'm passionate about building innovative solutions and exploring the intersectio
 </div>
 
 ## 💡 Fun Facts
-- 🏆 SIH'24 Finalist - Always up for a good hackathon challenge
-- 🎯 Building interactive learning tools to make education more engaging
-- 🤖 Exploring the endless possibilities of AI and machine learning
-- 🌩️ Diving deep into cloud technologies and their applications
-- 💻 Love solving complex problems with clean, efficient code
+
+- 🤖 Google Gemini Student Ambassador bridging AI research with practical applications
+- 🏆 Built production-ready AI systems with <2s latency optimization 
+- 📚 Designed governance-grade RAG systems for policy analysis
+- 🎯 Specialized in multimodal AI evaluation (speech, posture, text analysis)
+- 🌟 Passionate about making AI accessible for Tier-2/3 students
+- 🔍 Always exploring the intersection of deep learning and real-world impact
 
 ## 🚀 Recent Activity
-- Working on gesture-controlled applications using computer vision
-- Building AI-powered tools for content summarization
-- Working on an AI model for the masses
-- Contributing to open-source projects in Python
+
+- Developing advanced RAG systems for governance applications
+- Building multimodal AI evaluation frameworks for interview simulation
+- Contributing to open-source AI/ML projects focused on accessibility
+- Mentoring students in AI/ML through Google Gemini ambassador program
+- Optimizing deployment strategies for real-time AI applications
 
 ---
-
 <div align="center">
   <i>⭐️ From <a href="https://github.com/Thanatos9404">Thanatos9404</a></i>
 </div>
