@@ -1,468 +1,206 @@
-<div align="center">
+<!-- Visuals are animated SVGs built by scripts/build.py. The open source wall, skyline and PR list are refreshed by scripts/refresh.py through GitHub Actions. -->
 
-<!-- ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,30:0a2a1a,60:0d4a2a,90:16a34a,100:4ade80&height=300&section=header&text=YASHVARDHAN%20THANVI&fontSize=52&fontColor=4ade80&animation=twinkling&fontAlignY=40&desc=AI%20%2F%20ML%20Engineer%20%7C%20Google%20Gemini%20Ambassador%20%7C%20Nation%20Builder&descSize=18&descAlignY=62&descColor=86efac" width="100%"/>
+<a href="https://www.yashvardhan.tech"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img alt="Yashvardhan Thanvi. Founder of LLMSlim, AI engineer from Jaipur, India. Available for freelance work." src="assets/hero-light.svg" width="100%"></picture></a>
 
-<!-- TYPING ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=900&color=4ADE80&center=true&vCenter=true&multiline=false&repeat=true&width=750&height=45&lines=Building+AI+that+matters+for+Bharat+%F0%9F%8C%B1;VBYLD+2026+Finalist+%7C+Rajasthan+Rank+%231+%F0%9F%8F%86;Google+Gemini+Student+Ambassador+%F0%9F%A4%96;Top+0.0005%25+of+50.49+Lakh+Aspirants+%F0%9F%87%AE%F0%9F%87%B3;Deep+Learning+%2B+NLP+%2B+Computer+Vision+%F0%9F%9A%80;Bridging+AI+Research+%26+Real+World+Impact+%F0%9F%8C%90" alt="Typing SVG" />
+<p align="center">
+  <a href="https://calendly.com/yashvt9404/30min"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-call-dark.svg"><img alt="Book a call" src="assets/l-call-light.svg" height="44"></picture></a>
+  <a href="https://www.yashvardhan.tech"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-portfolio-dark.svg"><img alt="Portfolio" src="assets/l-portfolio-light.svg" height="44"></picture></a>
+  <a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-llmslim-dark.svg"><img alt="LLMSlim" src="assets/l-llmslim-light.svg" height="44"></picture></a>
+  <a href="https://www.linkedin.com/in/yashvardhanthanvi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-linkedin-dark.svg"><img alt="LinkedIn" src="assets/l-linkedin-light.svg" height="44"></picture></a>
+  <a href="mailto:yashvt9404@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-email-dark.svg"><img alt="Email" src="assets/l-email-light.svg" height="44"></picture></a>
+  <a href="https://www.yashvardhan.tech/Yashvardhan-Thanvi-Resume.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-resume-dark.svg"><img alt="Résumé" src="assets/l-resume-light.svg" height="44"></picture></a>
+</p>
 
-<br/>
+<p align="center">
+I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="https://www.llmslim.app"><b>LLMSlim</b></a>, open source context infrastructure for AI agents, built under my studio <a href="https://ameyor.in"><b>AMEYOR</b></a>. Most recently I was an AI/ML research intern at DRDO's Scientific Analysis Group. I also take on <b>freelance work</b>: Python backends, retrieval systems, AI features, and getting a prototype into someone's hands.
+</p>
 
-<!-- SOCIAL BADGES ROW -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yashvardhanthanvi)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thanatos9404)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yashvt9404@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=Thanatos9404&color=4ade80&style=for-the-badge&label=VISITORS)](https://github.com/Thanatos9404)
+<br>
 
-</div>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
----
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 62x lower cost per question on LongMemEval, 3x fewer tokens at the same LongBench score, 9.7 points ahead of Microsoft's LLMLingua-2 on NaturalQuestions. Part of 14 startup programs including OpenAI, Claude, MongoDB and Sarvam." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
-<!-- ABOUT ME SECTION -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0a2a1a&height=3&section=header" width="100%"/>
+<p align="center">
+  <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
+</p>
 
-<table>
-<tr>
-<td width="55%">
+<br>
 
-## ⚡ Who Am I?
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-work-dark.svg"><img alt="02 Selected work: Things I've built." src="assets/h-work-light.svg" width="100%"></picture>
 
-```python
-class YashvardhanThanvi:
-    
-    role      = "AI/ML Engineer & Nation Builder"
-    location  = "Jaipur, Rajasthan 🇮🇳"
-    education = "Engineering Student"
-    
-    ambassador = "Google Gemini 2025"
-    
-    achievements = [
-        "🏛️  VBYLD 2026 Finalist — Bharat Mandapam, Delhi",
-        "🥇  Rajasthan Rank #1 — Top 0.0005% Nationally",
-        "🤝  Appreciated by Union Ministers & PM Modi",
-        "🏆  SIH 2024 Finalist — Team TechSpark",
-        "🥇  1st Prize — IETE Website Design 2025",
-        "⭐  Google Gemini Ambassador — 200+ Students",
-    ]
-    
-    currently_building = [
-        "🌾 Krishyak — AI Farm Simulator",
-        "📰 BharatVaani — Multilingual AI News",
-        "🏛️  PRAGYAAN — Civic Intelligence Platform",
-    ]
-    
-    def greet(self):
-        return "Let's build AI that serves Bharat! 🌱"
-```
+<p align="center">
+  <a href="https://github.com/Thanatos9404/Krishyak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-krishyak-dark.svg"><img alt="Krishyak: farm decision support for Indian farmers in all 22 Indian languages. VBYLD 2026 and IETE Engineers' Day 2026 first place." src="assets/p-krishyak-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/polygraph"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-polygraph-dark.svg"><img alt="Polygraph: checks the claims in a pull request by experiment, on NVIDIA Nemotron. Nebius x NVIDIA hackathon." src="assets/p-polygraph-light.svg" width="49%"></picture></a>
+  <br><sub>Krishyak <a href="https://krishyak.vercel.app">live app</a> &nbsp;·&nbsp; Polygraph <a href="https://yvt94-polygraph.static.hf.space">live demo</a> and <a href="https://youtu.be/VFzUl18uwP8">video</a></sub>
+</p>
 
-</td>
-<td width="45%">
+<p align="center">
+  <a href="https://github.com/Thanatos9404/pratibimb"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-pratibimb-dark.svg"><img alt="Pratibimb: a physiology plus ML digital twin for Type 2 diabetes in India. Digital Twin Challenge 2026." src="assets/p-pratibimb-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/canopyproof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-canopyproof-dark.svg"><img alt="CanopyProof: satellite-verified integrity for forest carbon credits. IEEE ClimateChain 2026." src="assets/p-canopyproof-light.svg" width="49%"></picture></a>
+  <br><sub>Pratibimb <a href="https://pratibimb-omega.vercel.app">live console</a> &nbsp;·&nbsp; CanopyProof <a href="https://youtu.be/9FBv9KQ4Ag8">video</a></sub>
+</p>
 
-<!-- GITHUB STATS -->
-<img src="https://github-readme-stats.vercel.app/api?username=Thanatos9404&show_icons=true&theme=merko&hide_border=true&bg_color=0d1117&title_color=4ade80&icon_color=4ade80&text_color=86efac&rank_icon=github" width="100%"/>
+<p align="center">
+  <a href="https://github.com/Thanatos9404/passerelle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-passerelle-dark.svg"><img alt="Passerelle: an air-gapped caseworker assistant on Apertus. Hack Apertus 2026." src="assets/p-passerelle-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/hearthbeat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-hearthbeat-dark.svg"><img alt="Hearthbeat: privacy-first Alexa+ check-ins for older adults who live alone. Amazon Build, Ship, Shape 2026." src="assets/p-hearthbeat-light.svg" width="49%"></picture></a>
+  <br><sub>Passerelle <a href="https://youtu.be/bjc88UYdgfE">video</a> &nbsp;·&nbsp; Hearthbeat <a href="https://youtu.be/axVTrTiKaog">video</a></sub>
+</p>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Thanatos9404&theme=merko&hide_border=true&background=0d1117&stroke=4ade80&ring=4ade80&fire=fbbf24&currStreakNum=ffffff&sideNums=86efac&currStreakLabel=4ade80&sideLabels=86efac&dates=6b7280" width="100%"/>
+<p align="center"><sub>
+Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandates for AI shopping agents &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/StudyTwin">StudyTwin</a>, a tutor that cites your course material &nbsp;·&nbsp; <a href="https://ruledost.vercel.app">RuleDost</a>, hackathon rules decoded &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/dayrhythm">dayrhythm</a>, a routine-learning library &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet detection for NASA Space Apps
+</sub></p>
 
-</td>
-</tr>
-</table>
+<br>
 
-<!-- ANIMATED SEPARATOR -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-oss-dark.svg"><img alt="03 Open source: Pull requests to the tools I use." src="assets/h-oss-light.svg" width="100%"></picture>
 
-<!-- MEGA ACHIEVEMENT BANNER -->
-<div align="center">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="Open source pull requests grouped by organisation, with merged work at AWS Labs, IBM, NVIDIA, Pydantic and ModelScope, and PRs in review at Meta, Microsoft, Mozilla.ai and others." src="assets/oss-light.svg" width="100%"></picture>
 
-<img src="https://capsule-render.vercel.app/api?type=shark&color=0:0d2a0d,50:0f4a20,100:0d2a0d&height=130&section=header&text=%F0%9F%8F%9B%EF%B8%8F%20VIKSIT%20BHARAT%20YOUNG%20LEADERS%20DIALOGUE%202026&fontSize=20&fontColor=fbbf24&animation=twinkling&fontAlignY=38&desc=Bharat%20Mandapam%2C%20New%20Delhi%20%7C%209-12%20January%202026%20%7C%20Rajasthan%20Rank%20%231&descAlignY=68&descColor=fde68a&descSize=14" width="100%"/>
+<!-- OSS:START -->
+<details>
+<summary><b>All 47 pull requests</b>, by organisation</summary>
 
-</div>
+**ModelScope**
 
-<div align="center">
+- `merged` [fix(needle_haystack): keep context length and depth as metric dimensions](https://github.com/modelscope/evalscope/pull/1851) <sub>modelscope/evalscope#1851</sub>
+- `merged` [fix(metrics): name numeric dimensions in metric labels](https://github.com/modelscope/evalscope/pull/1856) <sub>modelscope/evalscope#1856</sub>
 
-| 🎯 Metric | 📊 Achievement |
-|:---:|:---:|
-| **Total Aspirants** | 50.49 Lakh across India |
-| **My Rank** | 🥇 **#1 in Rajasthan** |
-| **National Percentile** | Top **0.0005%** |
-| **Theme** | Smart & Sustainable Agriculture |
-| **Platform** | National Leaders, Union Ministers |
+**AWS**
 
-</div>
+- `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
+- `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
+- `open` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
+- `open` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
+- `open` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
+- `open` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
+- `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
+- `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 
-> 💬 *"Personally appreciated by **Shivraj Singh Chouhan** (Union Minister, Agriculture) who shared his contact to continue the discussion. Received blessings from **CM Bhajanlal Sharma**, **Col. Rajyavardhan Rathore**, and attended **PM Narendra Modi's** address at Bharat Mandapam."*
+**NVIDIA**
 
-<div align="center">
+- `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
+- `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
+- `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
+- `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 
-`Shivraj Singh Chouhan` • `ML Jat (DG, ICAR)` • `Mansukh Mandaviya` • `Arjun Ram Meghwal` • `Ajit Doval` • `Narendra Modi`
+**IBM**
 
-</div>
+- `merged` [feat: add an opt-in raise mode for LLM errors in the pipeline stages](https://github.com/IBM/FactReasoner/pull/63) <sub>IBM/FactReasoner#63</sub>
+- `open` [fix(oauth): refresh DB-stored OAuth tokens once under concurrent requests](https://github.com/IBM/mcp-context-forge/pull/7222) <sub>IBM/mcp-context-forge#7222</sub>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
+**Pydantic**
 
-## 🚀 Featured Projects
+- `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
 
-<!-- PROJECT 1: KRISHYAK -->
-<details open>
-<summary>
-  <img src="https://img.shields.io/badge/🌾%20KRISHYAK-AI%20Farm%20Decision%20Simulator-16a34a?style=for-the-badge" alt="Krishyak"/>
-  &nbsp;<b>⭐ VBYLD 2026 Presented to Union Ministers</b>
-</summary>
+**Meta**
 
-<br/>
+- `open` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
+- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
+- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
+- `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
+- `open` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
+- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 
-<table>
-<tr>
-<td width="60%">
+**Capital One**
 
-**Krishyak (कृष्यक — "The Cultivator")** is a full-stack AI platform empowering Indian farmers with data-driven decisions for crop planning and profitability — presented at the national stage to Union Ministers.
+- `open` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
+- `open` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
+- `open` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**🎯 Key Capabilities:**
-- 🔄 **Monte Carlo Simulations** (100–2000 scenarios) for farming strategies  
-- 🌿 **AI Disease Detection** — MobileNetV2 CNN with 40+ crop diseases  
-- 🗣️ **13 Indian Languages** incl. Hindi, Tamil, Bengali, Urdu (RTL)  
-- 🎤 **Voice Commands** — *"दो हेक्टेयर धान की खेती"*  
-- 🏛️ **Government Schemes** — PM-KISAN, PMFBY, KCC eligibility matcher  
-- 📈 **Price Forecasting** — ARIMA-inspired market predictions  
+**Microsoft**
 
-</td>
-<td width="40%">
+- `open` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
+- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
+- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 
-```
-Yield Model:
-────────────────────────────────
-Base × Soil × Rain × Irrigation
-     × Fertilizer × Seed × Pest
+**Mozilla.ai**
 
-Risk Score (0–100):
-────────────────────────────────
-Weather      ████████░░  30%
-Price Vol.   ███████░░░  25%
-Pest         ███████░░░  25%
-Soil         ██████░░░░  20%
+- `open` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
+- `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
+- `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
 
-Crops Supported: 50+
-Languages: 13
-Schemes: 8+
-```
+**Docling**
 
-</td>
-</tr>
-</table>
+- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
+- `open` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss)
-[![Krishyak Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/Thanatos9404/Krishyak)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-🌐-16a34a?style=flat-square)](https://krishyak.vercel.app/)
+**NLTK**
 
-</details>
+- `open` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
+- `open` [Send set_proxy's credentials on the HTTPS CONNECT, and keep proxy credentials off redirects](https://github.com/nltk/nltk/pull/3970) <sub>nltk/nltk#3970</sub>
 
-<br/>
+**OpenTelemetry**
 
-<!-- PROJECT 2: BHARATVAANI -->
-<details open>
-<summary>
-  <img src="https://img.shields.io/badge/📰%20BHARATVAANI-Multilingual%20AI%20News%20Platform-f97316?style=for-the-badge" alt="BharatVaani"/>
-  &nbsp;<b>v2.0 — 12+ Indian Languages</b>
-</summary>
+- `open` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
+- `open` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
 
-<br/>
+**Scikit-HEP**
 
-<table>
-<tr>
-<td width="60%">
+- `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
+- `closed` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
 
-**BharatVaani** is an AI-powered multilingual news platform making trusted Indian news accessible to every citizen — regardless of language.
+**Apache**
 
-**🎯 Key Capabilities:**
-- 🌐 **12+ Languages** — Hindi, Bengali, Telugu, Tamil & more  
-- 🔊 **Text-to-Speech** — Listen to news in your language  
-- ✨ **AI Summaries** — Gemini-powered concise digests  
-- 🔮 **What-If Scenarios** — Explore alternative news outcomes  
-- 💡 **Text Simplification** — Complex news made accessible  
-- 📊 **Reading Analytics** — Track your news habits  
+- `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
 
-</td>
-<td width="40%">
+**Astropy**
 
-```
-Pipeline:
-─────────────────────────────
-News APIs ──► Gemini AI
-     │             │
-     ▼             ▼
-Translation    Summary
-(12+ langs)   Generation
-     │             │
-     └──────┬──────┘
-            ▼
-        TTS Audio
-        + Bookmarks
-        + What-If
-```
+- `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
 
-</td>
-</tr>
-</table>
+**crewAI**
 
-![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=next.js)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript)
-![Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=flat-square&logo=google)
-[![BharatVaani Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/Thanatos9404/BharatVaani)
+- `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
+
+**deepset**
+
+- `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
+
+**Google**
+
+- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
+
+**libpng**
+
+- `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
+
+**Pillow**
+
+- `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
 
 </details>
+<!-- OSS:END -->
 
-<br/>
+<br>
 
-<!-- PROJECT 3: PRAGYAAN -->
-<details open>
-<summary>
-  <img src="https://img.shields.io/badge/🏛️%20PRAGYAAN-Enterprise%20Civic%20Intelligence%20Platform-3b82f6?style=for-the-badge" alt="PRAGYAAN"/>
-  &nbsp;<b>Real-Time Governance AI</b>
-</summary>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-proud-dark.svg"><img alt="04 Recognition: A few proud moments." src="assets/h-proud-light.svg" width="100%"></picture>
 
-<br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/recognition-dark.svg"><img alt="VBYLD 2026 Rajasthan Rank 1 and national finalist. NASA Space Apps 2025 Global Finalist Nominee. First place at IETE Engineers' Day 2026 and IETE Student's Day 2025. Product Hunt #11. HackLoop 2025 top 10. Polaris Fellowship 2026 final round. SIH 2026 internal round, nominated onward." src="assets/recognition-light.svg" width="100%"></picture>
 
-<table>
-<tr>
-<td width="60%">
+<br>
 
-**PRAGYAAN** (Predictive Relational Analytics for Governance, Yield & Administrative Networks) is an enterprise-grade AI platform that ingests millions of civic data points in real-time to deliver predictive governance intelligence.
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-path-dark.svg"><img alt="05 Experience: Where I've worked and led." src="assets/h-path-light.svg" width="100%"></picture>
 
-**🎯 Key Capabilities:**
-- 📡 **Kafka/Redpanda Streaming** — Real-time civic data ingestion  
-- 🧠 **HuggingFace NLP** — Sentiment + NER via distilBERT + spaCy  
-- 🕸️ **Neo4j Knowledge Graph** — Constituency-policy-leader networks  
-- ⚠️ **Risk Scoring** — Predict governance crises before they escalate  
-- 🔐 **Enterprise Security** — JWT + RBAC + Redis rate-limiting  
-- 🎨 **Glassmorphism UI** — React 19 + D3 graph visualizer  
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg"><img alt="DRDO Scientific Analysis Group research intern 2026. Founder of AMEYOR. Olinp Technologies AI/ML intern 2025. AWS Student Builder Group Leader, GeeksforGeeks Campus Mantri, IIC Head at BIT Jaipur, GDG on Campus coordinator, Google Gemini Student Ambassador, OnePlus Student Ambassador, GSSoC 2025 contributor. BCA at BIT Mesra, CGPA 9.35." src="assets/experience-light.svg" width="100%"></picture>
 
-</td>
-<td width="40%">
+<br>
 
-```
-Architecture:
-──────────────────────────────────
-GDELT/Data.gov.in
-      │
-      ▼ Kafka/Redpanda
-   NLP Pipeline
-  ┌────┴─────┐
-  ▼          ▼
-spaCy NER  HuggingFace
-(Entities)  (Sentiment)
-  │          │
-  └────┬─────┘
-       ▼
-    Neo4j Graph DB
-       │
-  PostgreSQL + Redis
-       │
-  React 19 War Room UI
-```
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-activity-dark.svg"><img alt="06 Activity: Shipping, most days." src="assets/h-activity-light.svg" width="100%"></picture>
 
-</td>
-</tr>
-</table>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/skyline-dark.svg"><img alt="A 3D skyline of GitHub contributions over the last twelve months." src="assets/skyline-light.svg" width="100%"></picture>
 
-![Python](https://img.shields.io/badge/Python_3.11-3776AB?style=flat-square&logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)
-![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react)
-![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker)
-[![PRAGYAAN Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/Thanatos9404/PRAGYAAN)
+<br>
 
-</details>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-tools-dark.svg"><img alt="07 Toolbox: On my workbench." src="assets/h-tools-light.svg" width="100%"></picture>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-dark.svg"><img alt="Python, TypeScript, FastAPI, Next.js, React, PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain, LlamaIndex, Haystack, Ollama, OpenAI Agents SDK, MCP, PostgreSQL, MongoDB, Redis, FAISS, Docker, AWS, Google Cloud." src="assets/toolbox-light.svg" width="100%"></picture>
 
-## 🛠️ Tech Arsenal
+<br>
 
-<div align="center">
+<a href="https://calendly.com/yashvt9404/30min"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg"><img alt="Available for freelance. Have something in mind? Let's build it. Book a 30 minute call." src="assets/contact-light.svg" width="100%"></picture></a>
 
-### 🧠 AI / ML Core
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,sklearn,gcp&theme=dark&perline=6" />
-
-<br/>
-
-<table>
-<tr>
-<td align="center">
-<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="52" height="52"/><br/>
-<sub><b>HuggingFace</b></sub>
-</td>
-<td align="center">
-<img src="https://raw.githubusercontent.com/langchain-ai/langchain/master/docs/static/img/brand/wordmark.png" width="110"/><br/>
-<sub><b>LangChain</b></sub>
-</td>
-<td align="center">
-<img src="https://numpy.org/images/logo.svg" width="52" height="52"/><br/>
-<sub><b>NumPy</b></sub>
-</td>
-<td align="center">
-<img src="https://pandas.pydata.org/static/img/pandas_mark.svg" width="52" height="52"/><br/>
-<sub><b>Pandas</b></sub>
-</td>
-</tr>
-</table>
-
-### 🌐 Web & Frontend
-<img src="https://skillicons.dev/icons?i=fastapi,react,nextjs,flask,streamlit,ts,js,tailwind&theme=dark&perline=8" />
-
-### ☁️ Cloud, Data & DevOps
-<img src="https://skillicons.dev/icons?i=gcp,docker,firebase,git,github,postgres,redis&theme=dark&perline=7" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"/>
-
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png" width="100%"/>
-
-## 🏅 Achievements & Recognition
-
-<div align="center">
-
-| 🏆 Achievement | 📋 Details | 📅 Year |
-|:---|:---|:---:|
-| 🏛️ **VBYLD 2026 National Finalist** | Top 0.0005% of 50.49L aspirants · Rajasthan Rank #1 · Bharat Mandapam | 2026 |
-| 🤝 **Appreciated by Union Ministers** | Shivraj Singh Chouhan (Agriculture), Mansukh Mandaviya, Arjun Ram Meghwal | 2026 |
-| 🤖 **Google Gemini Student Ambassador** | Conducted GenAI workshops for 200+ students | 2025 |
-| 🏆 **SIH 2024 Finalist** | Smart India Hackathon — Team TechSpark (Next Round Qualifier) | 2024 |
-| 🥇 **1st Prize — Website Design** | IETE Student's Day 2025 | 2025 |
-| 💼 **AI/ML & UI/UX Intern** | Olinp Technologies Pvt. Ltd. | 2025 |
-| 📜 **LLMOps — Google** | Post-training, RLHF, Code Agents Certified | 2025 |
-| ⭐ **5 Star Python** | HackerRank | 2025 |
-
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%"/>
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Thanatos9404&layout=donut&theme=merko&hide_border=true&bg_color=0d1117&title_color=4ade80&text_color=86efac&langs_count=8" width="38%"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Thanatos9404&bg_color=0d1117&color=4ade80&line=16a34a&point=fbbf24&area=true&hide_border=true" width="58%"/>
-
-</div>
-
-<br/>
-
-<!-- CONTRIBUTION SNAKE ANIMATION -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thanatos9404/Thanatos9404/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thanatos9404/Thanatos9404/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Thanatos9404/Thanatos9404/output/github-snake-dark.svg" width="100%" />
-</picture>
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
-
-## 🎓 Certifications
-
-<div align="center">
-
-<table>
-<tr>
-
-<td align="center" width="180">
-<a href="#">
-<img src="https://skillicons.dev/icons?i=gcp&theme=dark" width="56" height="56"/><br/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png" width="70"/><br/>
-<b>LLMOps</b><br/>
-<sub>Aug 2025</sub>
-</a>
-</td>
-
-<td align="center" width="180">
-<a href="#">
-<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="56" height="56"/><br/>
-<br/>
-<b>Code Agents</b><br/>
-<sub>smolagents · HuggingFace<br/>× DeepLearning.AI</sub>
-</a>
-</td>
-
-<td align="center" width="180">
-<a href="#">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Deeplearning.ai_logo.svg/320px-Deeplearning.ai_logo.svg.png" width="120"/><br/>
-<br/>
-<b>RLHF</b><br/>
-<sub>Reinforcement Learning<br/>from Human Feedback</sub>
-</a>
-</td>
-
-<td align="center" width="180">
-<a href="#">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/240px-Washington_Huskies_logo.svg.png" width="56" height="56"/><br/>
-<b>Univ. of Washington</b><br/>
-<b>Post-Training LLMs</b><br/>
-<sub>Aug 2025</sub>
-</a>
-</td>
-
-<td align="center" width="180">
-<a href="#">
-<img src="https://upload.wikimedia.org/wikipedia/common/4/40/HackerRank_Icon-1000px.png" width="56" height="56"/><br/>
-<br/>
-<b>Problem Solving</b><br/>
-<sub>DSA · HackerRank<br/>5★ Python · 2025</sub>
-</a>
-</td>
-
-</tr>
-</table>
-
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%"/>
-
-## 🌱 Currently Exploring
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║  ▸ Advanced RAG Systems   — Multi-modal governance-grade retrieval ║
-║  ▸ LLM Fine-tuning        — RLHF & post-training optimization      ║
-║  ▸ Agentic AI             — smolagents, tool-use, code agents       ║
-║  ▸ Production ML          — Scalable deployment & latency <2s       ║
-║  ▸ 3D AI Integration      — Computer vision + immersive UX          ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png" width="100%"/>
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Thanatos9404&theme=radical&no-frame=false&no-bg=true&margin-w=6&column=6" alt="GitHub Trophies" width="100%"/>
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
-
-## 📈 Profile Visits
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Thanatos9404&color=4ade80&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-  &nbsp;
-  <img src="https://img.shields.io/github/followers/Thanatos9404?style=for-the-badge&color=4ade80&labelColor=0d1117&label=FOLLOWERS&logo=github" alt="Followers"/>
-</div>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0a1a0a,65:0d4a2a,100:4ade80&height=140&section=footer&text=Building%20AI%20for%20Bharat%20%F0%9F%87%AE%F0%9F%87%B3&fontSize=26&fontColor=4ade80&animation=twinkling&fontAlignY=65" width="100%"/>
-
-<br/>
-
-*⭐ From [Thanatos9404](https://github.com/Thanatos9404) — Code with purpose, build with impact.*
-
-</div>
+<p align="center">
+  <a href="mailto:yashvt9404@gmail.com">yashvt9404@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.yashvardhan.tech">yashvardhan.tech</a> &nbsp;·&nbsp; <a href="https://ameyor.in">ameyor.in</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/yashvardhanthanvi">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/yashvardhan.thanvi/">Instagram</a>
+  <br><br>
+  <sub>Every visual here is a hand-built, animated SVG. The open source wall, skyline and PR list refresh themselves twice a day.</sub>
+</p>
