@@ -28,7 +28,7 @@ TICKER = [
     "IETE ENGINEERS' DAY 2026 · 1ST PLACE",
     "LLMSLIM · 14 STARTUP PROGRAMS",
     "PRODUCT HUNT · #11 OF THE DAY",
-    "PRS MERGED AT AWS LABS, IBM, PYDANTIC",
+    "PRS MERGED AT NVIDIA, AWS LABS, IBM",
     "AWS STUDENT BUILDER GROUP LEADER",
 ]
 
@@ -72,7 +72,7 @@ def token_sphere(svg: Svg, cx, cy, R, *, T=28.0, tilt=0.36, seed=11, hot=0.11, d
             )
     svg.style("".join(css))
     svg.style(
-        f".globe{{opacity:0;animation:globeIn 1.6s {EASE} {delay_in}s forwards}}"
+        f".globe{{animation:globeIn 1.6s {EASE} {delay_in}s both}}"
         "@keyframes globeIn{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:scale(1)}}"
         f".globe{{transform-box:view-box;transform-origin:{f(cx)}px {f(cy)}px}}"
         f".breathe{{transform-box:view-box;transform-origin:{f(cx)}px {f(cy)}px;"
@@ -160,9 +160,9 @@ def hero(theme: dict) -> Svg:
 
     # reveal animations
     s.style(
-        f".rv{{opacity:0;animation:rv 1.1s {EASE} forwards}}"
+        f".rv{{animation:rv 1.1s {EASE} both}}"
         "@keyframes rv{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}"
-        ".fd{opacity:0;animation:fd 1.2s ease forwards}@keyframes fd{to{opacity:1}}"
+        ".fd{animation:fd 1.2s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}"
         "@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3.2);opacity:0}}"
         ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}"
     )
@@ -244,9 +244,9 @@ def mix(c1: str, c2: str, k: float) -> str:
 
 def reveal_css(s: Svg):
     s.style(
-        f".rv{{opacity:0;animation:rv 1s {EASE} forwards}}"
+        f".rv{{animation:rv 1s {EASE} both}}"
         "@keyframes rv{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}"
-        ".fd{opacity:0;animation:fd 1.1s ease forwards}@keyframes fd{to{opacity:1}}"
+        ".fd{animation:fd 1.1s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}"
     )
 
 
@@ -286,8 +286,8 @@ def section_header(theme, num, eyebrow, runs, note):
     t = theme
     title = "".join(r[0] for r in runs)
     s = Svg(W, H, t, f"{num} {eyebrow.title()}: {title}")
-    s.style(f".ln{{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);"
-            f"animation:ln 1.6s {EASE} .05s forwards}}@keyframes ln{{to{{transform:scaleX(1)}}}}")
+    s.style(f".ln{{transform-box:fill-box;transform-origin:left center;"
+            f"animation:ln 1.6s {EASE} .05s both}}@keyframes ln{{from{{transform:scaleX(0)}}to{{transform:none}}}}")
     reveal_css(s)
     s.add(f'<rect class="ln" x="0" y="14" width="{W}" height="1" fill="{t["line2"]}"/>')
     s.add(f'<rect class="ln" x="0" y="13" width="64" height="3" fill="{t["accent"]}"/>')
@@ -743,8 +743,8 @@ def experience(theme):
 
     # work timeline
     s.add(s.text(36, 52, "WORK", "mono-m", 12.5, acc, ls=2.4))
-    s.style(f".tl{{transform-box:fill-box;transform-origin:top;transform:scaleY(0);animation:tl 1.6s {EASE} .2s forwards}}"
-            "@keyframes tl{to{transform:scaleY(1)}}")
+    s.style(f".tl{{transform-box:fill-box;transform-origin:top;animation:tl 1.6s {EASE} .2s both}}"
+            "@keyframes tl{from{transform:scaleY(0)}to{transform:none}}")
     s.add(f'<rect class="tl" x="44" y="92" width="1.5" height="{(len(WORK) - 1) * 128}" fill="{t["line2"]}"/>')
     for i, (org, role, when, note) in enumerate(WORK):
         y = 96 + i * 128

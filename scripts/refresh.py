@@ -159,7 +159,7 @@ def oss_svg(theme, prs, groups):
     # org tiles
     tw = (W - gap * (cols - 1)) / cols
     s.style("@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}"
-            ".sq{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) forwards}")
+            ".sq{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both}")
     for k, g in enumerate(shown):
         r, c = divmod(k, cols)
         x, y = c * (tw + gap), stats_h + gap + r * (tile_h + gap)
