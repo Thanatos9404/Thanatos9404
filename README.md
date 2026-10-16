@@ -59,7 +59,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 60 pull requests</b>, by organisation</summary>
+<summary><b>All 65 pull requests</b>, by organisation</summary>
 
 **ModelScope**
 
@@ -96,6 +96,15 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
 - `open` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
 
+**pyodide**
+
+- `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
+- `open` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
+
+**jupyter-server**
+
+- `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
+
 **Pydantic**
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
@@ -114,6 +123,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
 - `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
 - `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
+- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
 - `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
 
 **Capital One**
@@ -128,16 +138,17 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
 - `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
 
+**Docling**
+
+- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
+- `open` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
+- `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
+
 **Mozilla.ai**
 
 - `open` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 - `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
-
-**Docling**
-
-- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
-- `open` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
 
 **NLTK**
 
@@ -178,21 +189,21 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
 
-**jupyter-server**
-
-- `open` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
-
 **libpng**
 
 - `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
+
+**mozilla**
+
+- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
 
 **Pillow**
 
 - `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
 
-**pyodide**
+**prometheus**
 
-- `open` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
+- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
 
 **quodlibet**
 
