@@ -10,6 +10,8 @@ import math
 import random
 from pathlib import Path
 
+from content import (EDUCATION, HERO_CHIPS, HOT_TOOLS, LEAD, LINKS as LINK_ITEMS, LLMSLIM, PROJECTS,
+                     RECOGNITION, TICKER, TOOLS, WORK)
 from svgkit import THEMES, Svg, ease_css, f, grain, measure, pill, sphere_points, wrap
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,18 +22,6 @@ EASE = ease_css()
 # ---------------------------------------------------------------------------
 # Hero
 # ---------------------------------------------------------------------------
-
-TICKER = [
-    "VBYLD 2026 · RAJASTHAN RANK 1",
-    "NASA SPACE APPS 2025 · GLOBAL NOMINEE",
-    "DRDO · SAG RESEARCH INTERN",
-    "IETE ENGINEERS' DAY 2026 · 1ST PLACE",
-    "LLMSLIM · 14 STARTUP PROGRAMS",
-    "PRODUCT HUNT · #11 OF THE DAY",
-    "PRS MERGED AT NVIDIA, AWS LABS, IBM",
-    "AWS STUDENT BUILDER GROUP LEADER",
-]
-
 
 def token_sphere(svg: Svg, cx, cy, R, *, T=28.0, tilt=0.36, seed=11, hot=0.11, delay_in=0.5):
     """A dotted globe that spins in 3D using only CSS keyframes.
@@ -206,7 +196,7 @@ def hero(theme: dict) -> Svg:
 
     # chips
     cx = x0
-    chips = ["Python", "RAG + agents", "Open source", "BIT Mesra"]
+    chips = HERO_CHIPS
     s.add('<g class="rv" style="animation-delay:.8s">')
     for c in chips:
         cx += pill(s, cx, 486, c, "mono", 12.5, pad_x=13, h=30, ls=.4,
@@ -307,14 +297,6 @@ def section_header(theme, num, eyebrow, runs, note):
 # Link pills
 # ---------------------------------------------------------------------------
 
-LINKS = {
-    "l-portfolio": ("Portfolio", "↗", False),
-    "l-llmslim": ("LLMSlim", "↗", False),
-    "l-linkedin": ("LinkedIn", "↗", False),
-    "l-resume": ("Résumé", "↓", False),
-    "l-email": ("Email", "↗", False),
-    "l-call": ("Book a call", "↗", True),
-}
 
 
 def link_pill(theme, label, arrow, primary):
@@ -365,7 +347,7 @@ def llmslim_card(theme):
     x0 = 56
 
     s.add('<g class="rv" style="animation-delay:.1s">'
-          + s.text(x0, 76, "OPEN SOURCE  ·  MIT  ·  V0.9", "mono-m", 13, t["accent"], ls=2.4) + "</g>")
+          + s.text(x0, 76, LLMSLIM["eyebrow"], "mono-m", 13, t["accent"], ls=2.4) + "</g>")
     s.add('<g class="rv" style="animation-delay:.2s">'
           + s.text(x0 - 4, 176, "LLMSlim", "serif", 112, ink, ls=-2.5) + "</g>")
     s.add('<g class="rv" style="animation-delay:.3s">'
@@ -388,7 +370,7 @@ def llmslim_card(theme):
           + f'<rect class="cur" x="{f(x0 + 22 + measure("$ " + cmd, "mono-m", 17) + 4)}" y="{ty + 18}" width="9" height="20" fill="{t["accent"]}"/>'
           + "</g>")
     s.add('<g class="fd" style="animation-delay:.7s">'
-          + s.text(x0, ty + 92, "678 TESTS  ·  90% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP", "mono", 11.5,
+          + s.text(x0, ty + 92, LLMSLIM["facts"], "mono", 11.5,
                    muted, ls=1.4) + "</g>")
 
     # isometric compression animation
@@ -428,19 +410,16 @@ def llmslim_card(theme):
     ty_in = oy + S * .5 - (n - 1) * gap - h
     ty_out = oy + S * .5 - (len(kept) - 1) * gap - h
     s.add(f'<g class="lin"><line x1="{f(lx - 16)}" y1="{f(ty_in)}" x2="{f(lx + 6)}" y2="{f(ty_in)}" stroke="{muted}"/>'
-          + s.text(lx + 14, ty_in + 4, "114,006", "mono-m", 22, ink)
+          + s.text(lx + 14, ty_in + 4, LLMSLIM["tokens_in"], "mono-m", 22, ink)
           + s.text(lx + 14, ty_in + 26, "TOKENS IN", "mono", 11, muted, ls=2) + "</g>")
     s.add(f'<g class="lout"><line x1="{f(lx - 16)}" y1="{f(ty_out)}" x2="{f(lx + 6)}" y2="{f(ty_out)}" stroke="{t["accent"]}"/>'
-          + s.text(lx + 14, ty_out + 4, "7,985", "mono-m", 22, t["accent"])
+          + s.text(lx + 14, ty_out + 4, LLMSLIM["tokens_out"], "mono-m", 22, t["accent"])
           + s.text(lx + 14, ty_out + 26, "TOKENS SENT", "mono", 11, muted, ls=2) + "</g>")
 
     # stats band
     by = 560
     s.add(f'<line x1="{x0}" y1="{by}" x2="{W - x0}" y2="{by}" stroke="{t["line"]}"/>')
-    stats = [("62×", "lower cost per question", "LongMemEval, Haiku 5.5"),
-             ("3×", "fewer tokens, same score", "LongBench v1"),
-             ("+9.7", "points over LLMLingua-2", "NaturalQuestions, 300 cases"),
-             ("0.1s", "per question vs 9.3s", "vs LongLLMLingua, same score")]
+    stats = LLMSLIM["stats"]
     cw = (W - 2 * x0) / 4
     for i, (big, l1, l2) in enumerate(stats):
         x = x0 + i * cw
@@ -454,9 +433,8 @@ def llmslim_card(theme):
     # programs
     py_ = 746
     s.add(f'<line x1="{x0}" y1="712" x2="{W - x0}" y2="712" stroke="{t["line"]}"/>')
-    progs = ["OpenAI", "Claude", "MongoDB", "Sarvam", "Zoho", "Auth0", "Zendesk", "Mixpanel", "Sentry",
-             "Descope", "Pulumi", "Honeycomb", "Exa", "Neo4j"]
-    label = "IN 14 STARTUP PROGRAMS"
+    progs = LLMSLIM["programs"]
+    label = f"IN {len(progs)} STARTUP PROGRAMS"
     s.add('<g class="fd" style="animation-delay:1.2s">' + s.text(x0, py_, label, "mono-m", 12, t["accent"], ls=2.2))
     py_ += 34
     px = x0
@@ -474,44 +452,6 @@ def llmslim_card(theme):
 # Project cards
 # ---------------------------------------------------------------------------
 
-PROJECTS = [
-    {
-        "key": "krishyak", "name": "Krishyak", "tag": "VBYLD 2026 · IETE 2026 1ST",
-        "desc": "Farm decisions for Indian farmers: crop photo disease checks, a Sentinel-2 view of the field, "
-                "mandi prices, schemes and Monte Carlo planning, in all 22 Indian languages.",
-        "stack": ["Next.js", "FastAPI", "PostGIS", "LiteRT"], "live": True, "glyph": "field",
-    },
-    {
-        "key": "polygraph", "name": "Polygraph", "tag": "NEBIUS × NVIDIA HACKATHON",
-        "desc": "Every pull request makes claims. Polygraph checks them by experiment, running base and head side "
-                "by side on NVIDIA Nemotron and proving undeclared changes with a pytest witness.",
-        "stack": ["Python", "FastAPI", "Nemotron", "three.js"], "live": True, "glyph": "trace",
-    },
-    {
-        "key": "pratibimb", "name": "Pratibimb", "tag": "DIGITAL TWIN CHALLENGE 2026",
-        "desc": "A physiology + ML digital twin for Type 2 diabetes in India. An EnKF-synced glucose model warns "
-                "of hypos an hour ahead (AUROC 0.986) and a What-If Lab lets clinicians test plans.",
-        "stack": ["Python", "FastAPI", "LightGBM", "Next.js"], "live": True, "glyph": "twin",
-    },
-    {
-        "key": "canopyproof", "name": "CanopyProof", "tag": "IEEE CLIMATECHAIN 2026",
-        "desc": "Satellite-verified integrity for forest carbon credits. Sentinel-2 change detection, signed "
-                "observations anchored as Merkle roots on-chain, and an oracle that holds or retires credits.",
-        "stack": ["Python", "Solidity", "Hardhat", "React"], "live": False, "glyph": "merkle",
-    },
-    {
-        "key": "passerelle", "name": "Passerelle", "tag": "HACK APERTUS 2026 · TRACK 2B",
-        "desc": "An air-gapped caseworker assistant on Apertus. It explains Swiss official letters in the "
-                "client's own language, with a fact lock and a back-translation gate.",
-        "stack": ["FastAPI", "Next.js", "llama.cpp"], "live": False, "glyph": "bridge",
-    },
-    {
-        "key": "hearthbeat", "name": "Hearthbeat", "tag": "AMAZON BUILD, SHIP, SHAPE 2026",
-        "desc": "Privacy-first check-ins for older adults who live alone. Home events (never video) learn a daily "
-                "rhythm, and Alexa+ checks in by voice through a self-hosted MCP server.",
-        "stack": ["Python", "MCP", "SQLite", "React"], "live": False, "glyph": "pulse",
-    },
-]
 
 
 def glyph(s: Svg, kind, gx, gy, uid):
@@ -632,32 +572,33 @@ def project_card(theme, p, idx):
 def recognition(theme):
     W, gap = 1200, 16
     t = theme
-    rows = [300, 206, 206]
+    R = RECOGNITION
+    tiles = R["tiles"]
+    tile_rows = [tiles[i:i + 3] for i in range(0, len(tiles), 3)]
+    rows = [300] + [206] * len(tile_rows)
     H = sum(rows) + gap * (len(rows) - 1)
-    s = Svg(W, H, t, "Recognition",
-            "VBYLD 2026 Rajasthan Rank 1 and national finalist; NASA Space Apps 2025 Global Finalist Nominee; "
-            "IETE Engineers' Day 2026 first place; IETE Student's Day 2025 first prize; Product Hunt #11; "
-            "HackLoop 2025 top 10; Polaris Fellowship 2026 final round; SIH 2026 internal round.")
+    feat, side = R["feature"], R["side"]
+    summary = "; ".join(["".join(x[0] for x in feat["title"]) + " (" + feat["eyebrow"].split("  ")[0] + ")",
+                         f'{side["eyebrow"]} {side["title"]} {side["body"]}']
+                        + [f"{b} {a}: {c}" for b, a, c in [(x[1], x[0], x[2]) for x in tiles]])
+    s = Svg(W, H, t, "Recognition", summary)
     reveal_css(s)
     ink, body, muted, acc = t["ink"], t["body"], t["muted"], t["accent"]
 
-    # tile A
+    # feature tile
     aw = 776
     card_bg(s, 0, 0, aw, rows[0], glow=True)
     s.add('<g class="rv" style="animation-delay:.1s">'
-          + s.text(36, 54, "VBYLD 2026  ·  BHARAT MANDAPAM, NEW DELHI", "mono-m", 12.5, acc, ls=2)
-          + s.tspan_text(32, 134, [("Rajasthan ", "serif", ink), ("Rank 1", "serif-i", ink)], size=72,
+          + s.text(36, 54, feat["eyebrow"], "mono-m", 12.5, acc, ls=2)
+          + s.tspan_text(32, 134, [(txt, font, ink) for txt, font in feat["title"]], size=72,
                          attrs=' letter-spacing="-1.5"') + "</g>")
-    txt = ("National finalist at the Viksit Bharat Young Leaders Dialogue. I presented Krishyak to the Union "
-           "Agriculture Minister and the DG of ICAR, and was later invited to the Chief Minister's Residence, "
-           "where the CM cited my idea by name.")
-    lines = wrap(txt, "sans", 17, aw - 72)
+    lines = wrap(feat["body"], "sans", 17, aw - 72)[:3]
     s.add('<g class="rv" style="animation-delay:.2s">'
           + "".join(s.text(36, 180 + i * 26, ln, "sans", 17, body) for i, ln in enumerate(lines)) + "</g>")
     s.add('<g class="fd" style="animation-delay:.5s">'
-          + s.text(36, rows[0] - 30, "TOP 0.0005% OF 50.49 LAKH PARTICIPANTS", "mono", 12, muted, ls=1.8) + "</g>")
+          + s.text(36, rows[0] - 30, feat["foot"], "mono", 12, muted, ls=1.8) + "</g>")
 
-    # tile B: NASA with transit light curve
+    # side tile with an exoplanet transit and its light curve
     bx, bw = aw + gap, W - aw - gap
     card_bg(s, bx, 0, bw, rows[0])
     cx, cy = bx + bw - 96, 92
@@ -669,28 +610,19 @@ def recognition(theme):
     s.add(f'<circle cx="{cx}" cy="{cy}" r="40" fill="{mix(acc, t["surface"], .25)}"/>'
           f'<circle cx="{cx}" cy="{cy}" r="52" fill="none" stroke="{t["line2"]}" stroke-dasharray="2 4"/>'
           f'<g clip-path="url(#star)"><circle class="pl" cx="{cx}" cy="{cy + 6}" r="9" fill="{t["surface"]}"/></g>')
-    # light curve
     lx0, ly = bx + 36, 176
     s.add(f'<line x1="{lx0}" y1="{ly}" x2="{bx + bw - 36}" y2="{ly}" stroke="{t["line"]}"/>')
     s.add(f'<g class="dp"><circle cx="{f(lx0 + (bw - 72) / 2)}" cy="{ly}" r="3.5" fill="{acc}"/></g>')
     s.add('<g class="rv" style="animation-delay:.3s">'
-          + s.text(bx + 36, 54, "NASA SPACE APPS 2025", "mono-m", 12.5, acc, ls=2)
-          + s.text(bx + 34, 236, "Global Finalist", "serif", 40, ink, ls=-.6)
-          + s.text(bx + 34, 270, "Nominee · exoplanet detection", "sans", 16, body) + "</g>")
+          + s.text(bx + 36, 54, side["eyebrow"], "mono-m", 12.5, acc, ls=2)
+          + s.text(bx + 34, 236, side["title"], "serif", 40, ink, ls=-.6)
+          + s.text(bx + 34, 270, side["body"], "sans", 16, body) + "</g>")
 
-    # small tiles
-    small = [
-        [("1st", "IETE Engineers' Day 2026", "Student project competition, with Krishyak"),
-         ("1st", "IETE Student's Day 2025", "Design competition, IETE Bhawan, Jaipur"),
-         ("#11", "Product Hunt", "LLMSlim on its launch day")],
-        [("Top 10", "HackLoop 2025", "Finalist from 1,600+ entrants, at Thoughtworks"),
-         ("Final", "Polaris Fellowship 2026", "Final round, top 100 applicants"),
-         ("SIH '26", "BIT Jaipur internal round", "Nominated for the next round, Krishyak")],
-    ]
+    # tiles, three per row
     sw = (W - 2 * gap) / 3
     y = rows[0] + gap
     k = 0
-    for ri, row in enumerate(small):
+    for ri, row in enumerate(tile_rows):
         for ci, (big, l1, l2) in enumerate(row):
             x = ci * (sw + gap)
             card_bg(s, x, y, sw, rows[ri + 1])
@@ -708,23 +640,6 @@ def recognition(theme):
 # Experience
 # ---------------------------------------------------------------------------
 
-WORK = [
-    ("DRDO · Scientific Analysis Group", "AI/ML and software research intern", "MAY TO JUL 2026",
-     "Offline RAG, policy-compliant configuration and signal analysis in air-gapped labs."),
-    ("AMEYOR", "Founder", "2026 TO NOW",
-     "My Jaipur studio behind LLMSlim and Krishyak. Websites, AI systems and custom software."),
-    ("Olinp Technologies", "AI/ML engineering intern", "APR TO JUN 2025",
-     "Preprocessing and feature engineering across 3+ production modules."),
-]
-LEAD = [
-    ("AWS", "Student Builder Group Leader, BIT Jaipur", "NOW"),
-    ("GeeksforGeeks", "Campus Mantri", "2026 TO NOW"),
-    ("IIC, BIT Jaipur", "Head, Innovation Subcommittee", "NOW"),
-    ("GDG on Campus", "Coordinator, BIT Jaipur", "2025 TO 2026"),
-    ("Google", "Gemini Student Ambassador", "2025"),
-    ("OnePlus", "Student Ambassador", "PAST"),
-    ("GSSoC '25 · OSCI", "Open source contributor", "2025"),
-]
 
 
 def experience(theme):
@@ -775,12 +690,12 @@ def experience(theme):
     ey = H - 102
     s.add('<g class="fd" style="animation-delay:.9s">'
           + s.text(36, ey + 44, "EDUCATION", "mono-m", 12.5, acc, ls=2.4)
-          + s.tspan_text(36, ey + 76, [("BIT Mesra, Jaipur", "sans-sb", ink),
-                                       ("   BCA in Computer Science, minor in Artificial Intelligence", "sans", body)],
-                         size=17)
-          + s.text(W - 36, ey + 60, "9.35", "serif", 44, ink, anchor="end")
-          + s.text(W - 36 - measure("9.35", "serif", 44) - 12, ey + 60, "CGPA", "mono", 11.5, muted, anchor="end", ls=1.6)
-          + s.text(W - 36, ey + 82, "2024 TO 2027", "mono", 11, muted, anchor="end", ls=1.6)
+          + s.tspan_text(36, ey + 76, [(EDUCATION["school"], "sans-sb", ink),
+                                       ("   " + EDUCATION["degree"], "sans", body)], size=17)
+          + s.text(W - 36, ey + 60, EDUCATION["score"], "serif", 44, ink, anchor="end")
+          + s.text(W - 36 - measure(EDUCATION["score"], "serif", 44) - 12, ey + 60, EDUCATION["score_label"], "mono",
+                   11.5, muted, anchor="end", ls=1.6)
+          + s.text(W - 36, ey + 82, EDUCATION["years"], "mono", 11, muted, anchor="end", ls=1.6)
           + "</g>")
     return s
 
@@ -789,13 +704,6 @@ def experience(theme):
 # Toolbox marquee
 # ---------------------------------------------------------------------------
 
-TOOLS = [
-    ["Python", "TypeScript", "SQL", "C", "FastAPI", "Flask", "Next.js", "React", "Tailwind", "Node.js"],
-    ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face", "LangChain", "LlamaIndex", "Haystack",
-     "Ollama", "OpenAI Agents SDK", "MCP", "LightGBM"],
-    ["PostgreSQL", "PostGIS", "MongoDB", "Redis", "FAISS", "Docker", "Vercel", "AWS", "Google Cloud",
-     "Linux", "Git", "GitHub Actions"],
-]
 
 
 def toolbox(theme):
@@ -819,7 +727,7 @@ def toolbox(theme):
             for it, x0 in zip(items, xs):
                 bx = x0 + rep * loop
                 w = measure(it, "sans-m", 17) + 44
-                hot = (r == 1 and it in ("LangChain", "MCP", "Hugging Face")) or (r == 0 and it == "Python")
+                hot = it in HOT_TOOLS
                 g.append(f'<rect x="{f(bx)}" y="{y}" width="{f(w)}" height="52" rx="26" '
                          f'fill="{t["surface"]}" stroke="{t["accent"] if hot else t["line"]}"/>')
                 g.append(s.text(bx + 22, y + 32, it, "sans-m", 17, t["ink"] if hot else t["body"]))
@@ -917,7 +825,7 @@ def main(only: list[str] | None = None):
     jobs = dict(BUILDERS)
     for key, (num, eb, runs, note) in HEADERS.items():
         jobs[key] = (lambda th, a=(num, eb, runs, note): section_header(th, *a))
-    for key, (label, arrow, primary) in LINKS.items():
+    for _, key, label, arrow, primary in LINK_ITEMS:
         jobs[key] = (lambda th, a=(label, arrow, primary): link_pill(th, *a))
     for i, p in enumerate(PROJECTS, 1):
         jobs[f"p-{p['key']}"] = (lambda th, a=(p, i): project_card(th, *a))

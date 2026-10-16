@@ -2,7 +2,7 @@ name: Refresh live sections
 
 on:
   schedule:
-    - cron: "23 2,14 * * *"
+    - cron: "23 */4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -26,7 +26,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install font tooling
-        run: pip install fonttools==4.61.1 brotli==1.1.0
+        run: pip install fonttools==4.61.1 brotli==1.2.0
+
+      - name: Rebuild static SVGs and README from content.py
+        working-directory: scripts
+        run: |
+          python build.py > /dev/null
+          python readme.py
 
       - name: Rebuild live SVGs and PR list
         working-directory: scripts
@@ -43,6 +49,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Refresh open source wall and activity skyline"
+            git commit -m "Refresh live sections"
             git push
           fi
