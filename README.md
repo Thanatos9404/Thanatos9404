@@ -84,16 +84,16 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 **AWS**
 
+- `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
-- `open` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
-- `open` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
 - `open` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
 - `open` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
 - `open` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
 - `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 - `open` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
+- `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
 **IBM**
