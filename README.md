@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 62× lower cost per question (LongMemEval, Haiku 5.5), 3× fewer tokens, same score (LongBench v1), +9.7 points over LLMLingua-2 (NaturalQuestions, 300 cases), 0.1s per question vs 9.3s (vs LongLLMLingua, same score). Part of 14 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 62× lower cost per question (LongMemEval, Haiku 5.5), 3× fewer tokens, same score (LongBench v1), +9.7 points over LLMLingua-2 (NaturalQuestions, 300 cases), 0.1s per question vs 9.3s (vs LongLLMLingua, same score). Listed in Awesome LLMOps and Awesome Context Engineering. Part of 14 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -47,8 +47,21 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
   <br><sub>Passerelle <a href="https://youtu.be/bjc88UYdgfE">video</a> &nbsp;·&nbsp; Hearthbeat <a href="https://youtu.be/axVTrTiKaog">video</a></sub>
 </p>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-fresh-dark.svg"><img alt="New on GitHub, picked up automatically." src="assets/h-fresh-light.svg" width="100%"></picture>
+
+<p align="center">
+  <a href="https://github.com/Thanatos9404/leash"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-1-dark.svg"><img alt="Leash: Enforceable spending mandates for AI shopping agents. Plain-language rules compiled into a signed policy, a PayPal Orders v2 authorization as the hard ceiling, per-cart rule checks, merchant-verified receipts and dispute evidence." src="assets/f-1-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/ruledost"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-2-dark.svg"><img alt="RuleDost: Paste a hackathon's rules and get the real deadline in your time zone, whether you can enter, and what to submit, with every answer backed by the exact sentence from the rules. Fully offline." src="assets/f-2-light.svg" width="49%"></picture></a>
+  <br><sub>RuleDost <a href="https://ruledost.vercel.app">live</a></sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Thanatos9404/dayrhythm"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-3-dark.svg"><img alt="dayrhythm: A small, dependency-free Python library that learns a household's daily routine from home events and explains every deviation in plain words. Extracted from Hearthbeat." src="assets/f-3-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/StudyTwin"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-4-dark.svg"><img alt="StudyTwin: A multimodal study companion that answers only from your course material with verified citations, adaptive quizzes and a per-topic learner model." src="assets/f-4-light.svg" width="49%"></picture></a>
+</p>
+
 <p align="center"><sub>
-Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandates for AI shopping agents &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/StudyTwin">StudyTwin</a>, a tutor that cites your course material &nbsp;·&nbsp; <a href="https://ruledost.vercel.app">RuleDost</a>, hackathon rules decoded &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/dayrhythm">dayrhythm</a>, a routine-learning library &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet detection for NASA Space Apps
+Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet detection for NASA Space Apps
 </sub></p>
 
 <br>
@@ -59,12 +72,15 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 65 pull requests</b>, by organisation</summary>
+<summary><b>All 67 pull requests</b>, by organisation</summary>
 
-**ModelScope**
+**NVIDIA**
 
-- `merged` [fix(needle_haystack): keep context length and depth as metric dimensions](https://github.com/modelscope/evalscope/pull/1851) <sub>modelscope/evalscope#1851</sub>
-- `merged` [fix(metrics): name numeric dimensions in metric labels](https://github.com/modelscope/evalscope/pull/1856) <sub>modelscope/evalscope#1856</sub>
+- `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
+- `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
+- `open` [fix(nemo-gym): read env.nemo_gym.spinup_timeout for sharded startup](https://github.com/NVIDIA-NeMo/RL/pull/4751) <sub>NVIDIA-NeMo/RL#4751</sub>
+- `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
+- `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 
 **AWS**
 
@@ -77,14 +93,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
 - `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
-
-**NVIDIA**
-
-- `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
-- `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
-- `open` [fix(nemo-gym): read env.nemo_gym.spinup_timeout for sharded startup](https://github.com/NVIDIA-NeMo/RL/pull/4751) <sub>NVIDIA-NeMo/RL#4751</sub>
-- `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
-- `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
+- `open` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
 **IBM**
 
@@ -96,18 +105,37 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
 - `open` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
 
-**pyodide**
-
-- `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
-- `open` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
-
-**jupyter-server**
+**Jupyter**
 
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
+- `open` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 
 **Pydantic**
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
+
+**ModelScope**
+
+- `merged` [fix(needle_haystack): keep context length and depth as metric dimensions](https://github.com/modelscope/evalscope/pull/1851) <sub>modelscope/evalscope#1851</sub>
+- `merged` [fix(metrics): name numeric dimensions in metric labels](https://github.com/modelscope/evalscope/pull/1856) <sub>modelscope/evalscope#1856</sub>
+
+**Pyodide**
+
+- `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
+- `open` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
+
+**Microsoft**
+
+- `open` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
+- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
+- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
+- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
+- `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
+
+**Google**
+
+- `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
+- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Meta**
 
@@ -118,13 +146,14 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 
-**Microsoft**
+**Uber**
 
-- `open` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
-- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
-- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
-- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
-- `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
+- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
+- `open` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
+
+**Mozilla**
+
+- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
 
 **Capital One**
 
@@ -132,11 +161,13 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `open` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**containers**
+**Apache**
 
-- `open` [feat(config): read the TOML config from stdin with --config -](https://github.com/containers/kubernetes-mcp-server/pull/1510) <sub>containers/kubernetes-mcp-server#1510</sub>
-- `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
-- `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
+- `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
+
+**Prometheus**
+
+- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
 
 **Docling**
 
@@ -150,68 +181,49 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
 
+**Containers**
+
+- `open` [feat(config): read the TOML config from stdin with --config -](https://github.com/containers/kubernetes-mcp-server/pull/1510) <sub>containers/kubernetes-mcp-server#1510</sub>
+- `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
+- `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
+
+**crewAI**
+
+- `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
+
 **NLTK**
 
 - `open` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
 - `open` [Send set_proxy's credentials on the HTTPS CONNECT, and keep proxy credentials off redirects](https://github.com/nltk/nltk/pull/3970) <sub>nltk/nltk#3970</sub>
+
+**Pillow**
+
+- `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
+
+**Astropy**
+
+- `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
+
+**The Sleuth Kit**
+
+- `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
+
+**Quod Libet**
+
+- `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
+
+**libpng**
+
+- `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
 
 **Scikit-HEP**
 
 - `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
 - `closed` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
 
-**uber**
-
-- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
-- `open` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
-
-**Apache**
-
-- `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
-
-**Astropy**
-
-- `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
-
-**crewAI**
-
-- `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
-
 **deepset**
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
-
-**Google**
-
-- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
-
-**googleapis**
-
-- `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
-
-**libpng**
-
-- `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
-
-**mozilla**
-
-- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
-
-**Pillow**
-
-- `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
-
-**prometheus**
-
-- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
-
-**quodlibet**
-
-- `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
-
-**sleuthkit**
-
-- `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
 
 </details>
 <!-- OSS:END -->

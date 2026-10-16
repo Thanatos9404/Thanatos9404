@@ -5,6 +5,9 @@
 * assets/oss-{dark,light}.svg     pull requests to other people's repos, grouped by org
 * assets/skyline-{dark,light}.svg 3D contribution skyline for the last 12 months
 * README.md                       the PR list between the OSS markers
+* assets/live.json                derived facts that build.py and readme.py read: merged organisations
+                                  for the hero ticker, LLMSlim version and downloads, awesome-list
+                                  listings, and brand-new public repos for the "fresh" cards
 """
 from __future__ import annotations
 
@@ -20,6 +23,7 @@ from collections import OrderedDict
 from pathlib import Path
 
 from build import EASE, card_bg, mix, reveal_css
+from content import AUTO_EXCLUDE, FRESH_MAX, PROJECTS
 from svgkit import THEMES, Svg, f, measure
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,7 +41,14 @@ ORGS = {
     "pydantic": "Pydantic", "modelscope": "ModelScope", "open-telemetry": "OpenTelemetry",
     "crewAIInc": "crewAI", "deepset-ai": "deepset", "python-pillow": "Pillow", "pnggroup": "libpng",
     "nltk": "NLTK", "astropy": "Astropy", "scikit-hep": "Scikit-HEP",
+    "googleapis": "Google", "mozilla": "Mozilla", "jupyter": "Jupyter", "jupyter-server": "Jupyter",
+    "jupyterlab": "Jupyter", "pyodide": "Pyodide", "prometheus": "Prometheus", "uber": "Uber",
+    "containers": "Containers", "sleuthkit": "The Sleuth Kit", "quodlibet": "Quod Libet",
 }
+# Well-known names first, then everything else by the stars of the repos I contributed to.
+BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Uber", "Mozilla", "Capital One", "Apache",
+          "OpenTelemetry", "Jupyter", "Prometheus", "Pydantic", "Docling", "Mozilla.ai", "ModelScope", "Pyodide",
+          "Containers"]
 # Curated lists where the PR only adds LLMSlim to a list are left out of the wall.
 SKIP_REPO = re.compile(r"awesome", re.I)
 SKIP_OWNERS = {"vansh-nagar"}
@@ -48,6 +59,28 @@ def token() -> str:
     if tok:
         return tok
     return subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, check=True).stdout.strip()
+
+
+_CACHE: dict[str, dict] = {}
+
+
+def cached(url: str) -> dict:
+    if url not in _CACHE:
+        try:
+            _CACHE[url] = api(url)
+        except Exception:  # a missing repo or a rate limit should never break the refresh
+            _CACHE[url] = {}
+    return _CACHE[url]
+
+
+def fetch_json(url: str) -> dict:
+    req = urllib.request.Request(url, headers={"User-Agent": f"{USER}-profile-refresh"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.load(r)
+
+
+def short(n: int) -> str:
+    return f"{n / 1000:.1f}K".replace(".0K", "K") if n >= 1000 else str(n)
 
 
 def api(url: str, body: dict | None = None) -> dict:
@@ -105,7 +138,15 @@ def group_prs(prs):
         g["merged"] = sum(p["status"] == "merged" for p in g["prs"])
         g["open"] = sum(p["status"] == "open" for p in g["prs"])
         g["prs"].sort(key=lambda p: ({"merged": 0, "open": 1, "closed": 2}[p["status"]], p["created"]))
-    return sorted(groups.values(), key=lambda g: (-g["merged"], -len(g["prs"]), g["name"].lower()))
+    out = list(groups.values())
+    for g in out:
+        g["stars"] = sum(cached(f"/repos/{full}").get("stargazers_count") or 0 for full in {p["full"] for p in g["prs"]})
+        owner = g["prs"][0]["owner"]
+        if owner not in ORGS:  # unknown organisation: use its GitHub display name
+            g["name"] = (cached(f"/users/{owner}").get("name") or owner).strip()
+    rank = lambda g: BRANDS.index(g["name"]) if g["name"] in BRANDS else len(BRANDS)
+    out.sort(key=lambda g: (0 if g["merged"] else 1, rank(g), -g["stars"], -len(g["prs"]), g["name"].lower()))
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -123,9 +164,10 @@ def clip(text, font, size, max_w):
 def oss_svg(theme, prs, groups):
     t = theme
     W, gap = 1200, 16
-    cols, tile_h = 4, 150
-    shown = groups[:12]
-    rows = math.ceil(len(shown) / cols)
+    cols, tile_h, max_tiles = 4, 150, 16
+    shown = groups[:max_tiles] if len(groups) <= max_tiles else groups[:max_tiles - 1]
+    rest = groups[len(shown):]
+    rows = math.ceil((len(shown) + (1 if rest else 0)) / cols)
     merged = [p for p in prs if p["status"] == "merged" and not SKIP_REPO.search(p["repo"])]
     merged.sort(key=lambda p: p["merged_at"], reverse=True)
     recent = merged[:5]
@@ -170,7 +212,7 @@ def oss_svg(theme, prs, groups):
               + s.text(x + 24, y + 68, clip(repos, "mono", 11.5, tw - 48), "mono", 11.5, muted)
               + "</g>")
         sx = x + 24
-        for j, p in enumerate(g["prs"][:16]):
+        for j, p in enumerate(g["prs"][:12]):
             if p["status"] == "merged":
                 sq = f'<rect x="{f(sx)}" y="{y + 92}" width="14" height="14" rx="3" fill="{acc}"/>'
             elif p["status"] == "open":
@@ -179,8 +221,33 @@ def oss_svg(theme, prs, groups):
                 sq = f'<rect x="{f(sx)}" y="{y + 92}" width="14" height="14" rx="3" fill="{t["line2"]}"/>'
             s.add(f'<g class="sq" style="animation-delay:{.5 + k * .05 + j * .04:.2f}s">{sq}</g>')
             sx += 20
+        if len(g["prs"]) > 12:
+            s.add(s.text(sx + 2, y + 104, f"+{len(g['prs']) - 12}", "mono", 11, muted))
         label = f"{len(g['prs'])} PR{'S' if len(g['prs']) != 1 else ''}" + (f" · {g['merged']} MERGED" if g["merged"] else "")
         s.add(s.text(x + 24, y + 132, label, "mono", 11, acc if g["merged"] else muted, ls=1.4))
+        if g.get("stars", 0) >= 100:
+            s.add(s.text(x + tw - 24, y + 132, f"{short(g['stars'])} STARS", "mono", 11, muted, anchor="end", ls=1.4))
+
+    if rest:
+        k = len(shown)
+        r, c = divmod(k, cols)
+        x, y = c * (tw + gap), stats_h + gap + r * (tile_h + gap)
+        card_bg(s, x, y, tw, tile_h, r=22)
+        names = ", ".join(g["name"] for g in rest)
+        lines = []
+        for word in names.split(" "):
+            if lines and measure(lines[-1] + " " + word, "mono", 11.5) <= tw - 48:
+                lines[-1] += " " + word
+            elif len(lines) < 3:
+                lines.append(word)
+        if len(lines) == 3:
+            lines[2] = clip(lines[2], "mono", 11.5, tw - 48)
+        s.add(f'<g class="rv" style="animation-delay:{.2 + k * .05:.2f}s">'
+              + s.text(x + 22, y + 58, f"+{len(rest)}", "serif", 46, ink, ls=-1)
+              + s.text(x + 24 + measure(f"+{len(rest)}", "serif", 46, -1) + 10, y + 56, "more organisations", "sans", 14.5,
+                       muted)
+              + "".join(s.text(x + 24, y + 88 + i * 18, ln, "mono", 11.5, muted) for i, ln in enumerate(lines))
+              + "</g>")
 
     # recently merged
     if recent:
@@ -342,6 +409,103 @@ def skyline_svg(theme, cal):
 
 
 # ---------------------------------------------------------------------------
+# Derived facts for the static sections (assets/live.json)
+# ---------------------------------------------------------------------------
+
+LIVE = ROOT / "assets" / "live.json"
+
+
+def nice(text: str) -> str:
+    """Repo descriptions may contain dashes the house style avoids."""
+    text = re.sub(r"\s*[\u2014\u2013]\s*", ", ", text.strip())
+    return re.sub(r"\s+", " ", text)
+
+
+def split_description(repo: str, desc: str):
+    """'RuleDost: does X. Build With AI 2026.' -> ('RuleDost', 'Does X.', 'Build With AI 2026')."""
+    desc = nice(desc)
+    name = repo
+    m = re.match(r"^([^:,.]{2,40})\s*[:,]\s+(.*)$", desc)
+    if m and re.sub(r"[^a-z0-9]", "", m.group(1).lower()) == re.sub(r"[^a-z0-9]", "", repo.lower()):
+        name, desc = m.group(1).strip(), m.group(2)
+    parts = re.split(r"(?<=[.!?])\s+", desc)
+    tag = ""
+    if len(parts) > 1 and len(parts[-1]) <= 80 and re.search(r"hackathon|challenge|summit|202\d", parts[-1], re.I):
+        tag = parts.pop().rstrip(".")
+        tag = re.sub(r"\s*\([^)]*\)", "", tag).split(",")[0].strip()  # "X Hackathon 2026 (City), Track D" -> "X Hackathon 2026"
+    body = " ".join(parts).strip()
+    return name, (body[:1].upper() + body[1:]) if body else "", tag
+
+
+def fetch_fresh() -> list[dict]:
+    featured = {p["repo"].lower() for p in PROJECTS} | {x.lower() for x in AUTO_EXCLUDE}
+    cutoff = (dt.date.today() - dt.timedelta(days=60)).isoformat()
+    out = []
+    for r in cached(f"/users/{USER}/repos?per_page=100&type=owner&sort=created") or []:
+        if not isinstance(r, dict) or r.get("fork") or r.get("archived") or r.get("private"):
+            continue
+        if r["name"].lower() in featured or not r.get("description") or r["created_at"][:10] < cutoff:
+            continue
+        name, body, tag = split_description(r["name"], r["description"])
+        if not body:
+            continue
+        out.append({"repo": r["name"], "name": name, "desc": body, "tag": tag, "url": r["html_url"],
+                    "homepage": r.get("homepage") or "", "language": r.get("language") or "",
+                    "stars": r.get("stargazers_count") or 0, "created": r["created_at"][:10]})
+    out.sort(key=lambda x: x["created"], reverse=True)
+    return out[:FRESH_MAX]
+
+
+def fetch_llmslim(prev: dict) -> dict:
+    out = dict(prev)
+    try:
+        out["version"] = fetch_json("https://pypi.org/pypi/llmslim/json")["info"]["version"]
+    except Exception:
+        pass
+    try:
+        out["downloads_week"] = fetch_json("https://pypistats.org/api/packages/llmslim/recent")["data"]["last_week"]
+    except Exception:
+        pass
+    stars = cached(f"/repos/{USER}/llmslim").get("stargazers_count")
+    if stars is not None:
+        out["stars"] = stars
+    return out
+
+
+def listings(prs) -> list[dict]:
+    """Curated lists and integration catalogues that accepted LLMSlim."""
+    out = []
+    for p in prs:
+        if p["status"] == "merged" and re.search(r"llmslim", p["title"], re.I):
+            name = re.sub(r"[-_]+", " ", p["repo"]).strip()
+            name = " ".join(w if w.isupper() or any(c.isupper() for c in w[1:]) else w.capitalize() for w in name.split())
+            out.append({"name": name, "full": p["full"], "url": p["url"],
+                        "stars": cached(f"/repos/{p['full']}").get("stargazers_count") or 0})
+    out.sort(key=lambda x: -x["stars"])
+    return out
+
+
+def write_live(prs, groups):
+    prev = {}
+    if LIVE.exists():
+        try:
+            prev = json.loads(LIVE.read_text(encoding="utf-8"))
+        except ValueError:
+            prev = {}
+    merged_groups = [g for g in groups if g["merged"]]
+    live = {
+        "prs": sum(len(g["prs"]) for g in groups),
+        "merged": sum(g["merged"] for g in groups),
+        "orgs": len(groups),
+        "merged_orgs": [g["name"] for g in merged_groups],
+        "review_orgs": [g["name"] for g in groups if not g["merged"]][:6],
+        "listed_in": listings(prs),
+        "llmslim": fetch_llmslim(prev.get("llmslim", {})),
+        "fresh": fetch_fresh(),
+    }
+    LIVE.write_text(json.dumps(live, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    return live
+
 
 def update_readme(block: str):
     path = ROOT / "README.md"
@@ -349,7 +513,7 @@ def update_readme(block: str):
     new = re.sub(r"(<!-- OSS:START -->)(.*?)(<!-- OSS:END -->)", lambda m: f"{m.group(1)}\n{block}\n{m.group(3)}",
                  text, flags=re.S)
     if new != text:
-        path.write_text(new, encoding="utf-8")
+        path.write_text(new, encoding="utf-8", newline="\n")
 
 
 def main():
@@ -360,7 +524,9 @@ def main():
         oss_svg(theme, prs, groups).save(ROOT / "assets" / f"oss-{name}.svg")
         skyline_svg(theme, cal).save(ROOT / "assets" / f"skyline-{name}.svg")
     update_readme(readme_block(groups))
-    print(f"{len(prs)} PRs, {len(groups)} orgs, {cal['totalContributions']} contributions")
+    live = write_live(prs, groups)
+    print(f"{len(prs)} PRs, {len(groups)} orgs, {cal['totalContributions']} contributions, "
+          f"merged at {', '.join(live['merged_orgs'])}, {len(live['fresh'])} fresh repos")
 
 
 if __name__ == "__main__":

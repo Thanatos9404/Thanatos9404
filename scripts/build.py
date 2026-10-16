@@ -6,8 +6,10 @@ Writes assets/<name>-dark.svg and assets/<name>-light.svg.
 """
 from __future__ import annotations
 
+import json
 import math
 import random
+import re
 from pathlib import Path
 
 from content import (EDUCATION, HERO_CHIPS, HOT_TOOLS, LEAD, LINKS as LINK_ITEMS, LLMSLIM, PROJECTS,
@@ -17,6 +19,26 @@ from svgkit import THEMES, Svg, ease_css, f, grain, measure, pill, sphere_points
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 EASE = ease_css()
+LIVE_PATH = ASSETS / "live.json"
+
+
+def load_live() -> dict:
+    """Facts derived from the GitHub and PyPI APIs by refresh.py (empty if it never ran)."""
+    try:
+        return json.loads(LIVE_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def fill(template: str, live: dict) -> str | None:
+    """Fill {placeholders} in content strings; None when a needed live value is missing."""
+    ll = live.get("llmslim", {})
+    vals = {"merged_orgs": ", ".join(live.get("merged_orgs", [])[:4]).upper(), "prs": live.get("prs"),
+            "merged": live.get("merged"), "orgs": live.get("orgs"), "version": ll.get("version"),
+            "downloads_week": ll.get("downloads_week")}
+    if any(vals.get(k) in (None, "", 0) for k in re.findall(r"{(\w+)}", template)):
+        return None
+    return template.format(**vals)
 
 
 # ---------------------------------------------------------------------------
@@ -214,7 +236,8 @@ def hero(theme: dict) -> Svg:
     band_y = H - 64
     s.add(f'<rect x="0" y="{band_y}" width="{W}" height="64" fill="{"rgba(255,255,255,.02)" if dark else "rgba(255,255,255,.38)"}"/>'
           f'<line x1="0" y1="{band_y}" x2="{W}" y2="{band_y}" stroke="{t["line"] if dark else "rgba(26,22,21,.10)"}"/>')
-    ticker(s, band_y, 64, TICKER)
+    live = load_live()
+    ticker(s, band_y, 64, [x for x in (fill(it, live) for it in TICKER) if x])
     s.add("</g>")
     if dark:
         s.add(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="30" fill="none" stroke="{t["line"]}"/>')
@@ -337,6 +360,7 @@ def slab(ox, oy, S, z, h, top, left, right):
 def llmslim_card(theme):
     W, H = 1200, 820
     t = theme
+    live = load_live()
     dark = t["name"] == "dark"
     s = Svg(W, H, t, "LLMSlim: the context layer for production AI agents",
             "Open source Python library. pip install llmslim. 62x lower cost per question on LongMemEval, "
@@ -347,7 +371,8 @@ def llmslim_card(theme):
     x0 = 56
 
     s.add('<g class="rv" style="animation-delay:.1s">'
-          + s.text(x0, 76, LLMSLIM["eyebrow"], "mono-m", 13, t["accent"], ls=2.4) + "</g>")
+          + s.text(x0, 76, fill(LLMSLIM["eyebrow"], live) or "OPEN SOURCE  ·  MIT", "mono-m", 13, t["accent"],
+                   ls=2.4) + "</g>")
     s.add('<g class="rv" style="animation-delay:.2s">'
           + s.text(x0 - 4, 176, "LLMSlim", "serif", 112, ink, ls=-2.5) + "</g>")
     s.add('<g class="rv" style="animation-delay:.3s">'
@@ -370,8 +395,18 @@ def llmslim_card(theme):
           + f'<rect class="cur" x="{f(x0 + 22 + measure("$ " + cmd, "mono-m", 17) + 4)}" y="{ty + 18}" width="9" height="20" fill="{t["accent"]}"/>'
           + "</g>")
     s.add('<g class="fd" style="animation-delay:.7s">'
-          + s.text(x0, ty + 92, LLMSLIM["facts"], "mono", 11.5,
+          + s.text(x0, ty + 90, LLMSLIM["facts"], "mono", 11.5,
                    muted, ls=1.4) + "</g>")
+    runs = []
+    dl = live.get("llmslim", {}).get("downloads_week")
+    if dl:
+        runs.append((f"{dl:,} DOWNLOADS LAST WEEK", "mono", body))
+    names = [x["name"].upper() for x in live.get("listed_in", [])]
+    if names:
+        runs += [("  ·  " if runs else "", "mono", t["faint"]), ("LISTED IN " + ", ".join(names), "mono", t["accent"])]
+    if runs:
+        s.add('<g class="fd" style="animation-delay:.8s">'
+              + s.tspan_text(x0, ty + 113, [r for r in runs if r[0]], size=11.5, attrs=' letter-spacing="1.4"') + "</g>")
 
     # isometric compression animation
     S, gap, h = 150, 15, 9
@@ -562,6 +597,64 @@ def project_card(theme, p, idx):
           + s.text(ax - 16, by + 20, "↗", "sans-m", 16, t["on_accent"], anchor="middle"))
     s.add("</g>")
     _ = lw
+    return s
+
+
+def fresh_card(theme, item, idx):
+    """Auto-generated card for a brand-new public repo (data from refresh.py)."""
+    W, H = 590, 312
+    t = theme
+    s = Svg(W, H, t, f"{item['name']}: {item['desc']}")
+    reveal_css(s)
+    card_bg(s, 0, 0, W, H, r=26)
+    pad = 40
+    import datetime as _dt
+    when = "NEW  ·  " + _dt.date.fromisoformat(item["created"]).strftime("%d %b %Y").upper()
+    ww = measure(when, "mono", 11.5, 1.6)
+    tag = (item.get("tag") or "New repository").upper()
+    while " " in tag and measure(tag, "mono-m", 12, 1.8) > W - pad * 2 - ww - 40:
+        tag = tag.rsplit(" ", 1)[0].rstrip(" ,:;(")
+    s.style("@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3);opacity:0}}"
+            ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}")
+    s.add('<g class="fd" style="animation-delay:.1s">'
+          + s.text(pad, 56, tag, "mono-m", 12, t["accent"], ls=1.8)
+          + f'<circle class="pulse" cx="{f(W - pad - ww - 12)}" cy="52" r="3.5" fill="{t["accent"]}"/>'
+          + f'<circle cx="{f(W - pad - ww - 12)}" cy="52" r="3.5" fill="{t["accent"]}"/>'
+          + s.text(W - pad, 56, when, "mono", 11.5, t["muted"], anchor="end", ls=1.6) + "</g>")
+    s.add('<g class="rv" style="animation-delay:.15s">'
+          + s.text(pad - 2, 122, item["name"], "serif", 46, t["ink"], ls=-.8) + "</g>")
+    lines = wrap(item["desc"], "sans", 16.5, W - pad * 2)
+    if len(lines) > 3:
+        lines = lines[:3]
+        while measure(lines[2] + "...", "sans", 16.5) > W - pad * 2:
+            lines[2] = lines[2].rsplit(" ", 1)[0]
+        lines[2] = lines[2].rstrip(",.;:") + "..."
+    s.add('<g class="rv" style="animation-delay:.25s">'
+          + "".join(s.text(pad, 160 + i * 25, ln, "sans", 16.5, t["body"]) for i, ln in enumerate(lines)) + "</g>")
+    by = H - 62
+    s.add(f'<line x1="{pad}" y1="{by - 16}" x2="{W - pad}" y2="{by - 16}" stroke="{t["line"]}"/>')
+    x = pad
+    s.add('<g class="fd" style="animation-delay:.4s">')
+    for chip in [c for c in (item.get("language"), f"{item['stars']} stars" if item.get("stars") else "") if c]:
+        x += pill(s, x, by, chip, "mono", 12, pad_x=11, h=28, ls=.3, fill="none", stroke=t["line2"], color=t["muted"]) + 7
+    label = "LIVE + SOURCE" if item.get("homepage") else "SOURCE"
+    ax = W - pad
+    s.add(s.text(ax - 40, by + 18.5, label, "mono-m", 11.5, t["muted"], anchor="end", ls=1.6))
+    s.add(f'<circle cx="{ax - 16}" cy="{by + 14}" r="16" fill="{t["accent"]}"/>'
+          + s.text(ax - 16, by + 20, "↗", "sans-m", 16, t["on_accent"], anchor="middle") + "</g>")
+    return s
+
+
+def fresh_header(theme):
+    W, H = 1200, 64
+    t = theme
+    s = Svg(W, H, t, "New on GitHub, picked up automatically")
+    s.style(f".ln{{transform-box:fill-box;transform-origin:left center;"
+            f"animation:ln 1.6s {EASE} .05s both}}@keyframes ln{{from{{transform:scaleX(0)}}to{{transform:none}}}}")
+    s.add(f'<rect class="ln" x="0" y="14" width="{W}" height="1" fill="{t["line"]}"/>')
+    s.add(s.tspan_text(0, 50, [("NEW ON GITHUB", "mono-m", t["accent"]), ("  ·  PICKED UP AUTOMATICALLY", "mono", t["muted"])],
+                       size=12.5, attrs=' letter-spacing="2.2"'))
+    s.add(s.text(W, 50, "LAST 60 DAYS", "mono", 12, t["muted"], anchor="end", ls=2))
     return s
 
 
@@ -829,6 +922,15 @@ def main(only: list[str] | None = None):
         jobs[key] = (lambda th, a=(label, arrow, primary): link_pill(th, *a))
     for i, p in enumerate(PROJECTS, 1):
         jobs[f"p-{p['key']}"] = (lambda th, a=(p, i): project_card(th, *a))
+    fresh = load_live().get("fresh", [])
+    if fresh:
+        jobs["h-fresh"] = fresh_header
+    for i, item in enumerate(fresh, 1):
+        jobs[f"f-{i}"] = (lambda th, a=(item, i): fresh_card(th, *a))
+    if not only:  # drop cards for repos that aged out of the fresh list
+        for old in ASSETS.glob("f-*-*.svg"):
+            if int(old.name.split("-")[1]) > len(fresh):
+                old.unlink()
     for name, fn in jobs.items():
         if only and name not in only and not any(name.startswith(o.rstrip("*")) for o in only if o.endswith("*")):
             continue

@@ -11,6 +11,8 @@ an SIH 2024 finalist result (it is not true).
 """
 
 # Scrolling achievements strip at the bottom of the hero. Uppercase, short.
+# {placeholders} are filled from assets/live.json (written by refresh.py) and the item is
+# skipped if a value is missing: {merged_orgs} {prs} {merged} {orgs} {version} {downloads_week}
 TICKER = [
     "VBYLD 2026 · RAJASTHAN RANK 1",
     "NASA SPACE APPS 2025 · GLOBAL NOMINEE",
@@ -18,7 +20,8 @@ TICKER = [
     "IETE ENGINEERS' DAY 2026 · 1ST PLACE",
     "LLMSLIM · 14 STARTUP PROGRAMS",
     "PRODUCT HUNT · #11 OF THE DAY",
-    "PRS MERGED AT NVIDIA, AWS LABS, IBM, OPENTELEMETRY",
+    "PRS MERGED AT {merged_orgs}",
+    "{prs} OPEN SOURCE PRS · {orgs} ORGANISATIONS",
     "AWS STUDENT BUILDER GROUP LEADER",
 ]
 
@@ -44,7 +47,7 @@ LINKS = [  # (href, asset name, label, arrow, primary)
 ]
 
 LLMSLIM = {
-    "eyebrow": "OPEN SOURCE  ·  MIT  ·  V0.9",
+    "eyebrow": "OPEN SOURCE  ·  MIT  ·  V{version}",  # version comes from PyPI via live.json
     "facts": "678 TESTS  ·  90% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
     "tokens_in": "114,006",
     "tokens_out": "7,985",
@@ -185,3 +188,10 @@ FOOTER_LINKS = [
     ("Instagram", "https://www.instagram.com/yashvardhan.thanvi/"),
 ]
 CALL_URL = "https://calendly.com/yashvt9404/30min"
+
+# Public repos the automatic "fresh from the workbench" cards should never pick up.
+AUTO_EXCLUDE = {"Thanatos9404", "Thanatos9404.github.io", "StackUnderflow_BIT-Mesra-Jaipur", "Portfolio-Website",
+                "SoapySDR", "todo-app", "hackathon-demo-videos"}
+
+# Brand-new public repos (last 60 days, not featured above) become cards automatically; this caps them.
+FRESH_MAX = 4
