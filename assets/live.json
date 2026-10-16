@@ -1,16 +1,18 @@
 {
- "prs": 70,
- "merged": 9,
+ "prs": 71,
+ "merged": 12,
  "orgs": 31,
  "merged_orgs": [
   "NVIDIA",
   "AWS",
   "IBM",
+  "Capital One",
   "OpenTelemetry",
   "Jupyter",
   "Pydantic",
   "ModelScope",
-  "Pyodide"
+  "Pyodide",
+  "EvoScientist"
  ],
  "review_orgs": [
   "Microsoft",
@@ -18,7 +20,7 @@
   "Meta",
   "Uber",
   "Mozilla",
-  "Capital One"
+  "Apache"
  ],
  "listed_in": [
   {
