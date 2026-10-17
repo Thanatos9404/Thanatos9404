@@ -92,8 +92,8 @@ PROJECTS = [
     },
     {
         "key": "pratibimb", "repo": "pratibimb", "name": "Pratibimb", "tag": "DIGITAL TWIN CHALLENGE 2026",
-        "desc": "A physiology + ML digital twin for Type 2 diabetes in India. An EnKF-synced glucose model warns "
-                "of hypos an hour ahead (AUROC 0.986) and a What-If Lab lets clinicians test plans.",
+        "desc": "A physiology + ML digital twin for Type 2 diabetes in India: hypo alerts an hour ahead (AUROC "
+                "0.9855, synthetic cohort), a What-If Lab, and a check on real CGM data from 87 people.",
         "stack": ["Python", "FastAPI", "LightGBM", "Next.js"], "live": True, "glyph": "twin",
         "links": [("live console", "https://pratibimb-omega.vercel.app")],
     },

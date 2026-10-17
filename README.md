@@ -36,7 +36,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 </p>
 
 <p align="center">
-  <a href="https://github.com/Thanatos9404/pratibimb"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-pratibimb-dark.svg"><img alt="Pratibimb: A physiology + ML digital twin for Type 2 diabetes in India. An EnKF-synced glucose model warns of hypos an hour ahead (AUROC 0.986) and a What-If Lab lets clinicians test plans." src="assets/p-pratibimb-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Thanatos9404/pratibimb"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-pratibimb-dark.svg"><img alt="Pratibimb: A physiology + ML digital twin for Type 2 diabetes in India: hypo alerts an hour ahead (AUROC 0.9855, synthetic cohort), a What-If Lab, and a check on real CGM data from 87 people." src="assets/p-pratibimb-light.svg" width="49%"></picture></a>
   <a href="https://github.com/Thanatos9404/canopyproof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-canopyproof-dark.svg"><img alt="CanopyProof: Satellite-verified integrity for forest carbon credits. Sentinel-2 change detection, signed observations anchored as Merkle roots on-chain, and an oracle that holds or retires credits." src="assets/p-canopyproof-light.svg" width="49%"></picture></a>
   <br><sub>Pratibimb <a href="https://pratibimb-omega.vercel.app">live console</a> &nbsp;·&nbsp; CanopyProof <a href="https://youtu.be/9FBv9KQ4Ag8">video</a></sub>
 </p>
