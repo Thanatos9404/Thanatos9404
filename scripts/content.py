@@ -48,6 +48,10 @@ LINKS = [  # (href, asset name, label, arrow, primary)
 
 LLMSLIM = {
     "eyebrow": "OPEN SOURCE  ·  MIT  ·  V{version}",  # version comes from PyPI via live.json
+    # Card paragraph, keep it to four lines (about 230 characters) so it clears the stats row.
+    "about": "Compress, plan and budget what the model sees, from prompts and chat history to RAG chunks, tool "
+             "schemas and agent memory. It runs inside your own process: no API key, no network call, "
+             "deterministic by default.",
     "facts": "1,648 TESTS  ·  93% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
     "tokens_in": "111,372",
     "tokens_out": "10,008",

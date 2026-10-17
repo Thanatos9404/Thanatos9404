@@ -378,9 +378,7 @@ def llmslim_card(theme):
     s.add('<g class="rv" style="animation-delay:.3s">'
           + s.tspan_text(x0, 228, [("The context layer for ", "sans-m", ink), ("production AI agents.", "sans-m", ink)],
                          size=24) + "</g>")
-    para = ("Compress, plan and budget what the model sees, from prompts and chat history to RAG chunks and "
-            "tool schemas. It runs inside your own process: no API key, no network call, deterministic by default.")
-    lines = wrap(para, "sans", 18.5, 520)
+    lines = wrap(LLMSLIM["about"], "sans", 18.5, 520)
     s.add('<g class="rv" style="animation-delay:.4s">'
           + "".join(s.text(x0, 278 + i * 29, ln, "sans", 18.5, body) for i, ln in enumerate(lines)) + "</g>")
 
