@@ -18,7 +18,7 @@ TICKER = [
     "NASA SPACE APPS 2025 · GLOBAL NOMINEE",
     "DRDO · SAG RESEARCH INTERN",
     "IETE ENGINEERS' DAY 2026 · 1ST PLACE",
-    "LLMSLIM · 14 STARTUP PROGRAMS",
+    "LLMSLIM · 15 STARTUP PROGRAMS",
     "PRODUCT HUNT · #11 OF THE DAY",
     "PRS MERGED AT {merged_orgs}",
     "{prs} OPEN SOURCE PRS · {orgs} ORGANISATIONS",
@@ -48,17 +48,17 @@ LINKS = [  # (href, asset name, label, arrow, primary)
 
 LLMSLIM = {
     "eyebrow": "OPEN SOURCE  ·  MIT  ·  V{version}",  # version comes from PyPI via live.json
-    "facts": "678 TESTS  ·  90% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
-    "tokens_in": "114,006",
-    "tokens_out": "7,985",
+    "facts": "1,648 TESTS  ·  93% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
+    "tokens_in": "111,372",
+    "tokens_out": "10,008",
     "stats": [  # (big, line 1, line 2) exactly four
-        ("62×", "lower cost per question", "LongMemEval, Haiku 5.5"),
+        ("212×", "lower cost than Mem0", "Mem0's LongMemEval questions"),
+        ("42×", "lower cost, same accuracy", "vs full history, LongMemEval"),
         ("3×", "fewer tokens, same score", "LongBench v1"),
-        ("+9.7", "points over LLMLingua-2", "NaturalQuestions, 300 cases"),
-        ("0.1s", "per question vs 9.3s", "vs LongLLMLingua, same score"),
+        ("+21", "points over LLMLingua-2", "NaturalQuestions, same budget"),
     ],
     "programs": ["OpenAI", "Claude", "MongoDB", "Sarvam", "Zoho", "Auth0", "Zendesk", "Mixpanel", "Sentry",
-                 "Descope", "Pulumi", "Honeycomb", "Exa", "Neo4j"],
+                 "Descope", "Pulumi", "Honeycomb", "Exa", "Neo4j", "Cartesia"],
     "links": [
         ("Website", "https://www.llmslim.app"),
         ("Docs", "https://www.llmslim.app/docs/getting-started"),

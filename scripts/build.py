@@ -363,8 +363,8 @@ def llmslim_card(theme):
     live = load_live()
     dark = t["name"] == "dark"
     s = Svg(W, H, t, "LLMSlim: the context layer for production AI agents",
-            "Open source Python library. pip install llmslim. 62x lower cost per question on LongMemEval, "
-            "3x fewer tokens at the same LongBench score, +9.7 points over LLMLingua-2.")
+            "Open source Python library. pip install llmslim. "
+            + ", ".join(f"{big} {l1} ({l2})" for big, l1, l2 in LLMSLIM["stats"]) + ".")
     reveal_css(s)
     card_bg(s, 0, 0, W, H, r=30, glow=True)
     ink, body, muted = t["ink"], t["body"], t["muted"]
