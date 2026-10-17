@@ -1,7 +1,7 @@
 {
- "prs": 74,
+ "prs": 76,
  "merged": 14,
- "orgs": 31,
+ "orgs": 33,
  "merged_orgs": [
   "NVIDIA",
   "Meta",
@@ -38,7 +38,7 @@
   }
  ],
  "llmslim": {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "downloads_week": 505,
   "stars": 16
  },

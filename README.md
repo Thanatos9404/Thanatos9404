@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 74 pull requests</b>, by organisation</summary>
+<summary><b>All 76 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -197,6 +197,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
+**Vercel**
+
+- `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
+
 **Hermes WebUI**
 
 - `open` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
@@ -226,6 +230,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **libpng**
 
 - `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
+
+**speced**
+
+- `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
 
 **Scikit-HEP**
 

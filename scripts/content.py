@@ -52,7 +52,7 @@ LLMSLIM = {
     "about": "Compress, plan and budget what the model sees, from prompts and chat history to RAG chunks, tool "
              "schemas and agent memory. It runs inside your own process: no API key, no network call, "
              "deterministic by default.",
-    "facts": "1,648 TESTS  ·  93% BRANCH COVERAGE  ·  LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
+    "facts": "1,648 TESTS  ·  93% BRANCH COVERAGE  ·  CLAUDE CODE, LANGCHAIN, LLAMAINDEX, HAYSTACK, MCP",
     "tokens_in": "111,372",
     "tokens_out": "10,008",
     "stats": [  # (big, line 1, line 2) exactly four
