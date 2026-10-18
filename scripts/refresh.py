@@ -44,12 +44,12 @@ ORGS = {
     "googleapis": "Google", "mozilla": "Mozilla", "jupyter": "Jupyter", "jupyter-server": "Jupyter",
     "jupyterlab": "Jupyter", "pyodide": "Pyodide", "prometheus": "Prometheus", "uber": "Uber",
     "containers": "Containers", "sleuthkit": "The Sleuth Kit", "quodlibet": "Quod Libet",
-    "nesquena": "Hermes WebUI",
+    "nesquena": "Hermes WebUI", "teslamotors": "Tesla", "helm": "Helm", "valyala": "fasthttp",
 }
 # Well-known names first, then everything else by the stars of the repos I contributed to.
-BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Uber", "Mozilla", "Capital One", "Apache",
-          "OpenTelemetry", "Jupyter", "Prometheus", "Pydantic", "Docling", "Mozilla.ai", "ModelScope", "Pyodide",
-          "Containers"]
+BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Tesla", "Uber", "Mozilla", "Capital One",
+          "Apache", "OpenTelemetry", "Jupyter", "Prometheus", "Pydantic", "Docling", "Mozilla.ai", "ModelScope",
+          "Pyodide", "Containers"]
 # Curated lists where the PR only adds LLMSlim to a list are left out of the wall.
 SKIP_REPO = re.compile(r"awesome", re.I)
 SKIP_OWNERS = {"vansh-nagar"}

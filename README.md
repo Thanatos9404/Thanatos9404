@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 96 pull requests</b>, by organisation</summary>
+<summary><b>All 97 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -167,6 +167,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
+**Tesla**
+
+- `open` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
+
 **Uber**
 
 - `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
@@ -208,7 +212,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
-**The Helm Project**
+**Helm**
 
 - `open` [fix(plugin): extract plugin archives through os.Root](https://github.com/helm/helm/pull/32774) <sub>helm/helm#32774</sub>
 - `open` [fix(chart): write expanded chart files through os.Root](https://github.com/helm/helm/pull/32773) <sub>helm/helm#32773</sub>
@@ -217,7 +221,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
 
-**Aliaksandr Valialkin**
+**fasthttp**
 
 - `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 - `open` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
