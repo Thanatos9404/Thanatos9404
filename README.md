@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 86 pull requests</b>, by organisation</summary>
+<summary><b>All 96 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -82,6 +82,17 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
 - `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 
+**Microsoft**
+
+- `merged` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
+- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
+- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
+- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
+- `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
+- `open` [DOC: Document uv-only preparation of pre-commit hook environments](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
+- `open` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
+- `open` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
+
 **Meta**
 
 - `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
@@ -90,6 +101,8 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
 - `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
+- `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
+- `open` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
 
 **AWS**
 
@@ -113,9 +126,9 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 **Capital One**
 
+- `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 - `open` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
-- `open` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 
 **OpenTelemetry**
 
@@ -149,14 +162,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `open` [fix(llm): let a run wait one retry budget, not one per model call](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 
-**Microsoft**
-
-- `open` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
-- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
-- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
-- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
-- `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
-
 **Google**
 
 - `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
@@ -174,6 +179,8 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Apache**
 
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
+- `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
+- `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 
 **Prometheus**
 
@@ -229,6 +236,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
 
+**stdlib**
+
+- `open` [fix: avoid premature overflow in `math/base/special/expm1`](https://github.com/stdlib-js/stdlib/pull/16239) <sub>stdlib-js/stdlib#16239</sub>
+- `open` [docs: improve doctests for ndarray instances in `ndarray/slice-from`](https://github.com/stdlib-js/stdlib/pull/16236) <sub>stdlib-js/stdlib#16236</sub>
+
 **Astropy**
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
@@ -253,6 +265,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **speced**
 
 - `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
+
+**Self-custody Solutions**
+
+- `open` [fix: require a TC Code to enable TC Flash Hash at Boot](https://github.com/selfcustody/krux/pull/966) <sub>selfcustody/krux#966</sub>
 
 **Scikit-HEP**
 

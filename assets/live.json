@@ -1,9 +1,10 @@
 {
- "prs": 86,
- "merged": 14,
- "orgs": 36,
+ "prs": 96,
+ "merged": 16,
+ "orgs": 38,
  "merged_orgs": [
   "NVIDIA",
+  "Microsoft",
   "Meta",
   "AWS",
   "IBM",
@@ -16,19 +17,19 @@
   "EvoScientist"
  ],
  "review_orgs": [
-  "Microsoft",
   "Google",
   "Uber",
   "Mozilla",
   "Apache",
-  "Prometheus"
+  "Prometheus",
+  "Docling"
  ],
  "listed_in": [
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
    "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5960
+   "stars": 5961
   },
   {
    "name": "Awesome Context Engineering",
