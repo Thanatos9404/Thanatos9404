@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 97 pull requests</b>, by organisation</summary>
+<summary><b>All 98 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -96,13 +96,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Meta**
 
 - `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
+- `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
 - `open` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
 - `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
 - `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
 - `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
-- `open` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
 
 **AWS**
 
@@ -160,7 +160,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
 - `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
-- `open` [fix(llm): let a run wait one retry budget, not one per model call](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
+- `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 
 **Google**
 
@@ -183,6 +183,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Apache**
 
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
+- `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 
