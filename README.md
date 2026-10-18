@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 76 pull requests</b>, by organisation</summary>
+<summary><b>All 86 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -102,6 +102,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 - `open` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
+- `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -125,6 +126,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
 - `open` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
+- `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
 
 **Pydantic**
 
@@ -144,6 +146,8 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
 - `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
+- `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
+- `open` [fix(llm): let a run wait one retry budget, not one per model call](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 
 **Microsoft**
 
@@ -197,9 +201,19 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
+**The Helm Project**
+
+- `open` [fix(plugin): extract plugin archives through os.Root](https://github.com/helm/helm/pull/32774) <sub>helm/helm#32774</sub>
+- `open` [fix(chart): write expanded chart files through os.Root](https://github.com/helm/helm/pull/32773) <sub>helm/helm#32773</sub>
+
 **Vercel**
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
+
+**Aliaksandr Valialkin**
+
+- `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
+- `open` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
 
 **Hermes WebUI**
 
@@ -218,6 +232,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Astropy**
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
+
+**Powertools for AWS**
+
+- `open` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
+- `open` [fix(event_handler): strip the HTTP API stage only when rawPath has it](https://github.com/aws-powertools/powertools-lambda-python/pull/8605) <sub>aws-powertools/powertools-lambda-python#8605</sub>
 
 **The Sleuth Kit**
 
