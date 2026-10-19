@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 124 pull requests</b>, by organisation</summary>
+<summary><b>All 132 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -111,11 +111,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **AWS**
 
 - `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
+- `merged` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
 - `open` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
-- `open` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
 - `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 - `open` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
@@ -146,11 +146,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
 - `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
+- `open` [Explain the missing yjs plugin when kernels.require_yjs is set](https://github.com/jupyter-server/jupyverse/pull/672) <sub>jupyter-server/jupyverse#672</sub>
 - `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
 
 **Pydantic**
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
+- `open` [Treat `logfire.tags` passed through structlog as log tags](https://github.com/pydantic/logfire/pull/2598) <sub>pydantic/logfire#2598</sub>
 
 **Docling**
 
@@ -182,10 +184,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
 - `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
+- `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
 - `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
-- `open` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
 
 **y-crdt**
 
@@ -221,12 +223,14 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
+- `open` [widget.py: Avoid extra empty lines when message-lines or error-lines is 0](https://github.com/apache/buildstream/pull/2208) <sub>apache/buildstream#2208</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 
 **Prometheus**
 
 - `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
+- `open` [web: escape page title and consoles link in the UI index](https://github.com/prometheus/prometheus/pull/20078) <sub>prometheus/prometheus#20078</sub>
 - `open` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
 
 **Mozilla.ai**
@@ -298,6 +302,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
 
+**Indico**
+
+- `open` [Allow hyphens in location names in the legacy room export API](https://github.com/indico/indico/pull/7806) <sub>indico/indico#7806</sub>
+
 **Quod Libet**
 
 - `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
@@ -310,6 +318,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
 
+**Milvus**
+
+- `open` [fix: set element_type for ARRAY fields in insert and upsert requests](https://github.com/milvus-io/pymilvus/pull/3872) <sub>milvus-io/pymilvus#3872</sub>
+
 **speced**
 
 - `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
@@ -317,6 +329,14 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **glue**
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
+
+**Datadog**
+
+- `open` [fix(dogshell): validate `metric post --type` and send `counter` as `count`](https://github.com/DataDog/datadogpy/pull/1001) <sub>DataDog/datadogpy#1001</sub>
+
+**Dapr**
+
+- `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
 
 **Self-custody Solutions**
 
