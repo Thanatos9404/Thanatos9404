@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 109 pull requests</b>, by organisation</summary>
+<summary><b>All 119 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -92,6 +92,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [DOC: Document uv-only preparation of pre-commit hook environments](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `open` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
 - `open` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
+- `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
 
 **Meta**
 
@@ -103,6 +104,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
+- `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/facebook/jscodeshift/pull/754) <sub>facebook/jscodeshift#754</sub>
 - `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 
 **AWS**
@@ -117,6 +119,8 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 - `open` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
+- `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
+- `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -138,14 +142,20 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 **Jupyter**
 
+- `merged` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
-- `open` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 - `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
 - `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
 
 **Pydantic**
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
+
+**Docling**
+
+- `merged` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
+- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
+- `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
 
 **ModelScope**
 
@@ -162,6 +172,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
 - `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 
+**Hermes WebUI**
+
+- `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
+- `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
+
 **EvoScientist**
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
@@ -172,6 +187,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Google**
 
 - `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
+- `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
 - `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
@@ -197,18 +213,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
+- `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 
 **Prometheus**
 
 - `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
 - `open` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
-
-**Docling**
-
-- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
-- `open` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
-- `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
 
 **Mozilla.ai**
 
@@ -235,11 +246,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
 
-**Hermes WebUI**
-
-- `open` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
-- `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
-
 **NLTK**
 
 - `closed` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
@@ -252,6 +258,15 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **OpenLayers**
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
+
+**KubeEdge**
+
+- `open` [keadm: honor --certPath when generating edgecore.yaml](https://github.com/kubeedge/kubeedge/pull/7362) <sub>kubeedge/kubeedge#7362</sub>
+
+**Cloud Custodian**
+
+- `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
+- `open` [core - resolver - skip blank rows in value_from csv2dict](https://github.com/cloud-custodian/cloud-custodian/pull/11227) <sub>cloud-custodian/cloud-custodian#11227</sub>
 
 **stdlib**
 
@@ -291,10 +306,14 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix: require a TC Code to enable TC Flash Hash at Boot](https://github.com/selfcustody/krux/pull/966) <sub>selfcustody/krux#966</sub>
 
+**PySAL**
+
+- `closed` [fix: raise NotImplementedError for asymmetric weights in join counts](https://github.com/pysal/esda/pull/527) <sub>pysal/esda#527</sub>
+
 **Scikit-HEP**
 
 - `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
-- `closed` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
+- `open` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
 
 **deepset**
 

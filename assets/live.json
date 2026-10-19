@@ -1,7 +1,7 @@
 {
- "prs": 109,
- "merged": 18,
- "orgs": 42,
+ "prs": 119,
+ "merged": 21,
+ "orgs": 45,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -12,9 +12,11 @@
   "OpenTelemetry",
   "Jupyter",
   "Pydantic",
+  "Docling",
   "ModelScope",
   "Pyodide",
   "fasthttp",
+  "Hermes WebUI",
   "EvoScientist"
  ],
  "review_orgs": [
