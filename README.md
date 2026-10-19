@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 119 pull requests</b>, by organisation</summary>
+<summary><b>All 124 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -92,6 +92,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [DOC: Document uv-only preparation of pre-commit hook environments](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `open` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
 - `open` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
+- `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
 - `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
 
 **Meta**
@@ -183,6 +184,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
+- `open` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
+- `open` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
+
+**y-crdt**
+
+- `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
+- `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
 **Google**
 
@@ -277,6 +285,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
 
+**Coraza**
+
+- `open` [fix(seclang): use slash paths for fs.FS include roots on Windows](https://github.com/corazawaf/coraza/pull/1784) <sub>corazawaf/coraza#1784</sub>
+
 **Powertools for AWS**
 
 - `open` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
@@ -289,6 +301,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Quod Libet**
 
 - `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
+
+**Carvel**
+
+- `open` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
 
 **libpng**
 
@@ -318,11 +334,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **deepset**
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
-
-**y-crdt**
-
-- `open` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
-- `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
 **OpenSSF**
 

@@ -1,7 +1,7 @@
 {
- "prs": 119,
- "merged": 21,
- "orgs": 45,
+ "prs": 124,
+ "merged": 22,
+ "orgs": 47,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -17,7 +17,8 @@
   "Pyodide",
   "fasthttp",
   "Hermes WebUI",
-  "EvoScientist"
+  "EvoScientist",
+  "y-crdt"
  ],
  "review_orgs": [
   "Google",

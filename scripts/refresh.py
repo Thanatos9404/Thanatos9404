@@ -45,7 +45,7 @@ ORGS = {
     "jupyterlab": "Jupyter", "pyodide": "Pyodide", "prometheus": "Prometheus", "uber": "Uber",
     "containers": "Containers", "sleuthkit": "The Sleuth Kit", "quodlibet": "Quod Libet",
     "nesquena": "Hermes WebUI", "teslamotors": "Tesla", "helm": "Helm", "valyala": "fasthttp",
-    "uber-go": "Uber", "ossf": "OpenSSF", "glue-viz": "glue", "pysal": "PySAL",
+    "uber-go": "Uber", "ossf": "OpenSSF", "glue-viz": "glue", "pysal": "PySAL", "corazawaf": "Coraza",
 }
 # Well-known names first, then everything else by the stars of the repos I contributed to.
 BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Tesla", "Uber", "Mozilla", "Capital One",
