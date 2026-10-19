@@ -45,6 +45,7 @@ ORGS = {
     "jupyterlab": "Jupyter", "pyodide": "Pyodide", "prometheus": "Prometheus", "uber": "Uber",
     "containers": "Containers", "sleuthkit": "The Sleuth Kit", "quodlibet": "Quod Libet",
     "nesquena": "Hermes WebUI", "teslamotors": "Tesla", "helm": "Helm", "valyala": "fasthttp",
+    "uber-go": "Uber", "ossf": "OpenSSF", "glue-viz": "glue",
 }
 # Well-known names first, then everything else by the stars of the repos I contributed to.
 BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Tesla", "Uber", "Mozilla", "Capital One",
@@ -241,6 +242,9 @@ def oss_svg(theme, prs, groups):
                 lines[-1] += " " + word
             elif len(lines) < 3:
                 lines.append(word)
+            else:  # third line is full: end it after the last whole name instead of skipping ahead
+                lines[2] = lines[2].rsplit(",", 1)[0] + ", ..." if "," in lines[2] else lines[2] + " ..."
+                break
         if len(lines) == 3:
             lines[2] = clip(lines[2], "mono", 11.5, tw - 48)
         s.add(f'<g class="rv" style="animation-delay:{.2 + k * .05:.2f}s">'

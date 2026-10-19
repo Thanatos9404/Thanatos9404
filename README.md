@@ -183,6 +183,8 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
 - `open` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
+- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
+- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
 **Mozilla**
 
@@ -260,11 +262,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
 
-**Uber Go**
-
-- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
-- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
-
 **Powertools for AWS**
 
 - `open` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
@@ -286,7 +283,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
 
-**glue-viz**
+**glue**
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
 
@@ -308,7 +305,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
-**Open Source Security Foundation (OpenSSF)**
+**OpenSSF**
 
 - `open` [fix(OSPS-QA-06.01): ignore skipped and neutral check runs](https://github.com/ossf/pvtr-github-repo-scanner/pull/514) <sub>ossf/pvtr-github-repo-scanner#514</sub>
 
