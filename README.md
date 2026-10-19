@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 98 pull requests</b>, by organisation</summary>
+<summary><b>All 109 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -103,6 +103,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
+- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 
 **AWS**
 
@@ -140,6 +141,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
 - `open` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 - `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
+- `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
 
 **Pydantic**
 
@@ -155,6 +157,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
 - `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
 
+**fasthttp**
+
+- `merged` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
+- `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
+
 **EvoScientist**
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
@@ -165,6 +172,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Google**
 
 - `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
+- `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Tesla**
@@ -183,13 +191,16 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Apache**
 
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
+- `open` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
+- `open` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 
 **Prometheus**
 
 - `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
+- `open` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
 
 **Docling**
 
@@ -222,11 +233,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
 
-**fasthttp**
-
-- `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
-- `open` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
-
 **Hermes WebUI**
 
 - `open` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
@@ -234,12 +240,16 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 **NLTK**
 
-- `open` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
-- `open` [Send set_proxy's credentials on the HTTPS CONNECT, and keep proxy credentials off redirects](https://github.com/nltk/nltk/pull/3970) <sub>nltk/nltk#3970</sub>
+- `closed` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
+- `closed` [Send set_proxy's credentials on the HTTPS CONNECT, and keep proxy credentials off redirects](https://github.com/nltk/nltk/pull/3970) <sub>nltk/nltk#3970</sub>
 
 **Pillow**
 
 - `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
+
+**OpenLayers**
+
+- `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
 
 **stdlib**
 
@@ -249,6 +259,11 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Astropy**
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
+
+**Uber Go**
+
+- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
+- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
 **Powertools for AWS**
 
@@ -271,6 +286,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
 
+**glue-viz**
+
+- `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
+
 **Self-custody Solutions**
 
 - `open` [fix: require a TC Code to enable TC Flash Hash at Boot](https://github.com/selfcustody/krux/pull/966) <sub>selfcustody/krux#966</sub>
@@ -288,6 +307,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
+
+**Open Source Security Foundation (OpenSSF)**
+
+- `open` [fix(OSPS-QA-06.01): ignore skipped and neutral check runs](https://github.com/ossf/pvtr-github-repo-scanner/pull/514) <sub>ossf/pvtr-github-repo-scanner#514</sub>
 
 </details>
 <!-- OSS:END -->

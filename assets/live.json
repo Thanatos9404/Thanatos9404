@@ -1,7 +1,7 @@
 {
- "prs": 98,
- "merged": 17,
- "orgs": 39,
+ "prs": 109,
+ "merged": 18,
+ "orgs": 43,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -14,6 +14,7 @@
   "Pydantic",
   "ModelScope",
   "Pyodide",
+  "fasthttp",
   "EvoScientist"
  ],
  "review_orgs": [
@@ -35,12 +36,12 @@
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 212
+   "stars": 213
   }
  ],
  "llmslim": {
   "version": "0.11.1",
-  "downloads_week": 802,
+  "downloads_week": 652,
   "stars": 16
  },
  "fresh": [
