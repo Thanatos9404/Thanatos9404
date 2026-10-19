@@ -181,10 +181,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **EvoScientist**
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
+- `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
-- `open` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `open` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
 
 **y-crdt**
