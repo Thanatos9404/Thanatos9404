@@ -1,10 +1,11 @@
 {
- "prs": 136,
- "merged": 36,
- "orgs": 52,
+ "prs": 143,
+ "merged": 40,
+ "orgs": 58,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
+  "Google",
   "Meta",
   "AWS",
   "IBM",
@@ -24,12 +25,12 @@
   "y-crdt"
  ],
  "review_orgs": [
-  "Google",
   "Uber",
   "Mozilla",
   "Prometheus",
   "Mozilla.ai",
-  "Containers"
+  "Containers",
+  "Nous Research"
  ],
  "listed_in": [
   {
@@ -50,50 +51,5 @@
   "downloads_week": 651,
   "stars": 16
  },
- "fresh": [
-  {
-   "repo": "leash",
-   "name": "Leash",
-   "desc": "Enforceable spending mandates for AI shopping agents. Plain-language rules compiled into a signed policy, a PayPal Orders v2 authorization as the hard ceiling, per-cart rule checks, merchant-verified receipts and dispute evidence.",
-   "tag": "PayPal AI Hackathon 2026",
-   "url": "https://github.com/Thanatos9404/leash",
-   "homepage": "",
-   "language": "Python",
-   "stars": 0,
-   "created": "2026-10-13"
-  },
-  {
-   "repo": "ruledost",
-   "name": "RuleDost",
-   "desc": "Paste a hackathon's rules and get the real deadline in your time zone, whether you can enter, and what to submit, with every answer backed by the exact sentence from the rules. Fully offline.",
-   "tag": "Build With AI: Basics 2026",
-   "url": "https://github.com/Thanatos9404/ruledost",
-   "homepage": "https://ruledost.vercel.app",
-   "language": "TypeScript",
-   "stars": 0,
-   "created": "2026-10-13"
-  },
-  {
-   "repo": "dayrhythm",
-   "name": "dayrhythm",
-   "desc": "A small, dependency-free Python library that learns a household's daily routine from home events and explains every deviation in plain words. Extracted from Hearthbeat.",
-   "tag": "",
-   "url": "https://github.com/Thanatos9404/dayrhythm",
-   "homepage": "",
-   "language": "Python",
-   "stars": 0,
-   "created": "2026-10-13"
-  },
-  {
-   "repo": "StudyTwin",
-   "name": "StudyTwin",
-   "desc": "A multimodal study companion that answers only from your course material with verified citations, adaptive quizzes and a per-topic learner model.",
-   "tag": "Multimodal AI Hackathon 2026",
-   "url": "https://github.com/Thanatos9404/StudyTwin",
-   "homepage": "",
-   "language": "Python",
-   "stars": 0,
-   "created": "2026-10-13"
-  }
- ]
+ "fresh": []
 }

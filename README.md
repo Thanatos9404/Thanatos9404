@@ -47,21 +47,8 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
   <br><sub>Passerelle <a href="https://youtu.be/bjc88UYdgfE">video</a> &nbsp;·&nbsp; Hearthbeat <a href="https://youtu.be/axVTrTiKaog">video</a></sub>
 </p>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-fresh-dark.svg"><img alt="New on GitHub, picked up automatically." src="assets/h-fresh-light.svg" width="100%"></picture>
-
-<p align="center">
-  <a href="https://github.com/Thanatos9404/leash"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-1-dark.svg"><img alt="Leash: Enforceable spending mandates for AI shopping agents. Plain-language rules compiled into a signed policy, a PayPal Orders v2 authorization as the hard ceiling, per-cart rule checks, merchant-verified receipts and dispute evidence." src="assets/f-1-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Thanatos9404/ruledost"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-2-dark.svg"><img alt="RuleDost: Paste a hackathon's rules and get the real deadline in your time zone, whether you can enter, and what to submit, with every answer backed by the exact sentence from the rules. Fully offline." src="assets/f-2-light.svg" width="49%"></picture></a>
-  <br><sub>RuleDost <a href="https://ruledost.vercel.app">live</a></sub>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Thanatos9404/dayrhythm"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-3-dark.svg"><img alt="dayrhythm: A small, dependency-free Python library that learns a household's daily routine from home events and explains every deviation in plain words. Extracted from Hearthbeat." src="assets/f-3-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Thanatos9404/StudyTwin"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-4-dark.svg"><img alt="StudyTwin: A multimodal study companion that answers only from your course material with verified citations, adaptive quizzes and a per-topic learner model." src="assets/f-4-light.svg" width="49%"></picture></a>
-</p>
-
 <p align="center"><sub>
-Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet detection for NASA Space Apps
+Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandates for AI shopping agents &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/StudyTwin">StudyTwin</a>, a tutor that cites your course material &nbsp;·&nbsp; <a href="https://ruledost.vercel.app">RuleDost</a>, hackathon rules decoded &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/dayrhythm">dayrhythm</a>, a routine-learning library &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet detection for NASA Space Apps
 </sub></p>
 
 <br>
@@ -72,7 +59,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 136 pull requests</b>, by organisation</summary>
+<summary><b>All 143 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -87,13 +74,20 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
 - `merged` [MAINT: Make uv the default pre-commit hook installer](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `merged` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
+- `merged` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
 - `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
 - `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 - `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
 - `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
-- `open` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
 - `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
 - `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
+
+**Google**
+
+- `merged` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
+- `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
+- `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
+- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Meta**
 
@@ -145,13 +139,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Apache**
 
 - `merged` [widget.py: Avoid extra empty lines when message-lines or error-lines is 0](https://github.com/apache/buildstream/pull/2208) <sub>apache/buildstream#2208</sub>
+- `merged` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
 - `open` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
-- `open` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 
 **OpenTelemetry**
 
@@ -170,6 +164,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
 - `merged` [Treat `logfire.tags` passed through structlog as log tags](https://github.com/pydantic/logfire/pull/2598) <sub>pydantic/logfire#2598</sub>
+- `open` [docs: add llmslim to third-party context management capabilities](https://github.com/pydantic/pydantic-ai/pull/10780) <sub>pydantic/pydantic-ai#10780</sub>
 
 **Docling**
 
@@ -208,21 +203,14 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
 - `merged` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `merged` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
+- `merged` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 - `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
-- `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 
 **y-crdt**
 
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
-
-**Google**
-
-- `open` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
-- `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
-- `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
-- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Uber**
 
@@ -253,9 +241,17 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
 - `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
 
+**Nous Research**
+
+- `open` [feat(plugin-catalog): add llmslim plugin](https://github.com/NousResearch/hermes-agent/pull/142212) <sub>NousResearch/hermes-agent#142212</sub>
+
 **crewAI**
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
+
+**Daniel Avila**
+
+- `open` [Add LLMSlim MCP to integration](https://github.com/davila7/claude-code-templates/pull/1226) <sub>davila7/claude-code-templates#1226</sub>
 
 **Helm**
 
@@ -278,6 +274,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **OpenLayers**
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
+
+**Raycast**
+
+- `open` [(Model Context Protocol Registry) Add LLMSlim](https://github.com/raycast/extensions/pull/32584) <sub>raycast/extensions#32584</sub>
 
 **KubeEdge**
 
@@ -329,6 +329,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
 
+**Path Integral Institute**
+
+- `open` [Add LLMSlim to registry](https://github.com/pathintegral-institute/mcpm.sh/pull/477) <sub>pathintegral-institute/mcpm.sh#477</sub>
+
 **glue**
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
@@ -340,6 +344,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Dapr**
 
 - `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
+
+**kimtth**
+
+- `open` [docs: add LLMSlim to RAG Application](https://github.com/kimtth/azure-openai-llm-notes/pull/104) <sub>kimtth/azure-openai-llm-notes#104</sub>
 
 **Cadence**
 
@@ -357,6 +365,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
 - `open` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
+
+**toolsdk.ai**
+
+- `open` [Add LLMSlim Memory MCP server](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/951) <sub>toolsdk-ai/toolsdk-mcp-registry#951</sub>
 
 **deepset**
 
