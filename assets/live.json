@@ -1,6 +1,6 @@
 {
  "prs": 132,
- "merged": 26,
+ "merged": 31,
  "orgs": 51,
  "merged_orgs": [
   "NVIDIA",
@@ -8,6 +8,7 @@
   "Meta",
   "AWS",
   "IBM",
+  "Tesla",
   "Capital One",
   "OpenTelemetry",
   "Jupyter",
@@ -17,16 +18,17 @@
   "Pyodide",
   "fasthttp",
   "Hermes WebUI",
+  "Cloud Custodian",
   "EvoScientist",
   "y-crdt"
  ],
  "review_orgs": [
   "Google",
-  "Tesla",
   "Uber",
   "Mozilla",
   "Apache",
-  "Prometheus"
+  "Prometheus",
+  "Mozilla.ai"
  ],
  "listed_in": [
   {
@@ -44,7 +46,7 @@
  ],
  "llmslim": {
   "version": "0.11.1",
-  "downloads_week": 652,
+  "downloads_week": 651,
   "stars": 16
  },
  "fresh": [

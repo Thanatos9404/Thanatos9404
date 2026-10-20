@@ -112,13 +112,13 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
 - `merged` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
+- `merged` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
+- `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
 - `open` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
-- `open` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `open` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
-- `open` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
@@ -129,6 +129,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [feat: add an opt-in raise mode for LLM errors in the pipeline stages](https://github.com/IBM/FactReasoner/pull/63) <sub>IBM/FactReasoner#63</sub>
 - `open` [fix(oauth): refresh DB-stored OAuth tokens once under concurrent requests](https://github.com/IBM/mcp-context-forge/pull/7222) <sub>IBM/mcp-context-forge#7222</sub>
+
+**Tesla**
+
+- `merged` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
 
 **Capital One**
 
@@ -172,13 +176,18 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 **fasthttp**
 
+- `merged` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 - `merged` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
-- `open` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 
 **Hermes WebUI**
 
 - `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
 - `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
+
+**Cloud Custodian**
+
+- `merged` [core - resolver - skip blank rows in value_from csv2dict](https://github.com/cloud-custodian/cloud-custodian/pull/11227) <sub>cloud-custodian/cloud-custodian#11227</sub>
+- `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
 
 **EvoScientist**
 
@@ -200,10 +209,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
 - `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
-
-**Tesla**
-
-- `open` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
 
 **Uber**
 
@@ -274,11 +279,6 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **KubeEdge**
 
 - `open` [keadm: honor --certPath when generating edgecore.yaml](https://github.com/kubeedge/kubeedge/pull/7362) <sub>kubeedge/kubeedge#7362</sub>
-
-**Cloud Custodian**
-
-- `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
-- `open` [core - resolver - skip blank rows in value_from csv2dict](https://github.com/cloud-custodian/cloud-custodian/pull/11227) <sub>cloud-custodian/cloud-custodian#11227</sub>
 
 **stdlib**
 
