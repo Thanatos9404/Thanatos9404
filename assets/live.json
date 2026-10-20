@@ -1,6 +1,6 @@
 {
  "prs": 143,
- "merged": 40,
+ "merged": 43,
  "orgs": 58,
  "merged_orgs": [
   "NVIDIA",
@@ -18,10 +18,12 @@
   "Docling",
   "ModelScope",
   "Pyodide",
+  "Nous Research",
   "fasthttp",
   "Hermes WebUI",
   "Cloud Custodian",
   "EvoScientist",
+  "speced",
   "y-crdt"
  ],
  "review_orgs": [
@@ -30,9 +32,15 @@
   "Prometheus",
   "Mozilla.ai",
   "Containers",
-  "Nous Research"
+  "crewAI"
  ],
  "listed_in": [
+  {
+   "name": "Hermes Agent",
+   "full": "NousResearch/hermes-agent",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
+   "stars": 255573
+  },
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
@@ -40,10 +48,22 @@
    "stars": 5961
   },
   {
+   "name": "Awesome LLM RAG",
+   "full": "jxzhangjhu/Awesome-LLM-RAG",
+   "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG/pull/57",
+   "stars": 1369
+  },
+  {
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
    "stars": 216
+  },
+  {
+   "name": "Awesome Mcp Servers",
+   "full": "mcpHQ/awesome-mcp-servers",
+   "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
+   "stars": 193
   }
  ],
  "llmslim": {
