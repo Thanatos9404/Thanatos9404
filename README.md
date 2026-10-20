@@ -72,7 +72,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 132 pull requests</b>, by organisation</summary>
+<summary><b>All 136 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -85,12 +85,12 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Microsoft**
 
 - `merged` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
+- `merged` [MAINT: Make uv the default pre-commit hook installer](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `merged` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
 - `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
 - `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 - `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
 - `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
-- `open` [MAINT: Make uv the default pre-commit hook installer](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `open` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
 - `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
 - `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
@@ -107,6 +107,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
 - `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/facebook/jscodeshift/pull/754) <sub>facebook/jscodeshift#754</sub>
 - `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
+- `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/facebook/lexical/pull/9391) <sub>facebook/lexical#9391</sub>
 
 **AWS**
 
@@ -122,6 +123,7 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
+- `open` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -188,14 +190,15 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 
 - `merged` [core - resolver - skip blank rows in value_from csv2dict](https://github.com/cloud-custodian/cloud-custodian/pull/11227) <sub>cloud-custodian/cloud-custodian#11227</sub>
 - `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
+- `open` [gcp - spanner-backup - list backups by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11235) <sub>cloud-custodian/cloud-custodian#11235</sub>
 
 **EvoScientist**
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
+- `merged` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
+- `merged` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
-- `open` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
-- `open` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `open` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 
 **y-crdt**
@@ -337,6 +340,10 @@ Also <a href="https://github.com/Thanatos9404/Intuix-NASA">Intuix</a>, exoplanet
 **Dapr**
 
 - `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
+
+**Cadence**
+
+- `open` [fix(testsuite): honor WaitForCancellation when canceling activities](https://github.com/cadence-workflow/cadence-go-client/pull/1545) <sub>cadence-workflow/cadence-go-client#1545</sub>
 
 **Self-custody Solutions**
 
