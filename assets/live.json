@@ -1,6 +1,6 @@
 {
  "prs": 136,
- "merged": 34,
+ "merged": 36,
  "orgs": 52,
  "merged_orgs": [
   "NVIDIA",
@@ -10,6 +10,7 @@
   "IBM",
   "Tesla",
   "Capital One",
+  "Apache",
   "OpenTelemetry",
   "Jupyter",
   "Pydantic",
@@ -26,9 +27,9 @@
   "Google",
   "Uber",
   "Mozilla",
-  "Apache",
   "Prometheus",
-  "Mozilla.ai"
+  "Mozilla.ai",
+  "Containers"
  ],
  "listed_in": [
   {
@@ -41,7 +42,7 @@
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 213
+   "stars": 216
   }
  ],
  "llmslim": {
