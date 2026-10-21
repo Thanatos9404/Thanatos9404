@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome LLMOps and Awesome LLM RAG and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome LLMOps and Awesome LLM RAG and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -149,8 +149,8 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **OpenTelemetry**
 
+- `merged` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
 - `merged` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
-- `open` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
 
 **Jupyter**
 
@@ -214,6 +214,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **speced**
 
 - `merged` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
+
+**kimtth**
+
+- `merged` [docs: add LLMSlim to RAG Application](https://github.com/kimtth/azure-openai-llm-notes/pull/104) <sub>kimtth/azure-openai-llm-notes#104</sub>
 
 **y-crdt**
 
@@ -344,10 +348,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Dapr**
 
 - `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
-
-**kimtth**
-
-- `open` [docs: add LLMSlim to RAG Application](https://github.com/kimtth/azure-openai-llm-notes/pull/104) <sub>kimtth/azure-openai-llm-notes#104</sub>
 
 **Cadence**
 

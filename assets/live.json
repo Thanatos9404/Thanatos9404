@@ -1,6 +1,6 @@
 {
  "prs": 143,
- "merged": 43,
+ "merged": 45,
  "orgs": 58,
  "merged_orgs": [
   "NVIDIA",
@@ -24,6 +24,7 @@
   "Cloud Custodian",
   "EvoScientist",
   "speced",
+  "kimtth",
   "y-crdt"
  ],
  "review_orgs": [
@@ -39,7 +40,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 255573
+   "stars": 255649
   },
   {
    "name": "Awesome LLMOps",
@@ -52,6 +53,12 @@
    "full": "jxzhangjhu/Awesome-LLM-RAG",
    "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG/pull/57",
    "stars": 1369
+  },
+  {
+   "name": "Azure Openai Llm Notes",
+   "full": "kimtth/azure-openai-llm-notes",
+   "url": "https://github.com/kimtth/azure-openai-llm-notes/pull/104",
+   "stars": 410
   },
   {
    "name": "Awesome Context Engineering",
@@ -69,7 +76,7 @@
  "llmslim": {
   "version": "0.11.1",
   "downloads_week": 651,
-  "stars": 16
+  "stars": 17
  },
  "fresh": []
 }
