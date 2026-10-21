@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome LLMOps and Awesome LLM RAG and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome LLMOps and Awesome LLM RAG and Awesome Mcp Servers and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -91,12 +91,12 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Meta**
 
+- `merged` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
+- `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
 - `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
-- `open` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
 - `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
 - `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
-- `open` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
 - `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/facebook/jscodeshift/pull/754) <sub>facebook/jscodeshift#754</sub>

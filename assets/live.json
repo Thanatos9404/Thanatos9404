@@ -1,6 +1,6 @@
 {
  "prs": 143,
- "merged": 45,
+ "merged": 47,
  "orgs": 58,
  "merged_orgs": [
   "NVIDIA",
@@ -40,19 +40,25 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 255649
+   "stars": 255768
   },
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
    "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5961
+   "stars": 5962
   },
   {
    "name": "Awesome LLM RAG",
    "full": "jxzhangjhu/Awesome-LLM-RAG",
    "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG/pull/57",
    "stars": 1369
+  },
+  {
+   "name": "Awesome Mcp Servers",
+   "full": "TensorBlock/awesome-mcp-servers",
+   "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
+   "stars": 932
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -70,7 +76,7 @@
    "name": "Awesome Mcp Servers",
    "full": "mcpHQ/awesome-mcp-servers",
    "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
-   "stars": 193
+   "stars": 194
   }
  ],
  "llmslim": {
