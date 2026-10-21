@@ -107,6 +107,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
 - `merged` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
+- `merged` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
 - `merged` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
 - `merged` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
 - `merged` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
@@ -114,7 +115,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
-- `open` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
