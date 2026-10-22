@@ -1,7 +1,7 @@
 {
- "prs": 143,
+ "prs": 148,
  "merged": 50,
- "orgs": 58,
+ "orgs": 61,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -40,7 +40,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 255888
+   "stars": 256009
   },
   {
    "name": "Awesome LLMOps",
@@ -52,7 +52,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1373
+   "stars": 1375
   },
   {
    "name": "Awesome LLM RAG",
@@ -64,19 +64,19 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 938
+   "stars": 939
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 822
+   "stars": 825
   },
   {
    "name": "Azure Openai Llm Notes",
    "full": "kimtth/azure-openai-llm-notes",
    "url": "https://github.com/kimtth/azure-openai-llm-notes/pull/104",
-   "stars": 410
+   "stars": 409
   },
   {
    "name": "Awesome Context Engineering",

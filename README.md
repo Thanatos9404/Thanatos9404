@@ -59,7 +59,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 143 pull requests</b>, by organisation</summary>
+<summary><b>All 148 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -146,6 +146,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
+- `open` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
 
 **OpenTelemetry**
 
@@ -210,6 +211,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
 - `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
+- `open` [fix(middleware): skip the blocking close at interpreter shutdown](https://github.com/EvoScientist/EvoScientist/pull/674) <sub>EvoScientist/EvoScientist#674</sub>
 
 **speced**
 
@@ -325,6 +327,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
 
+**ImageIO**
+
+- `open` [BUG: open ftp:// URIs in Request.get_file](https://github.com/imageio/imageio/pull/1245) <sub>imageio/imageio#1245</sub>
+
 **libpng**
 
 - `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
@@ -337,6 +343,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [Add LLMSlim to registry](https://github.com/pathintegral-institute/mcpm.sh/pull/477) <sub>pathintegral-institute/mcpm.sh#477</sub>
 
+**conda-forge**
+
+- `open` [Add llmslim](https://github.com/conda-forge/staged-recipes/pull/35309) <sub>conda-forge/staged-recipes#35309</sub>
+
 **glue**
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
@@ -348,6 +358,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Dapr**
 
 - `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
+
+**Hyperledger Firefly**
+
+- `open` [fix(events): fix intermittent TestEventDispatcherBatchDispatchFail panic](https://github.com/hyperledger-firefly/firefly/pull/1798) <sub>hyperledger-firefly/firefly#1798</sub>
 
 **Cadence**
 
