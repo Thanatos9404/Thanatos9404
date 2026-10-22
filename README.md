@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Awesome Codex Plugins and Awesome LLM RAG and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -59,129 +59,36 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 148 pull requests</b>, by organisation</summary>
-
-**NVIDIA**
-
-- `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
-- `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
-- `open` [fix(nemo-gym): read env.nemo_gym.spinup_timeout for sharded startup](https://github.com/NVIDIA-NeMo/RL/pull/4751) <sub>NVIDIA-NeMo/RL#4751</sub>
-- `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
-- `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
+<summary><b>All 64 pull requests</b>, by organisation</summary>
 
 **Microsoft**
 
-- `merged` [fix(sleep): enforce max_tokens_per_night in the nightly cycle](https://github.com/microsoft/SkillOpt/pull/317) <sub>microsoft/SkillOpt#317</sub>
 - `merged` [MAINT: Make uv the default pre-commit hook installer](https://github.com/microsoft/PyRIT/pull/3318) <sub>microsoft/PyRIT#3318</sub>
 - `merged` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
 - `merged` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
-- `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
-- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
-- `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
-- `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
-- `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
 - `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
-
-**Google**
-
-- `merged` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
-- `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
-- `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
-- `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Meta**
 
-- `merged` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
-- `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
-- `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
 - `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
-- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
-- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
-- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
-- `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
-- `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/facebook/jscodeshift/pull/754) <sub>facebook/jscodeshift#754</sub>
-- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 - `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/facebook/lexical/pull/9391) <sub>facebook/lexical#9391</sub>
 
 **AWS**
 
-- `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
-- `merged` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
-- `merged` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
-- `merged` [fix(292): format the budget key as a number in Bulk_Confidence_AUROC](https://github.com/awslabs/stickler/pull/396) <sub>awslabs/stickler#396</sub>
-- `merged` [fix(testing): fail fast on invalid handler output](https://github.com/aws/aws-durable-execution-sdk-python/pull/777) <sub>aws/aws-durable-execution-sdk-python#777</sub>
-- `merged` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
-- `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
-- `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
-- `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
-- `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
-- `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
-
-**IBM**
-
-- `merged` [feat: add an opt-in raise mode for LLM errors in the pipeline stages](https://github.com/IBM/FactReasoner/pull/63) <sub>IBM/FactReasoner#63</sub>
-- `open` [fix(oauth): refresh DB-stored OAuth tokens once under concurrent requests](https://github.com/IBM/mcp-context-forge/pull/7222) <sub>IBM/mcp-context-forge#7222</sub>
-
-**Tesla**
-
-- `merged` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
-
-**Capital One**
-
-- `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
-- `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
-- `open` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
 
 **Apache**
 
-- `merged` [widget.py: Avoid extra empty lines when message-lines or error-lines is 0](https://github.com/apache/buildstream/pull/2208) <sub>apache/buildstream#2208</sub>
 - `merged` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
-- `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
 - `open` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
-
-**OpenTelemetry**
-
-- `merged` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
-- `merged` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
-
-**Jupyter**
-
-- `merged` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
-- `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
-- `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
-- `open` [Explain the missing yjs plugin when kernels.require_yjs is set](https://github.com/jupyter-server/jupyverse/pull/672) <sub>jupyter-server/jupyverse#672</sub>
-- `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
-
-**Pydantic**
-
-- `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
-- `merged` [Treat `logfire.tags` passed through structlog as log tags](https://github.com/pydantic/logfire/pull/2598) <sub>pydantic/logfire#2598</sub>
-- `open` [docs: add llmslim to third-party context management capabilities](https://github.com/pydantic/pydantic-ai/pull/10780) <sub>pydantic/pydantic-ai#10780</sub>
-
-**Docling**
-
-- `merged` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
-- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
-- `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
-
-**ModelScope**
-
-- `merged` [fix(needle_haystack): keep context length and depth as metric dimensions](https://github.com/modelscope/evalscope/pull/1851) <sub>modelscope/evalscope#1851</sub>
-- `merged` [fix(metrics): name numeric dimensions in metric labels](https://github.com/modelscope/evalscope/pull/1856) <sub>modelscope/evalscope#1856</sub>
-
-**Pyodide**
-
-- `merged` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
-- `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
 
 **Nous Research**
 
@@ -192,11 +99,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 - `merged` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
 
-**Hermes WebUI**
-
-- `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
-- `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
-
 **Cloud Custodian**
 
 - `merged` [core - resolver - skip blank rows in value_from csv2dict](https://github.com/cloud-custodian/cloud-custodian/pull/11227) <sub>cloud-custodian/cloud-custodian#11227</sub>
@@ -205,7 +107,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **EvoScientist**
 
-- `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
 - `merged` [ci: wait for the index to list the release before the post-release smoke test](https://github.com/EvoScientist/EvoScientist/pull/655) <sub>EvoScientist/EvoScientist#655</sub>
 - `merged` [fix(cli): check again that the app is free when a polled turn starts](https://github.com/EvoScientist/EvoScientist/pull/657) <sub>EvoScientist/EvoScientist#657</sub>
 - `merged` [fix(llm): stop retrying a run once one model call has used its whole budget](https://github.com/EvoScientist/EvoScientist/pull/656) <sub>EvoScientist/EvoScientist#656</sub>
@@ -213,9 +114,14 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
 - `open` [fix(middleware): skip the blocking close at interpreter shutdown](https://github.com/EvoScientist/EvoScientist/pull/674) <sub>EvoScientist/EvoScientist#674</sub>
 
-**speced**
+**Coraza**
 
-- `merged` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
+- `merged` [fix(seclang): use slash paths for fs.FS include roots on Windows](https://github.com/corazawaf/coraza/pull/1784) <sub>corazawaf/coraza#1784</sub>
+
+**Powertools for AWS**
+
+- `merged` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
+- `merged` [fix(event_handler): strip the HTTP API stage only when rawPath has it](https://github.com/aws-powertools/powertools-lambda-python/pull/8605) <sub>aws-powertools/powertools-lambda-python#8605</sub>
 
 **kimtth**
 
@@ -224,40 +130,30 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **y-crdt**
 
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
-- `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
+
+**Google**
+
+- `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
+- `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 
 **Uber**
 
-- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
-- `open` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
 - `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
 - `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
-**Mozilla**
+**Jupyter**
 
-- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
+- `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
+- `open` [Explain the missing yjs plugin when kernels.require_yjs is set](https://github.com/jupyter-server/jupyverse/pull/672) <sub>jupyter-server/jupyverse#672</sub>
+- `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
 
 **Prometheus**
 
-- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
-- `open` [web: escape page title and consoles link in the UI index](https://github.com/prometheus/prometheus/pull/20078) <sub>prometheus/prometheus#20078</sub>
 - `open` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
 
-**Mozilla.ai**
+**Pydantic**
 
-- `open` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
-- `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
-- `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
-
-**Containers**
-
-- `open` [feat(config): read the TOML config from stdin with --config -](https://github.com/containers/kubernetes-mcp-server/pull/1510) <sub>containers/kubernetes-mcp-server#1510</sub>
-- `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
-- `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
-
-**crewAI**
-
-- `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
+- `open` [docs: add llmslim to third-party context management capabilities](https://github.com/pydantic/pydantic-ai/pull/10780) <sub>pydantic/pydantic-ai#10780</sub>
 
 **Daniel Avila**
 
@@ -272,22 +168,13 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
 
-**NLTK**
+**Hermes WebUI**
 
-- `closed` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
-- `closed` [Send set_proxy's credentials on the HTTPS CONNECT, and keep proxy credentials off redirects](https://github.com/nltk/nltk/pull/3970) <sub>nltk/nltk#3970</sub>
-
-**Pillow**
-
-- `open` [Check size arithmetic where it is used in the quantizers](https://github.com/python-pillow/Pillow/pull/10202) <sub>python-pillow/Pillow#10202</sub>
+- `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
 
 **OpenLayers**
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
-
-**Raycast**
-
-- `open` [(Model Context Protocol Registry) Add LLMSlim](https://github.com/raycast/extensions/pull/32584) <sub>raycast/extensions#32584</sub>
 
 **KubeEdge**
 
@@ -298,30 +185,9 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix: avoid premature overflow in `math/base/special/expm1`](https://github.com/stdlib-js/stdlib/pull/16239) <sub>stdlib-js/stdlib#16239</sub>
 - `open` [docs: improve doctests for ndarray instances in `ndarray/slice-from`](https://github.com/stdlib-js/stdlib/pull/16236) <sub>stdlib-js/stdlib#16236</sub>
 
-**Astropy**
-
-- `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
-
-**Coraza**
-
-- `open` [fix(seclang): use slash paths for fs.FS include roots on Windows](https://github.com/corazawaf/coraza/pull/1784) <sub>corazawaf/coraza#1784</sub>
-
-**Powertools for AWS**
-
-- `open` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
-- `open` [fix(event_handler): strip the HTTP API stage only when rawPath has it](https://github.com/aws-powertools/powertools-lambda-python/pull/8605) <sub>aws-powertools/powertools-lambda-python#8605</sub>
-
-**The Sleuth Kit**
-
-- `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
-
 **Indico**
 
 - `open` [Allow hyphens in location names in the legacy room export API](https://github.com/indico/indico/pull/7806) <sub>indico/indico#7806</sub>
-
-**Quod Libet**
-
-- `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
 
 **Carvel**
 
@@ -330,10 +196,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **ImageIO**
 
 - `open` [BUG: open ftp:// URIs in Request.get_file](https://github.com/imageio/imageio/pull/1245) <sub>imageio/imageio#1245</sub>
-
-**libpng**
-
-- `open` [fix: Correct interlaced 16-to-8-bit reads in the simplified API](https://github.com/pnggroup/libpng/pull/947) <sub>pnggroup/libpng#947</sub>
 
 **Milvus**
 
@@ -351,10 +213,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
 
-**Datadog**
-
-- `open` [fix(dogshell): validate `metric post --type` and send `counter` as `count`](https://github.com/DataDog/datadogpy/pull/1001) <sub>DataDog/datadogpy#1001</sub>
-
 **Dapr**
 
 - `open` [fix(bindings/localstorage): keep file operations inside rootPath with os.Root](https://github.com/dapr/components-contrib/pull/4676) <sub>dapr/components-contrib#4676</sub>
@@ -363,10 +221,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [fix(events): fix intermittent TestEventDispatcherBatchDispatchFail panic](https://github.com/hyperledger-firefly/firefly/pull/1798) <sub>hyperledger-firefly/firefly#1798</sub>
 
-**Cadence**
-
-- `open` [fix(testsuite): honor WaitForCancellation when canceling activities](https://github.com/cadence-workflow/cadence-go-client/pull/1545) <sub>cadence-workflow/cadence-go-client#1545</sub>
-
 **Self-custody Solutions**
 
 - `open` [fix: require a TC Code to enable TC Flash Hash at Boot](https://github.com/selfcustody/krux/pull/966) <sub>selfcustody/krux#966</sub>
@@ -374,19 +228,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **PySAL**
 
 - `closed` [fix: raise NotImplementedError for asymmetric weights in join counts](https://github.com/pysal/esda/pull/527) <sub>pysal/esda#527</sub>
-
-**Scikit-HEP**
-
-- `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
-- `open` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
-
-**toolsdk.ai**
-
-- `open` [Add LLMSlim Memory MCP server](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/951) <sub>toolsdk-ai/toolsdk-mcp-registry#951</sub>
-
-**deepset**
-
-- `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
 
 **OpenSSF**
 

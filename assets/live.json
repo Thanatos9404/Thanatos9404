@@ -1,58 +1,41 @@
 {
- "prs": 148,
- "merged": 50,
- "orgs": 61,
+ "prs": 64,
+ "merged": 20,
+ "orgs": 36,
  "merged_orgs": [
-  "NVIDIA",
   "Microsoft",
-  "Google",
   "Meta",
   "AWS",
-  "IBM",
-  "Tesla",
-  "Capital One",
   "Apache",
-  "OpenTelemetry",
-  "Jupyter",
-  "Pydantic",
-  "Docling",
-  "ModelScope",
-  "Pyodide",
   "Nous Research",
   "fasthttp",
-  "Hermes WebUI",
   "Cloud Custodian",
   "EvoScientist",
-  "speced",
+  "Coraza",
+  "Powertools for AWS",
   "kimtth",
   "y-crdt"
  ],
  "review_orgs": [
+  "Google",
   "Uber",
-  "Mozilla",
+  "Jupyter",
   "Prometheus",
-  "Mozilla.ai",
-  "Containers",
-  "crewAI"
+  "Pydantic",
+  "Daniel Avila"
  ],
  "listed_in": [
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256009
-  },
-  {
-   "name": "Awesome LLMOps",
-   "full": "tensorchord/Awesome-LLMOps",
-   "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5963
+   "stars": 256140
   },
   {
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1375
+   "stars": 1380
   },
   {
    "name": "Awesome LLM RAG",
@@ -64,13 +47,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 939
+   "stars": 941
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 825
+   "stars": 829
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -79,22 +62,16 @@
    "stars": 409
   },
   {
-   "name": "Awesome Context Engineering",
-   "full": "yzfly/awesome-context-engineering",
-   "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 216
-  },
-  {
    "name": "Awesome Mcp Servers",
    "full": "mcpHQ/awesome-mcp-servers",
    "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
-   "stars": 194
+   "stars": 184
   }
  ],
  "llmslim": {
   "version": "0.11.1",
   "downloads_week": 651,
-  "stars": 19
+  "stars": 20
  },
  "fresh": []
 }
