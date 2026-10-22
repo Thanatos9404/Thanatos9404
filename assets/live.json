@@ -1,41 +1,67 @@
 {
- "prs": 64,
- "merged": 20,
- "orgs": 36,
+ "prs": 150,
+ "merged": 55,
+ "orgs": 62,
  "merged_orgs": [
+  "NVIDIA",
   "Microsoft",
+  "Google",
   "Meta",
   "AWS",
+  "IBM",
+  "Tesla",
+  "Capital One",
   "Apache",
+  "OpenTelemetry",
+  "Jupyter",
+  "Pydantic",
+  "Docling",
+  "ModelScope",
+  "Pyodide",
   "Nous Research",
   "fasthttp",
+  "Hermes WebUI",
+  "Raycast",
   "Cloud Custodian",
   "EvoScientist",
   "Coraza",
   "Powertools for AWS",
+  "speced",
   "kimtth",
   "y-crdt"
  ],
  "review_orgs": [
-  "Google",
   "Uber",
-  "Jupyter",
+  "Mozilla",
   "Prometheus",
-  "Pydantic",
-  "Daniel Avila"
+  "Mozilla.ai",
+  "Containers",
+  "crewAI"
  ],
  "listed_in": [
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256140
+   "stars": 256207
+  },
+  {
+   "name": "Extensions",
+   "full": "raycast/extensions",
+   "url": "https://github.com/raycast/extensions/pull/32584",
+   "stars": 7805
+  },
+  {
+   "name": "Awesome LLMOps",
+   "full": "tensorchord/Awesome-LLMOps",
+   "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
+   "stars": 5963
   },
   {
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1380
+   "stars": 1382
   },
   {
    "name": "Awesome LLM RAG",
@@ -47,13 +73,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 941
+   "stars": 942
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 829
+   "stars": 830
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -62,10 +88,16 @@
    "stars": 409
   },
   {
+   "name": "Awesome Context Engineering",
+   "full": "yzfly/awesome-context-engineering",
+   "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
+   "stars": 219
+  },
+  {
    "name": "Awesome Mcp Servers",
    "full": "mcpHQ/awesome-mcp-servers",
    "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
-   "stars": 184
+   "stars": 185
   }
  ],
  "llmslim": {
