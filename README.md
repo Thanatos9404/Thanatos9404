@@ -66,7 +66,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 150 pull requests</b>, by organisation</summary>
+<summary><b>All 154 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -125,6 +125,8 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
+- `open` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
+- `open` [fix(E3671): Allow gp3 Iops up to 80000](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -154,6 +156,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
+- `open` [scriptelement.py, buildelement.py: Report relative directories as errors](https://github.com/apache/buildstream/pull/2212) <sub>apache/buildstream#2212</sub>
 
 **OpenTelemetry**
 
@@ -227,6 +230,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Coraza**
 
 - `merged` [fix(seclang): use slash paths for fs.FS include roots on Windows](https://github.com/corazawaf/coraza/pull/1784) <sub>corazawaf/coraza#1784</sub>
+- `open` [fix(operators): accept absolute Windows paths in @pmFromFile and @ipMatchFromFile](https://github.com/corazawaf/coraza/pull/1802) <sub>corazawaf/coraza#1802</sub>
 
 **Powertools for AWS**
 

@@ -1,5 +1,5 @@
 {
- "prs": 150,
+ "prs": 154,
  "merged": 55,
  "orgs": 62,
  "merged_orgs": [
@@ -43,25 +43,25 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256504
+   "stars": 256521
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7806
+   "stars": 7805
   },
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
    "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5964
+   "stars": 5965
   },
   {
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1387
+   "stars": 1388
   },
   {
    "name": "Awesome LLM RAG",
@@ -79,7 +79,7 @@
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 840
+   "stars": 842
   },
   {
    "name": "Azure Openai Llm Notes",
