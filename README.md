@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -45,6 +45,13 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
   <a href="https://github.com/Thanatos9404/passerelle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-passerelle-dark.svg"><img alt="Passerelle: An air-gapped caseworker assistant on Apertus. It explains Swiss official letters in the client's own language, with a fact lock and a back-translation gate." src="assets/p-passerelle-light.svg" width="49%"></picture></a>
   <a href="https://github.com/Thanatos9404/hearthbeat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-hearthbeat-dark.svg"><img alt="Hearthbeat: Privacy-first check-ins for older adults who live alone. Home events (never video) learn a daily rhythm, and Alexa+ checks in by voice through a self-hosted MCP server." src="assets/p-hearthbeat-light.svg" width="49%"></picture></a>
   <br><sub>Passerelle <a href="https://youtu.be/bjc88UYdgfE">video</a> &nbsp;·&nbsp; Hearthbeat <a href="https://youtu.be/axVTrTiKaog">video</a></sub>
+</p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-fresh-dark.svg"><img alt="New on GitHub, picked up automatically." src="assets/h-fresh-light.svg" width="100%"></picture>
+
+<p align="center">
+  <a href="https://github.com/Thanatos9404/ruko"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/f-1-dark.svg"><img alt="Ruko: A voice check of about a minute that stops a payment scam before the money leaves. Built on Bolna for the Bolna x YC Symphony Buildathon." src="assets/f-1-light.svg" width="49%"></picture></a>
+  <br><sub>Ruko <a href="https://ruko-symphony.vercel.app">live</a></sub>
 </p>
 
 <p align="center"><sub>

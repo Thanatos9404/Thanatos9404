@@ -43,7 +43,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256426
+   "stars": 256504
   },
   {
    "name": "Extensions",
@@ -61,7 +61,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1385
+   "stars": 1387
   },
   {
    "name": "Awesome LLM RAG",
@@ -73,13 +73,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 944
+   "stars": 945
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 837
+   "stars": 840
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -91,13 +91,19 @@
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 219
+   "stars": 220
   },
   {
    "name": "Awesome Mcp Servers",
    "full": "mcpHQ/awesome-mcp-servers",
    "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
    "stars": 185
+  },
+  {
+   "name": "Awesome Open Ai Developer Tools",
+   "full": "Sami-Uysal/awesome-open-ai-developer-tools",
+   "url": "https://github.com/Sami-Uysal/awesome-open-ai-developer-tools/pull/70",
+   "stars": 88
   }
  ],
  "llmslim": {
@@ -105,5 +111,17 @@
   "downloads_week": 651,
   "stars": 21
  },
- "fresh": []
+ "fresh": [
+  {
+   "repo": "ruko",
+   "name": "Ruko",
+   "desc": "A voice check of about a minute that stops a payment scam before the money leaves. Built on Bolna for the Bolna x YC Symphony Buildathon.",
+   "tag": "",
+   "url": "https://github.com/Thanatos9404/ruko",
+   "homepage": "https://ruko-symphony.vercel.app",
+   "language": "TypeScript",
+   "stars": 0,
+   "created": "2026-10-23"
+  }
+ ]
 }
