@@ -43,19 +43,19 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256300
+   "stars": 256426
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7805
+   "stars": 7806
   },
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
    "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5963
+   "stars": 5964
   },
   {
    "name": "Awesome Codex Plugins",
@@ -73,13 +73,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 942
+   "stars": 944
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 834
+   "stars": 837
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -103,7 +103,7 @@
  "llmslim": {
   "version": "0.11.1",
   "downloads_week": 651,
-  "stars": 20
+  "stars": 21
  },
  "fresh": []
 }
