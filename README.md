@@ -66,15 +66,15 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 154 pull requests</b>, by organisation</summary>
+<summary><b>All 155 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
 - `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
+- `merged` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 - `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
 - `open` [fix(nemo-gym): read env.nemo_gym.spinup_timeout for sharded startup](https://github.com/NVIDIA-NeMo/RL/pull/4751) <sub>NVIDIA-NeMo/RL#4751</sub>
 - `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
-- `open` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 
 **Microsoft**
 
@@ -308,6 +308,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **OpenLayers**
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
+
+**Kalyan KS**
+
+- `open` [Add LLMSlim to Memory](https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50) <sub>KalyanKS-NLP/llm-engineer-toolkit#50</sub>
 
 **KubeEdge**
 
