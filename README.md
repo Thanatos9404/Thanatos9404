@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome AI Agents and Awesome Mcp Servers and Awesome Ai Plugins and Azure Openai Llm Notes and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -121,11 +121,11 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
 - `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
+- `merged` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
-- `open` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
 - `open` [fix(E3671): Allow gp3 Iops up to 80000](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
@@ -147,10 +147,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Apache**
 
+- `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [widget.py: Avoid extra empty lines when message-lines or error-lines is 0](https://github.com/apache/buildstream/pull/2208) <sub>apache/buildstream#2208</sub>
 - `merged` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
-- `open` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `open` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
 - `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.23 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>

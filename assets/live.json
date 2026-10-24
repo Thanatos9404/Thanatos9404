@@ -1,6 +1,6 @@
 {
  "prs": 154,
- "merged": 55,
+ "merged": 57,
  "orgs": 62,
  "merged_orgs": [
   "NVIDIA",
@@ -43,7 +43,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256521
+   "stars": 256573
   },
   {
    "name": "Extensions",
@@ -61,13 +61,19 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1388
+   "stars": 1389
   },
   {
    "name": "Awesome LLM RAG",
    "full": "jxzhangjhu/Awesome-LLM-RAG",
    "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG/pull/57",
    "stars": 1369
+  },
+  {
+   "name": "Awesome AI Agents",
+   "full": "Jenqyang/Awesome-AI-Agents",
+   "url": "https://github.com/Jenqyang/Awesome-AI-Agents/pull/639",
+   "stars": 1264
   },
   {
    "name": "Awesome Mcp Servers",
@@ -79,7 +85,7 @@
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 842
+   "stars": 843
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -108,7 +114,7 @@
  ],
  "llmslim": {
   "version": "0.11.1",
-  "downloads_week": 651,
+  "downloads_week": 698,
   "stars": 21
  },
  "fresh": [
