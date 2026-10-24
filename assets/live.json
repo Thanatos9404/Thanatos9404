@@ -1,5 +1,5 @@
 {
- "prs": 155,
+ "prs": 156,
  "merged": 58,
  "orgs": 63,
  "merged_orgs": [
@@ -43,7 +43,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256677
+   "stars": 256751
   },
   {
    "name": "Extensions",
@@ -61,7 +61,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1392
+   "stars": 1396
   },
   {
    "name": "Awesome LLM RAG",
@@ -73,7 +73,7 @@
    "name": "Awesome AI Agents",
    "full": "Jenqyang/Awesome-AI-Agents",
    "url": "https://github.com/Jenqyang/Awesome-AI-Agents/pull/639",
-   "stars": 1264
+   "stars": 1266
   },
   {
    "name": "Awesome Mcp Servers",
@@ -85,13 +85,25 @@
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 845
+   "stars": 850
+  },
+  {
+   "name": "Awesome Gemini Cli",
+   "full": "Piebald-AI/awesome-gemini-cli",
+   "url": "https://github.com/Piebald-AI/awesome-gemini-cli/pull/246",
+   "stars": 544
   },
   {
    "name": "Azure Openai Llm Notes",
    "full": "kimtth/azure-openai-llm-notes",
    "url": "https://github.com/kimtth/azure-openai-llm-notes/pull/104",
    "stars": 409
+  },
+  {
+   "name": "Awesome Vibe Coding Resources",
+   "full": "acvnace/awesome-vibe-coding-resources",
+   "url": "https://github.com/acvnace/awesome-vibe-coding-resources/pull/211",
+   "stars": 321
   },
   {
    "name": "Awesome Context Engineering",
