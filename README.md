@@ -218,6 +218,11 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
 - `open` [gcp - spanner-backup - list backups by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11235) <sub>cloud-custodian/cloud-custodian#11235</sub>
 
+**OpenSSF**
+
+- `merged` [fix(OSPS-QA-06.01): ignore skipped and neutral check runs](https://github.com/ossf/pvtr-github-repo-scanner/pull/514) <sub>ossf/pvtr-github-repo-scanner#514</sub>
+- `open` [:seedling: Use os.Root to extract and read remote repository archives](https://github.com/ossf/scorecard/pull/5353) <sub>ossf/scorecard#5353</sub>
+
 **EvoScientist**
 
 - `merged` [fix(cli): give read_file a path it accepts for Windows @file mentions](https://github.com/EvoScientist/EvoScientist/pull/649) <sub>EvoScientist/EvoScientist#649</sub>
@@ -322,11 +327,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [fix: avoid premature overflow in `math/base/special/expm1`](https://github.com/stdlib-js/stdlib/pull/16239) <sub>stdlib-js/stdlib#16239</sub>
 - `open` [docs: improve doctests for ndarray instances in `ndarray/slice-from`](https://github.com/stdlib-js/stdlib/pull/16236) <sub>stdlib-js/stdlib#16236</sub>
-
-**OpenSSF**
-
-- `open` [fix(OSPS-QA-06.01): ignore skipped and neutral check runs](https://github.com/ossf/pvtr-github-repo-scanner/pull/514) <sub>ossf/pvtr-github-repo-scanner#514</sub>
-- `open` [:seedling: Use os.Root to extract and read remote repository archives](https://github.com/ossf/scorecard/pull/5353) <sub>ossf/scorecard#5353</sub>
 
 **Astropy**
 

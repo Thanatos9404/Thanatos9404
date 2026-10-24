@@ -1,6 +1,6 @@
 {
  "prs": 156,
- "merged": 58,
+ "merged": 59,
  "orgs": 63,
  "merged_orgs": [
   "NVIDIA",
@@ -23,6 +23,7 @@
   "Hermes WebUI",
   "Raycast",
   "Cloud Custodian",
+  "OpenSSF",
   "EvoScientist",
   "Coraza",
   "Powertools for AWS",
@@ -43,13 +44,13 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256751
+   "stars": 256791
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7806
+   "stars": 7807
   },
   {
    "name": "Awesome LLMOps",
@@ -61,7 +62,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1396
+   "stars": 1397
   },
   {
    "name": "Awesome LLM RAG",
@@ -79,13 +80,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 946
+   "stars": 947
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 850
+   "stars": 853
   },
   {
    "name": "Awesome Gemini Cli",
