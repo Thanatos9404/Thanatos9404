@@ -66,7 +66,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 156 pull requests</b>, by organisation</summary>
+<summary><b>All 160 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -127,6 +127,8 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
 - `open` [fix(E3671): Set gp3 Iops limits per resource type](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
+- `open` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
+- `open` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -170,6 +172,12 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
 - `open` [Explain the missing yjs plugin when kernels.require_yjs is set](https://github.com/jupyter-server/jupyverse/pull/672) <sub>jupyter-server/jupyverse#672</sub>
 - `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
+
+**Prometheus**
+
+- `merged` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
+- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
+- `open` [web: escape page title and consoles link in the UI index](https://github.com/prometheus/prometheus/pull/20078) <sub>prometheus/prometheus#20078</sub>
 
 **Pydantic**
 
@@ -236,6 +244,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(cli): write redirected output as UTF-8 so EvoSci does not crash on Windows](https://github.com/EvoScientist/EvoScientist/pull/663) <sub>EvoScientist/EvoScientist#663</sub>
 - `merged` [fix: hold the server start lock in EvoSci deploy and the WebUI launcher](https://github.com/EvoScientist/EvoScientist/pull/661) <sub>EvoScientist/EvoScientist#661</sub>
 - `merged` [fix(middleware): skip the blocking close at interpreter shutdown](https://github.com/EvoScientist/EvoScientist/pull/674) <sub>EvoScientist/EvoScientist#674</sub>
+- `open` [fix(hitl): answer invalid tool calls in server state on a parked close](https://github.com/EvoScientist/EvoScientist/pull/687) <sub>EvoScientist/EvoScientist#687</sub>
 
 **Coraza**
 
@@ -270,12 +279,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Mozilla**
 
 - `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
-
-**Prometheus**
-
-- `open` [Accept label keyword arguments in remove()](https://github.com/prometheus/client_python/pull/1227) <sub>prometheus/client_python#1227</sub>
-- `open` [web: escape page title and consoles link in the UI index](https://github.com/prometheus/prometheus/pull/20078) <sub>prometheus/prometheus#20078</sub>
-- `open` [web: log HTTP server errors through the provided slog logger](https://github.com/prometheus/exporter-toolkit/pull/461) <sub>prometheus/exporter-toolkit#461</sub>
 
 **Mozilla.ai**
 
@@ -412,6 +415,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **deepset**
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
+
+**Privateer Project**
+
+- `open` [fix(command): give Aborted and NoTests an exit severity](https://github.com/privateerproj/privateer-sdk/pull/340) <sub>privateerproj/privateer-sdk#340</sub>
 
 </details>
 <!-- OSS:END -->

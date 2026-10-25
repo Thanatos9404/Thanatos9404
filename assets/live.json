@@ -1,7 +1,7 @@
 {
- "prs": 156,
- "merged": 61,
- "orgs": 63,
+ "prs": 160,
+ "merged": 62,
+ "orgs": 64,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -14,6 +14,7 @@
   "Apache",
   "OpenTelemetry",
   "Jupyter",
+  "Prometheus",
   "Pydantic",
   "Docling",
   "ModelScope",
@@ -35,29 +36,29 @@
  "review_orgs": [
   "Uber",
   "Mozilla",
-  "Prometheus",
   "Mozilla.ai",
   "Containers",
-  "crewAI"
+  "crewAI",
+  "Daniel Avila"
  ],
  "listed_in": [
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256939
+   "stars": 257002
   },
   {
    "name": "Llm Engineer Toolkit",
    "full": "KalyanKS-NLP/llm-engineer-toolkit",
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50",
-   "stars": 10888
+   "stars": 10889
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7809
+   "stars": 7810
   },
   {
    "name": "Awesome LLMOps",
@@ -69,7 +70,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1404
+   "stars": 1409
   },
   {
    "name": "Awesome LLM RAG",
@@ -87,31 +88,31 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 950
+   "stars": 952
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 860
+   "stars": 866
   },
   {
    "name": "Awesome Gemini Cli",
    "full": "Piebald-AI/awesome-gemini-cli",
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli/pull/246",
-   "stars": 544
+   "stars": 545
   },
   {
    "name": "Azure Openai Llm Notes",
    "full": "kimtth/azure-openai-llm-notes",
    "url": "https://github.com/kimtth/azure-openai-llm-notes/pull/104",
-   "stars": 410
+   "stars": 412
   },
   {
    "name": "Awesome Vibe Coding Resources",
    "full": "acvnace/awesome-vibe-coding-resources",
    "url": "https://github.com/acvnace/awesome-vibe-coding-resources/pull/211",
-   "stars": 323
+   "stars": 325
   },
   {
    "name": "Awesome Context Engineering",
