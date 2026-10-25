@@ -1,6 +1,6 @@
 {
  "prs": 160,
- "merged": 62,
+ "merged": 63,
  "orgs": 64,
  "merged_orgs": [
   "NVIDIA",
@@ -28,6 +28,7 @@
   "OpenSSF",
   "EvoScientist",
   "Coraza",
+  "Coverage.py",
   "Powertools for AWS",
   "speced",
   "kimtth",
@@ -46,7 +47,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 257002
+   "stars": 257044
   },
   {
    "name": "Llm Engineer Toolkit",
@@ -94,7 +95,7 @@
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 866
+   "stars": 868
   },
   {
    "name": "Awesome Gemini Cli",

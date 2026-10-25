@@ -251,6 +251,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(seclang): use slash paths for fs.FS include roots on Windows](https://github.com/corazawaf/coraza/pull/1784) <sub>corazawaf/coraza#1784</sub>
 - `open` [fix(operators): accept absolute Windows paths in @pmFromFile and @ipMatchFromFile](https://github.com/corazawaf/coraza/pull/1802) <sub>corazawaf/coraza#1802</sub>
 
+**Coverage.py**
+
+- `merged` [fix: escape file names once on the HTML index pages](https://github.com/coveragepy/coveragepy/pull/2343) <sub>coveragepy/coveragepy#2343</sub>
+
 **Powertools for AWS**
 
 - `merged` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
@@ -334,10 +338,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Astropy**
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
-
-**Coverage.py**
-
-- `open` [fix: escape file names once on the HTML index pages](https://github.com/coveragepy/coveragepy/pull/2343) <sub>coveragepy/coveragepy#2343</sub>
 
 **The Sleuth Kit**
 
