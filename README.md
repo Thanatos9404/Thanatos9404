@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome AI Agents and Awesome Mcp Servers and Awesome Ai Plugins and Awesome Gemini Cli and Azure Openai Llm Notes and Awesome Vibe Coding Resources and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Llm Engineer Toolkit and Extensions and Awesome LLMOps and Awesome Codex Plugins and Awesome LLM RAG and Awesome AI Agents and Awesome Mcp Servers and Awesome Ai Plugins and Awesome Gemini Cli and Azure Openai Llm Notes and Awesome Vibe Coding Resources and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -141,9 +141,9 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Capital One**
 
+- `merged` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
-- `open` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
 
 **Apache**
 
@@ -175,7 +175,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [Treat `logfire.tags` passed through logging and loguru as log tags](https://github.com/pydantic/logfire/pull/2550) <sub>pydantic/logfire#2550</sub>
 - `merged` [Treat `logfire.tags` passed through structlog as log tags](https://github.com/pydantic/logfire/pull/2598) <sub>pydantic/logfire#2598</sub>
-- `open` [docs: add llmslim to third-party context management capabilities](https://github.com/pydantic/pydantic-ai/pull/10780) <sub>pydantic/pydantic-ai#10780</sub>
+- `closed` [docs: add llmslim to third-party context management capabilities](https://github.com/pydantic/pydantic-ai/pull/10780) <sub>pydantic/pydantic-ai#10780</sub>
 
 **Docling**
 
@@ -207,6 +207,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
 - `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
+
+**Kalyan KS**
+
+- `merged` [Add LLMSlim to Memory](https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50) <sub>KalyanKS-NLP/llm-engineer-toolkit#50</sub>
 
 **Raycast**
 
@@ -314,10 +318,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **OpenLayers**
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
-
-**Kalyan KS**
-
-- `open` [Add LLMSlim to Memory](https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50) <sub>KalyanKS-NLP/llm-engineer-toolkit#50</sub>
 
 **KubeEdge**
 
