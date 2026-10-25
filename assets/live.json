@@ -44,7 +44,7 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 256791
+   "stars": 256858
   },
   {
    "name": "Extensions",
@@ -62,7 +62,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1397
+   "stars": 1400
   },
   {
    "name": "Awesome LLM RAG",
@@ -86,7 +86,7 @@
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 853
+   "stars": 855
   },
   {
    "name": "Awesome Gemini Cli",
@@ -127,8 +127,8 @@
  ],
  "llmslim": {
   "version": "0.11.2",
-  "downloads_week": 698,
-  "stars": 21
+  "downloads_week": 489,
+  "stars": 22
  },
  "fresh": [
   {
