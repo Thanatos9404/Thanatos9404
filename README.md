@@ -268,6 +268,11 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [docs: add LLMSlim to RAG Application](https://github.com/kimtth/azure-openai-llm-notes/pull/104) <sub>kimtth/azure-openai-llm-notes#104</sub>
 
+**Scikit-HEP**
+
+- `merged` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
+- `open` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
+
 **y-crdt**
 
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
@@ -402,11 +407,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **PySAL**
 
 - `closed` [fix: raise NotImplementedError for asymmetric weights in join counts](https://github.com/pysal/esda/pull/527) <sub>pysal/esda#527</sub>
-
-**Scikit-HEP**
-
-- `open` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
-- `open` [feat: support to_2D/3D/4D, to_p* conversions and like() in Numba](https://github.com/scikit-hep/vector/pull/751) <sub>scikit-hep/vector#751</sub>
 
 **toolsdk.ai**
 
