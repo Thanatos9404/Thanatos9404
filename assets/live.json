@@ -1,7 +1,7 @@
 {
- "prs": 160,
- "merged": 68,
- "orgs": 64,
+ "prs": 163,
+ "merged": 70,
+ "orgs": 67,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -10,6 +10,7 @@
   "AWS",
   "IBM",
   "Tesla",
+  "Uber",
   "Capital One",
   "Apache",
   "OpenTelemetry",
@@ -36,10 +37,10 @@
   "y-crdt"
  ],
  "review_orgs": [
-  "Uber",
   "Mozilla",
   "Mozilla.ai",
   "Containers",
+  "mermaid-js",
   "crewAI",
   "Daniel Avila"
  ],
@@ -47,8 +48,14 @@
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/144036",
+   "stars": 257631
+  },
+  {
+   "name": "Hermes Agent",
+   "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 257474
+   "stars": 257631
   },
   {
    "name": "Llm Engineer Toolkit",
@@ -60,7 +67,7 @@
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7812
+   "stars": 7814
   },
   {
    "name": "Awesome LLMOps",
@@ -78,61 +85,61 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1419
+   "stars": 1421
   },
   {
    "name": "Awesome LLM RAG",
    "full": "jxzhangjhu/Awesome-LLM-RAG",
    "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG/pull/57",
-   "stars": 1369
+   "stars": 1370
   },
   {
    "name": "Awesome AI Agents",
    "full": "Jenqyang/Awesome-AI-Agents",
    "url": "https://github.com/Jenqyang/Awesome-AI-Agents/pull/639",
-   "stars": 1265
+   "stars": 1267
   },
   {
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 963
+   "stars": 967
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 881
+   "stars": 885
   },
   {
    "name": "Awesome Gemini Cli",
    "full": "Piebald-AI/awesome-gemini-cli",
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli/pull/246",
-   "stars": 550
+   "stars": 552
   },
   {
    "name": "Azure Openai Llm Notes",
    "full": "kimtth/azure-openai-llm-notes",
    "url": "https://github.com/kimtth/azure-openai-llm-notes/pull/104",
-   "stars": 419
+   "stars": 420
   },
   {
    "name": "Awesome Vibe Coding Resources",
    "full": "acvnace/awesome-vibe-coding-resources",
    "url": "https://github.com/acvnace/awesome-vibe-coding-resources/pull/211",
-   "stars": 325
+   "stars": 326
   },
   {
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 219
+   "stars": 220
   },
   {
    "name": "Awesome Mcp Servers",
    "full": "mcpHQ/awesome-mcp-servers",
    "url": "https://github.com/mcpHQ/awesome-mcp-servers/pull/354",
-   "stars": 185
+   "stars": 186
   },
   {
    "name": "Awesome Open Ai Developer Tools",

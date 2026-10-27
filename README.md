@@ -19,7 +19,7 @@ I'm a final-year BCA student at BIT Mesra, Jaipur, and the founder of <a href="h
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-building-dark.svg"><img alt="01 Now building: Smaller context, better answers." src="assets/h-building-light.svg" width="100%"></picture>
 
-<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Llm Engineer Toolkit and Extensions and Awesome LLMOps and Awesome LLM Compression and Awesome Codex Plugins and Awesome LLM RAG and Awesome AI Agents and Awesome Mcp Servers and Awesome Ai Plugins and Awesome Gemini Cli and Azure Openai Llm Notes and Awesome Vibe Coding Resources and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
+<a href="https://www.llmslim.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/llmslim-dark.svg"><img alt="LLMSlim, the context layer for production AI agents. pip install llmslim. 212× lower cost than Mem0 (Mem0's LongMemEval questions), 42× lower cost, same accuracy (vs full history, LongMemEval), 3× fewer tokens, same score (LongBench v1), +21 points over LLMLingua-2 (NaturalQuestions, same budget). Listed in Hermes Agent and Hermes Agent and Llm Engineer Toolkit and Extensions and Awesome LLMOps and Awesome LLM Compression and Awesome Codex Plugins and Awesome LLM RAG and Awesome AI Agents and Awesome Mcp Servers and Awesome Ai Plugins and Awesome Gemini Cli and Azure Openai Llm Notes and Awesome Vibe Coding Resources and Awesome Context Engineering and Awesome Mcp Servers and Awesome Open Ai Developer Tools. Part of 15 startup programs: OpenAI, Claude, MongoDB, Sarvam, Zoho, Auth0, Zendesk, Mixpanel, Sentry, Descope, Pulumi, Honeycomb, Exa, Neo4j, Cartesia." src="assets/llmslim-light.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://www.llmslim.app">Website</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/docs/getting-started">Docs</a> &nbsp;·&nbsp; <a href="https://www.llmslim.app/benchmarks">Benchmarks</a> &nbsp;·&nbsp; <a href="https://pypi.org/project/llmslim/">PyPI</a> &nbsp;·&nbsp; <a href="https://github.com/Thanatos9404/llmslim">Source</a> &nbsp;·&nbsp; <a href="https://www.producthunt.com/products/llmslim">Product Hunt</a>
@@ -66,7 +66,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 160 pull requests</b>, by organisation</summary>
+<summary><b>All 163 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -83,11 +83,11 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [Don't treat directories such as archive.zip_ as zip files](https://github.com/microsoft/debugpy/pull/2086) <sub>microsoft/debugpy#2086</sub>
 - `merged` [Don't rely on Promise.prototype.finally when starting or stopping the client](https://github.com/microsoft/vscode-languageserver-node/pull/1895) <sub>microsoft/vscode-languageserver-node#1895</sub>
 - `open` [fix(deployment): make rmtconfig file updates exclusive and atomic](https://github.com/microsoft/physical-ai-toolchain/pull/1944) <sub>microsoft/physical-ai-toolchain#1944</sub>
-- `open` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 - `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
 - `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
 - `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
 - `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
+- `closed` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 
 **Google**
 
@@ -140,6 +140,13 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Tesla**
 
 - `merged` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
+
+**Uber**
+
+- `merged` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
+- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
+- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
+- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
 **Capital One**
 
@@ -204,7 +211,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Nous Research**
 
 - `merged` [feat(plugin-catalog): add llmslim plugin](https://github.com/NousResearch/hermes-agent/pull/142212) <sub>NousResearch/hermes-agent#142212</sub>
-- `open` [chore(catalog): re-pin llmslim to v0.11.2](https://github.com/NousResearch/hermes-agent/pull/144036) <sub>NousResearch/hermes-agent#144036</sub>
+- `merged` [chore(catalog): re-pin llmslim to v0.11.2](https://github.com/NousResearch/hermes-agent/pull/144036) <sub>NousResearch/hermes-agent#144036</sub>
 
 **fasthttp**
 
@@ -278,13 +285,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
-**Uber**
-
-- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
-- `open` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
-- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
-- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
-
 **Mozilla**
 
 - `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
@@ -301,6 +301,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
 - `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
 
+**mermaid-js**
+
+- `open` [fix(quadrant): escape the dot in point coordinate lexer rules](https://github.com/mermaid-js/mermaid/pull/8579) <sub>mermaid-js/mermaid#8579</sub>
+
 **crewAI**
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
@@ -308,6 +312,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Daniel Avila**
 
 - `open` [Add LLMSlim MCP to integration](https://github.com/davila7/claude-code-templates/pull/1226) <sub>davila7/claude-code-templates#1226</sub>
+
+**⚡️ Lightning AI**
+
+- `open` [Fix stale batch indices in prediction writers for dataloaders without batch indices](https://github.com/Lightning-AI/pytorch-lightning/pull/22065) <sub>Lightning-AI/pytorch-lightning#22065</sub>
 
 **Helm**
 
@@ -317,6 +325,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Vercel**
 
 - `open` [docs: add LLMSlim as a community memory provider](https://github.com/vercel/ai/pull/23502) <sub>vercel/ai#23502</sub>
+
+**Angular**
+
+- `open` [fix(@angular-devkit/schematics): support delegating trees in the `filter` rule](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
 
 **NLTK**
 
