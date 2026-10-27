@@ -66,7 +66,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 163 pull requests</b>, by organisation</summary>
+<summary><b>All 164 pull requests</b>, by organisation</summary>
 
 **NVIDIA**
 
@@ -123,12 +123,12 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
 - `merged` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
 - `merged` [fix(E3671): Set gp3 Iops limits per resource type](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
+- `merged` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
+- `merged` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
 - `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
-- `open` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
-- `open` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
 
@@ -212,6 +212,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [feat(plugin-catalog): add llmslim plugin](https://github.com/NousResearch/hermes-agent/pull/142212) <sub>NousResearch/hermes-agent#142212</sub>
 - `merged` [chore(catalog): re-pin llmslim to v0.11.2](https://github.com/NousResearch/hermes-agent/pull/144036) <sub>NousResearch/hermes-agent#144036</sub>
+- `open` [chore(catalog): re-pin llmslim to v0.12.0](https://github.com/NousResearch/hermes-agent/pull/145645) <sub>NousResearch/hermes-agent#145645</sub>
 
 **fasthttp**
 
@@ -328,7 +329,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Angular**
 
-- `open` [fix(@angular-devkit/schematics): support delegating trees in the `filter` rule](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
+- `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
 
 **NLTK**
 

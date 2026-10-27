@@ -1,6 +1,6 @@
 {
- "prs": 163,
- "merged": 70,
+ "prs": 164,
+ "merged": 72,
  "orgs": 67,
  "merged_orgs": [
   "NVIDIA",
@@ -49,13 +49,13 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/144036",
-   "stars": 257631
+   "stars": 257715
   },
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 257631
+   "stars": 257715
   },
   {
    "name": "Llm Engineer Toolkit",
@@ -67,7 +67,7 @@
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7814
+   "stars": 7815
   },
   {
    "name": "Awesome LLMOps",
@@ -103,13 +103,13 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 967
+   "stars": 968
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 885
+   "stars": 889
   },
   {
    "name": "Awesome Gemini Cli",
@@ -133,7 +133,7 @@
    "name": "Awesome Context Engineering",
    "full": "yzfly/awesome-context-engineering",
    "url": "https://github.com/yzfly/awesome-context-engineering/pull/84",
-   "stars": 220
+   "stars": 221
   },
   {
    "name": "Awesome Mcp Servers",
@@ -149,9 +149,9 @@
   }
  ],
  "llmslim": {
-  "version": "0.11.2",
+  "version": "0.12.0",
   "downloads_week": 504,
-  "stars": 22
+  "stars": 23
  },
  "fresh": [
   {
