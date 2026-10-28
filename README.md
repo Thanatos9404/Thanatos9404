@@ -71,10 +71,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **NVIDIA**
 
 - `merged` [fix: break models.errors import cycle](https://github.com/NVIDIA-NeMo/DataDesigner/pull/1039) <sub>NVIDIA-NeMo/DataDesigner#1039</sub>
+- `merged` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
 - `merged` [fix(instruction_following): split counting_composition on `* * *` and stop counting punctuation as words](https://github.com/NVIDIA-NeMo/Gym/pull/4624) <sub>NVIDIA-NeMo/Gym#4624</sub>
 - `open` [fix(checkpoint): stop training at the next step after a failed background save](https://github.com/NVIDIA-NeMo/RL/pull/4729) <sub>NVIDIA-NeMo/RL#4729</sub>
 - `open` [fix(nemo-gym): read env.nemo_gym.spinup_timeout for sharded startup](https://github.com/NVIDIA-NeMo/RL/pull/4751) <sub>NVIDIA-NeMo/RL#4751</sub>
-- `open` [fix(llm): retry structured calls that return no result](https://github.com/NVIDIA/SkillSpector/pull/845) <sub>NVIDIA/SkillSpector#845</sub>
 
 **Microsoft**
 
@@ -98,20 +98,17 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Meta**
 
-- `merged` [refactor: compute component plot data in private helpers](https://github.com/facebook/prophet/pull/2756) <sub>facebook/prophet#2756</sub>
-- `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/facebook/prophet/pull/2757) <sub>facebook/prophet#2757</sub>
-- `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/facebook/lexical/pull/9356) <sub>facebook/lexical#9356</sub>
-- `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/facebook/lexical/pull/9366) <sub>facebook/lexical#9366</sub>
-- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
-- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
-- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
-- `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/facebook/stylex/pull/1962) <sub>facebook/stylex#1962</sub>
-- `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/facebook/jscodeshift/pull/754) <sub>facebook/jscodeshift#754</sub>
-- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
-- `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/facebook/lexical/pull/9391) <sub>facebook/lexical#9391</sub>
+- `merged` [refactor: compute component plot data in private helpers](https://github.com/meta/prophet/pull/2756) <sub>meta/prophet#2756</sub>
+- `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/meta/prophet/pull/2757) <sub>meta/prophet#2757</sub>
+- `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/meta/lexical/pull/9356) <sub>meta/lexical#9356</sub>
+- `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/meta/lexical/pull/9366) <sub>meta/lexical#9366</sub>
+- `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/meta/stylex/pull/1962) <sub>meta/stylex#1962</sub>
+- `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/meta/jscodeshift/pull/754) <sub>meta/jscodeshift#754</sub>
+- `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/meta/lexical/pull/9391) <sub>meta/lexical#9391</sub>
 
 **AWS**
 
+- `merged` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
 - `merged` [fix(E3620): Add db.serverless to the DocumentDB instance classes](https://github.com/aws-cloudformation/cfn-lint/pull/4761) <sub>aws-cloudformation/cfn-lint#4761</sub>
 - `merged` [fix(E3670): Use full xlarge names for Amazon MQ instance types](https://github.com/aws-cloudformation/cfn-lint/pull/4760) <sub>aws-cloudformation/cfn-lint#4760</sub>
@@ -125,7 +122,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix(E3671): Set gp3 Iops limits per resource type](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
 - `merged` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
 - `merged` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
-- `open` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
@@ -291,6 +287,13 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
+
+**Meta**
+
+- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
+- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
+- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
+- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 
 **Mozilla**
 

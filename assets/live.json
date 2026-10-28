@@ -1,7 +1,7 @@
 {
  "prs": 164,
- "merged": 74,
- "orgs": 67,
+ "merged": 76,
+ "orgs": 68,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -38,37 +38,37 @@
   "y-crdt"
  ],
  "review_orgs": [
+  "Meta",
   "Mozilla",
   "Mozilla.ai",
   "mermaid-js",
   "crewAI",
-  "Daniel Avila",
-  "⚡️ Lightning AI"
+  "Daniel Avila"
  ],
  "listed_in": [
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/144036",
-   "stars": 257971
+   "stars": 258049
   },
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 257971
+   "stars": 258049
   },
   {
    "name": "Llm Engineer Toolkit",
    "full": "KalyanKS-NLP/llm-engineer-toolkit",
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50",
-   "stars": 10891
+   "stars": 10892
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7821
+   "stars": 7820
   },
   {
    "name": "Awesome LLMOps",
@@ -80,13 +80,13 @@
    "name": "Awesome LLM Compression",
    "full": "HuangOwen/Awesome-LLM-Compression",
    "url": "https://github.com/HuangOwen/Awesome-LLM-Compression/pull/191",
-   "stars": 1888
+   "stars": 1889
   },
   {
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1429
+   "stars": 1430
   },
   {
    "name": "Awesome LLM RAG",
@@ -104,19 +104,19 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 982
+   "stars": 987
   },
   {
    "name": "Awesome Ai Plugins",
    "full": "hashgraph-online/awesome-ai-plugins",
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins/pull/924",
-   "stars": 899
+   "stars": 903
   },
   {
    "name": "Awesome Gemini Cli",
    "full": "Piebald-AI/awesome-gemini-cli",
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli/pull/246",
-   "stars": 556
+   "stars": 558
   },
   {
    "name": "Azure Openai Llm Notes",
