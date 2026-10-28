@@ -86,7 +86,7 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [fix(openapi3): emit SSE response examples on OpenAPI 3.2.0](https://github.com/microsoft/typespec/pull/12291) <sub>microsoft/typespec#12291</sub>
 - `open` [Restore process creation functions in pydevd.stoptrace()](https://github.com/microsoft/debugpy/pull/2085) <sub>microsoft/debugpy#2085</sub>
 - `open` [(api-extractor) Fix handling of exported `var` declarations](https://github.com/microsoft/rushstack/pull/6155) <sub>microsoft/rushstack#6155</sub>
-- `open` [fix(openapi3): use the first enum value as the server variable default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
+- `open` [fix(openapi3): warn when a server variable with enum values has no default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
 - `closed` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 
 **Google**
@@ -143,8 +143,8 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Uber**
 
+- `merged` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
 - `merged` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
-- `open` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
 - `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
 - `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
@@ -207,6 +207,12 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [Add a `--pre` flag to `pyodide skeleton pypi`](https://github.com/pyodide/pyodide-build/pull/439) <sub>pyodide/pyodide-build#439</sub>
 - `merged` [Pass uv environment variables to build requirement installs](https://github.com/pyodide/pyodide-build/pull/438) <sub>pyodide/pyodide-build#438</sub>
+
+**Containers**
+
+- `merged` [feat(config): read the TOML config from stdin with --config -](https://github.com/containers/kubernetes-mcp-server/pull/1510) <sub>containers/kubernetes-mcp-server#1510</sub>
+- `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
+- `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
 
 **Nous Research**
 
@@ -295,12 +301,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 - `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
-
-**Containers**
-
-- `open` [feat(config): read the TOML config from stdin with --config -](https://github.com/containers/kubernetes-mcp-server/pull/1510) <sub>containers/kubernetes-mcp-server#1510</sub>
-- `open` [Add --env-from-file option to run command](https://github.com/containers/podman-compose/pull/1584) <sub>containers/podman-compose#1584</sub>
-- `open` [Reject top-level sections indented under `services` with a clear error](https://github.com/containers/podman-compose/pull/1583) <sub>containers/podman-compose#1583</sub>
 
 **mermaid-js**
 
