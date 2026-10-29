@@ -117,12 +117,12 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `merged` [fix: Skip E1029 where CloudFormation doesn't evaluate Fn::Sub](https://github.com/aws-cloudformation/cfn-lint/pull/4759) <sub>aws-cloudformation/cfn-lint#4759</sub>
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
 - `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
+- `merged` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
 - `merged` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
 - `merged` [fix(E3671): Set gp3 Iops limits per resource type](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
 - `merged` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
 - `merged` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
-- `open` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
 - `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
