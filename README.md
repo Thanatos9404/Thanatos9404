@@ -190,8 +190,8 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 **Docling**
 
+- `merged` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
 - `merged` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
-- `open` [fix(jats): keep the target of an ext-link in a mixed citation](https://github.com/docling-project/docling/pull/4813) <sub>docling-project/docling#4813</sub>
 - `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
 
 **ModelScope**
@@ -240,6 +240,11 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 - `open` [gcp - bigtable - list clusters and tables by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11228) <sub>cloud-custodian/cloud-custodian#11228</sub>
 - `open` [gcp - spanner-backup - list backups by instance name](https://github.com/cloud-custodian/cloud-custodian/pull/11235) <sub>cloud-custodian/cloud-custodian#11235</sub>
 
+**stdlib**
+
+- `merged` [docs: improve doctests for ndarray instances in `ndarray/slice-from`](https://github.com/stdlib-js/stdlib/pull/16236) <sub>stdlib-js/stdlib#16236</sub>
+- `open` [fix: avoid premature overflow in `math/base/special/expm1`](https://github.com/stdlib-js/stdlib/pull/16239) <sub>stdlib-js/stdlib#16239</sub>
+
 **OpenSSF**
 
 - `merged` [fix(OSPS-QA-06.01): ignore skipped and neutral check runs](https://github.com/ossf/pvtr-github-repo-scanner/pull/514) <sub>ossf/pvtr-github-repo-scanner#514</sub>
@@ -269,6 +274,10 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `merged` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
 - `merged` [fix(event_handler): strip the HTTP API stage only when rawPath has it](https://github.com/aws-powertools/powertools-lambda-python/pull/8605) <sub>aws-powertools/powertools-lambda-python#8605</sub>
+
+**Carvel**
+
+- `merged` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
 
 **speced**
 
@@ -351,11 +360,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 
 - `open` [keadm: honor --certPath when generating edgecore.yaml](https://github.com/kubeedge/kubeedge/pull/7362) <sub>kubeedge/kubeedge#7362</sub>
 
-**stdlib**
-
-- `open` [fix: avoid premature overflow in `math/base/special/expm1`](https://github.com/stdlib-js/stdlib/pull/16239) <sub>stdlib-js/stdlib#16239</sub>
-- `open` [docs: improve doctests for ndarray instances in `ndarray/slice-from`](https://github.com/stdlib-js/stdlib/pull/16236) <sub>stdlib-js/stdlib#16236</sub>
-
 **Astropy**
 
 - `closed` [Fix modeling separability of pseudocylindrical, Bonne and HEALPix projections](https://github.com/astropy/astropy/pull/20590) <sub>astropy/astropy#20590</sub>
@@ -371,10 +375,6 @@ Also <a href="https://github.com/Thanatos9404/leash">Leash</a>, spending mandate
 **Quod Libet**
 
 - `open` [Musepack: don't hang on an SV8 packet smaller than its header](https://github.com/quodlibet/mutagen/pull/736) <sub>quodlibet/mutagen#736</sub>
-
-**Carvel**
-
-- `open` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
 
 **ImageIO**
 
