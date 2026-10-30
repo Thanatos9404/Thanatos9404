@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29294
+   "stars": 29295
   },
   {
    "name": "Microsoft",
@@ -79,7 +79,7 @@
    "merged": 5,
    "prs": 10,
    "open": 5,
-   "stars": 83045
+   "stars": 83046
   },
   {
    "name": "OpenTelemetry",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 258836
+   "stars": 258844
   },
   {
    "name": "fasthttp",
@@ -601,7 +601,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 258836
+   "stars": 258844
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -641,7 +641,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1455
+   "stars": 1456
   },
   {
    "name": "Awesome LLM RAG",
@@ -673,7 +673,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 929
+   "stars": 930
   },
   {
    "name": "Awesome Gemini CLI",
