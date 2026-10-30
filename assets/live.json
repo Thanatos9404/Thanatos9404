@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29295
+   "stars": 29296
   },
   {
    "name": "Microsoft",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 258844
+   "stars": 258845
   },
   {
    "name": "fasthttp",
@@ -601,7 +601,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 258844
+   "stars": 258845
   },
   {
    "name": "LLM Engineer Toolkit",
