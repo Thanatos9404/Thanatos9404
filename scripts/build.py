@@ -1,483 +1,315 @@
-"""Builds the static, animated SVGs used by the profile README.
+"""Builds every SVG used by the profile README.
 
     python scripts/build.py
 
-Writes assets/<name>-dark.svg and assets/<name>-light.svg.
+Writes assets/<name>-dark.svg and assets/<name>-light.svg from content.py and assets/live.json.
+Design: monochrome Geist, hairline borders, real logos, one orange accent, matching yashvardhan.tech.
 """
 from __future__ import annotations
 
 import json
-import math
-import random
-import re
 from pathlib import Path
 
-from content import (EDUCATION, HERO_CHIPS, HOT_TOOLS, LEAD, LINKS as LINK_ITEMS, LLMSLIM, PROJECTS,
-                     RECOGNITION, TICKER, TOOLS, WORK)
-from svgkit import THEMES, Svg, ease_css, f, grain, measure, pill, sphere_points, wrap
+from content import (CONTACT, EDUCATION, EMAIL, INTRO, LEAD, LINKS, LLMSLIM, NAME, PROJECTS, RECOGNITION, STACK,
+                     STATUS, WORK)
+from logos import LOGOS, path_for
+from svgkit import THEMES, Svg, data_uri, dot_grid, f, logo_tile, measure, rich_lines, wrap
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
-EASE = ease_css()
+SHOTS = ASSETS / "shots"
+STACK_DIR = ASSETS / "stack"
 LIVE_PATH = ASSETS / "live.json"
+EASE = "cubic-bezier(.2,.7,.1,1)"
+W = 1200
+
+# Lucide icons (ISC licence), 24x24 stroke paths.
+ICONS = {
+    "calendar": '<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+    "globe": '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"/>',
+    "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>'
+                '<rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
+    "mail": '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+    "file": '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>'
+            '<path d="M14 2v4a2 2 0 0 0 2 2h4M16 13H8M16 17H8M10 9H8"/>',
+    "arrow": '<path d="M7 7h10v10M7 17 17 7"/>',
+}
+
+
+def icon(name, x, y, size, color, width=1.8):
+    s = size / 24
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})" fill="none" stroke="{color}" '
+            f'stroke-width="{f(width / s)}" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</g>')
 
 
 def load_live() -> dict:
-    """Facts derived from the GitHub and PyPI APIs by refresh.py (empty if it never ran)."""
     try:
         return json.loads(LIVE_PATH.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
 
 
-def fill(template: str, live: dict) -> str | None:
-    """Fill {placeholders} in content strings; None when a needed live value is missing."""
-    ll = live.get("llmslim", {})
-    vals = {"merged_orgs": ", ".join(live.get("merged_orgs", [])[:4]).upper(), "prs": live.get("prs"),
-            "merged": live.get("merged"), "orgs": live.get("orgs"), "version": ll.get("version"),
-            "downloads_week": ll.get("downloads_week")}
-    if any(vals.get(k) in (None, "", 0) for k in re.findall(r"{(\w+)}", template)):
-        return None
-    return template.format(**vals)
+def reveal(s: Svg):
+    s.style(f".rv{{animation:rv .9s {EASE} both}}"
+            "@keyframes rv{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}"
+            ".fd{animation:fd 1s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}")
+
+
+def card(s: Svg, x, y, w, h, r=20, fill=None):
+    t = s.t
+    s.add(f'<rect x="{f(x + .5)}" y="{f(y + .5)}" width="{f(w - 1)}" height="{f(h - 1)}" rx="{r}" '
+          f'fill="{fill or t["surface"]}" stroke="{t["line"]}"/>')
+
+
+def label(s: Svg, x, y, text, color=None, anchor="start", size=11.5):
+    return s.text(x, y, text, "mono-m", size, color or s.t["muted"], anchor=anchor, ls=2)
+
+
+def clip_text(text, font, size, max_w):
+    if measure(text, font, size) <= max_w:
+        return text
+    while text and measure(text + "...", font, size) > max_w:
+        text = text[:-1]
+    return text.rstrip(" ,.:;") + "..."
+
+
+def gray2(t):
+    return "#8A8A8A" if t["name"] == "dark" else "#A3A3A3"
 
 
 # ---------------------------------------------------------------------------
 # Hero
 # ---------------------------------------------------------------------------
 
-def token_sphere(svg: Svg, cx, cy, R, *, T=28.0, tilt=0.36, seed=11, hot=0.11, delay_in=0.5):
-    """A dotted globe that spins in 3D using only CSS keyframes.
-
-    Each dot runs three in-phase sine animations: x (sin), y and depth (cos),
-    which is exactly what an orthographic projection of a spinning sphere is.
-    """
-    t = svg.t
-    rnd = random.Random(seed)
-    ease = "cubic-bezier(.37,0,.63,1)"
-    rings = sphere_points(n_rings=15, n_eq=38)
-    css = [
-        f".sz{{transform-box:fill-box;transform-origin:center;animation:sz {T}s {ease} infinite}}"
-        "@keyframes sz{0%,100%{transform:scale(.34);opacity:.12}50%{transform:scale(1);opacity:1}}"
-    ]
-    dots = []
-    for k, (lat, n, off) in enumerate(rings):
-        r = R * math.cos(lat)
-        a = r * math.sin(tilt)
-        y0 = cy - R * math.sin(lat) * math.cos(tilt)
-        css.append(
-            f"@keyframes x{k}{{0%,100%{{transform:translateX({f(-r)}px)}}50%{{transform:translateX({f(r)}px)}}}}"
-            f"@keyframes y{k}{{0%,100%{{transform:translateY({f(-a)}px)}}50%{{transform:translateY({f(a)}px)}}}}"
-            f".x{k}{{animation:x{k} {T}s {ease} infinite}}.y{k}{{animation:y{k} {T}s {ease} infinite}}"
-        )
-        for j in range(n):
-            theta = 2 * math.pi * j / n + off
-            t0 = (theta + math.pi / 2) / (2 * math.pi) * T
-            dx = -(t0 % T)
-            dz = -((t0 + T / 4) % T)
-            is_hot = rnd.random() < hot
-            fill = t["accent"] if is_hot else t["dot"]
-            rr = 3.1 if is_hot else 2.15
-            dots.append(
-                f'<g transform="translate({f(cx)} {f(y0)})"><g class="x{k}" style="animation-delay:{dx:.2f}s">'
-                f'<g class="y{k}" style="animation-delay:{dz:.2f}s"><circle r="{rr}" fill="{fill}" class="sz" '
-                f'style="animation-delay:{dz:.2f}s"/></g></g></g>'
-            )
-    svg.style("".join(css))
-    svg.style(
-        f".globe{{animation:globeIn 1.6s {EASE} {delay_in}s both}}"
-        "@keyframes globeIn{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:scale(1)}}"
-        f".globe{{transform-box:view-box;transform-origin:{f(cx)}px {f(cy)}px}}"
-        f".breathe{{transform-box:view-box;transform-origin:{f(cx)}px {f(cy)}px;"
-        f"animation:breathe 9s {ease} infinite}}"
-        "@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(.93)}}"
-    )
-    # orbit ring + satellites
-    rx, ry, rot = R * 1.32, R * 1.32 * 0.24, -12
-    orbit = (f"M {f(cx - rx)} {f(cy)} a {f(rx)} {f(ry)} 0 1 0 {f(2 * rx)} 0 "
-             f"a {f(rx)} {f(ry)} 0 1 0 {f(-2 * rx)} 0")
-    ring = (f'<g transform="rotate({rot} {f(cx)} {f(cy)})">'
-            f'<path d="{orbit}" fill="none" stroke="{t["line2"]}" stroke-width="1" stroke-dasharray="2 5"/>'
-            f'<circle r="4.5" fill="{t["accent"]}"><animateMotion dur="14s" repeatCount="indefinite" path="{orbit}"/></circle>'
-            f'<circle r="2.6" fill="{t["ink"]}" opacity=".7"><animateMotion dur="14s" begin="-7s" repeatCount="indefinite" path="{orbit}"/></circle>'
-            f"</g>")
-    halo = f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R + 26)}" fill="none" stroke="{t["line"]}" stroke-width="1"/>'
-    svg.add(f'<g class="globe">{halo}<g class="breathe">{"".join(dots)}</g>{ring}</g>')
-
-
-def ticker(svg: Svg, y, h, items, *, speed=38.0):
-    t = svg.t
-    size, ls, gap = 12.5, 1.6, 26
-    xs, x = [], 0.0
-    for it in items:
-        xs.append(x)
-        x += measure(it, "mono", size, ls) + gap * 2 + 6
-    loop_w = x
-    cy = y + h / 2
-    parts = []
-    for rep in (0, 1):
-        for it, x0 in zip(items, xs):
-            bx = x0 + rep * loop_w
-            parts.append(svg.text(bx, cy + size * 0.36, it, "mono", size, t["muted"], ls=ls))
-            dx = bx + measure(it, "mono", size, ls) + gap + 3
-            parts.append(f'<rect x="{f(dx - 3)}" y="{f(cy - 3)}" width="6" height="6" fill="{t["accent"]}" '
-                         f'transform="rotate(45 {f(dx)} {f(cy)})"/>')
-    dur = loop_w / speed
-    svg.style(f".tick{{animation:tick {dur:.1f}s linear infinite}}"
-              f"@keyframes tick{{from{{transform:translateX(0)}}to{{transform:translateX(-{f(loop_w)}px)}}}}")
-    svg.add(f'<g clip-path="url(#tickclip)"><g class="tick">{"".join(parts)}</g></g>')
-    svg.defs_add(f'<clipPath id="tickclip"><rect x="0" y="{f(y)}" width="{svg.w}" height="{f(h)}"/></clipPath>')
-
-
-def hero(theme: dict) -> Svg:
-    W, H = 1200, 620
-    t = theme
-    s = Svg(W, H, t, "Yashvardhan Thanvi, founder of LLMSlim",
-            "AI engineer and open source builder from Jaipur, India. Available for freelance work.")
-    dark = t["name"] == "dark"
-    s.defs_add(f'<clipPath id="card"><rect width="{W}" height="{H}" rx="30"/></clipPath>')
-    if dark:
-        s.defs_add(
-            '<radialGradient id="ember" cx="0.78" cy="1.05" r="0.62">'
-            f'<stop offset="0" stop-color="{t["accent"]}" stop-opacity=".20"/>'
-            f'<stop offset=".55" stop-color="{t["accent"]}" stop-opacity=".04"/>'
-            f'<stop offset="1" stop-color="{t["accent"]}" stop-opacity="0"/></radialGradient>'
-        )
-        bg = (f'<rect width="{W}" height="{H}" fill="{t["bg"]}"/>'
-              f'<rect width="{W}" height="{H}" fill="url(#ember)"/>')
-    else:
-        s.defs_add(
-            '<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">'
-            '<stop offset="0" stop-color="#9CC1E7"/><stop offset=".55" stop-color="#C9D6E4"/>'
-            '<stop offset="1" stop-color="#EDDFD0"/></linearGradient>'
-            '<filter id="cloud" x="-50%" y="-50%" width="200%" height="200%">'
-            '<feGaussianBlur stdDeviation="34"/></filter>'
-        )
-        clouds = "".join(
-            f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#FFFFFF" opacity="{o}" class="cl{i % 2}"/>'
-            for i, (cx, cy, rx, ry, o) in enumerate([
-                (180, 520, 260, 70, .75), (520, 600, 340, 80, .8), (980, 560, 300, 90, .7),
-                (1120, 140, 180, 40, .45), (640, 120, 160, 34, .35), (60, 250, 160, 40, .4)])
-        )
-        s.style("@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(30px)}}"
-                ".cl0{animation:drift 24s ease-in-out infinite alternate}"
-                ".cl1{animation:drift 31s ease-in-out infinite alternate-reverse}")
-        bg = (f'<rect width="{W}" height="{H}" fill="url(#sky)"/>'
-              f'<g filter="url(#cloud)">{clouds}</g>')
-    grain(s, opacity=0.10 if dark else 0.07)
-    s.add(f'<g clip-path="url(#card)">{bg}<rect width="{W}" height="{H}" filter="url(#grain)" opacity="1"/>')
-
-    ink, body, muted = t["ink"], t["body"], t["muted"]
-    if not dark:
-        body, muted = "#3A3431", "#5C5552"
-
-    # reveal animations
-    s.style(
-        f".rv{{animation:rv 1.1s {EASE} both}}"
-        "@keyframes rv{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}"
-        ".fd{animation:fd 1.2s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}"
-        "@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3.2);opacity:0}}"
-        ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}"
-    )
-
-    # top bar
-    s.add(f'<g class="fd" style="animation-delay:.1s">'
-          + s.text(56, 64, "YASHVARDHAN.TECH", "mono-m", 12.5, muted, ls=2.2)
-          + s.text(56 + measure("YASHVARDHAN.TECH", "mono-m", 12.5, 2.2) + 18, 64,
-                   "/  JAIPUR, INDIA  /  26.91° N  75.79° E", "mono", 12.5, muted, ls=1.6, opacity=.75)
-          + "</g>")
-    label = "Available for freelance"
-    lw = measure(label, "sans-m", 14.5) + 50
-    px, py = W - 56 - lw, 42
-    pill_fill = "rgba(255,255,255,.04)" if dark else "rgba(255,255,255,.55)"
-    s.add(f'<g class="fd" style="animation-delay:.3s">'
-          f'<rect x="{f(px)}" y="{py}" width="{f(lw)}" height="34" rx="17" fill="{pill_fill}" '
-          f'stroke="{t["line2"] if dark else "rgba(26,22,21,.12)"}"/>'
-          f'<circle cx="{f(px + 21)}" cy="{py + 17}" r="4" fill="{t["accent"]}" class="pulse"/>'
-          f'<circle cx="{f(px + 21)}" cy="{py + 17}" r="4" fill="{t["accent"]}"/>'
-          + s.text(px + 34, py + 22, label, "sans-m", 14.5, ink) + "</g>")
-
-    # eyebrow + name
-    x0 = 56
-    s.add(f'<g class="rv" style="animation-delay:.15s">'
-          f'<rect x="{x0}" y="148" width="22" height="2" fill="{t["accent"]}"/>'
-          + s.text(x0 + 34, 153, "FOUNDER, LLMSLIM  ·  AI ENGINEER", "mono-m", 13, t["accent"], ls=2.4)
-          + "</g>")
-    s.add(f'<g class="rv" style="animation-delay:.3s">'
-          + s.text(x0 - 4, 268, "Yashvardhan", "serif", 124, ink, ls=-2.5) + "</g>")
-    w2 = measure("Thanvi", "serif-i", 124, -2.5)
-    s.add(f'<g class="rv" style="animation-delay:.45s">'
-          + s.text(x0 - 2, 378, "Thanvi", "serif-i", 124, ink, ls=-2.5)
-          + f'<circle cx="{f(x0 + w2 + 12)}" cy="366" r="9" fill="{t["accent"]}"/>' + "</g>")
-
-    # voice line (his own words, from yashvardhan.tech)
-    lines = ["I make tools I want to use. Sometimes that means a smaller",
-             "LLM prompt. Sometimes it means helping a farmer decide better."]
-    s.add(f'<g class="rv" style="animation-delay:.65s">'
-          + "".join(s.text(x0, 438 + i * 30, ln, "sans", 19.5, body) for i, ln in enumerate(lines))
-          + "</g>")
-
-    # chips
-    cx = x0
-    chips = HERO_CHIPS
-    s.add('<g class="rv" style="animation-delay:.8s">')
-    for c in chips:
-        cx += pill(s, cx, 486, c, "mono", 12.5, pad_x=13, h=30, ls=.4,
-                   fill=("rgba(255,255,255,.03)" if dark else "rgba(255,255,255,.5)"),
-                   stroke=(t["line2"] if dark else "rgba(26,22,21,.14)"), color=body) + 8
-    s.add("</g>")
-
-    # globe
-    token_sphere(s, 905, 290, 172, delay_in=.55)
-    s.add(f'<g class="fd" style="animation-delay:1.4s">'
-          + s.text(905, 516, "CONTEXT, COMPRESSED", "mono", 11, muted, anchor="middle", ls=3)
-          + "</g>")
-
-    # ticker band
-    band_y = H - 64
-    s.add(f'<rect x="0" y="{band_y}" width="{W}" height="64" fill="{"rgba(255,255,255,.02)" if dark else "rgba(255,255,255,.38)"}"/>'
-          f'<line x1="0" y1="{band_y}" x2="{W}" y2="{band_y}" stroke="{t["line"] if dark else "rgba(26,22,21,.10)"}"/>')
+def hero(t):
+    H = 500
     live = load_live()
-    ticker(s, band_y, 64, [x for x in (fill(it, live) for it in TICKER) if x])
-    s.add("</g>")
-    if dark:
-        s.add(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="30" fill="none" stroke="{t["line"]}"/>')
+    s = Svg(W, H, t, "Yashvardhan Thanvi",
+            "Founder of LLMSlim, the open-source context layer for production AI agents, backed by 15 startup "
+            "programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at DRDO. Available for "
+            "freelance work, Jaipur, India.")
+    reveal(s)
+    card(s, 0, 0, W, H, r=24)
+    dot_grid(s, 560, 0, 640, H, gap=15, r=1, opacity=.22 if t["name"] == "dark" else .16, fade_cx=.62, fade_cy=.5,
+             uid="hg")
+
+    mark = LOGOS / "mark.svg"
+    if mark.exists():
+        inv = ' style="filter:invert(1)"' if t["name"] == "light" else ""
+        s.add(f'<image href="{data_uri(mark)}" x="44" y="38" width="34" height="29"{inv}/>')
+    s.add(s.text(88, 59, "Yashvardhan Thanvi", "sans-sb", 15, t["ink"]))
+
+    s.style("@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(3.2);opacity:0}}"
+            ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}")
+    x = 48
+    for i, txt in enumerate(STATUS):
+        dot = 18 if i == 0 else 0
+        w = measure(txt, "mono", 12, .4) + 28 + dot
+        s.add(f'<g class="fd" style="animation-delay:{.1 + i * .1:.1f}s">'
+              f'<rect x="{f(x + .5)}" y="104.5" width="{f(w - 1)}" height="29" rx="14.5" fill="{t["surface2"]}" '
+              f'stroke="{t["line2"]}"/>'
+              + (f'<circle cx="{f(x + 17)}" cy="119" r="3.5" fill="#22C55E" class="pulse"/>'
+                 f'<circle cx="{f(x + 17)}" cy="119" r="3.5" fill="#22C55E"/>' if dot else "")
+              + s.text(x + 14 + dot, 123.5, txt, "mono", 12, t["body"], ls=.4) + "</g>")
+        x += w + 10
+
+    s.add('<g class="rv" style="animation-delay:.15s">'
+          + s.text(44, 232, NAME[0], "sans-b", 88, t["ink"], ls=-3.6) + "</g>")
+    s.add('<g class="rv" style="animation-delay:.25s">'
+          + s.text(44, 322, NAME[1], "sans-b", 88, gray2(t), ls=-3.6) + "</g>")
+
+    runs = [(txt, "sans-m" if em else "sans", t["ink"] if em else t["body"]) for txt, em in INTRO]
+    lines = rich_lines(runs, 18, 560)
+    s.add('<g class="rv" style="animation-delay:.4s">'
+          + "".join(s.tspan_text(48, 378 + i * 28, ln, size=18) for i, ln in enumerate(lines)) + "</g>")
+
+    # terminal (dark in both themes, like the portfolio)
+    tx, ty, tw, th = 676, 120, 476, 300
+    bg, bar, edge = "#0B0B0B", "#141414", "#262626"
+    s.defs_add(f'<clipPath id="term"><rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="14"/></clipPath>')
+    s.add(f'<g class="rv" style="animation-delay:.3s"><g clip-path="url(#term)">'
+          f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="{bg}"/>'
+          f'<rect x="{tx}" y="{ty}" width="{tw}" height="38" fill="{bar}"/>'
+          f'<line x1="{tx}" y1="{ty + 38}" x2="{tx + tw}" y2="{ty + 38}" stroke="{edge}"/></g>'
+          f'<rect x="{tx + .5}" y="{ty + .5}" width="{tw - 1}" height="{th - 1}" rx="14" fill="none" stroke="{edge}"/>'
+          + "".join(f'<circle cx="{tx + 22 + i * 18}" cy="{ty + 19}" r="5.5" fill="#333333"/>' for i in range(3))
+          + s.text(tx + tw / 2, ty + 24, "yash@jaipur: ~", "mono", 12, "#8A8A8A", anchor="middle") + "</g>")
+
+    version = live.get("llmslim", {}).get("version", "")
+    merged = live.get("merged")
+    merged_orgs = [o["name"] for o in live.get("org_list", []) if o.get("merged")]
+    lines = [("cmd", "whoami"), ("out", "founder @ LLMSlim + AMEYOR · AI engineer")]
+    if version:
+        lines += [("cmd", "pip show llmslim | grep Version"), ("out", f"Version: {version}")]
+    if merged:
+        tail = f"   # {', '.join(merged_orgs[:3])} and {len(merged_orgs) - 3} more" if len(merged_orgs) > 3 else ""
+        lines += [("cmd", "gh search prs --author=@me --merged | wc -l"), ("out", f"{merged}{tail}")]
+    lines.append(("cur", ""))
+
+    size, lh, x0, y0 = 13, 26, tx + 22, ty + 74
+    cw = measure("m", "mono", size)
+    t0, parts = .9, []
+    for i, (kind, txt) in enumerate(lines):
+        y = y0 + i * lh
+        if kind == "cmd":
+            text = s.tspan_text(x0, y, [("› ", "mono-m", "#FF7A3D"), (txt, "mono", "#EDEDED")], size=size)
+            width = measure("› " + txt, "mono", size) + 8
+            dur = max(.35, len(txt) * .028)
+            # A cover slides right in steps to "type" the command. Static renderers show the text uncovered.
+            parts.append(f'{text}<rect x="{f(x0 - 2)}" y="{f(y - 16)}" width="{f(width + 4)}" height="22" '
+                         f'fill="{bg}" transform="translate({f(width + 4)} 0)" '
+                         f'style="animation:ty{i} {dur:.2f}s steps({len(txt) + 2}) {t0:.2f}s both"/>')
+            s.style(f"@keyframes ty{i}{{from{{transform:translateX(0)}}to{{transform:translateX({f(width + 4)}px)}}}}")
+            t0 += dur + .25
+        elif kind == "out":
+            parts.append(f'<g style="animation:fd .2s linear {t0:.2f}s both">'
+                         + s.text(x0 + 2 * cw, y, clip_text(txt, "mono", size, tw - 66), "mono", size, "#A1A1A1")
+                         + "</g>")
+            t0 += .35
+        else:
+            parts.append(s.text(x0, y, "›", "mono-m", size, "#FF7A3D")
+                         + f'<rect x="{f(x0 + cw * 1.6)}" y="{f(y - 13)}" width="{f(cw)}" height="17" fill="#EDEDED" '
+                           f'style="animation:blink 1.1s steps(1) {t0:.2f}s infinite"/>')
+    s.style("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}")
+    s.add(f'<g class="rv" style="animation-delay:.3s"><g clip-path="url(#term)">{"".join(parts)}</g></g>')
     return s
 
 
 # ---------------------------------------------------------------------------
-# Shared helpers
+# Link buttons
 # ---------------------------------------------------------------------------
 
-def mix(c1: str, c2: str, k: float) -> str:
-    """Blend two hex colours, k=0 -> c1, k=1 -> c2."""
-    a = [int(c1[i:i + 2], 16) for i in (1, 3, 5)]
-    b = [int(c2[i:i + 2], 16) for i in (1, 3, 5)]
-    return "#" + "".join(f"{round(x + (y - x) * k):02X}" for x, y in zip(a, b))
+def link_pill(t, text, icon_name, primary):
+    h, size = 48, 15.5
+    w = round(46 + measure(text, "sans-m", size) + 20)
+    s = Svg(w, h, t, text)
+    if primary:
+        fill, stroke, color = t["button"], t["button"], t["on_button"]
+    else:
+        fill, stroke, color = t["surface"], t["line2"], t["ink"]
+    s.add(f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="{(h - 1) / 2}" fill="{fill}" stroke="{stroke}"/>')
+    s.add(icon(icon_name, 18, 15, 18, color))
+    s.add(s.text(46, h / 2 + size * .36, text, "sans-m", size, color))
+    return s
 
 
-def reveal_css(s: Svg):
-    s.style(
-        f".rv{{animation:rv 1s {EASE} both}}"
-        "@keyframes rv{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}"
-        ".fd{animation:fd 1.1s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}"
-    )
+# ---------------------------------------------------------------------------
+# "Pull requests merged at" logo strip
+# ---------------------------------------------------------------------------
+
+def merged_strip(t):
+    live = load_live()
+    orgs = [o for o in live.get("org_list", []) if o.get("merged")]
+    shown = orgs[:10]
+    H = 186
+    s = Svg(W, H, t, "Pull requests merged at " + ", ".join(o["name"] for o in orgs),
+            f"{live.get('merged', 0)} merged pull requests across {len(orgs)} organisations.")
+    reveal(s)
+    head = (f"{live.get('merged', 0)} PULL REQUESTS MERGED ACROSS {len(orgs)} ORGANISATIONS, INCLUDING"
+            if orgs else "OPEN SOURCE")
+    tl = measure(head, "mono-m", 11.5, 2) + 48
+    s.add(f'<line x1="0" y1="20" x2="{f((W - tl) / 2)}" y2="20" stroke="{t["line"]}"/>'
+          f'<line x1="{f((W + tl) / 2)}" y1="20" x2="{W}" y2="20" stroke="{t["line"]}"/>')
+    s.add(label(s, W / 2, 24, head, anchor="middle"))
+    n = len(shown)
+    if not n:
+        return s
+    step, size = 116, 60
+    x0 = (W - (n - 1) * step) / 2
+    for i, o in enumerate(shown):
+        cx = x0 + i * step
+        s.add(f'<g class="rv" style="animation-delay:{.1 + i * .06:.2f}s">'
+              + logo_tile(s, cx - size / 2, 56, size, LOGOS / f"gh-{o['logo']}.png", o["name"], uid=f"m{i}")
+              + s.text(cx, 146, clip_text(o["name"], "sans-m", 13.5, step - 10), "sans-m", 13.5, t["body"],
+                       anchor="middle")
+              + s.text(cx, 166, f"{o['merged']} merged", "mono", 11, t["muted"], anchor="middle") + "</g>")
+    return s
 
 
-def card_bg(s: Svg, x, y, w, h, r=26, glow=False):
-    t = s.t
-    s.add(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="{r}" fill="{t["surface"]}" '
-          f'stroke="{t["line"]}"/>')
-    if glow and t["name"] == "dark":
-        gid = f"glow{int(x)}{int(y)}"
-        s.defs_add(f'<radialGradient id="{gid}" cx="0.85" cy="0" r="0.9">'
+# ---------------------------------------------------------------------------
+# LLMSlim
+# ---------------------------------------------------------------------------
+
+def llmslim_card(t):
+    H = 640
+    live = load_live()
+    L = LLMSLIM
+    ll = live.get("llmslim", {})
+    s = Svg(W, H, t, "LLMSlim: " + L["tagline"],
+            L["about"] + " " + "; ".join(f"{b} {a} ({c})" for b, a, c in L["stats"])
+            + ". Backed by " + ", ".join(L["program_names"]) + ".")
+    reveal(s)
+    card(s, 0, 0, W, H, r=24)
+    if t["name"] == "dark":
+        s.defs_add('<radialGradient id="lg" cx=".82" cy=".22" r=".55">'
                    f'<stop offset="0" stop-color="{t["accent"]}" stop-opacity=".10"/>'
                    f'<stop offset="1" stop-color="{t["accent"]}" stop-opacity="0"/></radialGradient>')
-        s.add(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="{r}" fill="url(#{gid})"/>')
+        s.add(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="24" fill="url(#lg)"/>')
 
+    # 3D render (LLMSlim's own asset), floating gently
+    img = SHOTS / "llmslim-3d.jpg"
+    ix, iy, iw, ih = 624, 40, 536, 300
+    s.defs_add(f'<clipPath id="core"><rect x="{ix}" y="{iy}" width="{iw}" height="{ih}" rx="16"/></clipPath>')
+    s.style("@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}"
+            ".float{animation:float 7s ease-in-out infinite}")
+    if img.exists():
+        s.add(f'<g class="fd" style="animation-delay:.2s"><g class="float"><g clip-path="url(#core)">'
+              f'<image href="{data_uri(img)}" x="{ix}" y="{iy}" width="{iw}" height="{ih}" '
+              f'preserveAspectRatio="xMidYMid slice"/></g>'
+              f'<rect x="{ix + .5}" y="{iy + .5}" width="{iw - 1}" height="{ih - 1}" rx="16" fill="none" '
+              f'stroke="{t["line2"]}"/></g></g>')
 
-# ---------------------------------------------------------------------------
-# Section headers
-# ---------------------------------------------------------------------------
-
-HEADERS = {
-    "h-building": ("01", "NOW BUILDING", [("Smaller context, ", "serif"), ("better", "serif-i"), (" answers.", "serif")],
-                   "LLMSLIM · MIT · PYPI"),
-    "h-work": ("02", "SELECTED WORK", [("Things I've ", "serif"), ("built", "serif-i"), (".", "serif")],
-               "2026 HACKATHON SEASON"),
-    "h-oss": ("03", "OPEN SOURCE", [("Pull requests to the tools ", "serif"), ("I use", "serif-i"), (".", "serif")],
-              "UPDATED AUTOMATICALLY"),
-    "h-proud": ("04", "RECOGNITION", [("A few ", "serif"), ("proud", "serif-i"), (" moments.", "serif")], ""),
-    "h-path": ("05", "EXPERIENCE", [("Where I've worked ", "serif"), ("and led", "serif-i"), (".", "serif")], ""),
-    "h-activity": ("06", "ACTIVITY", [("Shipping, ", "serif"), ("most", "serif-i"), (" days.", "serif")],
-                   "LAST 12 MONTHS · 3D"),
-    "h-tools": ("07", "TOOLBOX", [("On my ", "serif"), ("workbench", "serif-i"), (".", "serif")], ""),
-}
-
-
-def section_header(theme, num, eyebrow, runs, note):
-    W, H = 1200, 132
-    t = theme
-    title = "".join(r[0] for r in runs)
-    s = Svg(W, H, t, f"{num} {eyebrow.title()}: {title}")
-    s.style(f".ln{{transform-box:fill-box;transform-origin:left center;"
-            f"animation:ln 1.6s {EASE} .05s both}}@keyframes ln{{from{{transform:scaleX(0)}}to{{transform:none}}}}")
-    reveal_css(s)
-    s.add(f'<rect class="ln" x="0" y="14" width="{W}" height="1" fill="{t["line2"]}"/>')
-    s.add(f'<rect class="ln" x="0" y="13" width="64" height="3" fill="{t["accent"]}"/>')
-    s.add('<g class="fd" style="animation-delay:.15s">'
-          + s.tspan_text(0, 52, [(num, "mono-m", t["accent"]), ("  /  ", "mono", t["faint"]),
-                                 (eyebrow, "mono-m", t["muted"])], size=13, attrs=' letter-spacing="2.4"')
-          + (s.text(W, 52, note, "mono", 12, t["muted"], anchor="end", ls=2) if note else "")
-          + "</g>")
-    s.add('<g class="rv" style="animation-delay:.25s">'
-          + s.tspan_text(-2, 116, [(txt, font, t["ink"]) for txt, font in runs], size=58,
-                         attrs=' letter-spacing="-1.2"')
-          + "</g>")
-    return s
-
-
-# ---------------------------------------------------------------------------
-# Link pills
-# ---------------------------------------------------------------------------
-
-
-
-def link_pill(theme, label, arrow, primary):
-    t = theme
-    size, h, pad = 17, 52, 24
-    tw = measure(label, "sans-m", size) + 10 + measure(arrow, "sans-m", size)
-    W = round(tw + pad * 2)
-    s = Svg(W, h, t, label)
-    if primary:
-        fill, stroke, color, ac = t["accent"], t["accent"], t["on_accent"], t["on_accent"]
-    else:
-        fill, stroke, color, ac = t["surface"], t["line2"], t["ink"], t["accent"]
-    s.add(f'<rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" rx="{(h - 1) / 2}" fill="{fill}" stroke="{stroke}"/>')
-    s.add(s.text(pad, h / 2 + size * .36, label, "sans-m", size, color))
-    s.add(s.text(W - pad, h / 2 + size * .36, arrow, "sans-m", size, ac, anchor="end"))
-    return s
-
-
-# ---------------------------------------------------------------------------
-# LLMSlim feature card
-# ---------------------------------------------------------------------------
-
-def iso(x, y, z, ox, oy, c=0.866, sn=0.5):
-    return ox + (x - y) * c, oy + (x + y) * sn - z
-
-
-def slab(ox, oy, S, z, h, top, left, right):
-    P = lambda x, y, zz: iso(x, y, zz, ox, oy)
-    pts = lambda arr: " ".join(f"{f(a)},{f(b)}" for a, b in arr)
-    zt = z + h
-    t_ = [P(0, 0, zt), P(S, 0, zt), P(S, S, zt), P(0, S, zt)]
-    r_ = [P(S, 0, zt), P(S, S, zt), P(S, S, z), P(S, 0, z)]
-    l_ = [P(0, S, zt), P(S, S, zt), P(S, S, z), P(0, S, z)]
-    return (f'<polygon points="{pts(l_)}" fill="{left}"/><polygon points="{pts(r_)}" fill="{right}"/>'
-            f'<polygon points="{pts(t_)}" fill="{top}"/>')
-
-
-def llmslim_card(theme):
-    W, H = 1200, 820
-    t = theme
-    live = load_live()
-    dark = t["name"] == "dark"
-    s = Svg(W, H, t, "LLMSlim: the context layer for production AI agents",
-            "Open source Python library. pip install llmslim. "
-            + ", ".join(f"{big} {l1} ({l2})" for big, l1, l2 in LLMSLIM["stats"]) + ".")
-    reveal_css(s)
-    card_bg(s, 0, 0, W, H, r=30, glow=True)
-    ink, body, muted = t["ink"], t["body"], t["muted"]
-    x0 = 56
-
-    s.add('<g class="rv" style="animation-delay:.1s">'
-          + s.text(x0, 76, fill(LLMSLIM["eyebrow"], live) or "OPEN SOURCE  ·  MIT", "mono-m", 13, t["accent"],
-                   ls=2.4) + "</g>")
-    s.add('<g class="rv" style="animation-delay:.2s">'
-          + s.text(x0 - 4, 176, "LLMSlim", "serif", 112, ink, ls=-2.5) + "</g>")
-    s.add('<g class="rv" style="animation-delay:.3s">'
-          + s.tspan_text(x0, 228, [("The context layer for ", "sans-m", ink), ("production AI agents.", "sans-m", ink)],
-                         size=24) + "</g>")
-    lines = wrap(LLMSLIM["about"], "sans", 18.5, 520)
-    s.add('<g class="rv" style="animation-delay:.4s">'
-          + "".join(s.text(x0, 278 + i * 29, ln, "sans", 18.5, body) for i, ln in enumerate(lines)) + "</g>")
-
-    # terminal line
-    ty = 278 + len(lines) * 29 + 30
-    cmd = "pip install llmslim"
-    cw = measure("$ " + cmd, "mono-m", 17) + 64
-    s.style("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}.cur{animation:blink 1.1s steps(1) infinite}")
-    s.add(f'<g class="rv" style="animation-delay:.5s">'
-          f'<rect x="{x0}" y="{ty}" width="{f(cw)}" height="54" rx="14" fill="{t["bg"] if dark else "#FFFFFF"}" stroke="{t["line2"]}"/>'
-          + s.tspan_text(x0 + 22, ty + 33, [("$ ", "mono-m", t["accent"]), (cmd, "mono-m", ink)], size=17)
-          + f'<rect class="cur" x="{f(x0 + 22 + measure("$ " + cmd, "mono-m", 17) + 4)}" y="{ty + 18}" width="9" height="20" fill="{t["accent"]}"/>'
-          + "</g>")
-    s.add('<g class="fd" style="animation-delay:.7s">'
-          + s.text(x0, ty + 90, LLMSLIM["facts"], "mono", 11.5,
-                   muted, ls=1.4) + "</g>")
-    runs = []
-    dl = live.get("llmslim", {}).get("downloads_week")
-    if dl:
-        runs.append((f"{dl:,} DOWNLOADS LAST WEEK", "mono", body))
-    names = [x["name"].upper() for x in live.get("listed_in", [])]
-    if names:
-        runs += [("  ·  " if runs else "", "mono", t["faint"]), ("LISTED IN " + ", ".join(names), "mono", t["accent"])]
-    if runs:
-        s.add('<g class="fd" style="animation-delay:.8s">'
-              + s.tspan_text(x0, ty + 113, [r for r in runs if r[0]], size=11.5, attrs=' letter-spacing="1.4"') + "</g>")
-
-    # isometric compression animation
-    S, gap, h = 150, 15, 9
-    n = 14
-    kept = [2, 6, 11]
-    ox, oy = 870, 318
-    c_top, c_l, c_r = ("#3D3530", "#211C19", "#2D2723") if dark else ("#FFFFFF", "#DDD3CA", "#ECE4DD")
-    a_top, a_l, a_r = t["accent"], mix(t["accent"], "#000000", .42), mix(t["accent"], "#000000", .22)
-    edge = t["line2"]
-    css, slabs = [], []
-    T = 9
-    for i in range(n):
-        z = i * gap
-        if i in kept:
-            j = kept.index(i)
-            dy = (z - j * gap)  # how far it falls (screen units, down = +)
-            css.append(f"@keyframes k{i}{{0%,22%{{transform:none}}48%,82%{{transform:translateY({f(dy)}px)}}"
-                       f"96%,100%{{transform:none}}}}.k{i}{{animation:k{i} {T}s {EASE} infinite}}")
-            slabs.append(f'<g class="k{i}">{slab(ox, oy, S, z, h, a_top, a_l, a_r)}</g>')
-        else:
-            st = 18 + i * 1.2
-            css.append(f"@keyframes k{i}{{0%,{f(st)}%{{transform:none;opacity:1}}{f(st + 16)}%,84%{{transform:translate(70px,-34px);opacity:0}}"
-                       f"97%,100%{{transform:none;opacity:1}}}}.k{i}{{animation:k{i} {T}s {EASE} infinite}}")
-            slabs.append(f'<g class="k{i}">{slab(ox, oy, S, z, h, c_top, c_l, c_r)}</g>')
-    s.style("".join(css))
-    # floor shadow + outline
-    P = lambda x, y, z: iso(x, y, z, ox, oy)
-    fl = [P(-14, -14, 0), P(S + 14, -14, 0), P(S + 14, S + 14, 0), P(-14, S + 14, 0)]
-    s.add(f'<polygon points="{" ".join(f"{f(a)},{f(b)}" for a, b in fl)}" fill="none" stroke="{edge}" stroke-dasharray="3 5"/>')
-    s.add(f'<g class="fd" style="animation-delay:.6s">{"".join(slabs)}</g>')
-    # labels synced with the loop
-    s.style(f"@keyframes lin{{0%,24%{{opacity:1}}34%,86%{{opacity:0}}96%,100%{{opacity:1}}}}"
-            f"@keyframes lout{{0%,44%{{opacity:0}}54%,82%{{opacity:1}}92%,100%{{opacity:0}}}}"
-            f".lin{{animation:lin {T}s linear infinite}}.lout{{opacity:0;animation:lout {T}s linear infinite}}")
-    lx = ox + S * .866 + 22
-    ty_in = oy + S * .5 - (n - 1) * gap - h
-    ty_out = oy + S * .5 - (len(kept) - 1) * gap - h
-    s.add(f'<g class="lin"><line x1="{f(lx - 16)}" y1="{f(ty_in)}" x2="{f(lx + 6)}" y2="{f(ty_in)}" stroke="{muted}"/>'
-          + s.text(lx + 14, ty_in + 4, LLMSLIM["tokens_in"], "mono-m", 22, ink)
-          + s.text(lx + 14, ty_in + 26, "TOKENS IN", "mono", 11, muted, ls=2) + "</g>")
-    s.add(f'<g class="lout"><line x1="{f(lx - 16)}" y1="{f(ty_out)}" x2="{f(lx + 6)}" y2="{f(ty_out)}" stroke="{t["accent"]}"/>'
-          + s.text(lx + 14, ty_out + 4, LLMSLIM["tokens_out"], "mono-m", 22, t["accent"])
-          + s.text(lx + 14, ty_out + 26, "TOKENS SENT", "mono", 11, muted, ls=2) + "</g>")
-
-    # stats band
-    by = 560
-    s.add(f'<line x1="{x0}" y1="{by}" x2="{W - x0}" y2="{by}" stroke="{t["line"]}"/>')
-    stats = LLMSLIM["stats"]
-    cw = (W - 2 * x0) / 4
-    for i, (big, l1, l2) in enumerate(stats):
-        x = x0 + i * cw
-        if i:
-            s.add(f'<line x1="{f(x - 14)}" y1="{by + 26}" x2="{f(x - 14)}" y2="{by + 128}" stroke="{t["line"]}"/>')
-        s.add(f'<g class="rv" style="animation-delay:{.8 + i * .1:.1f}s">'
-              + s.text(x, by + 82, big, "serif", 62, ink, ls=-1)
-              + s.text(x + 2, by + 112, l1, "sans-m", 15.5, body)
-              + s.text(x + 2, by + 134, l2, "mono", 11.5, muted, ls=.6) + "</g>")
-
-    # programs
-    py_ = 746
-    s.add(f'<line x1="{x0}" y1="712" x2="{W - x0}" y2="712" stroke="{t["line"]}"/>')
-    progs = LLMSLIM["programs"]
-    label = f"IN {len(progs)} STARTUP PROGRAMS"
-    s.add('<g class="fd" style="animation-delay:1.2s">' + s.text(x0, py_, label, "mono-m", 12, t["accent"], ls=2.2))
-    py_ += 34
-    px = x0
-    for i, p in enumerate(progs):
-        s.add(s.text(px, py_, p, "sans-m", 15, body))
-        px += measure(p, "sans-m", 15)
-        if i < len(progs) - 1:
-            s.add(f'<circle cx="{f(px + 8)}" cy="{py_ - 5}" r="1.6" fill="{t["faint"]}"/>')
-            px += 16
+    x0 = 48
+    s.add('<g class="rv" style="animation-delay:.05s">'
+          + logo_tile(s, x0, 46, 52, path_for("llmslim"), "LLMSlim", uid="ll")
+          + s.text(x0 + 68, 84, "LLMSlim", "sans-b", 38, t["ink"], ls=-1.4))
+    if ll.get("version"):
+        vx = x0 + 68 + measure("LLMSlim", "sans-b", 38, -1.4) + 14
+        vt = f"v{ll['version']}"
+        vw = measure(vt, "mono", 12) + 20
+        s.add(f'<rect x="{f(vx + .5)}" y="62.5" width="{f(vw - 1)}" height="25" rx="12.5" fill="{t["surface2"]}" '
+              f'stroke="{t["line2"]}"/>' + s.text(vx + 10, 79, vt, "mono", 12, t["body"]))
     s.add("</g>")
+    s.add('<g class="rv" style="animation-delay:.12s">' + s.text(x0, 146, L["tagline"], "sans-sb", 22, t["ink"])
+          + "".join(s.text(x0, 182 + i * 26, ln, "sans", 16.5, t["body"])
+                    for i, ln in enumerate(wrap(L["about"], "sans", 16.5, 540)[:3])) + "</g>")
+    cmd = "pip install llmslim"
+    bw = measure("$ " + cmd, "mono-m", 15) + 44
+    s.add('<g class="rv" style="animation-delay:.2s">'
+          f'<rect x="{x0 + .5}" y="272.5" width="{f(bw)}" height="45" rx="10" fill="{t["surface2"]}" '
+          f'stroke="{t["line2"]}"/>'
+          + s.tspan_text(x0 + 20, 300, [("$ ", "mono-m", t["accent"]), (cmd, "mono-m", t["ink"])], size=15)
+          + label(s, x0, 346, L["facts"]) + "</g>")
+
+    by = 384
+    s.add(f'<line x1="{x0}" y1="{by}" x2="{W - x0}" y2="{by}" stroke="{t["line"]}"/>')
+    cw = (W - 2 * x0) / 4
+    for i, (big, lab, src) in enumerate(L["stats"]):
+        x = x0 + i * cw + (0 if i == 0 else 24)
+        if i:
+            s.add(f'<line x1="{f(x0 + i * cw)}" y1="{by + 26}" x2="{f(x0 + i * cw)}" y2="{by + 112}" '
+                  f'stroke="{t["line"]}"/>')
+        s.add(f'<g class="rv" style="animation-delay:{.3 + i * .07:.2f}s">'
+              + s.text(x, by + 66, big, "sans-b", 42, t["ink"], ls=-1.6)
+              + s.text(x + 1, by + 94, lab, "sans-m", 14.5, t["body"])
+              + s.text(x + 1, by + 114, src, "mono", 11, t["muted"], ls=.8) + "</g>")
+
+    py = 528
+    s.add(f'<line x1="{x0}" y1="{py}" x2="{W - x0}" y2="{py}" stroke="{t["line"]}"/>')
+    s.add(label(s, x0, py + 34, f"BACKED BY {len(L['programs'])} STARTUP PROGRAMS"))
+    meta = []
+    if ll.get("downloads_week"):
+        meta.append(f"{ll['downloads_week']:,} DOWNLOADS LAST WEEK")
+    lists = [x for x in live.get("listed_in", []) if x.get("kind", "list") == "list"]
+    if lists:
+        meta.append(f"LISTED IN {len(lists)} CURATED LISTS")
+    if meta:
+        s.add(label(s, W - x0, py + 34, "  ·  ".join(meta), anchor="end"))
+    size, gap = 40, 9
+    for i, key in enumerate(L["programs"]):
+        s.add(f'<g class="rv" style="animation-delay:{.45 + i * .03:.2f}s">'
+              + logo_tile(s, x0 + i * (size + gap), py + 52, size, path_for(key), L["program_names"][i], uid=f"p{i}")
+              + "</g>")
     return s
 
 
@@ -485,245 +317,104 @@ def llmslim_card(theme):
 # Project cards
 # ---------------------------------------------------------------------------
 
-
-
-def glyph(s: Svg, kind, gx, gy, uid):
-    """84x84 animated line glyph, one per project."""
-    t = s.t
-    a, ln, fa = t["accent"], t["line2"], t["faint"]
-    out = []
-    if kind == "field":
-        css = (f"@keyframes sc{uid}{{0%{{transform:translateX(0)}}100%{{transform:translateX(84px)}}}}"
-               f".sc{uid}{{animation:sc{uid} 3.6s linear infinite}}"
-               f"@keyframes hv{uid}{{0%,100%{{fill:{fa}}}6%{{fill:{a}}}40%{{fill:{fa}}}}}")
-        for c in range(6):
-            for r in range(5):
-                cx, cy = gx + 10 + c * 13, gy + 16 + r * 13
-                css += ""
-                out.append(f'<rect x="{cx - 3}" y="{cy - 3}" width="6" height="6" rx="1.5" fill="{fa}" '
-                           f'style="animation:hv{uid} 3.6s linear {c * .6:.1f}s infinite"/>')
-        s.style(css)
-        s.defs_add(f'<clipPath id="gc{uid}"><rect x="{gx}" y="{gy}" width="84" height="84"/></clipPath>')
-        out.append(f'<g clip-path="url(#gc{uid})"><rect class="sc{uid}" x="{gx - 2}" y="{gy + 4}" width="2" height="76" fill="{a}"/></g>')
-    elif kind == "trace":
-        def wave(seed, amp, spike):
-            rnd = random.Random(seed)
-            pts, x = [], 0
-            while x <= 168:
-                y = 0 if x % 84 not in range(38, 50) else (spike if x % 84 == 44 else -spike * .5)
-                pts.append(f"{x},{f(y + rnd.uniform(-amp, amp))}")
-                x += 4
-            return " ".join(pts)
-        s.style(f"@keyframes tr{uid}{{to{{transform:translateX(-84px)}}}}.tr{uid}{{animation:tr{uid} 3.2s linear infinite}}")
-        s.defs_add(f'<clipPath id="gc{uid}"><rect x="{gx}" y="{gy}" width="84" height="84"/></clipPath>')
-        out.append(f'<g clip-path="url(#gc{uid})"><g class="tr{uid}">'
-                   f'<polyline transform="translate({gx} {gy + 30})" points="{wave(1, 2.5, 10)}" fill="none" stroke="{fa}" stroke-width="1.6"/>'
-                   f'<polyline transform="translate({gx} {gy + 58})" points="{wave(2, 2.5, 22)}" fill="none" stroke="{a}" stroke-width="1.8"/>'
-                   f"</g></g>")
-        out.append(f'<line x1="{gx}" y1="{gy + 44}" x2="{gx + 84}" y2="{gy + 44}" stroke="{ln}" stroke-dasharray="2 4"/>')
-    elif kind == "twin":
-        s.style(f"@keyframes tw{uid}{{0%,100%{{transform:scale(1)}}50%{{transform:scale(1.14)}}}}"
-                f".tw{uid}{{transform-box:fill-box;transform-origin:center;animation:tw{uid} 2.8s ease-in-out infinite}}"
-                f"@keyframes cv{uid}{{to{{stroke-dashoffset:-40}}}}.cv{uid}{{animation:cv{uid} 2.2s linear infinite}}")
-        out.append(f'<circle cx="{gx + 22}" cy="{gy + 42}" r="18" fill="none" stroke="{fa}" stroke-width="1.6"/>'
-                   f'<circle class="tw{uid}" cx="{gx + 62}" cy="{gy + 42}" r="18" fill="none" stroke="{a}" stroke-width="1.6" stroke-dasharray="3 3"/>'
-                   f'<path class="cv{uid}" d="M{gx + 10} {gy + 44} q6 -14 12 0 t12 0 t12 0 t12 0 t12 0 t12 0" fill="none" stroke="{a}" stroke-width="1.6" stroke-dasharray="6 4"/>'
-                   f'<line x1="{gx + 42}" y1="{gy + 14}" x2="{gx + 42}" y2="{gy + 70}" stroke="{ln}" stroke-dasharray="2 3"/>')
-    elif kind == "merkle":
-        nodes = {"r": (42, 14), "m1": (22, 42), "m2": (62, 42),
-                 "l1": (12, 70), "l2": (32, 70), "l3": (52, 70), "l4": (72, 70)}
-        edges = [("r", "m1"), ("r", "m2"), ("m1", "l1"), ("m1", "l2"), ("m2", "l3"), ("m2", "l4")]
-        s.style(f"@keyframes mk{uid}{{0%,100%{{fill:{t['surface']};stroke:{fa}}}12%,55%{{fill:{a};stroke:{a}}}}}")
-        for p, q in edges:
-            (x1, y1), (x2, y2) = nodes[p], nodes[q]
-            out.append(f'<line x1="{gx + x1}" y1="{gy + y1}" x2="{gx + x2}" y2="{gy + y2}" stroke="{ln}" stroke-width="1.4"/>')
-        delays = {"l1": 0, "l2": .2, "l3": .4, "l4": .6, "m1": .9, "m2": 1.1, "r": 1.5}
-        for k, (x, y) in nodes.items():
-            sz = 9 if k == "r" else 7
-            out.append(f'<rect x="{gx + x - sz / 2}" y="{gy + y - sz / 2}" width="{sz}" height="{sz}" rx="1.5" '
-                       f'fill="{t["surface"]}" stroke="{fa}" stroke-width="1.4" '
-                       f'style="animation:mk{uid} 4s ease {delays[k]}s infinite"/>')
-    elif kind == "bridge":
-        arc = f"M{gx + 6} {gy + 58} Q{gx + 42} {gy + 4} {gx + 78} {gy + 58}"
-        out.append(f'<path d="{arc}" fill="none" stroke="{fa}" stroke-width="1.6"/>'
-                   f'<line x1="{gx}" y1="{gy + 58}" x2="{gx + 84}" y2="{gy + 58}" stroke="{fa}" stroke-width="1.6"/>')
-        for i in range(1, 8):
-            x = gx + 6 + i * 9
-            yy = gy + 58 - (1 - ((i * 9 - 36) / 36) ** 2) * 27
-            out.append(f'<line x1="{f(x)}" y1="{f(yy)}" x2="{f(x)}" y2="{gy + 58}" stroke="{ln}" stroke-width="1"/>')
-        out.append(f'<circle r="4" fill="{a}"><animateMotion dur="3s" repeatCount="indefinite" path="{arc}" '
-                   f'keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>')
-    elif kind == "pulse":
-        house = f"M{gx + 8} {gy + 40} L{gx + 42} {gy + 10} L{gx + 76} {gy + 40} L{gx + 76} {gy + 76} L{gx + 8} {gy + 76} Z"
-        ecg = (f"M{gx + 14} {gy + 54} L{gx + 30} {gy + 54} L{gx + 35} {gy + 46} L{gx + 40} {gy + 64} "
-               f"L{gx + 46} {gy + 34} L{gx + 51} {gy + 58} L{gx + 55} {gy + 54} L{gx + 70} {gy + 54}")
-        s.style(f"@keyframes ec{uid}{{0%{{stroke-dashoffset:120}}60%,100%{{stroke-dashoffset:0}}}}"
-                f".ec{uid}{{stroke-dasharray:120;animation:ec{uid} 2.4s ease-in-out infinite}}")
-        out.append(f'<path d="{house}" fill="none" stroke="{fa}" stroke-width="1.6" stroke-linejoin="round"/>'
-                   f'<path class="ec{uid}" d="{ecg}" fill="none" stroke="{a}" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>')
-    s.add("".join(out))
-
-
-def project_card(theme, p, idx):
-    W, H = 590, 400
-    t = theme
-    s = Svg(W, H, t, f"{p['name']}: {p['desc']}")
-    reveal_css(s)
-    card_bg(s, 0, 0, W, H, r=26)
-    pad = 40
-    s.add('<g class="fd" style="animation-delay:.1s">'
-          + s.text(pad, 58, f"{idx:02d}", "mono-m", 12.5, t["muted"], ls=2)
-          + s.text(pad + 34, 58, p["tag"], "mono-m", 12.5, t["accent"], ls=1.8) + "</g>")
-    glyph(s, p["glyph"], W - pad - 84, 30, p["key"][:3])
-    s.add('<g class="rv" style="animation-delay:.15s">'
-          + s.text(pad - 2, 158, p["name"], "serif", 54, t["ink"], ls=-1) + "</g>")
-    lines = wrap(p["desc"], "sans", 17.5, W - pad * 2)[:4]
-    s.add('<g class="rv" style="animation-delay:.25s">'
-          + "".join(s.text(pad, 200 + i * 27, ln, "sans", 17.5, t["body"]) for i, ln in enumerate(lines)) + "</g>")
-    # bottom row
-    by = H - 70
-    s.add(f'<line x1="{pad}" y1="{by - 16}" x2="{W - pad}" y2="{by - 16}" stroke="{t["line"]}"/>')
-    x = pad
-    s.add('<g class="fd" style="animation-delay:.4s">')
-    for st in p["stack"]:
-        x += pill(s, x, by, st, "mono", 12, pad_x=11, h=28, ls=.3, fill="none", stroke=t["line2"], color=t["muted"]) + 7
-    label = "LIVE + SOURCE" if p["live"] else "SOURCE"
-    lw = measure(label, "mono-m", 11.5, 1.6)
-    ax = W - pad
-    s.add(s.text(ax - 40, by + 18.5, label, "mono-m", 11.5, t["muted"], anchor="end", ls=1.6))
-    s.add(f'<circle cx="{ax - 16}" cy="{by + 14}" r="16" fill="{t["accent"]}"/>'
-          + s.text(ax - 16, by + 20, "↗", "sans-m", 16, t["on_accent"], anchor="middle"))
-    s.add("</g>")
-    _ = lw
-    return s
-
-
-def fresh_card(theme, item, idx):
-    """Auto-generated card for a brand-new public repo (data from refresh.py)."""
-    W, H = 590, 312
-    t = theme
-    s = Svg(W, H, t, f"{item['name']}: {item['desc']}")
-    reveal_css(s)
-    card_bg(s, 0, 0, W, H, r=26)
-    pad = 40
-    import datetime as _dt
-    when = "NEW  ·  " + _dt.date.fromisoformat(item["created"]).strftime("%d %b %Y").upper()
-    ww = measure(when, "mono", 11.5, 1.6)
-    tag = (item.get("tag") or "New repository").upper()
-    while " " in tag and measure(tag, "mono-m", 12, 1.8) > W - pad * 2 - ww - 40:
-        tag = tag.rsplit(" ", 1)[0].rstrip(" ,:;(")
-    s.style("@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3);opacity:0}}"
-            ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}")
-    s.add('<g class="fd" style="animation-delay:.1s">'
-          + s.text(pad, 56, tag, "mono-m", 12, t["accent"], ls=1.8)
-          + f'<circle class="pulse" cx="{f(W - pad - ww - 12)}" cy="52" r="3.5" fill="{t["accent"]}"/>'
-          + f'<circle cx="{f(W - pad - ww - 12)}" cy="52" r="3.5" fill="{t["accent"]}"/>'
-          + s.text(W - pad, 56, when, "mono", 11.5, t["muted"], anchor="end", ls=1.6) + "</g>")
-    s.add('<g class="rv" style="animation-delay:.15s">'
-          + s.text(pad - 2, 122, item["name"], "serif", 46, t["ink"], ls=-.8) + "</g>")
-    lines = wrap(item["desc"], "sans", 16.5, W - pad * 2)
-    if len(lines) > 3:
-        lines = lines[:3]
-        while measure(lines[2] + "...", "sans", 16.5) > W - pad * 2:
-            lines[2] = lines[2].rsplit(" ", 1)[0]
-        lines[2] = lines[2].rstrip(",.;:") + "..."
-    s.add('<g class="rv" style="animation-delay:.25s">'
-          + "".join(s.text(pad, 160 + i * 25, ln, "sans", 16.5, t["body"]) for i, ln in enumerate(lines)) + "</g>")
-    by = H - 62
-    s.add(f'<line x1="{pad}" y1="{by - 16}" x2="{W - pad}" y2="{by - 16}" stroke="{t["line"]}"/>')
-    x = pad
-    s.add('<g class="fd" style="animation-delay:.4s">')
-    for chip in [c for c in (item.get("language"), f"{item['stars']} stars" if item.get("stars") else "") if c]:
-        x += pill(s, x, by, chip, "mono", 12, pad_x=11, h=28, ls=.3, fill="none", stroke=t["line2"], color=t["muted"]) + 7
-    label = "LIVE + SOURCE" if item.get("homepage") else "SOURCE"
-    ax = W - pad
-    s.add(s.text(ax - 40, by + 18.5, label, "mono-m", 11.5, t["muted"], anchor="end", ls=1.6))
-    s.add(f'<circle cx="{ax - 16}" cy="{by + 14}" r="16" fill="{t["accent"]}"/>'
-          + s.text(ax - 16, by + 20, "↗", "sans-m", 16, t["on_accent"], anchor="middle") + "</g>")
-    return s
-
-
-def fresh_header(theme):
-    W, H = 1200, 64
-    t = theme
-    s = Svg(W, H, t, "New on GitHub, picked up automatically")
-    s.style(f".ln{{transform-box:fill-box;transform-origin:left center;"
-            f"animation:ln 1.6s {EASE} .05s both}}@keyframes ln{{from{{transform:scaleX(0)}}to{{transform:none}}}}")
-    s.add(f'<rect class="ln" x="0" y="14" width="{W}" height="1" fill="{t["line"]}"/>')
-    s.add(s.tspan_text(0, 50, [("NEW ON GITHUB", "mono-m", t["accent"]), ("  ·  PICKED UP AUTOMATICALLY", "mono", t["muted"])],
-                       size=12.5, attrs=' letter-spacing="2.2"'))
-    s.add(s.text(W, 50, "LAST 60 DAYS", "mono", 12, t["muted"], anchor="end", ls=2))
-    return s
-
-
-# ---------------------------------------------------------------------------
-# Recognition bento
-# ---------------------------------------------------------------------------
-
-def recognition(theme):
-    W, gap = 1200, 16
-    t = theme
-    R = RECOGNITION
-    tiles = R["tiles"]
-    tile_rows = [tiles[i:i + 3] for i in range(0, len(tiles), 3)]
-    rows = [300] + [206] * len(tile_rows)
-    H = sum(rows) + gap * (len(rows) - 1)
-    feat, side = R["feature"], R["side"]
-    summary = "; ".join(["".join(x[0] for x in feat["title"]) + " (" + feat["eyebrow"].split("  ")[0] + ")",
-                         f'{side["eyebrow"]} {side["title"]} {side["body"]}']
-                        + [f"{b} {a}: {c}" for b, a, c in [(x[1], x[0], x[2]) for x in tiles]])
-    s = Svg(W, H, t, "Recognition", summary)
-    reveal_css(s)
-    ink, body, muted, acc = t["ink"], t["body"], t["muted"], t["accent"]
-
-    # feature tile
-    aw = 776
-    card_bg(s, 0, 0, aw, rows[0], glow=True)
+def project_card(t, p):
+    w, h = 590, 412
+    s = Svg(w, h, t, f"{p['name']}: {p['line']}")
+    reveal(s)
+    card(s, 0, 0, w, h, r=18)
+    ix, iy, iw, ih = 10, 10, w - 20, 320
+    s.defs_add(f'<clipPath id="shot"><rect x="{ix}" y="{iy}" width="{iw}" height="{ih}" rx="11"/></clipPath>')
+    img = SHOTS / f"{p['shot']}.jpg"
+    if img.exists():
+        s.add(f'<g class="fd"><g clip-path="url(#shot)"><image href="{data_uri(img)}" x="{ix}" y="{iy}" '
+              f'width="{iw}" height="{ih}" preserveAspectRatio="xMidYMid slice"/></g>'
+              f'<rect x="{ix + .5}" y="{iy + .5}" width="{iw - 1}" height="{ih - 1}" rx="11" fill="none" '
+              f'stroke="{t["line"]}"/></g>')
+    tag = p["tag"]
+    tw = measure(tag, "mono-m", 10.5, 1.4) + 22
+    s.add(f'<rect x="24" y="24" width="{f(tw)}" height="24" rx="12" fill="#000000" fill-opacity=".62"/>'
+          + s.text(35, 40, tag, "mono-m", 10.5, "#FFFFFF", ls=1.4))
     s.add('<g class="rv" style="animation-delay:.1s">'
-          + s.text(36, 54, feat["eyebrow"], "mono-m", 12.5, acc, ls=2)
-          + s.tspan_text(32, 134, [(txt, font, ink) for txt, font in feat["title"]], size=72,
-                         attrs=' letter-spacing="-1.5"') + "</g>")
-    lines = wrap(feat["body"], "sans", 17, aw - 72)[:3]
-    s.add('<g class="rv" style="animation-delay:.2s">'
-          + "".join(s.text(36, 180 + i * 26, ln, "sans", 17, body) for i, ln in enumerate(lines)) + "</g>")
-    s.add('<g class="fd" style="animation-delay:.5s">'
-          + s.text(36, rows[0] - 30, feat["foot"], "mono", 12, muted, ls=1.8) + "</g>")
+          + s.text(24, 368, p["name"], "sans-sb", 22, t["ink"], ls=-.4)
+          + s.text(24, 393, clip_text(p["line"], "sans", 15, w - 110), "sans", 15, t["body"])
+          + f'<circle cx="{w - 40}" cy="379" r="17.5" fill="{t["surface2"]}" stroke="{t["line2"]}"/>'
+          + icon("arrow", w - 48, 371, 16, t["ink"]) + "</g>")
+    return s
 
-    # side tile with an exoplanet transit and its light curve
-    bx, bw = aw + gap, W - aw - gap
-    card_bg(s, bx, 0, bw, rows[0])
-    cx, cy = bx + bw - 96, 92
-    s.style("@keyframes transit{0%{transform:translateX(-70px)}100%{transform:translateX(70px)}}"
-            ".pl{animation:transit 5s linear infinite}"
-            "@keyframes dip{0%,38%{transform:translateY(0)}46%,54%{transform:translateY(10px)}62%,100%{transform:translateY(0)}}"
-            ".dp{animation:dip 5s ease-in-out infinite}")
-    s.defs_add(f'<clipPath id="star"><circle cx="{cx}" cy="{cy}" r="40"/></clipPath>')
-    s.add(f'<circle cx="{cx}" cy="{cy}" r="40" fill="{mix(acc, t["surface"], .25)}"/>'
-          f'<circle cx="{cx}" cy="{cy}" r="52" fill="none" stroke="{t["line2"]}" stroke-dasharray="2 4"/>'
-          f'<g clip-path="url(#star)"><circle class="pl" cx="{cx}" cy="{cy + 6}" r="9" fill="{t["surface"]}"/></g>')
-    lx0, ly = bx + 36, 176
-    s.add(f'<line x1="{lx0}" y1="{ly}" x2="{bx + bw - 36}" y2="{ly}" stroke="{t["line"]}"/>')
-    s.add(f'<g class="dp"><circle cx="{f(lx0 + (bw - 72) / 2)}" cy="{ly}" r="3.5" fill="{acc}"/></g>')
-    s.add('<g class="rv" style="animation-delay:.3s">'
-          + s.text(bx + 36, 54, side["eyebrow"], "mono-m", 12.5, acc, ls=2)
-          + s.text(bx + 34, 236, side["title"], "serif", 40, ink, ls=-.6)
-          + s.text(bx + 34, 270, side["body"], "sans", 16, body) + "</g>")
 
-    # tiles, three per row
-    sw = (W - 2 * gap) / 3
-    y = rows[0] + gap
-    k = 0
-    for ri, row in enumerate(tile_rows):
-        for ci, (big, l1, l2) in enumerate(row):
-            x = ci * (sw + gap)
-            card_bg(s, x, y, sw, rows[ri + 1])
-            s.add(f'<g class="rv" style="animation-delay:{.35 + k * .08:.2f}s">'
-                  + s.text(x + 30, y + 96, big, "serif", 66, ink, ls=-1.2)
-                  + f'<rect x="{f(x + 30)}" y="{y + 120}" width="26" height="2" fill="{acc}"/>'
-                  + s.text(x + 30, y + 152, l1, "sans-m", 17, ink)
-                  + s.text(x + 30, y + 176, l2, "sans", 14.5, muted) + "</g>")
-            k += 1
-        y += rows[ri + 1] + gap
+# ---------------------------------------------------------------------------
+# Open source logo wall
+# ---------------------------------------------------------------------------
+
+def oss_wall(t):
+    live = load_live()
+    orgs = live.get("org_list", [])
+    cols, gap, th, max_tiles = 4, 16, 84, 20
+    tw = (W - (cols - 1) * gap) / cols
+    shown = orgs if len(orgs) <= max_tiles else orgs[:max_tiles - 1]
+    rest = orgs[len(shown):]
+    rows = -(-(len(shown) + (1 if rest else 0)) // cols)
+    band = 128
+    H = band + gap + rows * (th + gap) - gap
+    s = Svg(W, H, t, f"{live.get('prs', 0)} pull requests to {live.get('orgs', 0)} organisations, "
+                     f"{live.get('merged', 0)} merged",
+            "Organisations: " + ", ".join(f"{o['name']} ({o['merged']} merged of {o['prs']})" for o in orgs))
+    reveal(s)
+    card(s, 0, 0, W, band, r=20)
+    cells = [(live.get("prs", 0), "pull requests"), (live.get("merged", 0), "merged"),
+             (live.get("orgs", 0), "organisations"), (live.get("repos", 0), "repositories")]
+    cw = (W - 96) / 4
+    for i, (n, lab) in enumerate(cells):
+        x = 48 + i * cw
+        if i:
+            s.add(f'<line x1="{f(x - 24)}" y1="34" x2="{f(x - 24)}" y2="94" stroke="{t["line"]}"/>')
+        s.add(f'<g class="rv" style="animation-delay:{.05 + i * .06:.2f}s">'
+              + s.text(x, 74, f"{n:,}", "sans-b", 44, t["accent"] if i == 1 else t["ink"], ls=-1.6)
+              + s.text(x + 2, 100, lab, "sans", 14.5, t["muted"]) + "</g>")
+    for k, o in enumerate(shown):
+        r, c = divmod(k, cols)
+        x, y = c * (tw + gap), band + gap + r * (th + gap)
+        card(s, x, y, tw, th, r=16)
+        plural = "S" if o["prs"] != 1 else ""
+        sub = f"{o['merged']} MERGED · {o['prs']} PR{plural}" if o["merged"] else f"{o['prs']} PR{plural} IN REVIEW"
+        s.add(f'<g class="rv" style="animation-delay:{.15 + k * .03:.2f}s">'
+              + logo_tile(s, x + 18, y + 18, 48, LOGOS / f"gh-{o['logo']}.png", o["name"], uid=f"o{k}")
+              + s.text(x + 80, y + 40, clip_text(o["name"], "sans-sb", 16, tw - 96), "sans-sb", 16, t["ink"])
+              + s.text(x + 80, y + 61, sub, "mono", 11, t["accent"] if o["merged"] else t["muted"], ls=1)
+              + "</g>")
+    if rest:
+        k = len(shown)
+        r, c = divmod(k, cols)
+        x, y = c * (tw + gap), band + gap + r * (th + gap)
+        card(s, x, y, tw, th, r=16, fill=t["surface2"])
+        names = ", ".join(o["name"] for o in rest)
+        s.add(s.text(x + 22, y + 40, f"+{len(rest)} more", "sans-sb", 16, t["ink"])
+              + s.text(x + 22, y + 61, clip_text(names, "mono", 11, tw - 40), "mono", 11, t["muted"]))
+    return s
+
+
+# ---------------------------------------------------------------------------
+# Recognition
+# ---------------------------------------------------------------------------
+
+def recognition(t):
+    gap = 16
+    cw, ch = (W - gap) / 2, 112
+    rows = -(-len(RECOGNITION) // 2)
+    H = rows * (ch + gap) - gap
+    s = Svg(W, H, t, "Recognition", " ".join(f"{a} ({d}): {b}" for _, a, b, d in RECOGNITION))
+    reveal(s)
+    for k, (logo, title, detail, year) in enumerate(RECOGNITION):
+        r, c = divmod(k, 2)
+        x, y = c * (cw + gap), r * (ch + gap)
+        card(s, x, y, cw, ch, r=18)
+        lines = wrap(detail, "sans", 14, cw - 92 - 28)[:2]
+        s.add(f'<g class="rv" style="animation-delay:{.05 + k * .05:.2f}s">'
+              + logo_tile(s, x + 20, y + 28, 56, path_for(logo), title, uid=f"r{k}")
+              + s.text(x + 92, y + 44, clip_text(title, "sans-sb", 17, cw - 92 - 70), "sans-sb", 17, t["ink"])
+              + s.text(x + cw - 22, y + 44, year, "mono", 11.5, t["muted"], anchor="end", ls=1)
+              + "".join(s.text(x + 92, y + 68 + i * 20, ln, "sans", 14, t["body"]) for i, ln in enumerate(lines))
+              + "</g>")
     return s
 
 
@@ -731,212 +422,136 @@ def recognition(theme):
 # Experience
 # ---------------------------------------------------------------------------
 
-
-
-def experience(theme):
-    W, H = 1200, 596
-    t = theme
-    s = Svg(W, H, t, "Experience",
-            "DRDO SAG research intern 2026, founder of AMEYOR, Olinp Technologies intern 2025. AWS Student Builder "
-            "Group Leader, GeeksforGeeks Campus Mantri, IIC Head, GDG coordinator, Google Gemini Student Ambassador.")
-    reveal_css(s)
-    ink, body, muted, acc = t["ink"], t["body"], t["muted"], t["accent"]
+def experience(t):
     gap = 16
-    lw = 640
-    card_bg(s, 0, 0, lw, H - 118)
-    card_bg(s, lw + gap, 0, W - lw - gap, H - 118)
-    card_bg(s, 0, H - 102, W, 102)
-
-    # work timeline
-    s.add(s.text(36, 52, "WORK", "mono-m", 12.5, acc, ls=2.4))
-    s.style(f".tl{{transform-box:fill-box;transform-origin:top;animation:tl 1.6s {EASE} .2s both}}"
-            "@keyframes tl{from{transform:scaleY(0)}to{transform:none}}")
-    s.add(f'<rect class="tl" x="44" y="92" width="1.5" height="{(len(WORK) - 1) * 128}" fill="{t["line2"]}"/>')
-    for i, (org, role, when, note) in enumerate(WORK):
-        y = 96 + i * 128
-        s.add(f'<g class="rv" style="animation-delay:{.25 + i * .15:.2f}s">'
-              f'<circle cx="44.75" cy="{y - 4}" r="6" fill="{t["surface"]}" stroke="{acc}" stroke-width="2"/>'
-              + s.text(72, y + 2, org, "sans-sb", 20, ink)
-              + s.text(lw - 36, y + 2, when, "mono", 11.5, muted, anchor="end", ls=1.6)
-              + s.text(72, y + 30, role, "sans", 16.5, body)
-              + "".join(s.text(72, y + 58 + j * 23, ln, "sans", 15, muted)
-                        for j, ln in enumerate(wrap(note, "sans", 15, lw - 120)[:2]))
+    cw = (W - gap) / 2
+    ch = 64 + len(LEAD) * 58 + 8
+    H = ch + gap + 96
+    s = Svg(W, H, t, "Experience",
+            " ".join(f"{o}, {r}, {w.lower()}." for _, o, r, w, _ in WORK)
+            + " " + " ".join(f"{o}, {r}." for _, o, r, _ in LEAD))
+    reveal(s)
+    card(s, 0, 0, cw, ch, r=20)
+    card(s, cw + gap, 0, cw, ch, r=20)
+    s.add(label(s, 28, 44, "WORK"))
+    for i, (logo, org, role, when, note) in enumerate(WORK):
+        y = 72 + i * 118
+        lines = wrap(note, "sans", 13.5, cw - 96 - 28)[:2]
+        s.add(f'<g class="rv" style="animation-delay:{.05 + i * .07:.2f}s">'
+              + logo_tile(s, 28, y, 48, path_for(logo), org.split(",")[0], uid=f"w{i}")
+              + s.text(92, y + 18, clip_text(org, "sans-sb", 16, cw - 92 - 130), "sans-sb", 16, t["ink"])
+              + s.text(cw - 28, y + 18, when, "mono", 11, t["muted"], anchor="end", ls=1)
+              + s.text(92, y + 40, role, "sans", 14.5, t["body"])
+              + "".join(s.text(92, y + 64 + j * 19, ln, "sans", 13.5, t["muted"]) for j, ln in enumerate(lines))
               + "</g>")
-
-    # leadership list
-    x0 = lw + gap + 32
-    rw = W - x0 - 32
-    s.add(s.text(x0, 52, "LEADERSHIP & COMMUNITY", "mono-m", 12.5, acc, ls=2.4))
-    for i, (org, role, when) in enumerate(LEAD):
-        y = 100 + i * 54
-        s.add(f'<g class="rv" style="animation-delay:{.3 + i * .07:.2f}s">'
-              + s.text(x0, y, org, "sans-sb", 17, ink)
-              + s.text(x0 + rw, y, when, "mono", 11, muted, anchor="end", ls=1.4)
-              + s.text(x0, y + 23, role, "sans", 15, body)
-              + (f'<line x1="{x0}" y1="{y + 39}" x2="{x0 + rw}" y2="{y + 39}" stroke="{t["line"]}"/>'
+    x0 = cw + gap
+    s.add(label(s, x0 + 28, 44, "COMMUNITY AND LEADERSHIP"))
+    for i, (logo, org, role, when) in enumerate(LEAD):
+        y = 66 + i * 58
+        s.add(f'<g class="rv" style="animation-delay:{.1 + i * .05:.2f}s">'
+              + logo_tile(s, x0 + 28, y, 40, path_for(logo), org, uid=f"c{i}")
+              + s.text(x0 + 84, y + 17, clip_text(org, "sans-sb", 15, cw - 84 - 90), "sans-sb", 15, t["ink"])
+              + s.text(x0 + cw - 28, y + 17, when, "mono", 11, t["muted"], anchor="end", ls=1)
+              + s.text(x0 + 84, y + 36, role, "sans", 13.5, t["body"])
+              + (f'<line x1="{x0 + 84}" y1="{y + 50}" x2="{x0 + cw - 28}" y2="{y + 50}" stroke="{t["line"]}"/>'
                  if i < len(LEAD) - 1 else "")
               + "</g>")
+    logo, school, degree, score, score_label, years = EDUCATION
+    ey = ch + gap
+    card(s, 0, ey, W, 96, r=20)
+    s.add('<g class="rv" style="animation-delay:.4s">'
+          + logo_tile(s, 24, ey + 20, 56, path_for(logo), school, uid="edu")
+          + s.text(96, ey + 44, school, "sans-sb", 17, t["ink"])
+          + s.text(96, ey + 68, degree, "sans", 14.5, t["body"])
+          + s.text(W - 28, ey + 52, score, "sans-b", 34, t["ink"], anchor="end", ls=-1)
+          + s.text(W - 28 - measure(score, "sans-b", 34, -1) - 12, ey + 50, score_label, "mono", 11, t["muted"],
+                   anchor="end", ls=1.4)
+          + s.text(W - 28, ey + 74, years, "mono", 11, t["muted"], anchor="end", ls=1.4) + "</g>")
+    return s
 
-    # education strip
-    ey = H - 102
-    s.add('<g class="fd" style="animation-delay:.9s">'
-          + s.text(36, ey + 44, "EDUCATION", "mono-m", 12.5, acc, ls=2.4)
-          + s.tspan_text(36, ey + 76, [(EDUCATION["school"], "sans-sb", ink),
-                                       ("   " + EDUCATION["degree"], "sans", body)], size=17)
-          + s.text(W - 36, ey + 60, EDUCATION["score"], "serif", 44, ink, anchor="end")
-          + s.text(W - 36 - measure(EDUCATION["score"], "serif", 44) - 12, ey + 60, EDUCATION["score_label"], "mono",
-                   11.5, muted, anchor="end", ls=1.6)
-          + s.text(W - 36, ey + 82, EDUCATION["years"], "mono", 11, muted, anchor="end", ls=1.6)
+
+# ---------------------------------------------------------------------------
+# Stack (skill-icons, MIT)
+# ---------------------------------------------------------------------------
+
+def stack_icon(name, theme_name):
+    for cand in (f"{name}-{'Dark' if theme_name == 'dark' else 'Light'}.svg", f"{name}.svg"):
+        p = STACK_DIR / cand
+        if p.exists():
+            return p
+    return None
+
+
+def stack(t):
+    size, gap = 64, 18
+    H = len(STACK) * size + (len(STACK) - 1) * gap + 8
+    s = Svg(W, H, t, "Stack", ", ".join(sum(STACK, [])))
+    reveal(s)
+    k = 0
+    for r, row in enumerate(STACK):
+        total = len(row) * size + (len(row) - 1) * gap
+        x0 = (W - total) / 2
+        for i, name in enumerate(row):
+            p = stack_icon(name, t["name"])
+            if not p:
+                continue
+            s.add(f'<g class="rv" style="animation-delay:{.03 * k:.2f}s"><image href="{data_uri(p)}" '
+                  f'x="{f(x0 + i * (size + gap))}" y="{4 + r * (size + gap)}" width="{size}" height="{size}"/></g>')
+            k += 1
+    return s
+
+
+# ---------------------------------------------------------------------------
+# Contact
+# ---------------------------------------------------------------------------
+
+def contact(t):
+    H = 290
+    C = CONTACT
+    s = Svg(W, H, t, f"{C['title'][0]} {C['title'][1]}", f"{C['body']} {C['button']} or email {EMAIL}.")
+    reveal(s)
+    card(s, 0, 0, W, H, r=24)
+    dot_grid(s, 600, 0, 600, H, gap=15, r=1, opacity=.2 if t["name"] == "dark" else .14, fade_cx=.7, fade_cy=.5,
+             uid="cg")
+    s.add('<g class="rv" style="animation-delay:.05s">'
+          + s.text(48, 104, C["title"][0], "sans-b", 44, t["ink"], ls=-1.6)
+          + s.text(48, 156, C["title"][1], "sans-b", 44, gray2(t), ls=-1.6) + "</g>")
+    s.add('<g class="rv" style="animation-delay:.15s">'
+          + "".join(s.text(48, 204 + i * 26, ln, "sans", 16.5, t["body"])
+                    for i, ln in enumerate(wrap(C["body"], "sans", 16.5, 600)[:2])) + "</g>")
+    bw = measure(C["button"], "sans-m", 16) + 96
+    bx, by = W - 48 - bw, 100
+    s.add('<g class="rv" style="animation-delay:.25s">'
+          f'<rect x="{f(bx)}" y="{by}" width="{f(bw)}" height="54" rx="27" fill="{t["button"]}"/>'
+          + icon("calendar", bx + 22, by + 17, 20, t["on_button"])
+          + s.text(bx + 54, by + 33, C["button"], "sans-m", 16, t["on_button"])
+          + icon("arrow", bx + bw - 38, by + 19, 16, t["on_button"])
+          + s.text(bx + bw / 2, by + 92, f"or write to {EMAIL}", "mono", 12.5, t["muted"], anchor="middle")
           + "</g>")
     return s
 
 
 # ---------------------------------------------------------------------------
-# Toolbox marquee
-# ---------------------------------------------------------------------------
 
-
-
-def toolbox(theme):
-    W, H = 1200, 248
-    t = theme
-    s = Svg(W, H, t, "Toolbox", ", ".join(sum(TOOLS, [])))
-    s.defs_add('<linearGradient id="fadeg" x1="0" x2="1" y1="0" y2="0">'
-               '<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".08" stop-color="#fff"/>'
-               '<stop offset=".92" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>'
-               f'<mask id="fade"><rect width="{W}" height="{H}" fill="url(#fadeg)"/></mask>')
-    rows = []
-    for r, items in enumerate(TOOLS):
-        y = 18 + r * 76
-        xs, x = [], 0.0
-        for it in items:
-            xs.append(x)
-            x += measure(it, "sans-m", 17) + 44 + 12
-        loop = x
-        g = []
-        for rep in (0, 1, 2):
-            for it, x0 in zip(items, xs):
-                bx = x0 + rep * loop
-                w = measure(it, "sans-m", 17) + 44
-                hot = it in HOT_TOOLS
-                g.append(f'<rect x="{f(bx)}" y="{y}" width="{f(w)}" height="52" rx="26" '
-                         f'fill="{t["surface"]}" stroke="{t["accent"] if hot else t["line"]}"/>')
-                g.append(s.text(bx + 22, y + 32, it, "sans-m", 17, t["ink"] if hot else t["body"]))
-        dur = loop / (22 + r * 6)
-        direction = "normal" if r % 2 == 0 else "reverse"
-        s.style(f"@keyframes mq{r}{{from{{transform:translateX(0)}}to{{transform:translateX(-{f(loop)}px)}}}}"
-                f".mq{r}{{animation:mq{r} {dur:.1f}s linear infinite {direction}}}")
-        rows.append(f'<g class="mq{r}">{"".join(g)}</g>')
-    s.add(f'<g mask="url(#fade)">{"".join(rows)}</g>')
-    return s
-
-
-# ---------------------------------------------------------------------------
-# Contact / freelance card
-# ---------------------------------------------------------------------------
-
-def contact(theme):
-    W, H = 1200, 404
-    t = theme
-    dark = t["name"] == "dark"
-    s = Svg(W, H, t, "Available for freelance. Have something in mind? Let's build it.",
-            "Python backends, retrieval systems, AI features and prototypes. Book a 30 minute call or email "
-            "yashvt9404@gmail.com.")
-    reveal_css(s)
-    s.defs_add(f'<clipPath id="cc"><rect width="{W}" height="{H}" rx="30"/></clipPath>')
-    if dark:
-        s.defs_add('<radialGradient id="emb2" cx="0.1" cy="1.1" r="0.8">'
-                   f'<stop offset="0" stop-color="{t["accent"]}" stop-opacity=".22"/>'
-                   f'<stop offset="1" stop-color="{t["accent"]}" stop-opacity="0"/></radialGradient>')
-        bg = f'<rect width="{W}" height="{H}" fill="{t["surface"]}"/><rect width="{W}" height="{H}" fill="url(#emb2)"/>'
-        ink, body, muted = t["ink"], t["body"], t["muted"]
-    else:
-        s.defs_add('<linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">'
-                   '<stop offset="0" stop-color="#EDDFD0"/><stop offset=".6" stop-color="#C9D6E4"/>'
-                   '<stop offset="1" stop-color="#9CC1E7"/></linearGradient>')
-        bg = f'<rect width="{W}" height="{H}" fill="url(#sky2)"/>'
-        ink, body, muted = t["ink"], "#3A3431", "#5C5552"
-    grain(s, "g2", opacity=0.08 if dark else 0.06)
-    s.add(f'<g clip-path="url(#cc)">{bg}<rect width="{W}" height="{H}" filter="url(#g2)"/></g>')
-    if dark:
-        s.add(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="30" fill="none" stroke="{t["line"]}"/>')
-
-    x0 = 56
-    s.style("@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3.2);opacity:0}}"
-            ".pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}")
-    s.add('<g class="rv" style="animation-delay:.1s">'
-          f'<circle cx="{x0 + 5}" cy="70" r="5" fill="{t["accent"]}" class="pulse"/>'
-          f'<circle cx="{x0 + 5}" cy="70" r="5" fill="{t["accent"]}"/>'
-          + s.text(x0 + 22, 75, "08  /  CONTACT  ·  AVAILABLE FOR FREELANCE", "mono-m", 13, t["accent"], ls=2.2)
-          + "</g>")
-    s.add('<g class="rv" style="animation-delay:.2s">'
-          + s.text(x0 - 3, 178, "Have something in mind?", "serif", 78, ink, ls=-1.6) + "</g>")
-    w = measure("Let's build it", "serif-i", 78, -1.6)
-    s.add('<g class="rv" style="animation-delay:.32s">'
-          + s.text(x0 - 3, 262, "Let's build it", "serif-i", 78, ink, ls=-1.6)
-          + f'<circle cx="{f(x0 + w + 8)}" cy="252" r="7" fill="{t["accent"]}"/>' + "</g>")
-    lines = wrap("Python backends, retrieval systems, AI features, and getting a prototype into someone's hands. "
-                 "I usually reply within a day.", "sans", 18, 620)
-    s.add('<g class="rv" style="animation-delay:.42s">'
-          + "".join(s.text(x0, 316 + i * 28, ln, "sans", 18, body) for i, ln in enumerate(lines)) + "</g>")
-
-    # right column: services + button
-    rx = 820
-    svc = ["PYTHON BACKENDS", "RAG + RETRIEVAL", "AI FEATURES", "PROTOTYPE TO PRODUCT"]
-    for i, it in enumerate(svc):
-        y = 128 + i * 40
-        s.add(f'<g class="rv" style="animation-delay:{.4 + i * .08:.2f}s">'
-              + s.text(rx, y, f"0{i + 1}", "mono", 12, muted, ls=1.6)
-              + s.text(rx + 36, y, it, "mono-m", 13, ink, ls=1.8)
-              + f'<line x1="{rx}" y1="{y + 15}" x2="{W - 56}" y2="{y + 15}" stroke="{t["line2"] if dark else "rgba(26,22,21,.12)"}"/>'
-              + "</g>")
-    label = "Book a 30 min call"
-    bw = measure(label, "sans-m", 17) + 84
-    by = 318
-    s.add(f'<g class="rv" style="animation-delay:.8s">'
-          f'<rect x="{rx}" y="{by}" width="{f(bw)}" height="56" rx="28" fill="{t["ink"]}"/>'
-          + s.text(rx + 26, by + 34, label, "sans-m", 17, t["bg"] if dark else "#FFFFFF")
-          + f'<circle cx="{f(rx + bw - 30)}" cy="{by + 28}" r="17" fill="{t["accent"]}"/>'
-          + s.text(rx + bw - 30, by + 34, "↗", "sans-m", 16, t["on_accent"], anchor="middle")
-          + "</g>")
-    return s
-
-
-BUILDERS = {
-    "hero": hero,
-    "llmslim": llmslim_card,
-    "recognition": recognition,
-    "experience": experience,
-    "toolbox": toolbox,
-    "contact": contact,
-}
+def jobs():
+    out = {"hero": hero, "merged": merged_strip, "llmslim": llmslim_card, "oss": oss_wall,
+           "recognition": recognition, "experience": experience, "stack": stack, "contact": contact}
+    for _, key, text, ic, primary in LINKS:
+        out[key] = (lambda th, a=(text, ic, primary): link_pill(th, *a))
+    for p in PROJECTS:
+        out[f"p-{p['shot']}"] = (lambda th, a=p: project_card(th, a))
+    return out
 
 
 def main(only: list[str] | None = None):
-    jobs = dict(BUILDERS)
-    for key, (num, eb, runs, note) in HEADERS.items():
-        jobs[key] = (lambda th, a=(num, eb, runs, note): section_header(th, *a))
-    for _, key, label, arrow, primary in LINK_ITEMS:
-        jobs[key] = (lambda th, a=(label, arrow, primary): link_pill(th, *a))
-    for i, p in enumerate(PROJECTS, 1):
-        jobs[f"p-{p['key']}"] = (lambda th, a=(p, i): project_card(th, *a))
-    fresh = load_live().get("fresh", [])
-    if fresh:
-        jobs["h-fresh"] = fresh_header
-    for i, item in enumerate(fresh, 1):
-        jobs[f"f-{i}"] = (lambda th, a=(item, i): fresh_card(th, *a))
-    if not only:  # drop cards for repos that aged out of the fresh list
-        for old in ASSETS.glob("f-*-*.svg"):
-            if int(old.name.split("-")[1]) > len(fresh):
-                old.unlink()
-    for name, fn in jobs.items():
-        if only and name not in only and not any(name.startswith(o.rstrip("*")) for o in only if o.endswith("*")):
+    for name, fn in jobs().items():
+        if only and name not in only:
             continue
         for tname, theme in THEMES.items():
             svg = fn(theme)
             out = ASSETS / f"{name}-{tname}.svg"
             svg.save(out)
-            print(f"{out.relative_to(ROOT)}  {out.stat().st_size / 1024:.1f} KB  {svg.w}x{svg.h}")
+            print(f"{out.relative_to(ROOT)}  {out.stat().st_size / 1024:.0f} KB  {svg.w}x{svg.h}")
 
 
 if __name__ == "__main__":

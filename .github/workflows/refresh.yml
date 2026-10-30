@@ -26,7 +26,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install font tooling
-        run: pip install fonttools==4.61.1 brotli==1.2.0
+        run: pip install fonttools==4.61.1 brotli==1.2.0 pillow==11.3.0
 
       - name: Pull live data (PRs, merges, contributions, PyPI, new repos)
         working-directory: scripts

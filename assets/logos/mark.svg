@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" fill="none">
+  <title>Yashvardhan Thanvi monogram</title>
+  <defs>
+    <linearGradient id="stem" x1="201" y1="103" x2="213" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#888784"/><stop offset=".49" stop-color="#dedbd7"/><stop offset="1" stop-color="#faf8f4"/></linearGradient>
+    <linearGradient id="branch" x1="220" y1="129" x2="329" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#c4c2be"/><stop offset="1" stop-color="#faf8f4"/></linearGradient>
+    <linearGradient id="ribbon" x1="160" y1="55" x2="204" y2="226" gradientUnits="userSpaceOnUse"><stop stop-color="#faf8f4"/><stop offset="1" stop-color="#f0ede8"/></linearGradient>
+  </defs>
+  <path fill="url(#stem)" d="M166 166 190 128C219 84 247 32 302 32H384C361 75 345 90 318 90H270C246 90 238 100 238 125V264C238 297 211 316 166 326Z"/>
+  <path fill="url(#branch)" d="M190 128C219 84 247 32 302 32H384C361 75 345 90 318 90H270C238 88 213 101 190 128Z"/>
+  <path fill="url(#ribbon)" d="M16 34H62C111 34 140 57 173 105L218 164C234 186 238 201 238 221C233 190 209 175 166 166C123 163 104 157 85 133Z"/>
+</svg>

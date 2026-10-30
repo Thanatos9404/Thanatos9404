@@ -27,42 +27,48 @@ FONTS = {
     "sans": ("Geist-Variable.ttf", 400, "Geist", 400, "normal"),
     "sans-m": ("Geist-Variable.ttf", 500, "Geist", 500, "normal"),
     "sans-sb": ("Geist-Variable.ttf", 600, "Geist", 600, "normal"),
+    "sans-b": ("Geist-Variable.ttf", 700, "Geist", 700, "normal"),
     "mono": ("GeistMono-Variable.ttf", 400, "Geist Mono", 400, "normal"),
     "mono-m": ("GeistMono-Variable.ttf", 500, "Geist Mono", 500, "normal"),
 }
 
 THEMES = {
+    # Monochrome, Geist-first, to match yashvardhan.tech. Orange is used sparingly.
     "dark": {
         "name": "dark",
-        "bg": "#0E0C0B",
-        "surface": "#161311",
-        "surface2": "#1E1A17",
-        "line": "#2B2521",
-        "line2": "#3A322D",
-        "ink": "#F4F1EE",
-        "body": "#C7BFB9",
-        "muted": "#8F8680",
-        "faint": "#5E5550",
+        "bg": "#000000",
+        "surface": "#0A0A0A",
+        "surface2": "#111111",
+        "line": "#1F1F1F",
+        "line2": "#2E2E2E",
+        "ink": "#EDEDED",
+        "body": "#A1A1A1",
+        "muted": "#7C7C7C",
+        "faint": "#4D4D4D",
         "accent": "#FF7A3D",
         "accent_soft": "#FFB18A",
-        "on_accent": "#170B05",
-        "dot": "#F4F1EE",
+        "on_accent": "#0A0A0A",
+        "dot": "#EDEDED",
+        "button": "#EDEDED",
+        "on_button": "#0A0A0A",
     },
     "light": {
         "name": "light",
         "bg": "#FFFFFF",
-        "surface": "#F6F3F0",
-        "surface2": "#EEE8E2",
-        "line": "#E4DCD5",
-        "line2": "#D6CCC4",
-        "ink": "#1A1615",
-        "body": "#453F3D",
-        "muted": "#757170",
-        "faint": "#ABA39D",
+        "surface": "#FFFFFF",
+        "surface2": "#FAFAFA",
+        "line": "#EAEAEA",
+        "line2": "#DEDEDE",
+        "ink": "#0A0A0A",
+        "body": "#4D4D4D",
+        "muted": "#6F6F6F",
+        "faint": "#B3B3B3",
         "accent": "#E8601F",
         "accent_soft": "#F4A47C",
         "on_accent": "#FFFFFF",
-        "dot": "#1A1615",
+        "dot": "#0A0A0A",
+        "button": "#0A0A0A",
+        "on_button": "#FFFFFF",
     },
 }
 
@@ -265,3 +271,72 @@ def sphere_points(n_rings=13, n_eq=34, lat_max=78):
         n = max(4, round(n_eq * math.cos(lat)))
         rings.append((lat, n, (k * 0.61) % (2 * math.pi)))
     return rings
+
+
+# -- images -------------------------------------------------------------------
+
+def data_uri(path: Path) -> str:
+    """Embed a local image so the SVG needs no network (GitHub serves SVGs as isolated images)."""
+    path = Path(path)
+    mime = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml",
+            ".webp": "image/webp"}[path.suffix.lower()]
+    return f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode()}"
+
+
+def logo_tile(svg: "Svg", x, y, size, path: Path | None, label: str = "", r: float | None = None, uid: str = "") -> str:
+    """A rounded-square logo tile. Falls back to a lettermark when no image exists."""
+    t = svg.t
+    r = size * 0.24 if r is None else r
+    cid = f"lt{uid or abs(hash((x, y, size, str(path)))) % 10**8}"
+    svg.defs_add(f'<clipPath id="{cid}"><rect x="{f(x)}" y="{f(y)}" width="{f(size)}" height="{f(size)}" rx="{f(r)}"/></clipPath>')
+    border = f'<rect x="{f(x + .5)}" y="{f(y + .5)}" width="{f(size - 1)}" height="{f(size - 1)}" rx="{f(r)}" fill="none" stroke="{t["line2"]}"/>'
+    if path and Path(path).exists():
+        return (f'<g clip-path="url(#{cid})"><rect x="{f(x)}" y="{f(y)}" width="{f(size)}" height="{f(size)}" fill="#FFFFFF"/>'
+                f'<image href="{data_uri(path)}" x="{f(x)}" y="{f(y)}" width="{f(size)}" height="{f(size)}" '
+                f'preserveAspectRatio="xMidYMid slice"/></g>{border}')
+    letters = "".join(w[0] for w in label.split()[:2]).upper() if " " in label else label[:4].upper()
+    fs = size * (0.26 if len(letters) > 2 else 0.38)
+    svg.use_font("mono-m", letters)
+    return (f'<rect x="{f(x)}" y="{f(y)}" width="{f(size)}" height="{f(size)}" rx="{f(r)}" fill="{t["surface2"]}"/>{border}'
+            f'<text x="{f(x + size / 2)}" y="{f(y + size / 2 + fs * .36)}" class="f-mono-m" font-size="{f(fs)}" '
+            f'fill="{t["ink"]}" text-anchor="middle" letter-spacing="{f(fs * .06)}">{escape(letters)}</text>')
+
+
+def rich_lines(runs, size, max_w):
+    """Wrap mixed-style runs [(text, font, fill)] into lines of runs."""
+    words = []  # (word, font, fill, preceded by a space)
+    gap = False  # did the text so far end with a space?
+    for text, font, fill in runs:
+        for i, w in enumerate(text.split(" ")):
+            if w:
+                words.append((w, font, fill, i > 0 or gap or not words))
+                gap = False
+            elif i > 0:
+                gap = True
+        gap = gap or text.endswith(" ")
+    lines, cur, cur_w = [], [], 0.0
+    for w, font, fill, spaced in words:
+        sep = " " if (cur and spaced) else ""
+        add = measure(sep + w, font, size)
+        if cur and spaced and cur_w + add > max_w:
+            lines.append(cur)
+            cur, cur_w, sep = [], 0.0, ""
+            add = measure(w, font, size)
+        cur.append((sep + w, font, fill))
+        cur_w += add
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def dot_grid(svg: "Svg", x, y, w, h, gap=14, r=1.0, opacity=.35, fade_cx=.75, fade_cy=.5, uid="dg"):
+    """Subtle dot matrix that fades out radially, like the portfolio hero."""
+    t = svg.t
+    svg.defs_add(
+        f'<pattern id="{uid}p" x="{f(x)}" y="{f(y)}" width="{gap}" height="{gap}" patternUnits="userSpaceOnUse">'
+        f'<circle cx="{gap / 2}" cy="{gap / 2}" r="{r}" fill="{t["dot"]}"/></pattern>'
+        f'<radialGradient id="{uid}g" cx="{fade_cx}" cy="{fade_cy}" r=".6">'
+        f'<stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>'
+        f'</radialGradient><mask id="{uid}m"><rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="url(#{uid}g)"/></mask>')
+    svg.add(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="url(#{uid}p)" mask="url(#{uid}m)" '
+            f'opacity="{opacity}"/>')
