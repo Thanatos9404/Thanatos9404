@@ -52,31 +52,31 @@
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/144036",
-   "stars": 258474
+   "stars": 258588
   },
   {
    "name": "Hermes Agent",
    "full": "NousResearch/hermes-agent",
    "url": "https://github.com/NousResearch/hermes-agent/pull/142212",
-   "stars": 258474
+   "stars": 258588
   },
   {
    "name": "Llm Engineer Toolkit",
    "full": "KalyanKS-NLP/llm-engineer-toolkit",
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50",
-   "stars": 10893
+   "stars": 10894
   },
   {
    "name": "Extensions",
    "full": "raycast/extensions",
    "url": "https://github.com/raycast/extensions/pull/32584",
-   "stars": 7822
+   "stars": 7823
   },
   {
    "name": "Awesome LLMOps",
    "full": "tensorchord/Awesome-LLMOps",
    "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/938",
-   "stars": 5968
+   "stars": 5967
   },
   {
    "name": "Awesome LLM Compression",
@@ -88,7 +88,7 @@
    "name": "Awesome Codex Plugins",
    "full": "hashgraph-online/awesome-codex-plugins",
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins/pull/555",
-   "stars": 1442
+   "stars": 1446
   },
   {
    "name": "Awesome LLM RAG",
@@ -106,7 +106,7 @@
    "name": "Awesome Mcp Servers",
    "full": "TensorBlock/awesome-mcp-servers",
    "url": "https://github.com/TensorBlock/awesome-mcp-servers/pull/4241",
-   "stars": 998
+   "stars": 1000
   },
   {
    "name": "Awesome Ai Plugins",
@@ -118,7 +118,7 @@
    "name": "Awesome Gemini Cli",
    "full": "Piebald-AI/awesome-gemini-cli",
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli/pull/246",
-   "stars": 563
+   "stars": 565
   },
   {
    "name": "Azure Openai Llm Notes",
@@ -153,7 +153,7 @@
  ],
  "llmslim": {
   "version": "0.12.0",
-  "downloads_week": 504,
+  "downloads_week": 598,
   "stars": 24
  },
  "fresh": [
