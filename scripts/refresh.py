@@ -21,6 +21,7 @@ from collections import OrderedDict
 from pathlib import Path
 
 from content import AUTO_EXCLUDE, FRESH_MAX, PROJECTS
+from fingerprint import fingerprint
 from logos import fetch_avatar
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -288,6 +289,10 @@ def write_live(prs, groups):
         "llmslim": fetch_llmslim(prev.get("llmslim", {})),
         "fresh": fetch_fresh(),
     }
+    try:  # what the 15-minute check compares against (see fingerprint.py)
+        live["fingerprint"] = fingerprint()
+    except Exception:
+        live["fingerprint"] = prev.get("fingerprint", "")
     LIVE.write_text(json.dumps(live, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     return live
 
