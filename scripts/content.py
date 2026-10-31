@@ -21,7 +21,8 @@ INTRO = [
 ]
 
 NAV = [("LLMSlim", "llmslim"), ("Work", "selected-work"), ("Open source", "open-source"),
-       ("Recognition", "recognition"), ("Experience", "experience"), ("Stack", "stack"), ("Contact", "contact")]
+       ("Recognition", "recognition"), ("Experience", "experience"), ("Stack", "stack"), ("Activity", "activity"),
+       ("Contact", "contact")]
 
 EMAIL = "founder@llmslim.app"
 CALL_URL = "https://calendly.com/yashvt9404/30min"

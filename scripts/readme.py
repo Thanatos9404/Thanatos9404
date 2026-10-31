@@ -48,7 +48,9 @@ def build() -> str:
         "hero", "Yashvardhan Thanvi. Founder of LLMSlim, the open-source context layer for production AI agents, "
                 "backed by 15 startup programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at "
                 "DRDO. Available for freelance work.", "100%")), ""]
-    o += ['<p align="center">', "  " + SEP.join(a(f"#{anchor}", text) for text, anchor in NAV), "</p>", ""]
+    has_3d = (ROOT / "profile-3d-contrib" / "profile-dark.svg").exists()
+    nav = [(text, anchor) for text, anchor in NAV if anchor != "activity" or has_3d]
+    o += ['<p align="center">', "  " + SEP.join(a(f"#{anchor}", text) for text, anchor in nav), "</p>", ""]
     o.append('<p align="center">')
     for href, name, text, _, _ in LINKS:
         o.append("  " + a(href, pic(name, text, height="40")))
