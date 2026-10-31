@@ -3,7 +3,7 @@
 <a href="https://www.yashvardhan.tech"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img alt="Yashvardhan Thanvi. Founder of LLMSlim, the open-source context layer for production AI agents, backed by 15 startup programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at DRDO. Available for freelance work." src="assets/hero-light.svg" width="100%"></picture></a>
 
 <p align="center">
-  <a href="#llmslim">LLMSlim</a> &nbsp;·&nbsp; <a href="#selected-work">Work</a> &nbsp;·&nbsp; <a href="#open-source">Open source</a> &nbsp;·&nbsp; <a href="#recognition">Recognition</a> &nbsp;·&nbsp; <a href="#experience">Experience</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a>
+  <a href="#llmslim">LLMSlim</a> &nbsp;·&nbsp; <a href="#selected-work">Work</a> &nbsp;·&nbsp; <a href="#open-source">Open source</a> &nbsp;·&nbsp; <a href="#recognition">Recognition</a> &nbsp;·&nbsp; <a href="#experience">Experience</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#activity">Activity</a> &nbsp;·&nbsp; <a href="#contact">Contact</a>
 </p>
 
 <p align="center">
@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="163 pull requests to 66 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="164 pull requests to 67 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 14 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a> and <a href="https://github.com/HuangOwen/Awesome-LLM-Compression">Awesome LLM Compression</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 163 pull requests</b> (79 merged), grouped by organisation</summary>
+<summary><b>All 164 pull requests</b> (79 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -297,9 +297,9 @@
 
 **Mozilla.ai** &nbsp;<sub>3 in review</sub>
 
-- `open` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 - `open` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
+- `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 
 **mermaid-js** &nbsp;<sub>1 in review</sub>
 
@@ -333,6 +333,10 @@
 **radare2** &nbsp;<sub>1 in review</sub>
 
 - `open` [Copy files in C so names with ! work in r_file_copy ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
+
+**Plotly** &nbsp;<sub>1 in review</sub>
+
+- `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
 
 **NLTK** &nbsp;<sub>2 in review</sub>
 
@@ -443,6 +447,10 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img alt="Python, TypeScript, JavaScript, FastAPI, Flask, NextJS, React, TailwindCSS, NodeJS, Docker, Linux, Git, PyTorch, TensorFlow, ScikitLearn, OpenCV, PostgreSQL, MongoDB, Redis, SQLite, AWS, GCP, Vercel, GithubActions" src="assets/stack-light.svg" width="100%"></picture>
 
 <p align="center"><sub>Also LangChain, LlamaIndex, Haystack, Hugging Face, Ollama, MCP, OpenAI Agents SDK.</sub></p>
+
+## Activity
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-dark.svg"><img alt="3D contribution calendar for the last year, with contribution types and top languages" src="profile-3d-contrib/profile-light.svg" width="100%"></picture>
 
 ## Contact
 
