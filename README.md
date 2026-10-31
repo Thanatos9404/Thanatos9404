@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="165 pull requests to 67 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="166 pull requests to 68 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 15 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a> and <a href="https://github.com/alvinreal/awesome-opensource-ai">Awesome Opensource AI</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 165 pull requests</b> (79 merged), grouped by organisation</summary>
+<summary><b>All 166 pull requests</b> (79 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -309,6 +309,10 @@
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
+**Poetry** &nbsp;<sub>1 in review</sub>
+
+- `open` [fix(plugins): name the plugin that fails to load or activate](https://github.com/python-poetry/poetry/pull/11182) <sub>python-poetry/poetry#11182</sub>
+
 **Claude Code Templates** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim MCP to integration](https://github.com/davila7/claude-code-templates/pull/1226) <sub>davila7/claude-code-templates#1226</sub>
@@ -333,7 +337,7 @@
 
 **radare2** &nbsp;<sub>1 in review</sub>
 
-- `open` [Copy files in C so names with ! work in r_file_copy ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
+- `open` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 
 **Plotly** &nbsp;<sub>1 in review</sub>
 
