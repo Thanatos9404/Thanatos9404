@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29435
+   "stars": 29465
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41315
+   "stars": 41316
   },
   {
    "name": "Google",
@@ -23,7 +23,7 @@
    "merged": 1,
    "prs": 4,
    "open": 2,
-   "stars": 11190
+   "stars": 11192
   },
   {
    "name": "Meta",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 71570
+   "stars": 71571
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25495
+   "stars": 25498
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70215
+   "stars": 70221
   },
   {
    "name": "ModelScope",
@@ -127,7 +127,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 3622
+   "stars": 3623
   },
   {
    "name": "Pyodide",
@@ -151,7 +151,15 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259080
+   "stars": 259137
+  },
+  {
+   "name": "radare2",
+   "logo": "radareorg",
+   "merged": 1,
+   "prs": 1,
+   "open": 0,
+   "stars": 25219
   },
   {
    "name": "fasthttp",
@@ -159,7 +167,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 23499
+   "stars": 23498
   },
   {
    "name": "Hermes WebUI",
@@ -167,7 +175,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 19311
+   "stars": 19317
   },
   {
    "name": "Raycast",
@@ -199,7 +207,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 5831
+   "stars": 5832
   },
   {
    "name": "EvoScientist",
@@ -295,7 +303,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60339
+   "stars": 60350
   },
   {
    "name": "Poetry",
@@ -311,7 +319,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33014
+   "stars": 33018
   },
   {
    "name": "Lightning AI",
@@ -327,7 +335,7 @@
    "merged": 0,
    "prs": 2,
    "open": 2,
-   "stars": 30384
+   "stars": 30385
   },
   {
    "name": "Vercel",
@@ -335,7 +343,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27648
+   "stars": 27654
   },
   {
    "name": "Angular",
@@ -343,15 +351,7 @@
    "merged": 0,
    "prs": 2,
    "open": 1,
-   "stars": 27018
-  },
-  {
-   "name": "radare2",
-   "logo": "radareorg",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 25219
+   "stars": 27019
   },
   {
    "name": "Plotly",
@@ -359,7 +359,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 18867
+   "stars": 18868
   },
   {
    "name": "NLTK",
@@ -375,7 +375,7 @@
    "merged": 0,
    "prs": 1,
    "open": 0,
-   "stars": 13949
+   "stars": 13950
   },
   {
    "name": "OpenLayers",
@@ -455,7 +455,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 1019
+   "stars": 1020
   },
   {
    "name": "conda-forge",
@@ -547,7 +547,7 @@
   }
  ],
  "prs": 166,
- "merged": 79,
+ "merged": 80,
  "orgs": 68,
  "merged_orgs": [
   "NVIDIA",
@@ -569,6 +569,7 @@
   "Pyodide",
   "Containers",
   "Nous Research",
+  "radare2",
   "fasthttp",
   "Hermes WebUI",
   "Raycast",
@@ -599,7 +600,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259080
+   "stars": 259137
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -647,7 +648,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1466
+   "stars": 1467
   },
   {
    "name": "Awesome LLM RAG",
@@ -687,7 +688,7 @@
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli",
    "kind": "list",
    "owner": "Piebald",
-   "stars": 568
+   "stars": 573
   },
   {
    "name": "Azure OpenAI LLM Notes",
@@ -748,5 +749,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=206;merged=94;open=95;repos=184;newest=poetry;llmslim=0.12.0"
+ "fingerprint": "prs=206;merged=95;open=94;repos=184;newest=poetry;llmslim=0.12.0"
 }

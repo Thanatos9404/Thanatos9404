@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="166 pull requests to 68 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="166 pull requests to 68 organisations, 80 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 15 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a> and <a href="https://github.com/alvinreal/awesome-opensource-ai">Awesome Opensource AI</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 166 pull requests</b> (79 merged), grouped by organisation</summary>
+<summary><b>All 166 pull requests</b> (80 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -218,6 +218,10 @@
 - `merged` [chore(catalog): re-pin llmslim to v0.11.2](https://github.com/NousResearch/hermes-agent/pull/144036) <sub>NousResearch/hermes-agent#144036</sub>
 - `merged` [chore(catalog): re-pin llmslim to v0.12.0](https://github.com/NousResearch/hermes-agent/pull/145645) <sub>NousResearch/hermes-agent#145645</sub>
 
+**radare2** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
+
 **fasthttp** &nbsp;<sub>2 merged of 2</sub>
 
 - `merged` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
@@ -334,10 +338,6 @@
 
 - `open` [fix(@angular-devkit/schematics): include the template path in errors thrown by content templates](https://github.com/angular/angular-cli/pull/34621) <sub>angular/angular-cli#34621</sub>
 - `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
-
-**radare2** &nbsp;<sub>1 in review</sub>
-
-- `open` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 
 **Plotly** &nbsp;<sub>1 in review</sub>
 
