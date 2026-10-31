@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29332
+   "stars": 29335
   },
   {
    "name": "Microsoft",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 258918
+   "stars": 258920
   },
   {
    "name": "fasthttp",
@@ -591,7 +591,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 258918
+   "stars": 258920
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -731,5 +731,6 @@
    "stars": 0,
    "created": "2026-10-23"
   }
- ]
+ ],
+ "fingerprint": "prs=204;merged=93;open=94;repos=183;newest=plotly.py;llmslim=0.12.0"
 }
