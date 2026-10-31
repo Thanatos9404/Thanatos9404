@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70183
+   "stars": 70184
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 258872
+   "stars": 258873
   },
   {
    "name": "fasthttp",
@@ -583,7 +583,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 258872
+   "stars": 258873
   },
   {
    "name": "LLM Engineer Toolkit",
