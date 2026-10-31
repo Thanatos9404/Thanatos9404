@@ -30,7 +30,7 @@ USER = os.environ.get("GH_USER", "Thanatos9404")
 ORGS = {
     "NVIDIA": "NVIDIA", "NVIDIA-NeMo": "NVIDIA",
     "microsoft": "Microsoft", "AzureAD": "Microsoft",
-    "facebook": "Meta", "facebookresearch": "Meta", "meta-pytorch": "Meta", "Instagram": "Meta",
+    "facebook": "Meta", "facebookresearch": "Meta", "meta-pytorch": "Meta", "Instagram": "Meta", "meta": "Meta",
     "aws": "AWS", "awslabs": "AWS", "aws-cloudformation": "AWS",
     "google-ai-edge": "Google", "google": "Google",
     "IBM": "IBM", "docling-project": "Docling",
@@ -44,6 +44,7 @@ ORGS = {
     "nesquena": "Hermes WebUI", "teslamotors": "Tesla", "helm": "Helm", "valyala": "fasthttp",
     "uber-go": "Uber", "ossf": "OpenSSF", "glue-viz": "glue", "pysal": "PySAL", "corazawaf": "Coraza",
     "DataDog": "Datadog", "milvus-io": "Milvus", "cadence-workflow": "Cadence",
+    "radareorg": "radare2", "speced": "Bikeshed", "davila7": "Claude Code Templates",
 }
 # Well-known names first, then everything else by the stars of the repos I contributed to.
 BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Tesla", "Uber", "Mozilla", "Capital One",
@@ -54,7 +55,7 @@ LOGO_OWNER = {"NVIDIA": "NVIDIA", "Microsoft": "microsoft", "Google": "google", 
               "AWS": "aws", "IBM": "IBM", "Tesla": "teslamotors", "Uber": "uber", "Jupyter": "jupyter"}
 # Curated lists where the PR only adds LLMSlim to a list are left out of the wall.
 SKIP_REPO = re.compile(r"awesome", re.I)
-SKIP_OWNERS = {"vansh-nagar"}
+SKIP_OWNERS = {"vansh-nagar", "KalyanKS-NLP", "kimtth"}
 
 
 def token() -> str:

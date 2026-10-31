@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="165 pull requests to 69 organisations, 81 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="163 pull requests to 66 organisations, 79 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 14 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a> and <a href="https://github.com/HuangOwen/Awesome-LLM-Compression">Awesome LLM Compression</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 165 pull requests</b> (81 merged), grouped by organisation</summary>
+<summary><b>All 163 pull requests</b> (79 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -94,14 +94,18 @@
 - `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
-**Meta** &nbsp;<sub>4 merged of 7</sub>
+**Meta** &nbsp;<sub>4 merged of 11</sub>
 
 - `merged` [refactor: compute component plot data in private helpers](https://github.com/meta/prophet/pull/2756) <sub>meta/prophet#2756</sub>
 - `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/meta/prophet/pull/2757) <sub>meta/prophet#2757</sub>
 - `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/meta/lexical/pull/9356) <sub>meta/lexical#9356</sub>
 - `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/meta/lexical/pull/9366) <sub>meta/lexical#9366</sub>
+- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
+- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
+- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/meta/stylex/pull/1962) <sub>meta/stylex#1962</sub>
 - `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/meta/jscodeshift/pull/754) <sub>meta/jscodeshift#754</sub>
+- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 - `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/meta/lexical/pull/9391) <sub>meta/lexical#9391</sub>
 
 **AWS** &nbsp;<sub>15 merged of 19</sub>
@@ -224,10 +228,6 @@
 - `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
 - `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
 
-**Kalyan KS** &nbsp;<sub>1 merged of 1</sub>
-
-- `merged` [Add LLMSlim to Memory](https://github.com/KalyanKS-NLP/llm-engineer-toolkit/pull/50) <sub>KalyanKS-NLP/llm-engineer-toolkit#50</sub>
-
 **Raycast** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [(Model Context Protocol Registry) Add LLMSlim](https://github.com/raycast/extensions/pull/32584) <sub>raycast/extensions#32584</sub>
@@ -277,13 +277,9 @@
 
 - `merged` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
 
-**speced** &nbsp;<sub>1 merged of 1</sub>
+**Bikeshed** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
-
-**kimtth** &nbsp;<sub>1 merged of 1</sub>
-
-- `merged` [docs: add LLMSlim to RAG Application](https://github.com/kimtth/azure-openai-llm-notes/pull/104) <sub>kimtth/azure-openai-llm-notes#104</sub>
 
 **Scikit-HEP** &nbsp;<sub>1 merged of 2</sub>
 
@@ -294,13 +290,6 @@
 
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
-
-**Meta** &nbsp;<sub>4 in review</sub>
-
-- `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
-- `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
-- `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
-- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 
 **Mozilla** &nbsp;<sub>1 in review</sub>
 
@@ -320,7 +309,7 @@
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
-**Daniel Avila** &nbsp;<sub>1 in review</sub>
+**Claude Code Templates** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim MCP to integration](https://github.com/davila7/claude-code-templates/pull/1226) <sub>davila7/claude-code-templates#1226</sub>
 
@@ -341,7 +330,7 @@
 
 - `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
 
-**radare org** &nbsp;<sub>1 in review</sub>
+**radare2** &nbsp;<sub>1 in review</sub>
 
 - `open` [Copy files in C so names with ! work in r_file_copy ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 
