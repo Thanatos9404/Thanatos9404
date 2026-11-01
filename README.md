@@ -60,7 +60,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="166 pull requests to 68 organisations, 80 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
-<p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 15 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a> and <a href="https://github.com/alvinreal/awesome-opensource-ai">Awesome Opensource AI</a>.</sub></p>
+<p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 16 curated lists, including <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a>, <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a> and <a href="https://github.com/tensorchord/Awesome-LLMOps">Awesome LLMOps</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
