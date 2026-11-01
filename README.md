@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="170 pull requests to 69 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="171 pull requests to 69 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 170 pull requests</b> (82 merged), grouped by organisation</summary>
+<summary><b>All 171 pull requests</b> (82 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -316,6 +316,11 @@
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
+**Plotly** &nbsp;<sub>2 in review</sub>
+
+- `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
+- `open` [Only link `.css` files in assets as stylesheets](https://github.com/plotly/dash/pull/4105) <sub>plotly/dash#4105</sub>
+
 **Poetry** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix(plugins): name the plugin that fails to load or activate](https://github.com/python-poetry/poetry/pull/11182) <sub>python-poetry/poetry#11182</sub>
@@ -341,10 +346,6 @@
 
 - `open` [fix(@angular-devkit/schematics): include the template path in errors thrown by content templates](https://github.com/angular/angular-cli/pull/34621) <sub>angular/angular-cli#34621</sub>
 - `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
-
-**Plotly** &nbsp;<sub>1 in review</sub>
-
-- `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
 
 **NLTK** &nbsp;<sub>2 in review</sub>
 

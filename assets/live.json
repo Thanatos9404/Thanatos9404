@@ -1,5 +1,5 @@
 {
- "repos": 112,
+ "repos": 113,
  "org_list": [
   {
    "name": "NVIDIA",
@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29578
+   "stars": 29580
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41329
+   "stars": 41330
   },
   {
    "name": "Google",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25506
+   "stars": 25505
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70244
+   "stars": 70245
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259371
+   "stars": 259378
   },
   {
    "name": "radare2",
@@ -175,7 +175,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 19329
+   "stars": 19330
   },
   {
    "name": "Raycast",
@@ -303,7 +303,15 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60377
+   "stars": 60378
+  },
+  {
+   "name": "Plotly",
+   "logo": "plotly",
+   "merged": 0,
+   "prs": 2,
+   "open": 2,
+   "stars": 43342
   },
   {
    "name": "Poetry",
@@ -319,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33027
+   "stars": 33028
   },
   {
    "name": "Lightning AI",
@@ -343,7 +351,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27669
+   "stars": 27670
   },
   {
    "name": "Angular",
@@ -352,14 +360,6 @@
    "prs": 2,
    "open": 1,
    "stars": 27019
-  },
-  {
-   "name": "Plotly",
-   "logo": "plotly",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 18868
   },
   {
    "name": "NLTK",
@@ -554,7 +554,7 @@
    "stars": 7
   }
  ],
- "prs": 170,
+ "prs": 171,
  "merged": 82,
  "orgs": 69,
  "merged_orgs": [
@@ -598,8 +598,8 @@
   "Mozilla.ai",
   "Mermaid",
   "crewAI",
-  "Poetry",
-  "Claude Code Templates"
+  "Plotly",
+  "Poetry"
  ],
  "listed_in": [
   {
@@ -608,7 +608,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259371
+   "stars": 259378
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -704,7 +704,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 948
+   "stars": 949
   },
   {
    "name": "Awesome Gemini CLI",
