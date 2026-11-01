@@ -360,7 +360,7 @@
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
 
-**cython** &nbsp;<sub>1 in review</sub>
+**Cython** &nbsp;<sub>1 in review</sub>
 
 - `open` [Fix compiler crash on a missing cimported module attribute inside a function](https://github.com/cython/cython/pull/8099) <sub>cython/cython#8099</sub>
 
