@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259389
+   "stars": 259388
   },
   {
    "name": "radare2",
@@ -175,7 +175,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 19329
+   "stars": 19331
   },
   {
    "name": "Raycast",
@@ -616,7 +616,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259389
+   "stars": 259388
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -704,7 +704,7 @@
    "url": "https://github.com/TensorBlock/awesome-mcp-servers",
    "kind": "list",
    "owner": "TensorBlock",
-   "stars": 1010
+   "stars": 1011
   },
   {
    "name": "Awesome AI Plugins",
