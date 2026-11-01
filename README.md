@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="172 pull requests to 70 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="173 pull requests to 71 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 172 pull requests</b> (82 merged), grouped by organisation</summary>
+<summary><b>All 173 pull requests</b> (82 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -359,6 +359,10 @@
 **OpenLayers** &nbsp;<sub>1 in review</sub>
 
 - `open` [Fix Snap with Circles in GeometryCollection](https://github.com/openlayers/openlayers/pull/17699) <sub>openlayers/openlayers#17699</sub>
+
+**cython** &nbsp;<sub>1 in review</sub>
+
+- `open` [Fix compiler crash on a missing cimported module attribute inside a function](https://github.com/cython/cython/pull/8099) <sub>cython/cython#8099</sub>
 
 **Spring** &nbsp;<sub>1 in review</sub>
 
