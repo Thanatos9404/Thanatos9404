@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29465
+   "stars": 29483
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41316
+   "stars": 41317
   },
   {
    "name": "Google",
@@ -23,7 +23,7 @@
    "merged": 1,
    "prs": 4,
    "open": 2,
-   "stars": 11192
+   "stars": 11194
   },
   {
    "name": "Meta",
@@ -79,7 +79,7 @@
    "merged": 5,
    "prs": 10,
    "open": 5,
-   "stars": 83050
+   "stars": 83052
   },
   {
    "name": "OpenTelemetry",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 71571
+   "stars": 71580
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25498
+   "stars": 25500
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70221
+   "stars": 70226
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259137
+   "stars": 259180
   },
   {
    "name": "radare2",
@@ -159,7 +159,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 25219
+   "stars": 25221
   },
   {
    "name": "fasthttp",
@@ -175,7 +175,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 19317
+   "stars": 19318
   },
   {
    "name": "Raycast",
@@ -207,7 +207,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 5832
+   "stars": 5833
   },
   {
    "name": "EvoScientist",
@@ -290,12 +290,12 @@
    "stars": 2239
   },
   {
-   "name": "mermaid-js",
+   "name": "Mermaid",
    "logo": "mermaid-js",
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 90947
+   "stars": 90950
   },
   {
    "name": "crewAI",
@@ -303,7 +303,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60350
+   "stars": 60353
   },
   {
    "name": "Poetry",
@@ -319,7 +319,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33018
+   "stars": 33020
   },
   {
    "name": "Lightning AI",
@@ -343,7 +343,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27654
+   "stars": 27655
   },
   {
    "name": "Angular",
@@ -359,7 +359,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 18868
+   "stars": 18867
   },
   {
    "name": "NLTK",
@@ -367,7 +367,7 @@
    "merged": 0,
    "prs": 2,
    "open": 0,
-   "stars": 14761
+   "stars": 14762
   },
   {
    "name": "Pillow",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 12639
+   "stars": 12640
   },
   {
    "name": "KubeEdge",
@@ -588,7 +588,7 @@
  "review_orgs": [
   "Mozilla",
   "Mozilla.ai",
-  "mermaid-js",
+  "Mermaid",
   "crewAI",
   "Poetry",
   "Claude Code Templates"
@@ -600,7 +600,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259137
+   "stars": 259180
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -648,7 +648,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1467
+   "stars": 1468
   },
   {
    "name": "Awesome LLM RAG",
@@ -680,7 +680,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 942
+   "stars": 944
   },
   {
    "name": "Awesome Gemini CLI",
@@ -688,7 +688,7 @@
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli",
    "kind": "list",
    "owner": "Piebald",
-   "stars": 573
+   "stars": 572
   },
   {
    "name": "Azure OpenAI LLM Notes",

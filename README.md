@@ -305,7 +305,7 @@
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
 - `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 
-**mermaid-js** &nbsp;<sub>1 in review</sub>
+**Mermaid** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix(quadrant): escape the dot in point coordinate lexer rules](https://github.com/mermaid-js/mermaid/pull/8579) <sub>mermaid-js/mermaid#8579</sub>
 
