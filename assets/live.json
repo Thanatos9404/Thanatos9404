@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70226
+   "stars": 70227
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259180
+   "stars": 259181
   },
   {
    "name": "radare2",
@@ -600,7 +600,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259180
+   "stars": 259181
   },
   {
    "name": "LLM Engineer Toolkit",
