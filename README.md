@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="173 pull requests to 71 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="176 pull requests to 73 organisations, 82 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 173 pull requests</b> (82 merged), grouped by organisation</summary>
+<summary><b>All 176 pull requests</b> (82 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -298,9 +298,10 @@
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
-**Mozilla** &nbsp;<sub>1 in review</sub>
+**Mozilla** &nbsp;<sub>2 in review</sub>
 
 - `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
+- `open` [Skip for-in properties shadowed by non-enumerable properties](https://github.com/mozilla/rhino/pull/2557) <sub>mozilla/rhino#2557</sub>
 
 **Mozilla.ai** &nbsp;<sub>3 in review</sub>
 
@@ -383,6 +384,14 @@
 **The Sleuth Kit** &nbsp;<sub>1 in review</sub>
 
 - `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
+
+**RDFlib** &nbsp;<sub>1 in review</sub>
+
+- `open` [fix: support solution modifiers in short form CONSTRUCT WHERE queries](https://github.com/RDFLib/rdflib/pull/3660) <sub>RDFLib/rdflib#3660</sub>
+
+**znc** &nbsp;<sub>1 in review</sub>
+
+- `open` [web: send a nonce-based Content-Security-Policy for templated pages](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
 
 **Indico** &nbsp;<sub>1 in review</sub>
 
