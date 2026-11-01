@@ -4,8 +4,9 @@ on:
   schedule:
     # Every 15 minutes: a cheap check (5 API calls) that only triggers the rebuild when a PR was opened,
     # merged or closed, a public repo was created, or LLMSlim shipped a release. Every 4 hours the rebuild
-    # runs regardless, to refresh contributions, downloads and stars.
-    - cron: "*/15 * * * *"
+    # runs regardless, to refresh contributions, downloads and stars. Off the :00/:15/:30/:45 marks, because
+    # GitHub delays or drops scheduled runs most often at the top of the hour.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
