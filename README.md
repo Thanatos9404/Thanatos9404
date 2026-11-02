@@ -385,11 +385,11 @@
 
 - `open` [Fix UBSAN undefined-shift in ntfs_make_data_run (GH #1857)](https://github.com/sleuthkit/sleuthkit/pull/3576) <sub>sleuthkit/sleuthkit#3576</sub>
 
-**RDFlib** &nbsp;<sub>1 in review</sub>
+**RDFLib** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix: support solution modifiers in short form CONSTRUCT WHERE queries](https://github.com/RDFLib/rdflib/pull/3660) <sub>RDFLib/rdflib#3660</sub>
 
-**znc** &nbsp;<sub>1 in review</sub>
+**ZNC** &nbsp;<sub>1 in review</sub>
 
 - `open` [web: send a nonce-based Content-Security-Policy for templated pages](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
 

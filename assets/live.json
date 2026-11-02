@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 29650
+   "stars": 29657
   },
   {
    "name": "Microsoft",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116026
+   "stars": 116025
   },
   {
    "name": "AWS",
@@ -63,7 +63,7 @@
    "merged": 2,
    "prs": 4,
    "open": 2,
-   "stars": 10703
+   "stars": 10704
   },
   {
    "name": "Capital One",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70265
+   "stars": 70267
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259489
+   "stars": 259500
   },
   {
    "name": "radare2",
@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 25232
+   "stars": 25234
   },
   {
    "name": "fasthttp",
@@ -175,7 +175,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 19337
+   "stars": 19338
   },
   {
    "name": "Raycast",
@@ -303,7 +303,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60394
+   "stars": 60393
   },
   {
    "name": "Plotly",
@@ -327,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33041
+   "stars": 33044
   },
   {
    "name": "Lightning AI",
@@ -351,7 +351,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27679
+   "stars": 27680
   },
   {
    "name": "Angular",
@@ -391,7 +391,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 10890
+   "stars": 10891
   },
   {
    "name": "Spring",
@@ -434,7 +434,7 @@
    "stars": 3183
   },
   {
-   "name": "RDFlib",
+   "name": "RDFLib",
    "logo": "RDFLib",
    "merged": 0,
    "prs": 1,
@@ -442,7 +442,7 @@
    "stars": 2544
   },
   {
-   "name": "znc",
+   "name": "ZNC",
    "logo": "znc",
    "merged": 0,
    "prs": 1,
@@ -551,7 +551,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 379
+   "stars": 380
   },
   {
    "name": "PySAL",
@@ -640,7 +640,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259489
+   "stars": 259500
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -704,7 +704,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1480
+   "stars": 1481
   },
   {
    "name": "Awesome LLM RAG",
@@ -736,7 +736,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 956
+   "stars": 957
   },
   {
    "name": "Awesome Gemini CLI",
