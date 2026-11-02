@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41342
+   "stars": 41343
   },
   {
    "name": "Google",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 259500
+   "stars": 259501
   },
   {
    "name": "radare2",
@@ -640,7 +640,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 259500
+   "stars": 259501
   },
   {
    "name": "Awesome Chatgpt Zh",
