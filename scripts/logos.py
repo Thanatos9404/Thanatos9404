@@ -29,7 +29,8 @@ NAMED = {
     "sarvam": "gh-sarvamai.png", "zoho": "gh-zoho.png", "auth0": "gh-auth0.png", "zendesk": "gh-zendesk.png",
     "mixpanel": "gh-mixpanel.png", "sentry": "gh-getsentry.png", "descope": "gh-descope.png",
     "pulumi": "gh-pulumi.png", "honeycomb": "gh-honeycombio.png", "exa": "gh-exa-labs.png", "neo4j": "gh-neo4j.png",
-    "cartesia": "gh-cartesia-ai.png",
+    "cartesia": "gh-cartesia-ai.png", "nebius": "gh-nebius.png", "notion": "gh-makenotion.png", "snyk": "gh-snyk.png",
+    "gitar": "gh-gitarcode.png", "composio": "gh-ComposioHQ.png", "futureagi": "gh-future-agi.png",
 }
 
 

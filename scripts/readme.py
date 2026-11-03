@@ -46,7 +46,7 @@ def build() -> str:
     # Hero, navigation, buttons
     o += [a("https://www.yashvardhan.tech", pic(
         "hero", "Yashvardhan Thanvi. Founder of LLMSlim, the open-source context layer for production AI agents, "
-                "backed by 15 startup programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at "
+                f"backed by {len(LLMSLIM['programs'])} startup programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at "
                 "DRDO. Available for freelance work.", "100%")), ""]
     has_3d = (ROOT / "profile-3d-contrib" / "profile-dark.svg").exists()
     nav = [(text, anchor) for text, anchor in NAV if anchor != "activity" or has_3d]

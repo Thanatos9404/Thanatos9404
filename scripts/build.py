@@ -85,8 +85,8 @@ def hero(t):
     H = 500
     live = load_live()
     s = Svg(W, H, t, "Yashvardhan Thanvi",
-            "Founder of LLMSlim, the open-source context layer for production AI agents, backed by 15 startup "
-            "programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at DRDO. Available for "
+            "Founder of LLMSlim, the open-source context layer for production AI agents, backed by "
+            f"{len(LLMSLIM['programs'])} startup programs. Runs AMEYOR, an AI and software studio. Previously AI/ML research at DRDO. Available for "
             "freelance work, Jaipur, India.")
     reveal(s)
     card(s, 0, 0, W, H, r=24)
