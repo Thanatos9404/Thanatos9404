@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="185 pull requests to 76 organisations, 89 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="188 pull requests to 78 organisations, 90 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 185 pull requests</b> (89 merged), grouped by organisation</summary>
+<summary><b>All 188 pull requests</b> (90 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -223,12 +223,13 @@
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
 
-**radare2** &nbsp;<sub>9 merged of 9</sub>
+**radare2** &nbsp;<sub>10 merged of 10</sub>
 
 - `merged` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 - `merged` [Don't truncate long commands in r_sys_cmdf and r_sys_cmd_strf ##util](https://github.com/radareorg/radare2/pull/27303) <sub>radareorg/radare2#27303</sub>
 - `merged` [Pass ExpandEnvironmentStrings its buffer size in characters ##crash](https://github.com/radareorg/radare2/pull/27302) <sub>radareorg/radare2#27302</sub>
 - `merged` [Fix #17381 - Decode SH-4 fsca and fsrra and tighten the ftrv pattern ##disasm](https://github.com/radareorg/radare2/pull/27308) <sub>radareorg/radare2#27308</sub>
+- `merged` [Fix #14078 - Mask AVR jump targets with the flash byte-address width ##analysis](https://github.com/radareorg/radare2/pull/27328) <sub>radareorg/radare2#27328</sub>
 - `merged` [Don't overflow the bit buffer printing Cd data in binary ##crash](https://github.com/radareorg/radare2/pull/27322) <sub>radareorg/radare2#27322</sub>
 - `merged` [Fix #9756 - Show Cd data as data in pdj ##disasm](https://github.com/radareorg/radare2/pull/27320) <sub>radareorg/radare2#27320</sub>
 - `merged` [Sort the r2pm -l and -s listings ##r2pm](https://github.com/radareorg/radare2/pull/27315) <sub>radareorg/radare2#27315</sub>
@@ -319,6 +320,10 @@
 - `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 - `closed` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 
+**nvm.sh** &nbsp;<sub>1 in review</sub>
+
+- `open` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
+
 **Mermaid** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix(quadrant): escape the dot in point coordinate lexer rules](https://github.com/mermaid-js/mermaid/pull/8579) <sub>mermaid-js/mermaid#8579</sub>
@@ -365,6 +370,10 @@
 
 - `open` [fix(@angular-devkit/schematics): include the template path in errors thrown by content templates](https://github.com/angular/angular-cli/pull/34621) <sub>angular/angular-cli#34621</sub>
 - `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
+
+**Kivy** &nbsp;<sub>1 in review</sub>
+
+- `open` [Make Matrix.rotate() and Matrix.scale() compose with the current matrix](https://github.com/kivy/kivy/pull/9483) <sub>kivy/kivy#9483</sub>
 
 **NLTK** &nbsp;<sub>2 in review</sub>
 
