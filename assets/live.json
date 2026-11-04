@@ -1,5 +1,5 @@
 {
- "repos": 123,
+ "repos": 124,
  "org_list": [
   {
    "name": "NVIDIA",
@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 30021
+   "stars": 30038
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41434
+   "stars": 41438
   },
   {
    "name": "Google",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116053
+   "stars": 116052
   },
   {
    "name": "AWS",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 71627
+   "stars": 71628
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25549
+   "stars": 25553
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70373
+   "stars": 70376
   },
   {
    "name": "ModelScope",
@@ -143,7 +143,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 8476
+   "stars": 8475
   },
   {
    "name": "Nous Research",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 260252
+   "stars": 260273
   },
   {
    "name": "nvm",
@@ -159,7 +159,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 95750
+   "stars": 95752
   },
   {
    "name": "OpenAPI Tools",
@@ -167,7 +167,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 26848
+   "stars": 26849
   },
   {
    "name": "radare2",
@@ -175,7 +175,7 @@
    "merged": 10,
    "prs": 10,
    "open": 0,
-   "stars": 25299
+   "stars": 25304
   },
   {
    "name": "fasthttp",
@@ -183,7 +183,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 23505
+   "stars": 23504
   },
   {
    "name": "Hermes WebUI",
@@ -199,7 +199,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 7833
+   "stars": 7834
   },
   {
    "name": "Cloud Custodian",
@@ -239,7 +239,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 3992
+   "stars": 3993
   },
   {
    "name": "Coverage.py",
@@ -311,7 +311,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 90999
+   "stars": 91003
   },
   {
    "name": "crewAI",
@@ -319,7 +319,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60460
+   "stars": 60465
   },
   {
    "name": "jadx",
@@ -327,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 51559
+   "stars": 51561
   },
   {
    "name": "mitmproxy",
@@ -335,7 +335,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 46618
+   "stars": 46621
   },
   {
    "name": "Plotly",
@@ -359,7 +359,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33103
+   "stars": 33108
   },
   {
    "name": "Lightning AI",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27713
+   "stars": 27716
   },
   {
    "name": "Angular",
@@ -416,6 +416,14 @@
    "prs": 1,
    "open": 0,
    "stars": 13966
+  },
+  {
+   "name": "Open Asset Import Library",
+   "logo": "assimp",
+   "merged": 0,
+   "prs": 1,
+   "open": 1,
+   "stars": 13303
   },
   {
    "name": "OpenLayers",
@@ -607,7 +615,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 213
+   "stars": 214
   },
   {
    "name": "deepset",
@@ -626,9 +634,9 @@
    "stars": 8
   }
  ],
- "prs": 188,
+ "prs": 189,
  "merged": 91,
- "orgs": 78,
+ "orgs": 79,
  "merged_orgs": [
   "NVIDIA",
   "Microsoft",
@@ -682,7 +690,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 260252
+   "stars": 260273
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -706,7 +714,7 @@
    "url": "https://github.com/raycast/extensions",
    "kind": "integration",
    "owner": "Raycast",
-   "stars": 7833
+   "stars": 7834
   },
   {
    "name": "Awesome MCP ZH",
@@ -714,7 +722,7 @@
    "url": "https://github.com/yzfly/Awesome-MCP-ZH",
    "kind": "list",
    "owner": "云中江树",
-   "stars": 7806
+   "stars": 7805
   },
   {
    "name": "Awesome LLMOps",
@@ -746,7 +754,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1500
+   "stars": 1501
   },
   {
    "name": "Awesome LLM RAG",
@@ -847,5 +855,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=228;merged=108;open=102;repos=197;newest=kivy;llmslim=0.12.0"
+ "fingerprint": "prs=229;merged=108;open=103;repos=198;newest=assimp;llmslim=0.12.0"
 }
