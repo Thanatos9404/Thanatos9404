@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 30013
+   "stars": 30020
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41431
+   "stars": 41434
   },
   {
    "name": "Google",
@@ -23,7 +23,7 @@
    "merged": 1,
    "prs": 5,
    "open": 3,
-   "stars": 11792
+   "stars": 11793
   },
   {
    "name": "Meta",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116051
+   "stars": 116053
   },
   {
    "name": "AWS",
@@ -63,7 +63,7 @@
    "merged": 2,
    "prs": 4,
    "open": 2,
-   "stars": 10703
+   "stars": 10704
   },
   {
    "name": "Capital One",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 71626
+   "stars": 71627
   },
   {
    "name": "Pydantic",
@@ -119,7 +119,7 @@
    "merged": 2,
    "prs": 3,
    "open": 1,
-   "stars": 70372
+   "stars": 70373
   },
   {
    "name": "ModelScope",
@@ -151,7 +151,15 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 260240
+   "stars": 260251
+  },
+  {
+   "name": "nvm",
+   "logo": "nvm-sh",
+   "merged": 1,
+   "prs": 1,
+   "open": 0,
+   "stars": 95750
   },
   {
    "name": "OpenAPI Tools",
@@ -167,7 +175,7 @@
    "merged": 10,
    "prs": 10,
    "open": 0,
-   "stars": 25296
+   "stars": 25299
   },
   {
    "name": "fasthttp",
@@ -191,7 +199,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 7832
+   "stars": 7833
   },
   {
    "name": "Cloud Custodian",
@@ -287,7 +295,7 @@
    "merged": 0,
    "prs": 2,
    "open": 2,
-   "stars": 5009
+   "stars": 5008
   },
   {
    "name": "Mozilla.ai",
@@ -298,20 +306,12 @@
    "stars": 2245
   },
   {
-   "name": "nvm.sh",
-   "logo": "nvm-sh",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 95750
-  },
-  {
    "name": "Mermaid",
    "logo": "mermaid-js",
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 90996
+   "stars": 90999
   },
   {
    "name": "crewAI",
@@ -319,7 +319,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60456
+   "stars": 60460
   },
   {
    "name": "jadx",
@@ -327,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 51554
+   "stars": 51558
   },
   {
    "name": "mitmproxy",
@@ -335,7 +335,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 46615
+   "stars": 46618
   },
   {
    "name": "Plotly",
@@ -343,7 +343,7 @@
    "merged": 0,
    "prs": 2,
    "open": 2,
-   "stars": 43352
+   "stars": 43353
   },
   {
    "name": "Poetry",
@@ -367,7 +367,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 31440
+   "stars": 31441
   },
   {
    "name": "Helm",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27711
+   "stars": 27712
   },
   {
    "name": "Angular",
@@ -627,7 +627,7 @@
   }
  ],
  "prs": 188,
- "merged": 90,
+ "merged": 91,
  "orgs": 78,
  "merged_orgs": [
   "NVIDIA",
@@ -649,6 +649,7 @@
   "Pyodide",
   "Containers",
   "Nous Research",
+  "nvm",
   "OpenAPI Tools",
   "radare2",
   "fasthttp",
@@ -669,10 +670,10 @@
  "review_orgs": [
   "Mozilla",
   "Mozilla.ai",
-  "nvm.sh",
   "Mermaid",
   "crewAI",
-  "jadx"
+  "jadx",
+  "mitmproxy"
  ],
  "listed_in": [
   {
@@ -681,7 +682,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 260240
+   "stars": 260251
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -697,7 +698,7 @@
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
    "kind": "list",
    "owner": "Kalyan KS",
-   "stars": 10909
+   "stars": 10910
   },
   {
    "name": "Raycast Store",
@@ -705,7 +706,7 @@
    "url": "https://github.com/raycast/extensions",
    "kind": "integration",
    "owner": "Raycast",
-   "stars": 7832
+   "stars": 7833
   },
   {
    "name": "Awesome MCP ZH",
@@ -846,5 +847,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=228;merged=107;open=103;repos=197;newest=kivy;llmslim=0.12.0"
+ "fingerprint": "prs=228;merged=108;open=102;repos=197;newest=kivy;llmslim=0.12.0"
 }

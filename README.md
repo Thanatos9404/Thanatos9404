@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="188 pull requests to 78 organisations, 90 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="188 pull requests to 78 organisations, 91 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 188 pull requests</b> (90 merged), grouped by organisation</summary>
+<summary><b>All 188 pull requests</b> (91 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -219,6 +219,10 @@
 - `merged` [chore(catalog): re-pin llmslim to v0.11.2](https://github.com/NousResearch/hermes-agent/pull/144036) <sub>NousResearch/hermes-agent#144036</sub>
 - `merged` [chore(catalog): re-pin llmslim to v0.12.0](https://github.com/NousResearch/hermes-agent/pull/145645) <sub>NousResearch/hermes-agent#145645</sub>
 
+**nvm** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
+
 **OpenAPI Tools** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
@@ -319,10 +323,6 @@
 - `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
 - `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
 - `closed` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
-
-**nvm.sh** &nbsp;<sub>1 in review</sub>
-
-- `open` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
 
 **Mermaid** &nbsp;<sub>1 in review</sub>
 
