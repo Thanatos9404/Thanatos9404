@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 30020
+   "stars": 30021
   },
   {
    "name": "Microsoft",
@@ -151,7 +151,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 260251
+   "stars": 260252
   },
   {
    "name": "nvm",
@@ -327,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 51558
+   "stars": 51559
   },
   {
    "name": "mitmproxy",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27712
+   "stars": 27713
   },
   {
    "name": "Angular",
@@ -439,7 +439,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 9664
+   "stars": 9665
   },
   {
    "name": "KubeEdge",
@@ -682,7 +682,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 260251
+   "stars": 260252
   },
   {
    "name": "Awesome Chatgpt Zh",
