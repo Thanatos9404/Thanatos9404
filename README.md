@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="195 pull requests to 81 organisations, 95 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="195 pull requests to 81 organisations, 96 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 195 pull requests</b> (95 merged), grouped by organisation</summary>
+<summary><b>All 195 pull requests</b> (96 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -197,6 +197,12 @@
 - `merged` [fix(html): put formatting and hyperlinks inside the `<p>` and `<hN>` tags](https://github.com/docling-project/docling-core/pull/879) <sub>docling-project/docling-core#879</sub>
 - `open` [fix(jats): keep the license and funding statements of the article](https://github.com/docling-project/docling/pull/4866) <sub>docling-project/docling#4866</sub>
 
+**Mozilla.ai** &nbsp;<sub>1 merged of 3</sub>
+
+- `merged` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
+- `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
+- `closed` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
+
 **ModelScope** &nbsp;<sub>2 merged of 2</sub>
 
 - `merged` [fix(needle_haystack): keep context length and depth as metric dimensions](https://github.com/modelscope/evalscope/pull/1851) <sub>modelscope/evalscope#1851</sub>
@@ -321,12 +327,6 @@
 
 - `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
 - `open` [Skip for-in properties shadowed by non-enumerable properties](https://github.com/mozilla/rhino/pull/2557) <sub>mozilla/rhino#2557</sub>
-
-**Mozilla.ai** &nbsp;<sub>3 in review</sub>
-
-- `open` [test: scope nested-loop teardown checks to bridge threads](https://github.com/mozilla-ai/any-llm/pull/1481) <sub>mozilla-ai/any-llm#1481</sub>
-- `closed` [feat: add provider lifecycle cleanup and async context managers](https://github.com/mozilla-ai/any-llm/pull/1477) <sub>mozilla-ai/any-llm#1477</sub>
-- `closed` [fix(gemini): preserve provider tool-call IDs through replay](https://github.com/mozilla-ai/any-llm/pull/1476) <sub>mozilla-ai/any-llm#1476</sub>
 
 **Mermaid** &nbsp;<sub>1 in review</sub>
 
