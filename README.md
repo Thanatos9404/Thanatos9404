@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="189 pull requests to 79 organisations, 91 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="195 pull requests to 81 organisations, 95 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 189 pull requests</b> (91 merged), grouped by organisation</summary>
+<summary><b>All 195 pull requests</b> (95 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -227,7 +227,7 @@
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
 
-**radare2** &nbsp;<sub>10 merged of 10</sub>
+**radare2** &nbsp;<sub>14 merged of 14</sub>
 
 - `merged` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 - `merged` [Don't truncate long commands in r_sys_cmdf and r_sys_cmd_strf ##util](https://github.com/radareorg/radare2/pull/27303) <sub>radareorg/radare2#27303</sub>
@@ -239,6 +239,10 @@
 - `merged` [Sort the r2pm -l and -s listings ##r2pm](https://github.com/radareorg/radare2/pull/27315) <sub>radareorg/radare2#27315</sub>
 - `merged` [Fix #6867 - Keep cfg.bigendian when asm.arch changes ##config](https://github.com/radareorg/radare2/pull/27314) <sub>radareorg/radare2#27314</sub>
 - `merged` [Don't decode SH-4 fcnvds and fcnvsd with an odd DRn ##disasm](https://github.com/radareorg/radare2/pull/27313) <sub>radareorg/radare2#27313</sub>
+- `merged` [Fix #19873 - Detect MZ executables shorter than 0x3e bytes ##bin](https://github.com/radareorg/radare2/pull/27337) <sub>radareorg/radare2#27337</sub>
+- `merged` [Fix #14439 - Don't rewrite the last ihex record at the segment base on EOF ##io](https://github.com/radareorg/radare2/pull/27336) <sub>radareorg/radare2#27336</sub>
+- `merged` [Fix #16533 - Decode the TriCore 1.6 BOL loads and stores ##disasm](https://github.com/radareorg/radare2/pull/27333) <sub>radareorg/radare2#27333</sub>
+- `merged` [Fix #8389 - Make MIPS branch offsets relative to the instruction address ##asm](https://github.com/radareorg/radare2/pull/27332) <sub>radareorg/radare2#27332</sub>
 
 **fasthttp** &nbsp;<sub>2 merged of 2</sub>
 
@@ -345,6 +349,10 @@
 - `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
 - `open` [Only link `.css` files in assets as stylesheets](https://github.com/plotly/dash/pull/4105) <sub>plotly/dash#4105</sub>
 
+**Manim Community** &nbsp;<sub>1 in review</sub>
+
+- `open` [Keep submobject opacity in ShowIncreasingSubsets and its subclasses](https://github.com/ManimCommunity/manim/pull/5117) <sub>ManimCommunity/manim#5117</sub>
+
 **Poetry** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix(plugins): name the plugin that fails to load or activate](https://github.com/python-poetry/poetry/pull/11182) <sub>python-poetry/poetry#11182</sub>
@@ -370,6 +378,10 @@
 
 - `open` [fix(@angular-devkit/schematics): include the template path in errors thrown by content templates](https://github.com/angular/angular-cli/pull/34621) <sub>angular/angular-cli#34621</sub>
 - `closed` [fix(@angular-devkit/schematics): support delegating trees in `filter` and `partition`](https://github.com/angular/angular-cli/pull/34539) <sub>angular/angular-cli#34539</sub>
+
+**KaTeX** &nbsp;<sub>1 in review</sub>
+
+- `open` [fix(macros): define \arraystretch so \renewcommand works](https://github.com/KaTeX/KaTeX/pull/4320) <sub>KaTeX/KaTeX#4320</sub>
 
 **Kivy** &nbsp;<sub>1 in review</sub>
 
