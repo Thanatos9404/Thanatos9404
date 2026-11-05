@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="195 pull requests to 81 organisations, 96 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="197 pull requests to 82 organisations, 98 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 195 pull requests</b> (96 merged), grouped by organisation</summary>
+<summary><b>All 197 pull requests</b> (98 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -87,12 +87,12 @@
 - `open` [fix(openapi3): warn when a server variable with enum values has no default](https://github.com/microsoft/typespec/pull/12302) <sub>microsoft/typespec#12302</sub>
 - `closed` [Time out idle connections to the auth code receiver](https://github.com/AzureAD/microsoft-authentication-library-for-python/pull/971) <sub>AzureAD/microsoft-authentication-library-for-python#971</sub>
 
-**Google** &nbsp;<sub>1 merged of 5</sub>
+**Google** &nbsp;<sub>2 merged of 5</sub>
 
 - `merged` [fix(auth): use an unencrypted key for mTLS certificate rotation](https://github.com/googleapis/google-cloud-python/pull/18709) <sub>googleapis/google-cloud-python#18709</sub>
+- `merged` [Send the LE Enhanced Connection Complete event when the host unmasks it](https://github.com/google/bumble/pull/1025) <sub>google/bumble#1025</sub>
 - `open` [fix(misc/npm-source): annotate packages when scanning the project directory](https://github.com/google/osv-scalibr/pull/2495) <sub>google/osv-scalibr#2495</sub>
 - `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
-- `open` [Send the LE Enhanced Connection Complete event when the host unmasks it](https://github.com/google/bumble/pull/1025) <sub>google/bumble#1025</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
 **Meta** &nbsp;<sub>4 merged of 11</sub>
@@ -233,7 +233,7 @@
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
 
-**radare2** &nbsp;<sub>14 merged of 14</sub>
+**radare2** &nbsp;<sub>15 merged of 15</sub>
 
 - `merged` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 - `merged` [Don't truncate long commands in r_sys_cmdf and r_sys_cmd_strf ##util](https://github.com/radareorg/radare2/pull/27303) <sub>radareorg/radare2#27303</sub>
@@ -249,6 +249,7 @@
 - `merged` [Fix #14439 - Don't rewrite the last ihex record at the segment base on EOF ##io](https://github.com/radareorg/radare2/pull/27336) <sub>radareorg/radare2#27336</sub>
 - `merged` [Fix #16533 - Decode the TriCore 1.6 BOL loads and stores ##disasm](https://github.com/radareorg/radare2/pull/27333) <sub>radareorg/radare2#27333</sub>
 - `merged` [Fix #8389 - Make MIPS branch offsets relative to the instruction address ##asm](https://github.com/radareorg/radare2/pull/27332) <sub>radareorg/radare2#27332</sub>
+- `merged` [Fix #4974 - Print binary Cd data in value order ##disasm](https://github.com/radareorg/radare2/pull/27348) <sub>radareorg/radare2#27348</sub>
 
 **fasthttp** &nbsp;<sub>2 merged of 2</sub>
 
@@ -369,6 +370,10 @@
 
 - `open` [fix(plugin): extract plugin archives through os.Root](https://github.com/helm/helm/pull/32774) <sub>helm/helm#32774</sub>
 - `open` [fix(chart): write expanded chart files through os.Root](https://github.com/helm/helm/pull/32773) <sub>helm/helm#32773</sub>
+
+**Emscripten** &nbsp;<sub>1 in review</sub>
+
+- `open` [Fix the status message for counted main loop blockers](https://github.com/emscripten-core/emscripten/pull/28177) <sub>emscripten-core/emscripten#28177</sub>
 
 **Vercel** &nbsp;<sub>1 in review</sub>
 

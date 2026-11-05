@@ -47,7 +47,7 @@ ORGS = {
     "DataDog": "Datadog", "milvus-io": "Milvus", "cadence-workflow": "Cadence",
     "radareorg": "radare2", "speced": "Bikeshed", "davila7": "Claude Code Templates", "mermaid-js": "Mermaid",
     "pylint-dev": "Pylint", "cython": "Cython", "RDFLib": "RDFLib", "znc": "ZNC", "skylot": "jadx",
-    "nvm-sh": "nvm",
+    "nvm-sh": "nvm", "emscripten-core": "Emscripten",
 }
 # Well-known names first, then everything else by the stars of the repos I contributed to.
 BRANDS = ["NVIDIA", "Microsoft", "Google", "Meta", "AWS", "IBM", "Tesla", "Uber", "Mozilla", "Capital One",
