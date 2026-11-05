@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 260713
+   "stars": 260714
   },
   {
    "name": "nvm",
@@ -351,7 +351,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 42260
+   "stars": 42261
   },
   {
    "name": "Poetry",
@@ -715,7 +715,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 260713
+   "stars": 260714
   },
   {
    "name": "Awesome Chatgpt Zh",
