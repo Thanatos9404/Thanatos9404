@@ -58,13 +58,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="197 pull requests to 82 organisations, 98 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="197 pull requests to 82 organisations, 100 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 17 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 197 pull requests</b> (98 merged), grouped by organisation</summary>
+<summary><b>All 197 pull requests</b> (100 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -229,6 +229,10 @@
 
 - `merged` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
 
+**Emscripten** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [Fix the status message for counted main loop blockers](https://github.com/emscripten-core/emscripten/pull/28177) <sub>emscripten-core/emscripten#28177</sub>
+
 **OpenAPI Tools** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
@@ -256,10 +260,10 @@
 - `merged` [fix(fs): resolve default FS paths with os.Root so they stay inside Root](https://github.com/valyala/fasthttp/pull/2490) <sub>valyala/fasthttp#2490</sub>
 - `merged` [fix(fs): don't remove stale compressed files of a custom FS.FS from disk](https://github.com/valyala/fasthttp/pull/2489) <sub>valyala/fasthttp#2489</sub>
 
-**Hermes WebUI** &nbsp;<sub>1 merged of 2</sub>
+**Hermes WebUI** &nbsp;<sub>2 merged of 2</sub>
 
 - `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
-- `open` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
+- `merged` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
 
 **Raycast** &nbsp;<sub>1 merged of 1</sub>
 
@@ -370,10 +374,6 @@
 
 - `open` [fix(plugin): extract plugin archives through os.Root](https://github.com/helm/helm/pull/32774) <sub>helm/helm#32774</sub>
 - `open` [fix(chart): write expanded chart files through os.Root](https://github.com/helm/helm/pull/32773) <sub>helm/helm#32773</sub>
-
-**Emscripten** &nbsp;<sub>1 in review</sub>
-
-- `open` [Fix the status message for counted main loop blockers](https://github.com/emscripten-core/emscripten/pull/28177) <sub>emscripten-core/emscripten#28177</sub>
 
 **Vercel** &nbsp;<sub>1 in review</sub>
 
