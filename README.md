@@ -45,8 +45,9 @@
 </p>
 
 <details>
-<summary><b>More projects</b> (6)</summary>
+<summary><b>More projects</b> (7)</summary>
 
+- **[ringback-releases](https://github.com/Thanatos9404/ringback-releases)** <sub>new</sub> Installers and auto-update feed for Ringback (Windows, macOS, Linux).
 - **[Ruko](https://github.com/Thanatos9404/ruko)** <sub>new</sub> A voice check of about a minute that stops a payment scam before the money leaves. Built on Bolna for the Bolna x YC Symphony Buildathon. [Live](https://ruko-symphony.vercel.app)
 - **[RuleDost](https://ruledost.vercel.app)** Hackathon rules, decoded with receipts.
 - **[StudyTwin](https://github.com/Thanatos9404/StudyTwin)** A tutor that cites your course material.
