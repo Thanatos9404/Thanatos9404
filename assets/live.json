@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 30883
+   "stars": 30907
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41587
+   "stars": 41591
   },
   {
    "name": "Google",
@@ -23,7 +23,7 @@
    "merged": 2,
    "prs": 5,
    "open": 2,
-   "stars": 11819
+   "stars": 11820
   },
   {
    "name": "Meta",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116105
+   "stars": 116109
   },
   {
    "name": "AWS",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 72283
+   "stars": 72289
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25644
+   "stars": 25647
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 70628
+   "stars": 70633
   },
   {
    "name": "Mozilla.ai",
@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 262001
+   "stars": 262031
   },
   {
    "name": "nvm",
@@ -173,8 +173,8 @@
    "name": "Emscripten",
    "logo": "emscripten-core",
    "merged": 1,
-   "prs": 1,
-   "open": 0,
+   "prs": 2,
+   "open": 1,
    "stars": 27766
   },
   {
@@ -197,9 +197,9 @@
    "name": "radare2",
    "logo": "radareorg",
    "merged": 15,
-   "prs": 15,
-   "open": 0,
-   "stars": 25377
+   "prs": 17,
+   "open": 2,
+   "stars": 25379
   },
   {
    "name": "fasthttp",
@@ -215,7 +215,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 19463
+   "stars": 19465
   },
   {
    "name": "Raycast",
@@ -327,7 +327,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 91053
+   "stars": 91055
   },
   {
    "name": "crewAI",
@@ -335,7 +335,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60690
+   "stars": 60694
   },
   {
    "name": "jadx",
@@ -343,7 +343,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 51724
+   "stars": 51726
   },
   {
    "name": "mitmproxy",
@@ -351,7 +351,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 46751
+   "stars": 46758
   },
   {
    "name": "Plotly",
@@ -367,7 +367,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 42368
+   "stars": 42373
   },
   {
    "name": "Poetry",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33237
+   "stars": 33240
   },
   {
    "name": "Lightning AI",
@@ -391,7 +391,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 31447
+   "stars": 31446
   },
   {
    "name": "Helm",
@@ -407,7 +407,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27834
+   "stars": 27837
   },
   {
    "name": "KaTeX",
@@ -519,7 +519,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 2257
+   "stars": 2258
   },
   {
    "name": "ZNC",
@@ -615,7 +615,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 603
+   "stars": 604
   },
   {
    "name": "Cadence",
@@ -647,7 +647,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 228
+   "stars": 229
   },
   {
    "name": "deepset",
@@ -666,7 +666,7 @@
    "stars": 8
   }
  ],
- "prs": 198,
+ "prs": 201,
  "merged": 103,
  "orgs": 83,
  "merged_orgs": [
@@ -725,7 +725,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 262001
+   "stars": 262031
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -733,7 +733,7 @@
    "url": "https://github.com/EmbraceAGI/awesome-chatgpt-zh",
    "kind": "list",
    "owner": "EmbraceAGI",
-   "stars": 11826
+   "stars": 11827
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -773,7 +773,7 @@
    "url": "https://github.com/alvinreal/awesome-opensource-ai",
    "kind": "list",
    "owner": "alvinreal",
-   "stars": 5016
+   "stars": 5017
   },
   {
    "name": "Awesome LLM Compression",
@@ -789,7 +789,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1546
+   "stars": 1547
   },
   {
    "name": "Awesome LLM RAG",
@@ -906,5 +906,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=238;merged=122;open=96;repos=203;newest=ringback-releases;llmslim=0.12.0"
+ "fingerprint": "prs=241;merged=122;open=99;repos=203;newest=ringback-releases;llmslim=0.12.0"
 }
