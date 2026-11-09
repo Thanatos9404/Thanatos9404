@@ -84,6 +84,7 @@ PROJECTS = [
 
 # Listed inside "More projects": (name, href, short description)
 MORE = [
+    ("Ringback", "https://github.com/Thanatos9404/ringback-releases", "a phone call when your coding agent needs you"),
     ("RuleDost", "https://ruledost.vercel.app", "hackathon rules, decoded with receipts"),
     ("StudyTwin", "https://github.com/Thanatos9404/StudyTwin", "a tutor that cites your course material"),
     ("Leash", "https://github.com/Thanatos9404/leash", "spending mandates for AI shopping agents"),
@@ -149,6 +150,6 @@ FOOTER_LINKS = [
 
 # Public repos that the automatic "More projects" list should never pick up.
 AUTO_EXCLUDE = {"Thanatos9404", "Thanatos9404.github.io", "StackUnderflow_BIT-Mesra-Jaipur", "Portfolio-Website",
-                "SoapySDR", "todo-app", "hackathon-demo-videos"}
+                "SoapySDR", "todo-app", "hackathon-demo-videos", "ringback-releases"}
 # Brand-new public repos (last 60 days, not featured above) are added to "More projects" automatically.
 FRESH_MAX = 4
