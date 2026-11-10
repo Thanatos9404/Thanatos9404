@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="201 pull requests to 83 organisations, 104 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="201 pull requests to 83 organisations, 105 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 201 pull requests</b> (104 merged), grouped by organisation</summary>
+<summary><b>All 201 pull requests</b> (105 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -230,6 +230,11 @@
 
 - `merged` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
 
+**Plotly** &nbsp;<sub>1 merged of 2</sub>
+
+- `merged` [Only link `.css` files in assets as stylesheets](https://github.com/plotly/dash/pull/4105) <sub>plotly/dash#4105</sub>
+- `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
+
 **Emscripten** &nbsp;<sub>2 merged of 2</sub>
 
 - `merged` [Fix the status message for counted main loop blockers](https://github.com/emscripten-core/emscripten/pull/28177) <sub>emscripten-core/emscripten#28177</sub>
@@ -357,11 +362,6 @@
 **mitmproxy** &nbsp;<sub>1 in review</sub>
 
 - `open` [Don't let server replay override a response set by an earlier addon](https://github.com/mitmproxy/mitmproxy/pull/8563) <sub>mitmproxy/mitmproxy#8563</sub>
-
-**Plotly** &nbsp;<sub>2 in review</sub>
-
-- `open` [Accept None elements in color, number and angle arrays so from_json loads figures with NaN](https://github.com/plotly/plotly.py/pull/5856) <sub>plotly/plotly.py#5856</sub>
-- `open` [Only link `.css` files in assets as stylesheets](https://github.com/plotly/dash/pull/4105) <sub>plotly/dash#4105</sub>
 
 **Manim Community** &nbsp;<sub>1 in review</sub>
 
