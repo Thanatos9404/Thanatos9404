@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="202 pull requests to 83 organisations, 106 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="202 pull requests to 83 organisations, 107 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 202 pull requests</b> (106 merged), grouped by organisation</summary>
+<summary><b>All 202 pull requests</b> (107 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -343,6 +343,10 @@
 - `merged` [Log each failed server awareness send with its traceback](https://github.com/y-crdt/pycrdt-websocket/pull/150) <sub>y-crdt/pycrdt-websocket#150</sub>
 - `closed` [Release the ydoc subscription in `YRoom.stop()`](https://github.com/y-crdt/pycrdt-websocket/pull/149) <sub>y-crdt/pycrdt-websocket#149</sub>
 
+**Privateer Project** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [fix(command): give Aborted and NoTests an exit severity](https://github.com/privateerproj/privateer-sdk/pull/340) <sub>privateerproj/privateer-sdk#340</sub>
+
 **Mozilla** &nbsp;<sub>2 in review</sub>
 
 - `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
@@ -513,10 +517,6 @@
 **deepset** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
-
-**Privateer Project** &nbsp;<sub>1 in review</sub>
-
-- `open` [fix(command): give Aborted and NoTests an exit severity](https://github.com/privateerproj/privateer-sdk/pull/340) <sub>privateerproj/privateer-sdk#340</sub>
 
 </details>
 <!-- OSS:END -->
