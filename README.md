@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="202 pull requests to 83 organisations, 107 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 109 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 202 pull requests</b> (107 merged), grouped by organisation</summary>
+<summary><b>All 204 pull requests</b> (109 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -154,18 +154,20 @@
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**Apache** &nbsp;<sub>6 merged of 11</sub>
+**Apache** &nbsp;<sub>7 merged of 13</sub>
 
 - `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
+- `merged` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `merged` [widget.py: Avoid extra empty lines when message-lines or error-lines is 0](https://github.com/apache/buildstream/pull/2208) <sub>apache/buildstream#2208</sub>
 - `merged` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 - `merged` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
 - `merged` [scriptelement.py, buildelement.py: Report relative directories as errors](https://github.com/apache/buildstream/pull/2212) <sub>apache/buildstream#2212</sub>
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
-- `open` [(Python) Only give an unknown option a value that directly follows it](https://github.com/apache/beam/pull/40647) <sub>apache/beam#40647</sub>
 - `open` [Require pandera>=0.27 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
+- `open` [_testing/_sourcetests/utils.py: Make the copied test project writable](https://github.com/apache/buildstream/pull/2221) <sub>apache/buildstream#2221</sub>
+- `open` [_frontend/cli.py: Report a relative `bst shell --mount` path as an error](https://github.com/apache/buildstream/pull/2220) <sub>apache/buildstream#2220</sub>
 - `open` [(Python) Build nested rows for struct values in pyarrow batch converters](https://github.com/apache/beam/pull/41201) <sub>apache/beam#41201</sub>
 
 **OpenTelemetry** &nbsp;<sub>2 merged of 2</sub>
@@ -230,6 +232,10 @@
 **nvm** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [(Fix) `nvm install`: honor nvm options after the version, and `--alias`/`--save` on every install](https://github.com/nvm-sh/nvm/pull/3981) <sub>nvm-sh/nvm#3981</sub>
+
+**jadx** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [fix(gui): don't crash when the file chooser is in "This PC" on Windows](https://github.com/skylot/jadx/pull/3049) <sub>skylot/jadx#3049</sub>
 
 **Plotly** &nbsp;<sub>1 merged of 2</sub>
 
@@ -360,10 +366,6 @@
 
 - `open` [fix(tools): serialize function tool callables as dotted paths](https://github.com/crewAIInc/crewAI/pull/8104) <sub>crewAIInc/crewAI#8104</sub>
 
-**jadx** &nbsp;<sub>1 in review</sub>
-
-- `open` [fix(gui): don't crash when the file chooser is in "This PC" on Windows](https://github.com/skylot/jadx/pull/3049) <sub>skylot/jadx#3049</sub>
-
 **mitmproxy** &nbsp;<sub>1 in review</sub>
 
 - `open` [Don't let server replay override a response set by an earlier addon](https://github.com/mitmproxy/mitmproxy/pull/8563) <sub>mitmproxy/mitmproxy#8563</sub>
@@ -450,13 +452,13 @@
 
 - `open` [fix(frontend): match jinja2 scoping when extracting template variables (agent)](https://github.com/future-agi/future-agi/pull/3767) <sub>future-agi/future-agi#3767</sub>
 
-**ZNC** &nbsp;<sub>1 in review</sub>
-
-- `open` [web: send a nonce-based Content-Security-Policy](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
-
 **Indico** &nbsp;<sub>1 in review</sub>
 
 - `open` [Allow hyphens in location names in the legacy room export API](https://github.com/indico/indico/pull/7806) <sub>indico/indico#7806</sub>
+
+**ZNC** &nbsp;<sub>1 in review</sub>
+
+- `open` [web: send a nonce-based Content-Security-Policy](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
 
 **Quod Libet** &nbsp;<sub>1 in review</sub>
 

@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 31266
+   "stars": 31330
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41648
+   "stars": 41662
   },
   {
    "name": "Google",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116312
+   "stars": 116334
   },
   {
    "name": "AWS",
@@ -47,7 +47,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 4846
+   "stars": 4850
   },
   {
    "name": "Tesla",
@@ -71,15 +71,15 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 668
+   "stars": 669
   },
   {
    "name": "Apache",
    "logo": "apache",
-   "merged": 6,
-   "prs": 11,
-   "open": 5,
-   "stars": 83146
+   "merged": 7,
+   "prs": 13,
+   "open": 6,
+   "stars": 83145
   },
   {
    "name": "OpenTelemetry",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 72243
+   "stars": 72259
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25691
+   "stars": 25697
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 70748
+   "stars": 70753
   },
   {
    "name": "Mozilla.ai",
@@ -151,7 +151,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 8502
+   "stars": 8503
   },
   {
    "name": "Nous Research",
@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 262683
+   "stars": 262740
   },
   {
    "name": "nvm",
@@ -167,7 +167,15 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 95869
+   "stars": 95911
+  },
+  {
+   "name": "jadx",
+   "logo": "skylot",
+   "merged": 1,
+   "prs": 1,
+   "open": 0,
+   "stars": 51774
   },
   {
    "name": "Plotly",
@@ -175,7 +183,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 43380
+   "stars": 43381
   },
   {
    "name": "Emscripten",
@@ -207,7 +215,7 @@
    "merged": 16,
    "prs": 17,
    "open": 1,
-   "stars": 25394
+   "stars": 25399
   },
   {
    "name": "fasthttp",
@@ -215,7 +223,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 23509
+   "stars": 23510
   },
   {
    "name": "Hermes WebUI",
@@ -223,7 +231,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 19483
+   "stars": 19486
   },
   {
    "name": "Raycast",
@@ -231,7 +239,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 7835
+   "stars": 7837
   },
   {
    "name": "Cloud Custodian",
@@ -255,7 +263,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 5857
+   "stars": 5858
   },
   {
    "name": "EvoScientist",
@@ -263,7 +271,7 @@
    "merged": 8,
    "prs": 8,
    "open": 0,
-   "stars": 4948
+   "stars": 4950
   },
   {
    "name": "Coraza",
@@ -271,7 +279,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 4014
+   "stars": 4016
   },
   {
    "name": "Coverage.py",
@@ -287,7 +295,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 3305
+   "stars": 3304
   },
   {
    "name": "Carvel",
@@ -303,7 +311,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 1332
+   "stars": 1333
   },
   {
    "name": "Scikit-HEP",
@@ -351,15 +359,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 60778
-  },
-  {
-   "name": "jadx",
-   "logo": "skylot",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 51773
+   "stars": 60786
   },
   {
    "name": "mitmproxy",
@@ -367,7 +367,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 46829
+   "stars": 46837
   },
   {
    "name": "Manim Community",
@@ -375,7 +375,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 42421
+   "stars": 42424
   },
   {
    "name": "Poetry",
@@ -391,7 +391,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33332
+   "stars": 33354
   },
   {
    "name": "Lightning AI",
@@ -407,7 +407,7 @@
    "merged": 0,
    "prs": 2,
    "open": 2,
-   "stars": 30421
+   "stars": 30422
   },
   {
    "name": "Vercel",
@@ -415,7 +415,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 27870
+   "stars": 27872
   },
   {
    "name": "KaTeX",
@@ -423,7 +423,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 20517
+   "stars": 20519
   },
   {
    "name": "Kivy",
@@ -431,7 +431,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 19025
+   "stars": 19027
   },
   {
    "name": "NLTK",
@@ -439,7 +439,7 @@
    "merged": 0,
    "prs": 2,
    "open": 0,
-   "stars": 14770
+   "stars": 14771
   },
   {
    "name": "Pillow",
@@ -447,7 +447,7 @@
    "merged": 0,
    "prs": 1,
    "open": 0,
-   "stars": 13977
+   "stars": 13978
   },
   {
    "name": "Open Asset Import Library",
@@ -455,7 +455,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 13318
+   "stars": 13319
   },
   {
    "name": "OpenLayers",
@@ -487,7 +487,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 7628
+   "stars": 7629
   },
   {
    "name": "Pylint",
@@ -527,19 +527,19 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 2262
-  },
-  {
-   "name": "ZNC",
-   "logo": "znc",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 2129
+   "stars": 2264
   },
   {
    "name": "Indico",
    "logo": "indico",
+   "merged": 0,
+   "prs": 1,
+   "open": 1,
+   "stars": 2128
+  },
+  {
+   "name": "ZNC",
+   "logo": "znc",
    "merged": 0,
    "prs": 1,
    "open": 1,
@@ -567,7 +567,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 1677
+   "stars": 1678
   },
   {
    "name": "Milvus",
@@ -666,8 +666,8 @@
    "stars": 115
   }
  ],
- "prs": 202,
- "merged": 107,
+ "prs": 204,
+ "merged": 109,
  "orgs": 83,
  "merged_orgs": [
   "NVIDIA",
@@ -691,6 +691,7 @@
   "Containers",
   "Nous Research",
   "nvm",
+  "jadx",
   "Plotly",
   "Emscripten",
   "Angular",
@@ -716,9 +717,9 @@
   "Mozilla",
   "Mermaid",
   "crewAI",
-  "jadx",
   "mitmproxy",
-  "Manim Community"
+  "Manim Community",
+  "Poetry"
  ],
  "listed_in": [
   {
@@ -727,7 +728,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 262683
+   "stars": 262740
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -735,7 +736,7 @@
    "url": "https://github.com/EmbraceAGI/awesome-chatgpt-zh",
    "kind": "list",
    "owner": "EmbraceAGI",
-   "stars": 11836
+   "stars": 11837
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -743,7 +744,7 @@
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
    "kind": "list",
    "owner": "Kalyan KS",
-   "stars": 11069
+   "stars": 11070
   },
   {
    "name": "Raycast Store",
@@ -751,7 +752,7 @@
    "url": "https://github.com/raycast/extensions",
    "kind": "integration",
    "owner": "Raycast",
-   "stars": 7835
+   "stars": 7837
   },
   {
    "name": "Awesome MCP ZH",
@@ -775,7 +776,7 @@
    "url": "https://github.com/alvinreal/awesome-opensource-ai",
    "kind": "list",
    "owner": "alvinreal",
-   "stars": 5025
+   "stars": 5026
   },
   {
    "name": "Awesome LLM Compression",
@@ -791,7 +792,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1559
+   "stars": 1560
   },
   {
    "name": "Awesome LLM RAG",
@@ -815,7 +816,7 @@
    "url": "https://github.com/TensorBlock/awesome-mcp-servers",
    "kind": "list",
    "owner": "TensorBlock",
-   "stars": 1063
+   "stars": 1064
   },
   {
    "name": "Awesome AI Plugins",
@@ -823,7 +824,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1026
+   "stars": 1027
   },
   {
    "name": "Awesome Gemini CLI",
@@ -863,7 +864,7 @@
    "url": "https://github.com/GetBindu/awesome-claude-code-and-skills",
    "kind": "list",
    "owner": "getbindu.com",
-   "stars": 209
+   "stars": 210
   },
   {
    "name": "Awesome MCP Servers",
@@ -908,5 +909,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=242;merged=126;open=95;repos=203;newest=ringback-releases;llmslim=0.12.0"
+ "fingerprint": "prs=244;merged=128;open=95;repos=203;newest=ringback-releases;llmslim=0.12.0"
 }
