@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 109 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 110 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 204 pull requests</b> (109 merged), grouped by organisation</summary>
+<summary><b>All 204 pull requests</b> (110 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -110,7 +110,7 @@
 - `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 - `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/meta/lexical/pull/9391) <sub>meta/lexical#9391</sub>
 
-**AWS** &nbsp;<sub>15 merged of 19</sub>
+**AWS** &nbsp;<sub>16 merged of 19</sub>
 
 - `merged` [refactor(395): remove the remaining dead confusion-matrix paths](https://github.com/awslabs/stickler/pull/398) <sub>awslabs/stickler#398</sub>
 - `merged` [fix(core): reject checkpoints at virtual child ids](https://github.com/aws/aws-durable-execution-sdk-python/pull/778) <sub>aws/aws-durable-execution-sdk-python#778</sub>
@@ -122,12 +122,12 @@
 - `merged` [refactor(296): remove the dead ConfusionMatrixCalculator methods](https://github.com/awslabs/stickler/pull/390) <sub>awslabs/stickler#390</sub>
 - `merged` [fix(349)!: export plain models and nested lists, refuse model unions](https://github.com/awslabs/stickler/pull/414) <sub>awslabs/stickler#414</sub>
 - `merged` [fix(417)!: use one threshold tolerance at every classification gate](https://github.com/awslabs/stickler/pull/421) <sub>awslabs/stickler#421</sub>
+- `merged` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `merged` [fix(extras): stop following redirects in the MicroVM request step](https://github.com/aws/aws-durable-execution-sdk-js/pull/1036) <sub>aws/aws-durable-execution-sdk-js#1036</sub>
 - `merged` [fix(otel): report faas.max_memory in bytes](https://github.com/aws/aws-durable-execution-sdk-js/pull/1074) <sub>aws/aws-durable-execution-sdk-js#1074</sub>
 - `merged` [fix(E3671): Set gp3 Iops limits per resource type](https://github.com/aws-cloudformation/cfn-lint/pull/4866) <sub>aws-cloudformation/cfn-lint#4866</sub>
 - `merged` [fix(E3695): Allow redis EngineVersion 6.x on CacheCluster](https://github.com/aws-cloudformation/cfn-lint/pull/4906) <sub>aws-cloudformation/cfn-lint#4906</sub>
 - `merged` [fix(E3615): Allow a CloudWatch alarm Period of 20](https://github.com/aws-cloudformation/cfn-lint/pull/4905) <sub>aws-cloudformation/cfn-lint#4905</sub>
-- `open` [fix(jsii-pacmak): Python target crashes on h5 and h6 Markdown headings](https://github.com/aws/jsii/pull/5292) <sub>aws/jsii#5292</sub>
 - `open` [Torch: allow `enable_checkpointing=False` in trainer_kwargs](https://github.com/awslabs/gluonts/pull/3359) <sub>awslabs/gluonts#3359</sub>
 - `closed` [fix(serve): let ModelBuilder.register() omit content and response types](https://github.com/aws/sagemaker-python-sdk/pull/6486) <sub>aws/sagemaker-python-sdk#6486</sub>
 - `closed` [fix(340): read and check Stickler extensions inside $defs](https://github.com/awslabs/stickler/pull/402) <sub>awslabs/stickler#402</sub>
