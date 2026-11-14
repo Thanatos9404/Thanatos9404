@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 110 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 111 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 204 pull requests</b> (110 merged), grouped by organisation</summary>
+<summary><b>All 204 pull requests</b> (111 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -331,6 +331,10 @@
 - `merged` [fix(idempotency): read expiry from expiry_attr in CachePersistenceLayer](https://github.com/aws-powertools/powertools-lambda-python/pull/8606) <sub>aws-powertools/powertools-lambda-python#8606</sub>
 - `merged` [fix(event_handler): strip the HTTP API stage only when rawPath has it](https://github.com/aws-powertools/powertools-lambda-python/pull/8605) <sub>aws-powertools/powertools-lambda-python#8605</sub>
 
+**ZNC** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [web: send a nonce-based Content-Security-Policy](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
+
 **Carvel** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [Allow template.replace() to reuse the placeholder's map key](https://github.com/carvel-dev/ytt/pull/1019) <sub>carvel-dev/ytt#1019</sub>
@@ -455,10 +459,6 @@
 **Indico** &nbsp;<sub>1 in review</sub>
 
 - `open` [Allow hyphens in location names in the legacy room export API](https://github.com/indico/indico/pull/7806) <sub>indico/indico#7806</sub>
-
-**ZNC** &nbsp;<sub>1 in review</sub>
-
-- `open` [web: send a nonce-based Content-Security-Policy](https://github.com/znc/znc/pull/2066) <sub>znc/znc#2066</sub>
 
 **Quod Libet** &nbsp;<sub>1 in review</sub>
 
