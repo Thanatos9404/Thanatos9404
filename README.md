@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 112 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 112 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 204 pull requests</b> (112 merged), grouped by organisation</summary>
+<summary><b>All 205 pull requests</b> (112 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -507,6 +507,10 @@
 **Cadence** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix(testsuite): honor WaitForCancellation when canceling activities](https://github.com/cadence-workflow/cadence-go-client/pull/1545) <sub>cadence-workflow/cadence-go-client#1545</sub>
+
+**AI Agent Registry** &nbsp;<sub>1 in review</sub>
+
+- `open` [Add LLMSlim to Memory and Context](https://github.com/ARUNAGIRINATHAN-K/ai-agent-registry/pull/465) <sub>ARUNAGIRINATHAN-K/ai-agent-registry#465</sub>
 
 **PySAL** &nbsp;<sub>1 in review</sub>
 
