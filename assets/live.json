@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 264111
+   "stars": 264113
   },
   {
    "name": "nvm",
@@ -167,7 +167,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 96184
+   "stars": 96186
   },
   {
    "name": "jadx",
@@ -737,7 +737,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 264111
+   "stars": 264113
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -753,7 +753,7 @@
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
    "kind": "list",
    "owner": "Kalyan KS",
-   "stars": 11089
+   "stars": 11090
   },
   {
    "name": "Awesome MCP ZH",
