@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 111 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="204 pull requests to 83 organisations, 112 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 19 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 204 pull requests</b> (111 merged), grouped by organisation</summary>
+<summary><b>All 204 pull requests</b> (112 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -256,7 +256,7 @@
 
 - `merged` [(bash) Return the cURL exit status when the body is piped on stdin](https://github.com/OpenAPITools/openapi-generator/pull/25526) <sub>OpenAPITools/openapi-generator#25526</sub>
 
-**radare2** &nbsp;<sub>16 merged of 17</sub>
+**radare2** &nbsp;<sub>17 merged of 17</sub>
 
 - `merged` [Don't escape ! in r_str_escape_sh on Unix ##util](https://github.com/radareorg/radare2/pull/27287) <sub>radareorg/radare2#27287</sub>
 - `merged` [Don't truncate long commands in r_sys_cmdf and r_sys_cmd_strf ##util](https://github.com/radareorg/radare2/pull/27303) <sub>radareorg/radare2#27303</sub>
@@ -273,8 +273,8 @@
 - `merged` [Fix #16533 - Decode the TriCore 1.6 BOL loads and stores ##disasm](https://github.com/radareorg/radare2/pull/27333) <sub>radareorg/radare2#27333</sub>
 - `merged` [Fix #8389 - Make MIPS branch offsets relative to the instruction address ##asm](https://github.com/radareorg/radare2/pull/27332) <sub>radareorg/radare2#27332</sub>
 - `merged` [Fix #4974 - Print binary Cd data in value order ##disasm](https://github.com/radareorg/radare2/pull/27348) <sub>radareorg/radare2#27348</sub>
+- `merged` [Read ihj pf values from the file for ELF and PE headers ##bin](https://github.com/radareorg/radare2/pull/27401) <sub>radareorg/radare2#27401</sub>
 - `merged` [Show Cd data in binary for ahi b, as for instructions ##disasm](https://github.com/radareorg/radare2/pull/27400) <sub>radareorg/radare2#27400</sub>
-- `open` [Read ihj pf values from the file for ELF and PE headers ##bin](https://github.com/radareorg/radare2/pull/27401) <sub>radareorg/radare2#27401</sub>
 
 **fasthttp** &nbsp;<sub>2 merged of 2</sub>
 
@@ -500,13 +500,13 @@
 
 - `open` [fix(events): fix intermittent TestEventDispatcherBatchDispatchFail panic](https://github.com/hyperledger-firefly/firefly/pull/1798) <sub>hyperledger-firefly/firefly#1798</sub>
 
-**Cadence** &nbsp;<sub>1 in review</sub>
-
-- `open` [fix(testsuite): honor WaitForCancellation when canceling activities](https://github.com/cadence-workflow/cadence-go-client/pull/1545) <sub>cadence-workflow/cadence-go-client#1545</sub>
-
 **Self-custody Solutions** &nbsp;<sub>1 in review</sub>
 
 - `open` [fix: require a TC Code to enable TC Flash Hash at Boot](https://github.com/selfcustody/krux/pull/966) <sub>selfcustody/krux#966</sub>
+
+**Cadence** &nbsp;<sub>1 in review</sub>
+
+- `open` [fix(testsuite): honor WaitForCancellation when canceling activities](https://github.com/cadence-workflow/cadence-go-client/pull/1545) <sub>cadence-workflow/cadence-go-client#1545</sub>
 
 **PySAL** &nbsp;<sub>1 in review</sub>
 
