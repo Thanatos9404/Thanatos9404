@@ -7,7 +7,7 @@
    "merged": 3,
    "prs": 5,
    "open": 2,
-   "stars": 32578
+   "stars": 32711
   },
   {
    "name": "Microsoft",
@@ -15,7 +15,7 @@
    "merged": 4,
    "prs": 10,
    "open": 5,
-   "stars": 41929
+   "stars": 41958
   },
   {
    "name": "Google",
@@ -23,7 +23,7 @@
    "merged": 2,
    "prs": 5,
    "open": 2,
-   "stars": 11859
+   "stars": 11862
   },
   {
    "name": "Meta",
@@ -31,7 +31,7 @@
    "merged": 4,
    "prs": 11,
    "open": 7,
-   "stars": 116739
+   "stars": 116754
   },
   {
    "name": "AWS",
@@ -47,7 +47,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 4892
+   "stars": 4898
   },
   {
    "name": "Tesla",
@@ -63,7 +63,7 @@
    "merged": 2,
    "prs": 4,
    "open": 2,
-   "stars": 10718
+   "stars": 10719
   },
   {
    "name": "Capital One",
@@ -79,7 +79,7 @@
    "merged": 7,
    "prs": 13,
    "open": 6,
-   "stars": 83204
+   "stars": 83215
   },
   {
    "name": "OpenTelemetry",
@@ -87,7 +87,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 53
+   "stars": 52
   },
   {
    "name": "Jupyter",
@@ -103,7 +103,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 72381
+   "stars": 72386
   },
   {
    "name": "Pydantic",
@@ -111,7 +111,7 @@
    "merged": 2,
    "prs": 3,
    "open": 0,
-   "stars": 25824
+   "stars": 25837
   },
   {
    "name": "Docling",
@@ -119,7 +119,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 71033
+   "stars": 71063
   },
   {
    "name": "Mozilla.ai",
@@ -127,7 +127,7 @@
    "merged": 1,
    "prs": 3,
    "open": 0,
-   "stars": 2258
+   "stars": 2259
   },
   {
    "name": "ModelScope",
@@ -135,7 +135,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 3711
+   "stars": 3712
   },
   {
    "name": "Pyodide",
@@ -151,7 +151,7 @@
    "merged": 1,
    "prs": 3,
    "open": 2,
-   "stars": 8525
+   "stars": 8531
   },
   {
    "name": "Nous Research",
@@ -159,7 +159,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 264311
+   "stars": 264486
   },
   {
    "name": "nvm",
@@ -167,7 +167,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 96209
+   "stars": 96147
   },
   {
    "name": "jadx",
@@ -175,7 +175,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 51887
+   "stars": 51893
   },
   {
    "name": "Plotly",
@@ -191,7 +191,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 27783
+   "stars": 27784
   },
   {
    "name": "Angular",
@@ -199,7 +199,7 @@
    "merged": 1,
    "prs": 2,
    "open": 0,
-   "stars": 27019
+   "stars": 27020
   },
   {
    "name": "OpenAPI Tools",
@@ -207,7 +207,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 26861
+   "stars": 26862
   },
   {
    "name": "radare2",
@@ -215,7 +215,7 @@
    "merged": 17,
    "prs": 17,
    "open": 0,
-   "stars": 25451
+   "stars": 25450
   },
   {
    "name": "fasthttp",
@@ -223,7 +223,7 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 23519
+   "stars": 23520
   },
   {
    "name": "Hermes WebUI",
@@ -231,7 +231,15 @@
    "merged": 2,
    "prs": 2,
    "open": 0,
-   "stars": 19557
+   "stars": 19559
+  },
+  {
+   "name": "Kivy",
+   "logo": "kivy",
+   "merged": 1,
+   "prs": 1,
+   "open": 0,
+   "stars": 19029
   },
   {
    "name": "Raycast",
@@ -263,7 +271,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 5878
+   "stars": 5879
   },
   {
    "name": "EvoScientist",
@@ -271,7 +279,7 @@
    "merged": 8,
    "prs": 8,
    "open": 0,
-   "stars": 5023
+   "stars": 5032
   },
   {
    "name": "Coraza",
@@ -279,7 +287,7 @@
    "merged": 1,
    "prs": 2,
    "open": 1,
-   "stars": 4036
+   "stars": 4039
   },
   {
    "name": "Coverage.py",
@@ -287,7 +295,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 3434
+   "stars": 3436
   },
   {
    "name": "Powertools for AWS",
@@ -311,7 +319,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 1889
+   "stars": 1890
   },
   {
    "name": "Bikeshed",
@@ -359,7 +367,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 91143
+   "stars": 91156
   },
   {
    "name": "crewAI",
@@ -367,7 +375,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 61060
+   "stars": 61084
   },
   {
    "name": "mitmproxy",
@@ -375,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 47064
+   "stars": 47071
   },
   {
    "name": "Manim Community",
@@ -383,7 +391,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 42656
+   "stars": 42667
   },
   {
    "name": "Poetry",
@@ -391,7 +399,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 34322
+   "stars": 34323
   },
   {
    "name": "Claude Code Templates",
@@ -399,7 +407,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 33939
+   "stars": 33972
   },
   {
    "name": "Lightning AI",
@@ -407,7 +415,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 31450
+   "stars": 31451
   },
   {
    "name": "Helm",
@@ -415,7 +423,7 @@
    "merged": 0,
    "prs": 2,
    "open": 2,
-   "stars": 30435
+   "stars": 30436
   },
   {
    "name": "Vercel",
@@ -423,7 +431,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 28058
+   "stars": 28073
   },
   {
    "name": "KaTeX",
@@ -431,15 +439,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 20525
-  },
-  {
-   "name": "Kivy",
-   "logo": "kivy",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 19029
+   "stars": 20526
   },
   {
    "name": "NLTK",
@@ -447,7 +447,7 @@
    "merged": 0,
    "prs": 2,
    "open": 0,
-   "stars": 14774
+   "stars": 14775
   },
   {
    "name": "Pillow",
@@ -455,7 +455,7 @@
    "merged": 0,
    "prs": 1,
    "open": 0,
-   "stars": 13993
+   "stars": 13995
   },
   {
    "name": "Open Asset Import Library",
@@ -463,7 +463,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 13331
+   "stars": 13333
   },
   {
    "name": "OpenLayers",
@@ -527,7 +527,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 2563
+   "stars": 2564
   },
   {
    "name": "Future AGI",
@@ -535,7 +535,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 2282
+   "stars": 2283
   },
   {
    "name": "Indico",
@@ -543,7 +543,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 2131
+   "stars": 2132
   },
   {
    "name": "Quod Libet",
@@ -551,7 +551,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 1986
+   "stars": 1987
   },
   {
    "name": "ImageIO",
@@ -567,7 +567,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 1679
+   "stars": 1678
   },
   {
    "name": "Milvus",
@@ -575,7 +575,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 1426
+   "stars": 1427
   },
   {
    "name": "Path Integral Institute",
@@ -584,14 +584,6 @@
    "prs": 1,
    "open": 1,
    "stars": 1026
-  },
-  {
-   "name": "conda-forge",
-   "logo": "conda-forge",
-   "merged": 0,
-   "prs": 1,
-   "open": 1,
-   "stars": 850
   },
   {
    "name": "glue",
@@ -655,7 +647,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 272
+   "stars": 273
   },
   {
    "name": "PySAL",
@@ -672,10 +664,18 @@
    "prs": 1,
    "open": 1,
    "stars": 114
+  },
+  {
+   "name": "conda-forge",
+   "logo": "conda-forge",
+   "merged": 0,
+   "prs": 1,
+   "open": 1,
+   "stars": 0
   }
  ],
  "prs": 205,
- "merged": 112,
+ "merged": 113,
  "orgs": 84,
  "merged_orgs": [
   "NVIDIA",
@@ -707,6 +707,7 @@
   "radare2",
   "fasthttp",
   "Hermes WebUI",
+  "Kivy",
   "Raycast",
   "Cloud Custodian",
   "stdlib",
@@ -737,7 +738,7 @@
    "url": "https://github.com/NousResearch/hermes-agent",
    "kind": "integration",
    "owner": "Nous Research",
-   "stars": 264311
+   "stars": 264486
   },
   {
    "name": "Awesome Chatgpt Zh",
@@ -745,7 +746,7 @@
    "url": "https://github.com/EmbraceAGI/awesome-chatgpt-zh",
    "kind": "list",
    "owner": "EmbraceAGI",
-   "stars": 11857
+   "stars": 11856
   },
   {
    "name": "LLM Engineer Toolkit",
@@ -753,7 +754,7 @@
    "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
    "kind": "list",
    "owner": "Kalyan KS",
-   "stars": 11090
+   "stars": 11092
   },
   {
    "name": "Awesome MCP ZH",
@@ -777,7 +778,7 @@
    "url": "https://github.com/tensorchord/Awesome-LLMOps",
    "kind": "list",
    "owner": "TensorChord",
-   "stars": 5980
+   "stars": 5979
   },
   {
    "name": "Awesome Opensource AI",
@@ -785,7 +786,7 @@
    "url": "https://github.com/alvinreal/awesome-opensource-ai",
    "kind": "list",
    "owner": "alvinreal",
-   "stars": 5049
+   "stars": 5050
   },
   {
    "name": "Awesome LLM Compression",
@@ -801,7 +802,7 @@
    "url": "https://github.com/hashgraph-online/awesome-codex-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1587
+   "stars": 1591
   },
   {
    "name": "Awesome LLM RAG",
@@ -809,7 +810,7 @@
    "url": "https://github.com/jxzhangjhu/Awesome-LLM-RAG",
    "kind": "list",
    "owner": "Jiaxin Zhang",
-   "stars": 1374
+   "stars": 1373
   },
   {
    "name": "Awesome AI Agents",
@@ -817,7 +818,7 @@
    "url": "https://github.com/Jenqyang/Awesome-AI-Agents",
    "kind": "list",
    "owner": "Zhengyang Hou",
-   "stars": 1276
+   "stars": 1278
   },
   {
    "name": "Awesome MCP Servers",
@@ -825,7 +826,7 @@
    "url": "https://github.com/TensorBlock/awesome-mcp-servers",
    "kind": "list",
    "owner": "TensorBlock",
-   "stars": 1096
+   "stars": 1101
   },
   {
    "name": "Awesome AI Plugins",
@@ -833,7 +834,7 @@
    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
    "kind": "list",
    "owner": "HOL (Hashgraph Online)",
-   "stars": 1057
+   "stars": 1059
   },
   {
    "name": "Awesome Memory For Agents",
@@ -849,7 +850,7 @@
    "url": "https://github.com/Piebald-AI/awesome-gemini-cli",
    "kind": "list",
    "owner": "Piebald",
-   "stars": 636
+   "stars": 638
   },
   {
    "name": "Azure OpenAI LLM Notes",
@@ -865,7 +866,7 @@
    "url": "https://github.com/acvnace/awesome-vibe-coding-resources",
    "kind": "list",
    "owner": "acvnace",
-   "stars": 336
+   "stars": 337
   },
   {
    "name": "Awesome Context Engineering",
@@ -889,7 +890,7 @@
    "url": "https://github.com/mcpHQ/awesome-mcp-servers",
    "kind": "list",
    "owner": "mcpHQ",
-   "stars": 120
+   "stars": 123
   },
   {
    "name": "Awesome Pydantic AI",
@@ -926,5 +927,5 @@
    "created": "2026-10-23"
   }
  ],
- "fingerprint": "prs=244;merged=132;open=91;repos=203;newest=ringback-releases;llmslim=0.12.0"
+ "fingerprint": "prs=244;merged=133;open=90;repos=203;newest=ringback-releases;llmslim=0.12.0"
 }

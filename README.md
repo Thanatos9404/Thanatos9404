@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 112 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 113 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 205 pull requests</b> (112 merged), grouped by organisation</summary>
+<summary><b>All 205 pull requests</b> (113 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -286,6 +286,10 @@
 - `merged` [fix(bootstrap): recognise our own WebUI behind a Windows WSAEACCES bind](https://github.com/nesquena/hermes-webui/pull/8301) <sub>nesquena/hermes-webui#8301</sub>
 - `merged` [fix(settings): name the update unit once in the update status line](https://github.com/nesquena/hermes-webui/pull/8334) <sub>nesquena/hermes-webui#8334</sub>
 
+**Kivy** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [Make Matrix.rotate() and Matrix.scale() compose with the current matrix](https://github.com/kivy/kivy/pull/9483) <sub>kivy/kivy#9483</sub>
+
 **Raycast** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [(Model Context Protocol Registry) Add LLMSlim](https://github.com/raycast/extensions/pull/32584) <sub>raycast/extensions#32584</sub>
@@ -403,10 +407,6 @@
 
 - `open` [fix(macros): define \arraystretch so \renewcommand works](https://github.com/KaTeX/KaTeX/pull/4320) <sub>KaTeX/KaTeX#4320</sub>
 
-**Kivy** &nbsp;<sub>1 in review</sub>
-
-- `open` [Make Matrix.rotate() and Matrix.scale() compose with the current matrix](https://github.com/kivy/kivy/pull/9483) <sub>kivy/kivy#9483</sub>
-
 **NLTK** &nbsp;<sub>2 in review</sub>
 
 - `closed` [Take the default answer at the downloader's retry prompt when stdin is closed](https://github.com/nltk/nltk/pull/3965) <sub>nltk/nltk#3965</sub>
@@ -480,10 +480,6 @@
 
 - `open` [Add LLMSlim to registry](https://github.com/pathintegral-institute/mcpm.sh/pull/477) <sub>pathintegral-institute/mcpm.sh#477</sub>
 
-**conda-forge** &nbsp;<sub>1 in review</sub>
-
-- `open` [Add llmslim](https://github.com/conda-forge/staged-recipes/pull/35309) <sub>conda-forge/staged-recipes#35309</sub>
-
 **glue** &nbsp;<sub>1 in review</sub>
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
@@ -523,6 +519,10 @@
 **deepset** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
+
+**conda-forge** &nbsp;<sub>1 in review</sub>
+
+- `open` [Add llmslim](https://github.com/conda-forge/staged-recipes/pull/35309) <sub>conda-forge/staged-recipes#35309</sub>
 
 </details>
 <!-- OSS:END -->
