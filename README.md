@@ -480,6 +480,10 @@
 
 - `open` [Add LLMSlim to registry](https://github.com/pathintegral-institute/mcpm.sh/pull/477) <sub>pathintegral-institute/mcpm.sh#477</sub>
 
+**conda-forge** &nbsp;<sub>1 in review</sub>
+
+- `open` [Add llmslim](https://github.com/conda-forge/staged-recipes/pull/35309) <sub>conda-forge/staged-recipes#35309</sub>
+
 **glue** &nbsp;<sub>1 in review</sub>
 
 - `open` [Place random dask views at a random position inside each chunk](https://github.com/glue-viz/glue/pull/2605) <sub>glue-viz/glue#2605</sub>
@@ -519,10 +523,6 @@
 **deepset** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
-
-**conda-forge** &nbsp;<sub>1 in review</sub>
-
-- `open` [Add llmslim](https://github.com/conda-forge/staged-recipes/pull/35309) <sub>conda-forge/staged-recipes#35309</sub>
 
 </details>
 <!-- OSS:END -->
