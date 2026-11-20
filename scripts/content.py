@@ -15,7 +15,7 @@ STATUS = ["Available for freelance work", "Jaipur, India · IST"]
 # Hero paragraph: (text, emphasised?) runs.
 INTRO = [
     ("Founder of ", False), ("LLMSlim", True), (", the open-source context layer for production AI agents, "
-                                                 "backed by ", False), ("21 startup programs", True),
+                                                 "backed by ", False), ("24 startup programs", True),
     (". I also run ", False), ("AMEYOR", True), (", my AI and software studio. Previously AI/ML research at ", False),
     ("DRDO", True), (".", False),
 ]
@@ -47,10 +47,10 @@ LLMSLIM = {
     ],
     "programs": ["openai", "anthropic", "mongodb", "sarvam", "zoho", "auth0", "zendesk", "mixpanel", "sentry",
                  "descope", "pulumi", "honeycomb", "exa", "neo4j", "cartesia", "nebius", "notion", "snyk", "gitar",
-                 "composio", "futureagi"],
+                 "composio", "futureagi", "reducto", "blacksmith", "neon"],
     "program_names": ["OpenAI", "Claude", "MongoDB", "Sarvam", "Zoho", "Auth0", "Zendesk", "Mixpanel", "Sentry",
                       "Descope", "Pulumi", "Honeycomb", "Exa", "Neo4j", "Cartesia", "Nebius", "Notion", "Snyk",
-                      "Gitar", "Composio", "Future AGI"],
+                      "Gitar", "Composio", "Future AGI", "Reducto", "Blacksmith", "Neon"],
     "links": [
         ("Website", "https://www.llmslim.app"),
         ("Docs", "https://www.llmslim.app/docs/getting-started"),

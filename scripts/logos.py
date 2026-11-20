@@ -31,6 +31,7 @@ NAMED = {
     "pulumi": "gh-pulumi.png", "honeycomb": "gh-honeycombio.png", "exa": "gh-exa-labs.png", "neo4j": "gh-neo4j.png",
     "cartesia": "gh-cartesia-ai.png", "nebius": "gh-nebius.png", "notion": "gh-makenotion.png", "snyk": "gh-snyk.png",
     "gitar": "gh-gitarcode.png", "composio": "gh-ComposioHQ.png", "futureagi": "gh-future-agi.png",
+    "reducto": "gh-reductoai.png", "blacksmith": "gh-useblacksmith.png", "neon": "gh-neondatabase.png",
 }
 
 

@@ -305,7 +305,9 @@ def llmslim_card(t):
         meta.append(f"LISTED IN {len(lists)} CURATED LISTS")
     if meta:
         s.add(label(s, W - x0, py + 34, "  ·  ".join(meta), anchor="end"))
-    size, gap = 40, 9
+    n = len(L["programs"])
+    gap = 9 if n <= 22 else 8  # keep the row inside the card as programs are added
+    size = min(40, int((W - 2 * x0 - (n - 1) * gap) / n))
     for i, key in enumerate(L["programs"]):
         s.add(f'<g class="rv" style="animation-delay:{.45 + i * .03:.2f}s">'
               + logo_tile(s, x0 + i * (size + gap), py + 52, size, path_for(key), L["program_names"][i], uid=f"p{i}")
