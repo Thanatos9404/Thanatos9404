@@ -14,7 +14,7 @@
   <a href="https://www.yashvardhan.tech/Yashvardhan-Thanvi-Resume.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/l-resume-dark.svg"><img alt="Résumé" src="assets/l-resume-light.svg" height="40"></picture></a>
 </p>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg"><img alt="Pull requests merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache and more." src="assets/merged-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg"><img alt="Pull requests merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One and more." src="assets/merged-light.svg" width="100%"></picture>
 
 ## LLMSlim
 
@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 114 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 116 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 205 pull requests</b> (114 merged), grouped by organisation</summary>
+<summary><b>All 205 pull requests</b> (116 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -148,6 +148,11 @@
 - `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
 - `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
+**Mozilla** &nbsp;<sub>1 merged of 2</sub>
+
+- `merged` [Skip for-in properties shadowed by non-enumerable properties](https://github.com/mozilla/rhino/pull/2557) <sub>mozilla/rhino#2557</sub>
+- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
+
 **Capital One** &nbsp;<sub>3 merged of 3</sub>
 
 - `merged` [fix: preserve nested report template paths](https://github.com/capitalone/datacompy/pull/590) <sub>capitalone/datacompy#590</sub>
@@ -175,11 +180,11 @@
 - `merged` [fix(dspy): record agent finish reasons for ReAct and ReActV2](https://github.com/open-telemetry/opentelemetry-python-genai/pull/885) <sub>open-telemetry/opentelemetry-python-genai#885</sub>
 - `merged` [fix(langchain): record dict-form assistant messages on workflow and agent spans](https://github.com/open-telemetry/opentelemetry-python-genai/pull/881) <sub>open-telemetry/opentelemetry-python-genai#881</sub>
 
-**Jupyter** &nbsp;<sub>2 merged of 5</sub>
+**Jupyter** &nbsp;<sub>3 merged of 5</sub>
 
 - `merged` [Use UTF-8 for text file I/O](https://github.com/jupyter-server/jupyverse/pull/671) <sub>jupyter-server/jupyverse#671</sub>
 - `merged` [Fix /api/me permissions in fps-auth-jupyterhub](https://github.com/jupyter-server/jupyverse/pull/670) <sub>jupyter-server/jupyverse#670</sub>
-- `open` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
+- `merged` [Drop the hatchling 1.32.3 workaround](https://github.com/jupyterlab/hatch-jupyter-builder/pull/152) <sub>jupyterlab/hatch-jupyter-builder#152</sub>
 - `open` [Explain the missing yjs plugin when kernels.require_yjs is set](https://github.com/jupyter-server/jupyverse/pull/672) <sub>jupyter-server/jupyverse#672</sub>
 - `open` [Return a JSON body for contents API 404 errors](https://github.com/jupyter-server/jupyter_server/pull/1711) <sub>jupyter-server/jupyter_server#1711</sub>
 
@@ -360,11 +365,6 @@
 **Privateer Project** &nbsp;<sub>1 merged of 1</sub>
 
 - `merged` [fix(command): give Aborted and NoTests an exit severity](https://github.com/privateerproj/privateer-sdk/pull/340) <sub>privateerproj/privateer-sdk#340</sub>
-
-**Mozilla** &nbsp;<sub>2 in review</sub>
-
-- `open` [fix: clarify missing or empty data_collection_permissions.required](https://github.com/mozilla/addons-linter/pull/6246) <sub>mozilla/addons-linter#6246</sub>
-- `open` [Skip for-in properties shadowed by non-enumerable properties](https://github.com/mozilla/rhino/pull/2557) <sub>mozilla/rhino#2557</sub>
 
 **Mermaid** &nbsp;<sub>1 in review</sub>
 
