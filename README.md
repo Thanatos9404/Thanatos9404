@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 113 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 114 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Capital One, Apache, OpenTelemetry, Jupyter." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 205 pull requests</b> (113 merged), grouped by organisation</summary>
+<summary><b>All 205 pull requests</b> (114 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -154,7 +154,7 @@
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**Apache** &nbsp;<sub>7 merged of 13</sub>
+**Apache** &nbsp;<sub>8 merged of 13</sub>
 
 - `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
@@ -163,11 +163,11 @@
 - `merged` [(Issue 1298)(consumer) Fix Seek to earliest or latest on non-partitioned topics](https://github.com/apache/pulsar-client-go/pull/1551) <sub>apache/pulsar-client-go#1551</sub>
 - `merged` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
 - `merged` [scriptelement.py, buildelement.py: Report relative directories as errors](https://github.com/apache/buildstream/pull/2212) <sub>apache/buildstream#2212</sub>
+- `merged` [element.py: Report a relative shell mount path as an error](https://github.com/apache/buildstream/pull/2220) <sub>apache/buildstream#2220</sub>
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
 - `open` [Require pandera>=0.27 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [_testing/_sourcetests/utils.py: Make the copied test project writable](https://github.com/apache/buildstream/pull/2221) <sub>apache/buildstream#2221</sub>
-- `open` [_frontend/cli.py: Report a relative `bst shell --mount` path as an error](https://github.com/apache/buildstream/pull/2220) <sub>apache/buildstream#2220</sub>
 - `open` [(Python) Build nested rows for struct values in pyarrow batch converters](https://github.com/apache/beam/pull/41201) <sub>apache/beam#41201</sub>
 
 **OpenTelemetry** &nbsp;<sub>2 merged of 2</sub>
