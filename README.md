@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="205 pull requests to 84 organisations, 116 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="208 pull requests to 84 organisations, 118 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 205 pull requests</b> (116 merged), grouped by organisation</summary>
+<summary><b>All 208 pull requests</b> (118 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -141,12 +141,12 @@
 
 - `merged` [Upgrade to Go 1.27.2 and build a static image](https://github.com/teslamotors/vehicle-command/pull/523) <sub>teslamotors/vehicle-command#523</sub>
 
-**Uber** &nbsp;<sub>2 merged of 4</sub>
+**Uber** &nbsp;<sub>4 merged of 4</sub>
 
 - `merged` [feat(build-index): count manifest downloads that succeed after a retry](https://github.com/uber/kraken/pull/723) <sub>uber/kraken#723</sub>
 - `merged` [feat(build-index): make the manifest download backoff configurable](https://github.com/uber/kraken/pull/722) <sub>uber/kraken#722</sub>
-- `open` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
-- `open` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
+- `merged` [fix: prevent panic on variadic anonymous functions with closure variables](https://github.com/uber-go/nilaway/pull/535) <sub>uber-go/nilaway#535</sub>
+- `merged` [fix: prevent panic on type switch bindings in anonymous functions](https://github.com/uber-go/nilaway/pull/534) <sub>uber-go/nilaway#534</sub>
 
 **Mozilla** &nbsp;<sub>1 merged of 2</sub>
 
@@ -159,7 +159,7 @@
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**Apache** &nbsp;<sub>8 merged of 13</sub>
+**Apache** &nbsp;<sub>8 merged of 16</sub>
 
 - `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
@@ -174,6 +174,9 @@
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [_testing/_sourcetests/utils.py: Make the copied test project writable](https://github.com/apache/buildstream/pull/2221) <sub>apache/buildstream#2221</sub>
 - `open` [(Python) Build nested rows for struct values in pyarrow batch converters](https://github.com/apache/beam/pull/41201) <sub>apache/beam#41201</sub>
+- `open` [(Python) Respect without_defaults in Top.Of with the global window](https://github.com/apache/beam/pull/41570) <sub>apache/beam#41570</sub>
+- `open` [(Python) Match the output path of file-based sinks literally](https://github.com/apache/beam/pull/41569) <sub>apache/beam#41569</sub>
+- `open` [Don't keep workspace mtimes in the files of an artifact](https://github.com/apache/buildstream/pull/2229) <sub>apache/buildstream#2229</sub>
 
 **OpenTelemetry** &nbsp;<sub>2 merged of 2</sub>
 
