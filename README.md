@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="208 pull requests to 84 organisations, 118 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="208 pull requests to 84 organisations, 119 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
-<p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
+<p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a> and the <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry">Toolsdk MCP Registry</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 208 pull requests</b> (118 merged), grouped by organisation</summary>
+<summary><b>All 208 pull requests</b> (119 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -355,6 +355,10 @@
 
 - `merged` [Fix Permission denied error from `bikeshed echidna` on Windows](https://github.com/speced/bikeshed/pull/3328) <sub>speced/bikeshed#3328</sub>
 
+**toolsdk.ai** &nbsp;<sub>1 merged of 1</sub>
+
+- `merged` [Add LLMSlim Memory MCP server](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/951) <sub>toolsdk-ai/toolsdk-mcp-registry#951</sub>
+
 **Scikit-HEP** &nbsp;<sub>1 merged of 2</sub>
 
 - `merged` [fix(nanoevents): read RNTuple field descriptions as docstrings in dask mode](https://github.com/scikit-hep/coffea/pull/1646) <sub>scikit-hep/coffea#1646</sub>
@@ -514,10 +518,6 @@
 **AI Agent Registry** &nbsp;<sub>1 in review</sub>
 
 - `open` [Add LLMSlim to Memory and Context](https://github.com/ARUNAGIRINATHAN-K/ai-agent-registry/pull/465) <sub>ARUNAGIRINATHAN-K/ai-agent-registry#465</sub>
-
-**toolsdk.ai** &nbsp;<sub>1 in review</sub>
-
-- `open` [Add LLMSlim Memory MCP server](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/951) <sub>toolsdk-ai/toolsdk-mcp-registry#951</sub>
 
 **PySAL** &nbsp;<sub>1 in review</sub>
 
