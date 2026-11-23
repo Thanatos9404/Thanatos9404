@@ -59,13 +59,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="208 pull requests to 84 organisations, 119 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="210 pull requests to 84 organisations, 119 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a> and the <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry">Toolsdk MCP Registry</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 208 pull requests</b> (119 merged), grouped by organisation</summary>
+<summary><b>All 210 pull requests</b> (119 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -159,7 +159,7 @@
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**Apache** &nbsp;<sub>8 merged of 16</sub>
+**Apache** &nbsp;<sub>8 merged of 18</sub>
 
 - `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
@@ -177,6 +177,8 @@
 - `open` [(Python) Respect without_defaults in Top.Of with the global window](https://github.com/apache/beam/pull/41570) <sub>apache/beam#41570</sub>
 - `open` [(Python) Match the output path of file-based sinks literally](https://github.com/apache/beam/pull/41569) <sub>apache/beam#41569</sub>
 - `open` [Don't keep workspace mtimes in the files of an artifact](https://github.com/apache/buildstream/pull/2229) <sub>apache/buildstream#2229</sub>
+- `open` [(Python) Support fractional delays in AfterProcessingTime](https://github.com/apache/beam/pull/41575) <sub>apache/beam#41575</sub>
+- `open` [Treat missing null value counts as unknown in the strict metrics evaluator](https://github.com/apache/iceberg-python/pull/4472) <sub>apache/iceberg-python#4472</sub>
 
 **OpenTelemetry** &nbsp;<sub>2 merged of 2</sub>
 
