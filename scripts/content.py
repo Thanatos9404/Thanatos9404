@@ -71,9 +71,9 @@ PROJECTS = [
     {"repo": "pratibimb", "name": "Pratibimb", "shot": "pratibimb",
      "tag": "DIGITAL TWIN CHALLENGE 2026", "line": "A physiology and ML digital twin for Type 2 diabetes",
      "links": [("Live console", "https://pratibimb-omega.vercel.app")]},
-    {"repo": "canopyproof", "name": "CanopyProof", "shot": "canopyproof",
-     "tag": "IEEE CLIMATECHAIN 2026", "line": "Satellite-verified integrity for forest carbon credits",
-     "links": [("Video", "https://youtu.be/9FBv9KQ4Ag8")]},
+    {"repo": "exhale", "name": "Exhale", "shot": "exhale",
+     "tag": "PROMPTWARS CHALLENGE 6", "line": "Smog forecasts and a lower-exposure day for families",
+     "links": [("Live app", "https://exhale-air.vercel.app")]},
     {"repo": "passerelle", "name": "Passerelle", "shot": "passerelle",
      "tag": "HACK APERTUS 2026", "line": "An air-gapped caseworker assistant on Apertus",
      "links": [("Video", "https://youtu.be/bjc88UYdgfE")]},
@@ -89,6 +89,7 @@ MORE = [
     ("StudyTwin", "https://github.com/Thanatos9404/StudyTwin", "a tutor that cites your course material"),
     ("Leash", "https://github.com/Thanatos9404/leash", "spending mandates for AI shopping agents"),
     ("dayrhythm", "https://github.com/Thanatos9404/dayrhythm", "a routine-learning Python library"),
+    ("CanopyProof", "https://github.com/Thanatos9404/canopyproof", "satellite checks for forest carbon credits"),
     ("Intuix", "https://github.com/Thanatos9404/Intuix-NASA", "exoplanet detection for NASA Space Apps"),
 ]
 

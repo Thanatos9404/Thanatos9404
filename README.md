@@ -34,8 +34,8 @@
 
 <p align="center">
   <a href="https://github.com/Thanatos9404/pratibimb"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-pratibimb-dark.svg"><img alt="Pratibimb: A physiology and ML digital twin for Type 2 diabetes. Digital Twin Challenge 2026." src="assets/p-pratibimb-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/Thanatos9404/canopyproof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-canopyproof-dark.svg"><img alt="CanopyProof: Satellite-verified integrity for forest carbon credits. Ieee Climatechain 2026." src="assets/p-canopyproof-light.svg" width="49%"></picture></a>
-  <br><sub>Pratibimb: <a href="https://pratibimb-omega.vercel.app">Live console</a> &nbsp;·&nbsp; CanopyProof: <a href="https://youtu.be/9FBv9KQ4Ag8">Video</a></sub>
+  <a href="https://github.com/Thanatos9404/exhale"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/p-exhale-dark.svg"><img alt="Exhale: Smog forecasts and a lower-exposure day for families. Promptwars Challenge 6." src="assets/p-exhale-light.svg" width="49%"></picture></a>
+  <br><sub>Pratibimb: <a href="https://pratibimb-omega.vercel.app">Live console</a> &nbsp;·&nbsp; Exhale: <a href="https://exhale-air.vercel.app">Live app</a></sub>
 </p>
 
 <p align="center">
@@ -47,13 +47,13 @@
 <details>
 <summary><b>More projects</b> (8)</summary>
 
-- **[Exhale](https://github.com/Thanatos9404/exhale)** <sub>new</sub> GenAI air observability for families. Live smog forecasts, a Gemini-planned low-exposure day, and the exact impact of every choice.
 - **[Ruko](https://github.com/Thanatos9404/ruko)** <sub>new</sub> A voice check of about a minute that stops a payment scam before the money leaves. Built on Bolna for the Bolna x YC Symphony Buildathon. [Live](https://ruko-symphony.vercel.app)
 - **[Ringback](https://github.com/Thanatos9404/ringback-releases)** A phone call when your coding agent needs you.
 - **[RuleDost](https://ruledost.vercel.app)** Hackathon rules, decoded with receipts.
 - **[StudyTwin](https://github.com/Thanatos9404/StudyTwin)** A tutor that cites your course material.
 - **[Leash](https://github.com/Thanatos9404/leash)** Spending mandates for AI shopping agents.
 - **[dayrhythm](https://github.com/Thanatos9404/dayrhythm)** A routine-learning Python library.
+- **[CanopyProof](https://github.com/Thanatos9404/canopyproof)** Satellite checks for forest carbon credits.
 - **[Intuix](https://github.com/Thanatos9404/Intuix-NASA)** Exoplanet detection for NASA Space Apps.
 
 </details>
