@@ -127,7 +127,7 @@
    "merged": 3,
    "prs": 3,
    "open": 0,
-   "stars": 71246
+   "stars": 71247
   },
   {
    "name": "Mozilla.ai",
@@ -319,7 +319,7 @@
    "merged": 1,
    "prs": 1,
    "open": 0,
-   "stars": 2128
+   "stars": 2129
   },
   {
    "name": "Carvel",
@@ -383,7 +383,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 61216
+   "stars": 61218
   },
   {
    "name": "mitmproxy",
@@ -399,7 +399,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 42863
+   "stars": 42864
   },
   {
    "name": "Poetry",
@@ -415,7 +415,7 @@
    "merged": 0,
    "prs": 1,
    "open": 1,
-   "stars": 34150
+   "stars": 34151
   },
   {
    "name": "Lightning AI",
@@ -925,17 +925,6 @@
   "stars": 27
  },
  "fresh": [
-  {
-   "repo": "exhale",
-   "name": "Exhale",
-   "desc": "GenAI air observability for families. Live smog forecasts, a Gemini-planned low-exposure day, and the exact impact of every choice.",
-   "tag": "PromptWars Challenge 6",
-   "url": "https://github.com/Thanatos9404/exhale",
-   "homepage": "",
-   "language": "TypeScript",
-   "stars": 0,
-   "created": "2026-11-23"
-  },
   {
    "repo": "ruko",
    "name": "Ruko",
