@@ -45,8 +45,9 @@
 </p>
 
 <details>
-<summary><b>More projects</b> (7)</summary>
+<summary><b>More projects</b> (8)</summary>
 
+- **[Exhale](https://github.com/Thanatos9404/exhale)** <sub>new</sub> GenAI air observability for families. Live smog forecasts, a Gemini-planned low-exposure day, and the exact impact of every choice.
 - **[Ruko](https://github.com/Thanatos9404/ruko)** <sub>new</sub> A voice check of about a minute that stops a payment scam before the money leaves. Built on Bolna for the Bolna x YC Symphony Buildathon. [Live](https://ruko-symphony.vercel.app)
 - **[Ringback](https://github.com/Thanatos9404/ringback-releases)** A phone call when your coding agent needs you.
 - **[RuleDost](https://ruledost.vercel.app)** Hackathon rules, decoded with receipts.
@@ -59,13 +60,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="210 pull requests to 84 organisations, 119 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="210 pull requests to 84 organisations, 120 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a> and the <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry">Toolsdk MCP Registry</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 210 pull requests</b> (119 merged), grouped by organisation</summary>
+<summary><b>All 210 pull requests</b> (120 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -159,7 +160,7 @@
 - `merged` [fix: align report tables using Unicode character widths](https://github.com/capitalone/datacompy/pull/589) <sub>capitalone/datacompy#589</sub>
 - `merged` [fix: declare UTF-8 consistently in saved HTML reports](https://github.com/capitalone/datacompy/pull/588) <sub>capitalone/datacompy#588</sub>
 
-**Apache** &nbsp;<sub>8 merged of 18</sub>
+**Apache** &nbsp;<sub>9 merged of 18</sub>
 
 - `merged` [(Issue 1154)(consumer) Fix bogus values in the processing time metric](https://github.com/apache/pulsar-client-go/pull/1550) <sub>apache/pulsar-client-go#1550</sub>
 - `merged` [(Go SDK) Fix generic registration of anonymous struct types](https://github.com/apache/beam/pull/40649) <sub>apache/beam#40649</sub>
@@ -169,13 +170,13 @@
 - `merged` [fix(blueprint): keep the scheduled plan unmasked after PATCH /blueprints](https://github.com/apache/devlake/pull/9247) <sub>apache/devlake#9247</sub>
 - `merged` [scriptelement.py, buildelement.py: Report relative directories as errors](https://github.com/apache/buildstream/pull/2212) <sub>apache/buildstream#2212</sub>
 - `merged` [element.py: Report a relative shell mount path as an error](https://github.com/apache/buildstream/pull/2220) <sub>apache/buildstream#2220</sub>
+- `merged` [(Python) Match the output path of file-based sinks literally](https://github.com/apache/beam/pull/41569) <sub>apache/beam#41569</sub>
 - `open` [Stop re-hashing node source on every execution (OpenTelemetry, caching)](https://github.com/apache/hamilton/pull/1756) <sub>apache/hamilton#1756</sub>
 - `open` [Require pandera>=0.27 and un-xfail the dask series test](https://github.com/apache/hamilton/pull/1770) <sub>apache/hamilton#1770</sub>
 - `open` [fix(timeline): apply progress and emphasis label formatter](https://github.com/apache/echarts/pull/21795) <sub>apache/echarts#21795</sub>
 - `open` [_testing/_sourcetests/utils.py: Make the copied test project writable](https://github.com/apache/buildstream/pull/2221) <sub>apache/buildstream#2221</sub>
 - `open` [(Python) Build nested rows for struct values in pyarrow batch converters](https://github.com/apache/beam/pull/41201) <sub>apache/beam#41201</sub>
 - `open` [(Python) Respect without_defaults in Top.Of with the global window](https://github.com/apache/beam/pull/41570) <sub>apache/beam#41570</sub>
-- `open` [(Python) Match the output path of file-based sinks literally](https://github.com/apache/beam/pull/41569) <sub>apache/beam#41569</sub>
 - `open` [Don't keep workspace mtimes in the files of an artifact](https://github.com/apache/buildstream/pull/2229) <sub>apache/buildstream#2229</sub>
 - `open` [(Python) Support fractional delays in AfterProcessingTime](https://github.com/apache/beam/pull/41575) <sub>apache/beam#41575</sub>
 - `open` [Treat missing null value counts as unknown in the strict metrics evaluator](https://github.com/apache/iceberg-python/pull/4472) <sub>apache/iceberg-python#4472</sub>
