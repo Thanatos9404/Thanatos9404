@@ -528,7 +528,7 @@
 
 **deepset** &nbsp;<sub>1 in review</sub>
 
-- `open` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
+- `closed` [Add LLMSlim integration (document compressor)](https://github.com/deepset-ai/haystack-integrations/pull/655) <sub>deepset-ai/haystack-integrations#655</sub>
 
 </details>
 <!-- OSS:END -->
