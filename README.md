@@ -60,13 +60,13 @@
 
 ## Open source
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="210 pull requests to 84 organisations, 120 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg"><img alt="210 pull requests to 84 organisations, 121 merged. Merged at NVIDIA, Microsoft, Google, Meta, AWS, IBM, Tesla, Uber, Mozilla, Capital One, Apache, OpenTelemetry." src="assets/oss-light.svg" width="100%"></picture>
 
 <p align="center"><sub>LLMSlim ships in the <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent plugin catalog</a> and the <a href="https://github.com/raycast/extensions">Raycast Store</a> and the <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry">Toolsdk MCP Registry</a>, and is listed in 20 curated lists, including <a href="https://github.com/EmbraceAGI/awesome-chatgpt-zh">Awesome Chatgpt Zh</a>, <a href="https://github.com/KalyanKS-NLP/llm-engineer-toolkit">LLM Engineer Toolkit</a> and <a href="https://github.com/yzfly/Awesome-MCP-ZH">Awesome MCP ZH</a>.</sub></p>
 
 <!-- OSS:START -->
 <details>
-<summary><b>All 210 pull requests</b> (120 merged), grouped by organisation</summary>
+<summary><b>All 210 pull requests</b> (121 merged), grouped by organisation</summary>
 
 **NVIDIA** &nbsp;<sub>3 merged of 5</sub>
 
@@ -97,18 +97,18 @@
 - `open` [fix(layer): keep layer settings when the layer type is auto-detected](https://github.com/google/neuroglancer/pull/1135) <sub>google/neuroglancer#1135</sub>
 - `closed` [Use checked arithmetic for GATHER shape products](https://github.com/google-ai-edge/LiteRT/pull/10846) <sub>google-ai-edge/LiteRT#10846</sub>
 
-**Meta** &nbsp;<sub>4 merged of 11</sub>
+**Meta** &nbsp;<sub>5 merged of 11</sub>
 
 - `merged` [refactor: compute component plot data in private helpers](https://github.com/meta/prophet/pull/2756) <sub>meta/prophet#2756</sub>
 - `merged` [fix: do not modify the holidays dataframe passed to Prophet](https://github.com/meta/prophet/pull/2757) <sub>meta/prophet#2757</sub>
 - `merged` [(lexical-table) Bug Fix: Leave clicks on another editor's table to that editor](https://github.com/meta/lexical/pull/9356) <sub>meta/lexical#9356</sub>
 - `merged` [(lexical) Bug Fix: Explain how to guard a stale node reference in the missing node error](https://github.com/meta/lexical/pull/9366) <sub>meta/lexical#9366</sub>
+- `merged` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 - `open` [Fix sample_around_best with HigherOrderGP](https://github.com/meta-pytorch/botorch/pull/3424) <sub>meta-pytorch/botorch#3424</sub>
 - `open` [Fix ClientIndex result merging for inner product and expose its metric_type](https://github.com/facebookresearch/faiss/pull/5732) <sub>facebookresearch/faiss#5732</sub>
 - `open` [Preserve whitespace before `:` in except handlers without `as`](https://github.com/Instagram/LibCST/pull/1473) <sub>Instagram/LibCST#1473</sub>
 - `open` [(unplugin) Rename Vite chunks that link to the StyleX CSS when it changes](https://github.com/meta/stylex/pull/1962) <sub>meta/stylex#1962</sub>
 - `open` [Fix negated ignore patterns making jscodeshift ignore every file (#342)](https://github.com/meta/jscodeshift/pull/754) <sub>meta/jscodeshift#754</sub>
-- `open` [Fix COBYLA Invalid RHOEND warning with recent scipy](https://github.com/facebookresearch/nevergrad/pull/1722) <sub>facebookresearch/nevergrad#1722</sub>
 - `open` [(lexical-react)(lexical-playground) Bug Fix: Keep the arrow key highlight when a typeahead menu scrolls under the mouse](https://github.com/meta/lexical/pull/9391) <sub>meta/lexical#9391</sub>
 
 **AWS** &nbsp;<sub>16 merged of 19</sub>
